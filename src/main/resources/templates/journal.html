@@ -1,0 +1,11 @@
+<img th:src="@{/images/{f}(f=${journal.cover})}">
+
+<h2 th:text="${journal.title}"></h2>
+
+<p th:text="${journal.description}"></p>
+
+<a th:href="@{/pdf/{file}(file=${journal.pdf})}"
+   target="_blank"
+   class="btn">
+    Читать выпуск
+</a>

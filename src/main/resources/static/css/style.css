@@ -1,0 +1,32 @@
+.menu{
+    display:flex;
+    list-style:none;
+    background:#003366;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    display:block;
+    padding:15px;
+    color:white;
+    text-decoration:none;
+}
+
+.menu ul{
+    display:none;
+    position:absolute;
+    background:white;
+    list-style:none;
+}
+
+.menu li:hover>ul{
+    display:block;
+}
+
+.menu ul li ul{
+    left:100%;
+    top:0;
+}

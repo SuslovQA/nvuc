@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Архив научных журналов</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#003366;
+        }
+
+        .menu{
+            display:flex;
+            list-style:none;
+        }
+
+        .menu>li{
+            position:relative;
+        }
+
+        .menu a{
+            display:block;
+            padding:15px 20px;
+            color:white;
+            text-decoration:none;
+        }
+
+        .menu a:hover{
+            background:#0055aa;
+        }
+
+        .menu ul{
+            display:none;
+            position:absolute;
+            list-style:none;
+            background:white;
+            min-width:200px;
+            border:1px solid #cccccc;
+            z-index:1000;
+        }
+
+        .menu li:hover>ul{
+            display:block;
+        }
+
+        .menu ul li{
+            position:relative;
+        }
+
+        .menu ul a{
+            color:black;
+            background:white;
+        }
+
+        .menu ul a:hover{
+            background:#eeeeee;
+        }
+
+        .menu ul ul{
+            top:0;
+            left:100%;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+
+        h1{
+            color:#003366;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.7;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <ul class="menu">
+
+            <li>
+                <a th:href="@{/}">
+                    Главная
+                </a>
+            </li>
+
+            <li>
+
+                <a href="#">
+                    Архив выпусков
+                </a>
+
+                <ul>
+
+                    <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
+
+                        <a href="#" th:text="${year}"></a>
+
+                        <ul>
+
+                            <li th:each="journal : ${journals}"
+                                th:if="${journal.year == year}">
+
+                                <a th:href="@{/journal/{id}(id=${journal.id})}"
+                                   th:text="'Выпуск ' + journal.issue">
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>Архив научных журналов</h1>
+
+    <p>
+        Добро пожаловать в электронный архив научных журналов.
+    </p>
+
+    <br>
+
+    <p>
+        Для просмотра выпусков воспользуйтесь пунктом меню
+        <b>«Архив выпусков»</b>,
+        выберите интересующий год, затем выпуск журнала.
+    </p>
+
+    <br>
+
+    <p>
+        На странице выпуска отображаются:
+    </p>
+
+    <ul style="margin-left:30px; margin-top:15px; line-height:2;">
+        <li>обложка журнала;</li>
+        <li>название выпуска;</li>
+        <li>описание;</li>
+        <li>содержание;</li>
+        <li>кнопка <b>«Читать выпуск»</b> для открытия PDF.</li>
+    </ul>
+
+</div>
+
+</body>
+
+</html>
