@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
+<link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <header xmlns:th="http://www.w3.org/1999/xhtml">
 
     <div class="logo">
-<!--        <img src="static/images/logo.png" alt="logo">-->
+        <!--        <img src="static/images/logo.png" alt="logo">-->
         <img th:src="@{/images/logo.png}" alt="logo">
     </div>
 
@@ -26,7 +26,7 @@
                 </ul>
             </li>
             <li class="sp-menu-item">
-                <a href="/about-the-edition.html">Об издании</a></li>
+                <a href="/about-the-edition">Об издании</a></li>
             <li class="sp-menu-item current-item active">
                 <a href="/founder-and-publisher">Учредитель и издатель</a>
             </li>
@@ -44,15 +44,17 @@
     </nav>
 </header>
 
+<div class="article">
+    <div class="header-article">
+        <h2>Учредитель и издатель</h2>
+    </div>
+    <div class="article-content"
+    <!--гипер-ссылка и ссылки на соц сети и сайт-->
+    <p>Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральская государственная
+        консерватория имени М.П. Мусоргского».</p>
+        <a href="#">
+        <a href="#">
+        <a href="#">
 
-<img th:src="@{/images/{f}(f=${journal.cover})}">
-
-<h2 th:text="${journal.title}"></h2>
-
-<p th:text="${journal.description}"></p>
-
-<a th:href="@{/pdf/{file}(file=${journal.pdf})}"
-   target="_blank"
-   class="btn">
-    Читать выпуск
-</a>
+</div>
+</div>

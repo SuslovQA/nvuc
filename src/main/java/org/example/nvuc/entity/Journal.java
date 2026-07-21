@@ -29,6 +29,5 @@ public class Journal {
     private String cover;
 
     private String pdf;
-
 }
 

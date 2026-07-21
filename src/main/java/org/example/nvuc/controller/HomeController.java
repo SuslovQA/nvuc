@@ -14,10 +14,27 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model){
-
         model.addAttribute("journals", service.getAll());
-
         return "index";
     }
 
+    @GetMapping("/about")
+    public String about(){
+        return "about-the-addition";
+    }
+
+    @GetMapping("/founder")
+    public String founder(){
+        return "founder-and-publisher";
+    }
+
+    @GetMapping("/charter")
+    public String charter(){
+        return "charter-of-the-editorial-board";
+    }
+
+    @GetMapping("/editorial-board")
+    public String editorial(){
+        return "editorial-board";
+    }
 }

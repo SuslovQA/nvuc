@@ -5,96 +5,7 @@
     <meta charset="UTF-8">
     <title>Архив научных журналов</title>
 
-    <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            background:#f4f4f4;
-        }
-
-        header{
-            background:#003366;
-        }
-
-        .menu{
-            display:flex;
-            list-style:none;
-        }
-
-        .menu>li{
-            position:relative;
-        }
-
-        .menu a{
-            display:block;
-            padding:15px 20px;
-            color:white;
-            text-decoration:none;
-        }
-
-        .menu a:hover{
-            background:#0055aa;
-        }
-
-        .menu ul{
-            display:none;
-            position:absolute;
-            list-style:none;
-            background:white;
-            min-width:200px;
-            border:1px solid #cccccc;
-            z-index:1000;
-        }
-
-        .menu li:hover>ul{
-            display:block;
-        }
-
-        .menu ul li{
-            position:relative;
-        }
-
-        .menu ul a{
-            color:black;
-            background:white;
-        }
-
-        .menu ul a:hover{
-            background:#eeeeee;
-        }
-
-        .menu ul ul{
-            top:0;
-            left:100%;
-        }
-
-        .container{
-            width:90%;
-            max-width:1100px;
-            margin:40px auto;
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,.2);
-        }
-
-        h1{
-            color:#003366;
-            margin-bottom:20px;
-        }
-
-        p{
-            font-size:18px;
-            line-height:1.7;
-        }
-
-    </style>
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
 </head>
 
@@ -102,84 +13,79 @@
 
 <header>
 
+    <div class="logo">
+<!--        <img src="static/images/logo.png" alt="logo">-->
+        <img th:src="@{/images/logo.png}" alt="logo">
+    </div>
+
     <nav>
-
         <ul class="menu">
-
             <li>
-                <a th:href="@{/}">
-                    Главная
-                </a>
-            </li>
-
-            <li>
-
-                <a href="#">
-                    Архив выпусков
-                </a>
-
+                <a href="#">Архив выпусков</a>
                 <ul>
-
                     <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
-
                         <a href="#" th:text="${year}"></a>
-
                         <ul>
-
                             <li th:each="journal : ${journals}"
-                                th:if="${journal.year == year}">
-
+                                th:if="${journal.year==year}">
                                 <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                   th:text="'Выпуск ' + journal.issue">
+                                   th:text="'Выпуск № ' + ${journal.issue}">
                                 </a>
-
                             </li>
-
                         </ul>
-
                     </li>
-
                 </ul>
-
             </li>
-
+            <li class="sp-menu-item">
+                <a href="/about">Об издании</a></li>
+            <li class="sp-menu-item">
+                <a href="/founder">Учредитель и издатель</a>
+            </li>
+            <li class="sp-menu-item">
+                <a th:href="@{/charter}">Устав</a></li>
+            <li class="sp-menu-item">
+                <a th:href="@{/editorial-board}">Редакционная коллегия</a></li>
+            <li class="sp-menu-item">
+                <a href="#">Редакционная этика</a></li>
+            <li class="sp-menu-item">
+                <a href="# ">Авторам</a></li>
+            <li class="#">
+                <a href="#">Контакты</a></li>
         </ul>
-
     </nav>
-
 </header>
 
-<div class="container">
+<!--<div class="container">-->
 
-    <h1>Архив научных журналов</h1>
+<!--    <h1>Архив научных журналов</h1>-->
 
-    <p>
-        Добро пожаловать в электронный архив научных журналов.
-    </p>
+<!--    <p>-->
+<!--        Добро пожаловать в электронный архив научных журналов.-->
+<!--    </p>-->
 
-    <br>
+<!--    <br>-->
 
-    <p>
-        Для просмотра выпусков воспользуйтесь пунктом меню
-        <b>«Архив выпусков»</b>,
-        выберите интересующий год, затем выпуск журнала.
-    </p>
+<!--    <p>-->
+<!--        Для просмотра выпусков воспользуйтесь пунктом меню-->
+<!--        <b>«Архив выпусков»</b>,-->
+<!--        выберите интересующий год, затем выпуск журнала.-->
+<!--    </p>-->
 
-    <br>
+<!--    <br>-->
 
-    <p>
-        На странице выпуска отображаются:
-    </p>
+<!--    <p>-->
+<!--        На странице выпуска отображаются:-->
+<!--    </p>-->
 
-    <ul style="margin-left:30px; margin-top:15px; line-height:2;">
-        <li>обложка журнала;</li>
-        <li>название выпуска;</li>
-        <li>описание;</li>
-        <li>содержание;</li>
-        <li>кнопка <b>«Читать выпуск»</b> для открытия PDF.</li>
-    </ul>
+<!--    <ul style="margin-left:30px; margin-top:15px; line-height:2;">-->
+<!--        <li>обложка журнала;</li>-->
+<!--        <li>название выпуска;</li>-->
+<!--        <li>описание;</li>-->
+<!--        <li>содержание;</li>-->
+<!--        <li>кнопка <b>«Читать выпуск»</b> для открытия PDF.</li>-->
+<!--    </ul>-->
 
-</div>
+<!--</div>-->
 
 </body>
 
