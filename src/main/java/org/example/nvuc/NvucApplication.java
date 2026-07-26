@@ -9,5 +9,4 @@ public class NvucApplication {
     public static void main(String[] args) {
         SpringApplication.run(NvucApplication.class, args);
     }
-
 }

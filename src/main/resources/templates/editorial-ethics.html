@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Архив научных журналов</title>
+
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <!--        <img src="static/images/logo.png" alt="logo">-->
+        <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="/">Архив выпусков</a>
+                <ul>
+                    <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
+                        <a href="#" th:text="${year}"></a>
+                        <ul>
+                            <li th:each="journal : ${journals}"
+                                th:if="${journal.year==year}">
+                                <a th:href="@{/journal/{id}(id=${journal.id})}"
+                                   th:text="'Выпуск № ' + ${journal.issue}">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="sp-menu-item">
+                <a>Об издании</a>
+                <ul>
+                    <li>
+                        <a href="/about">Информация об издании</a>
+                    </li>
+                    <li>
+                        <a href="/founder">Учредитель и издатель</a>
+                    </li>
+                    <li>
+                        <a href="/charter">Устав</a>
+                    </li>
+                    <li>
+                        <a href="/editorial-board">Редакционная коллегия</a></li>
+                    <li>
+                        <a href="/editorial-ethics">Редакционная этика</a></li>
+                </ul>
+            </li>
+
+
+
+            <li class="sp-menu-item">
+                <a href="# ">Авторам</a></li>
+            <li class="#">
+                <a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article class="item item-page" itemscope="" itemtype="http://schema.org/Article">
+    <meta itemprop="inLanguage" content="ru-RU">
+
+
+
+    <div class="entry-header has-post-format">
+
+        <h2 itemprop="name">
+            Редакционная этика							</h2>
+
+
+    </div>
+    <div itemprop="articleBody" class="s-content">
+        <p style="text-align: justify;">Редакционная этика Журнала «Музыка в системе культуры: Научный вестник Уральской консерватории» базируется на современных юридических требованиях в отношении авторского права, законности, изложенных законодательстве РФ в отношении обеспечения авторского права и на этических принципах, декларируемых сообществом издателей научной периодики Committeeon Publication Ethics (COPE), и принципах, утвержденных Декларацией Ассоциации научных редакторов и издателей «Этические принципы научных публикаций».</p>
+        <p style="text-align: justify;">Редакция несет ответственность за качество опубликованных научных статей и обеспечивает соблюдение публикационной этики членами редакционной коллегии, рецензентами и авторами. Не допускаются к публикации материалы, содержание которых запрещено законодательством РФ.</p>
+        <p style="text-align: justify;">Сотрудники редакции обязаны:</p>
+        <ul style="list-style-type: disc;">
+            <li style="text-align: justify;">быть беспристрастными, не оказывать предпочтение авторам в зависимости от пола, расы, религиозных убеждений, гражданства, этнической принадлежности, политических убеждений, должностного положения и иных условий, не имеющих отношения к научной ценности работы;</li>
+            <li style="text-align: justify;">не иметь конфликта интересов в отношении статей, которые они принимают или отвергают;</li>
+            <li style="text-align: justify;">привлекать к рецензированию компетентных специалистов, использовать практику двойного (слепого) рецензирования;</li>
+            <li style="text-align: justify;">хранить редакционную тайну, не разглашать персональные данные авторов и рецензентов;</li>
+            <li style="text-align: justify;">добросовестно редактировать принятые к публикации тексты, согласовывать правку с авторами;</li>
+            <li style="text-align: justify;">предусмотреть возможность опубликования исправлений, разъяснений, опровержений и извинений в случае необходимости.</li>
+        </ul>
+        <p style="text-align: justify;">Авторы обязаны:</p>
+        <ul>
+            <li style="text-align: justify;">обеспечивать научную новизну и высокий научный уровень переданных в редакцию материалов;</li>
+            <li style="text-align: justify;">гарантировать эксклюзивность предоставляемых материалов (статья не может быть ранее опубликована или предложена в другое издание);</li>
+            <li style="text-align: justify;">указывать в качестве соавторов всех участников, внесших существенный вклад в исследование;</li>
+            <li style="text-align: justify;">не допускать плагиата, оформлять ссылки на источники, обеспечивать точность цитирования;</li>
+            <li style="text-align: justify;">быть готовыми к сотрудничеству с редакцией на всех этапах работы с материалами;</li>
+            <li style="text-align: justify;">указывать информацию о финансовых источниках поддержки отражаемых в материалах результатах исследования.</li>
+        </ul>
+        <p style="text-align: justify;">Рецензенты обязаны:</p>
+        <ul>
+            <li style="text-align: justify;">быть беспристрастными, стремиться к объективности в оценке рецензируемых материалов, высказывать конструктивные замечания;</li>
+            <li style="text-align: justify;">в случае недостаточной компетентности для объективной оценки полученных материалов сообщать об этом обстоятельстве;</li>
+            <li style="text-align: justify;">соблюдать конфиденциальность экспертной оценки, не использовать информацию, полученную при рецензировании, в личных целях или в интересах иных лиц;</li>
+            <li style="text-align: justify;">обеспечивать своевременность рецензирования.</li>
+        </ul>
+        <p style="text-align: justify;">&nbsp;</p>
+        <p style="text-align: justify;">&nbsp;</p>
+        <p style="text-align: justify;">&nbsp;</p>
+        <p style="text-align: justify;">&nbsp;</p> 	</div>
+
+    <div class="article-footer-wrap">
+        <div class="article-footer-top">
+            <div class="helix-social-share">
+                <div class="helix-social-share-icon">
+                    <ul>
+
+                        <li>
+                            <div class="facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Share On Facebook">
+
+                                <a class="facebook" onclick="window.open('http://www.facebook.com/sharer.php?u=https://nvuc.ru/ru/ethics','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?u=https://nvuc.ru/ru/ethics">
+
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Share On Twitter">
+
+                                <a class="twitter" onclick="window.open('http://twitter.com/share?url=https://nvuc.ru/ru/ethics&amp;text=Редакционная%20этика','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url=https://nvuc.ru/ru/ethics&amp;text=Редакционная%20этика">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="google-plus">
+                                <a class="gplus" data-toggle="tooltip" data-placement="top" title="" onclick="window.open('https://plus.google.com/share?url=https://nvuc.ru/ru/ethics','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url=https://nvuc.ru/ru/ethics" data-original-title="Share On Google Plus">
+                                    <i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="linkedin">
+                                <a class="linkedin" data-toggle="tooltip" data-placement="top" title="" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://nvuc.ru/ru/ethics','Linkedin','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://nvuc.ru/ru/ethics" data-original-title="Share On Linkedin">
+
+                                    <i class="fa fa-linkedin-square"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- /.helix-social-share -->
+        </div>
+    </div>
+
+</article>
+<div class="footer">
+    <div class="container">
+        <h3 class="footer-block-title">Контакты</h3>
+
+        <ul class="info-footer-adress">
+            <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
+            <li class="mail">nvuc-uralconsv@rambler.ru</li>
+            <li class="phone"><a href="tel:+7 (343) 371‑21‑80">+7 (343) 371‑21‑80</a>&nbsp;/&nbsp;<a
+                    href="tel:+7 (343) 371‑67‑61">+7 (343) 371‑67‑61 (факс)</a></li>
+            <li class="time">Часы работы: 10:00 - 17:00</li>
+        </ul>
+
+        <h3 class="footer-block-title">Полезные ссылки</h3>
+
+        <ul class="nav menu">
+            <li class="item-632"><a href="https://culture.gov.ru/"> Министерство культуры РФ</a></li>
+            <li class="item-630"><a href="https://uralconsv.org/" target="_blank"> УГК им. М.П. Мусоргского</a></li>
+            <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"> Слово о музыке</a>
+            </li>
+            <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank"> eLIBRARY.RU</a></li>
+            <li class="item-634"><a href="https://eurasia.mosconsv.ru/"> Музыкальное искусство Евразии. Традиции и
+                современность</a></li>
+        </ul>
+
+
+        <h3 class="footer-block-title">Информация</h3>
+
+
+        <div class="me-inline">
+            <h3>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h3>
+            <p>Научное периодическое издание</p>
+            <p>Четыре раза в год, формат В5</p>
+        </div>
+
+        <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
+        <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
+        <p style="text-align: left;">ISSN 2658-7858</p>
+    </div>
+</div>
+<div class="copyright">
+    <div class="container">
+        <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

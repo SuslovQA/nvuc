@@ -13,28 +13,38 @@ public class HomeController {
     private JournalService service;
 
     @GetMapping("/")
-    public String home(Model model){
+    public String home(Model model) {
         model.addAttribute("journals", service.getAll());
         return "index";
     }
 
     @GetMapping("/about")
-    public String about(){
-        return "about-the-addition";
+    public String about(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "about";
     }
 
     @GetMapping("/founder")
-    public String founder(){
-        return "founder-and-publisher";
+    public String founder(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "founder";
     }
 
     @GetMapping("/charter")
-    public String charter(){
-        return "charter-of-the-editorial-board";
+    public String charter(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "charter";
     }
 
     @GetMapping("/editorial-board")
-    public String editorial(){
+    public String editorial_board(Model model) {
+        model.addAttribute("journals", service.getAll());
         return "editorial-board";
+    }
+
+    @GetMapping("/editorial-ethics")
+    public String editorial_ethics(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "editorial-ethics";
     }
 }

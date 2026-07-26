@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
-<header xmlns:th="http://www.w3.org/1999/xhtml">
+<header>
 
     <div class="logo">
-<!--        <img src="static/images/logo.png" alt="logo">-->
-        <img th:src="@{/images/logo.png}" alt="logo">
+        <!--        <img src="static/images/logo.png" alt="logo">-->
+        <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
     </div>
 
     <nav>
         <ul class="menu">
             <li>
-                <a href="#">Архив выпусков</a>
+                <a href="/">Архив выпусков</a>
                 <ul>
                     <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
                         <a href="#" th:text="${year}"></a>
@@ -26,20 +26,30 @@
                 </ul>
             </li>
             <li class="sp-menu-item">
-                <a href="/about-the-edition.html">Об издании</a></li>
-            <li class="sp-menu-item current-item active">
-                <a href="/founder-and-publisher">Учредитель и издатель</a>
+                <a>Об издании</a>
+                <ul>
+                    <li>
+                        <a href="/about">Информация об издании</a>
+                    </li>
+                    <li>
+                        <a href="/founder">Учредитель и издатель</a>
+                    </li>
+                    <li>
+                        <a href="/charter">Устав</a>
+                    </li>
+                    <li>
+                        <a href="/editorial-board">Редакционная коллегия</a></li>
+                    <li>
+                        <a href="/editorial-ethics">Редакционная этика</a></li>
+                </ul>
             </li>
+
+
+
             <li class="sp-menu-item">
-                <a href="/charter-of-the-editorial-board">Устав</a></li>
-            <li class="sp-menu-item">
-                <a href="/editorial-board">Редакционная коллегия</a></li>
-            <li class="sp-menu-item">
-                <a href="/editorial-ethics">Редакционная этика</a></li>
-            <li class="sp-menu-item">
-                <a href="/for-authors ">Авторам</a></li>
-            <li class="sp-menu-item">
-                <a href="/contacts">Контакты</a></li>
+                <a href="# ">Авторам</a></li>
+            <li class="#">
+                <a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
