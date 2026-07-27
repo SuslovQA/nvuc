@@ -22,14 +22,4 @@ public class JournalController {
 
         return "journal";
     }
-
-//    @GetMapping("journal/reader/{id}")
-//    public String reader(@PathVariable Long id,
-//                         Model model){
-//
-//        model.addAttribute("journal",
-//                service.get(id));
-//
-//        return "reader";
-//    }
 }

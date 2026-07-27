@@ -22,6 +22,13 @@ header{
     width: 100vw;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 nav {
     font-size: 15px;
     width: 70%;

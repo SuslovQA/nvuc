@@ -37,14 +37,26 @@ public class HomeController {
     }
 
     @GetMapping("/editorial-board")
-    public String editorial_board(Model model) {
+    public String editorialBoard(Model model) {
         model.addAttribute("journals", service.getAll());
         return "editorial-board";
     }
 
     @GetMapping("/editorial-ethics")
-    public String editorial_ethics(Model model) {
+    public String editorialEthics(Model model) {
         model.addAttribute("journals", service.getAll());
         return "editorial-ethics";
+    }
+
+    @GetMapping("/contacts")
+    public String contacts(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "contacts";
+    }
+
+    @GetMapping("/for-authors")
+    public String forAuthors(Model model) {
+        model.addAttribute("journals", service.getAll());
+        return "for-authors";
     }
 }
