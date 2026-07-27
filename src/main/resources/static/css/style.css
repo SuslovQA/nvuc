@@ -11,7 +11,7 @@ body{
 
 /* Шапка */
 
-header{
+header .container {
     background-color: #f7f8fa;
     display:flex;
     justify-content:space-between;
@@ -23,6 +23,7 @@ header{
 }
 
 .container {
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -146,4 +147,12 @@ main{
 .active {
     background-color: #891f05;
     color: white !important;
+}
+
+.latest-cover {
+    width: 500px;
+}
+
+.journal-cover {
+    max-width: 500px;
 }

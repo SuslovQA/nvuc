@@ -17,9 +17,13 @@ public class JournalController {
 
     @GetMapping("/{id}")
     public String journal(@PathVariable Long id, Model model){
+        model.addAttribute("journal", service.getJournal(id));
+        return "journal";
+    }
 
-        model.addAttribute("journal", service.get(id));
-
+    @GetMapping("/latest")
+    public String latestJournal(Model model) {
+        model.addAttribute("journal", service.getLastJournal());
         return "journal";
     }
 }

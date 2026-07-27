@@ -12,61 +12,83 @@
 <body>
 
 <header>
+    <div class="container">
+        <div class="logo">
+            <!--        <img src="static/images/logo.png" alt="logo">-->
+            <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
+        </div>
 
-    <div class="logo">
-        <!--        <img src="static/images/logo.png" alt="logo">-->
-        <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/">Архив выпусков</a>
+                    <ul>
+                        <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
+                            <a href="#" th:text="${year}"></a>
+                            <ul>
+                                <li th:each="journal : ${journals}"
+                                    th:if="${journal.year==year}">
+                                    <a th:href="@{/journal/{id}(id=${journal.id})}"
+                                       th:text="'Выпуск № ' + ${journal.issue}">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a>Об издании</a>
+                    <ul>
+                        <li>
+                            <a href="/about">Информация об издании</a>
+                        </li>
+                        <li>
+                            <a href="/founder">Учредитель и издатель</a>
+                        </li>
+                        <li>
+                            <a href="/charter">Устав</a>
+                        </li>
+                        <li>
+                            <a href="/editorial-board">Редакционная коллегия</a></li>
+                        <li>
+                            <a href="/editorial-ethics">Редакционная этика</a></li>
+                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/for-authors ">Авторам</a>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <nav>
-        <ul class="menu">
-            <li>
-                <a href="/">Архив выпусков</a>
-                <ul>
-                    <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
-                        <a href="#" th:text="${year}"></a>
-                        <ul>
-                            <li th:each="journal : ${journals}"
-                                th:if="${journal.year==year}">
-                                <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                   th:text="'Выпуск № ' + ${journal.issue}">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="sp-menu-item">
-                <a>Об издании</a>
-                <ul>
-                    <li>
-                        <a href="/about">Информация об издании</a>
-                    </li>
-                    <li>
-                        <a href="/founder">Учредитель и издатель</a>
-                    </li>
-                    <li>
-                        <a href="/charter">Устав</a>
-                    </li>
-                    <li>
-                        <a href="/editorial-board">Редакционная коллегия</a></li>
-                    <li>
-                        <a href="/editorial-ethics">Редакционная этика</a></li>
-                </ul>
-            </li>
-            <li class="sp-menu-item">
-                <a href="/for-authors ">Авторам</a>
-            </li>
-            <li class="sp-menu-item">
-                <a href="/contacts">Контакты</a>
-            </li>
-        </ul>
-    </nav>
 </header>
 
-<div>
-    <img src="images/main_page_image.jpg">
-</div>
+<article>
+    <div class="container">
+        <img src="images/main_page_image.jpg">
+        <p style="text-align: justify;">«Музыка в системе культуры: Научный вестник Уральской консерватории» –
+            периодическое печатное издание, публикующее научные труды представителей российских консерваторий, вузов
+            искусств.</p>
+        <p style="text-align: justify;">Тематика издания включает актуальные теоретические и исторические проблемы
+            современного музыкознания, различные аспекты исполнительства, музыкального краеведения, фольклористики,
+            духовно-музыкальной культуры, музыкальной педагогики, истории музыкального образования.</p>
+        <p style="text-align: justify;">Журнал издаётся с 2005 г. В 2005–2011 гг. выходил под названием «Музыка в
+            системе культуры». С 2013 г. издаётся под названием «Музыка в системе культуры: Научный вестник Уральской
+            консерватории». Журнал включён в Российский индекс научного цитирования (РИНЦ).</p>
+        <a href="/about">Подробнее об издании<i class="fas fa-arrow-right ml-2"></i></a>
+        <div>
+            <h3>Текущий выпуск</h3>
+            <img class="latest-cover" th:src="@{/images/{f}(f=${latestJournal.cover})}">
+            <h4 th:text="${latestJournal.title}"></h4>
+            <p>Год:<span th:text="${latestJournal.year}"></span></p>
+            <p>№<span th:text="${latestJournal.issue}"></span></p>
+            <a th:href="@{/pdf/{file}(file=${latestJournal.pdf})}" target="_blank" class="btn">Читать выпуск</a>
+        </div>
+    </div>
+</article>
+
 
 <div class="footer">
     <div class="container">
@@ -105,14 +127,12 @@
         <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
         <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
         <p style="text-align: left;">ISSN 2658-7858</p>
+
+
+        <div class="copyright">
+            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+        </div>
     </div>
-</div>
-<div class="copyright">
-    <div class="container">
-        <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
-    </div>
-</div>
 </div>
 </body>
-
 </html>

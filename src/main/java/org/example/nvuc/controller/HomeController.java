@@ -14,49 +14,50 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
+        model.addAttribute("latestJournal", service.getLastJournal());
         return "index";
     }
 
     @GetMapping("/about")
     public String about(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "about";
     }
 
     @GetMapping("/founder")
     public String founder(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "founder";
     }
 
     @GetMapping("/charter")
     public String charter(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "charter";
     }
 
     @GetMapping("/editorial-board")
     public String editorialBoard(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "editorial-board";
     }
 
     @GetMapping("/editorial-ethics")
     public String editorialEthics(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "editorial-ethics";
     }
 
     @GetMapping("/contacts")
     public String contacts(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "contacts";
     }
 
     @GetMapping("/for-authors")
     public String forAuthors(Model model) {
-        model.addAttribute("journals", service.getAll());
+        model.addAttribute("journals", service.getAllJournals());
         return "for-authors";
     }
 }

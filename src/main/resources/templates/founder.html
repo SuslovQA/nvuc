@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -12,74 +12,77 @@
 <body>
 
 <header>
+    <div class="container">
+        <div class="logo">
+            <!--        <img src="static/images/logo.png" alt="logo">-->
+            <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
+        </div>
 
-    <div class="logo">
-        <!--        <img src="static/images/logo.png" alt="logo">-->
-        <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/">Архив выпусков</a>
+                    <ul>
+                        <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
+                            <a href="#" th:text="${year}"></a>
+                            <ul>
+                                <li th:each="journal : ${journals}"
+                                    th:if="${journal.year==year}">
+                                    <a th:href="@{/journal/{id}(id=${journal.id})}"
+                                       th:text="'Выпуск № ' + ${journal.issue}">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a>Об издании</a>
+                    <ul>
+                        <li>
+                            <a href="/about">Информация об издании</a>
+                        </li>
+                        <li>
+                            <a href="/founder">Учредитель и издатель</a>
+                        </li>
+                        <li>
+                            <a href="/charter">Устав</a>
+                        </li>
+                        <li>
+                            <a href="/editorial-board">Редакционная коллегия</a></li>
+                        <li>
+                            <a href="/editorial-ethics">Редакционная этика</a></li>
+                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/for-authors ">Авторам</a>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <nav>
-        <ul class="menu">
-            <li>
-                <a href="/">Архив выпусков</a>
-                <ul>
-                    <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
-                        <a href="#" th:text="${year}"></a>
-                        <ul>
-                            <li th:each="journal : ${journals}"
-                                th:if="${journal.year==year}">
-                                <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                   th:text="'Выпуск № ' + ${journal.issue}">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="sp-menu-item">
-                <a>Об издании</a>
-                <ul>
-                    <li>
-                        <a href="/about">Информация об издании</a>
-                    </li>
-                    <li>
-                        <a href="/founder">Учредитель и издатель</a>
-                    </li>
-                    <li>
-                        <a href="/charter">Устав</a>
-                    </li>
-                    <li>
-                        <a href="/editorial-board">Редакционная коллегия</a></li>
-                    <li>
-                        <a href="/editorial-ethics">Редакционная этика</a></li>
-                </ul>
-            </li>
-
-
-
-            <li class="sp-menu-item">
-                <a href="# ">Авторам</a></li>
-            <li class="#">
-                <a href="#">Контакты</a></li>
-        </ul>
-    </nav>
 </header>
 
-<div class="article">
-    <div class="header-article">
-        <h2>Учредитель и издатель</h2>
-    </div>
-    <div class="article-content">
-    <!--гипер-ссылка и ссылки на соц сети и сайт-->
-    <p>Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральская государственная
-        консерватория имени М.П. Мусоргского».</p>
-        <a href="#"> </a>
-        <a href="#"> </a>
-        <a href="#"> </a>
-        </a>
+<article>
+    <div class="container">
+        <div class="header-article">
+            <h2>Учредитель и издатель</h2>
+        </div>
+        <div class="article-content">
+            <!--гипер-ссылка и ссылки на соц сети и сайт-->
+            <p>Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральская
+                государственная
+                консерватория имени М.П. Мусоргского».</p>
+            <a href="#"> </a>
+            <a href="#"> </a>
+            <a href="#"> </a>
+            </a>
 
-</div>
-</div>
+        </div>
+    </div>
+</article>
 <div class="footer">
     <div class="container">
         <h3 class="footer-block-title">Контакты</h3>
@@ -117,14 +120,11 @@
         <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
         <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
         <p style="text-align: left;">ISSN 2658-7858</p>
+
+        <div class="copyright">
+            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+        </div>
     </div>
-</div>
-<div class="copyright">
-    <div class="container">
-        <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
-    </div>
-</div>
 </div>
 </body>
-
 </html>
