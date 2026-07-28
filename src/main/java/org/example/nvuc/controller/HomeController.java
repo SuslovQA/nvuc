@@ -31,11 +31,11 @@ public class HomeController {
         return "founder";
     }
 
-    @GetMapping("/charter")
-    public String charter(Model model) {
-        model.addAttribute("journals", service.getAllJournals());
-        return "charter";
-    }
+//    @GetMapping("/charter")
+//    public String charter(Model model) {
+//        model.addAttribute("journals", service.getAllJournals());
+//        return "charter";
+//    }
 
     @GetMapping("/editorial-board")
     public String editorialBoard(Model model) {
