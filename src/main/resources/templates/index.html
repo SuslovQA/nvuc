@@ -67,35 +67,43 @@
 
 <article>
     <div class="container">
-        <div>
-            <div>
+        <div class="about-journal">
+            <div class="main-cover">
                 <img src="images/main_page_image.jpg">
             </div>
-            <div>
-                <p style="text-align: justify;">«Музыка в системе культуры: Научный вестник Уральской консерватории» –
+            <div class="main-text">
+                <p><strong>«Музыка в системе культуры: Научный вестник Уральской консерватории»</strong> –
                     периодическое печатное издание, публикующее научные труды представителей российских консерваторий,
                     вузов
                     искусств.</p>
-                <p style="text-align: justify;">Тематика издания включает актуальные теоретические и исторические
+                <p>Тематика издания включает актуальные теоретические и исторические
                     проблемы
                     современного музыкознания, различные аспекты исполнительства, музыкального краеведения,
                     фольклористики,
                     духовно-музыкальной культуры, музыкальной педагогики, истории музыкального образования.</p>
-                <p style="text-align: justify;">Журнал издаётся с 2005 г. В 2005–2011 гг. выходил под названием «Музыка
+                <p>Журнал издаётся с 2005 г. В 2005–2011 гг. выходил под названием «Музыка
                     в
                     системе культуры». С 2013 г. издаётся под названием «Музыка в системе культуры: Научный вестник
                     Уральской
                     консерватории». Журнал включён в Российский индекс научного цитирования (РИНЦ).</p>
-                <a href="/about">Подробнее об издании<i class="fas fa-arrow-right ml-2"></i></a>
+                <a class="main-btn" href="/about">Подробнее об издании<i class="fas fa-arrow-right ml-2"></i></a>
             </div>
         </div>
-        <div>
-            <h3>Текущий выпуск</h3>
-            <img class="latest-cover" th:src="@{/images/{f}(f=${latestJournal.cover})}">
-            <h4 th:text="${latestJournal.title}"></h4>
-            <p>Год:<span th:text="${latestJournal.year}"></span></p>
-            <p>№<span th:text="${latestJournal.issue}"></span></p>
-            <a th:href="@{/pdf/{file}(file=${latestJournal.pdf})}" target="_blank" class="btn">Читать выпуск</a>
+        <div class="current-issue">
+            <div class="current-issue-header">
+                <h1>Текущий выпуск</h1>
+            </div>
+            <div class="current-issue-wrapper">
+                <div class="main-cover">
+                    <img class="latest-cover" th:src="@{/images/{f}(f=${latestJournal.cover})}">
+                </div>
+                <div class="current-issue-data">
+                    <h4 th:text="${latestJournal.title}"></h4>
+                    <p>Год:<span th:text="${latestJournal.year}"></span></p>
+                    <p>№<span th:text="${latestJournal.issue}"></span></p>
+                    <a th:href="@{/pdf/{file}(file=${latestJournal.pdf})}" target="_blank" class="btn">Читать выпуск</a>
+                </div>
+            </div>
         </div>
     </div>
 </article>
