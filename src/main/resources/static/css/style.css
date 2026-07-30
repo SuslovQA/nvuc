@@ -224,6 +224,18 @@ main{
     display: flex;
 }
 
+.current-issue-cover {
+    min-width: 50%;
+}
+
 .current-issue-data {
     padding: 20px;
+}
+
+.current-issue-data>p {
+    margin-bottom: 10px;
+}
+
+.current-issue-data h2 {
+    margin-bottom: 20px;
 }
