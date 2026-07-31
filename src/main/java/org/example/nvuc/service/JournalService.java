@@ -21,8 +21,9 @@ public class JournalService {
     public Journal getJournal(Long id){
         return repository.findById(id).orElse(null);
     }
+
     public Journal getLastJournal(){
-        return repository.findFirstByOrderByIssueDesc().orElseThrow(() -> new EntityNotFoundException("Журнал не найден"));
+        return repository.findFirstByOrderByYearDescIssueDesc().orElseThrow(() -> new EntityNotFoundException("Журнал не найден"));
     }
 
 }

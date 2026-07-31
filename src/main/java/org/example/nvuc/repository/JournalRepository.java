@@ -11,5 +11,5 @@ import java.util.Optional;
 public interface JournalRepository extends JpaRepository<Journal, Long> {
 
     List<Journal> findByYear(Integer year);
-    Optional<Journal> findFirstByOrderByIssueDesc();
+    Optional<Journal> findFirstByOrderByYearDescIssueDesc();
 }

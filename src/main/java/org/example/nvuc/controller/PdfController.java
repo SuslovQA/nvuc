@@ -15,11 +15,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PdfController {
 
     @GetMapping("/{fileName}")
-    public ResponseEntity<Resource> openPdf(@PathVariable String fileName) {
-        ClassPathResource resource = new ClassPathResource("static/pdf/documents/" + fileName + ".pdf");
+    public ResponseEntity<Resource> openJournal(@PathVariable String fileName) {
+        ClassPathResource resource = new ClassPathResource("static/pdf/" + fileName);
 
         if (!resource.exists()) {
             return  ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_PDF)
+                .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + fileName + "\"")
+                .body(resource);
+    }
+
+    @GetMapping("/documents/{fileName}")
+    public ResponseEntity<Resource> openDocument(@PathVariable String fileName) {
+        ClassPathResource resource = new ClassPathResource("static/pdf/documents/" + fileName + ".pdf");
+
+        if (!resource.exists()) {
+            return ResponseEntity.notFound().build();
         }
 
         return ResponseEntity.ok()

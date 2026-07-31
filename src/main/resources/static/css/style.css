@@ -77,7 +77,6 @@ header div img{
 .menu>li>a:hover{
     background:#891f05;
     color: white;
-    border-radius: 5px;
 }
 
 /* Выпадающее меню */
@@ -113,9 +112,10 @@ header div img{
     transition:0.3s;
 }
 
-.menu ul li a:hover{
+.archive-drop-down li a:hover{
     background:#f0f0f0;
     color:#003366;
+    border-radius: 5px;
 }
 
 /* Меню выпусков */
@@ -238,4 +238,19 @@ main{
 
 .current-issue-data h2 {
     margin-bottom: 20px;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.footer-columns {
+    padding: 20px;
+}
+
+.info-footer-adress {
+    list-style: none;
 }

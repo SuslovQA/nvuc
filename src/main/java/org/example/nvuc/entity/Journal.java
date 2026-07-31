@@ -23,6 +23,9 @@ public class Journal {
 
     private String title;
 
+    @Column(columnDefinition = "TEXT")
+    private String contents;
+
     @Column(length = 5000)
     private String description;
 
