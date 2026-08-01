@@ -100,12 +100,10 @@
                         <img class="latest-cover" th:src="@{/images/{f}(f=${latestJournal.cover})}">
                     </div>
                     <div class="current-issue-data">
-                        <h2 th:text="${latestJournal.title}"></h2>
+                        <h3 th:text="${latestJournal.title}"></h3>
                         <p><span th:text="${latestJournal.description}"></span></p>
-                        <p>Год публикации: <span th:text="${latestJournal.year}"></span></p>
-                        <p>Номер выпуска: <span th:text="${latestJournal.issue}"></span></p>
-                        <h2>Содержание</h2>
-                        <p th:text="${latestJournal.contents}"></p>
+                        <h4>Содержание:</h4>
+                        <div th:utext="${latestJournal.contents}" class="current-issue-contents"></div>
                         <a class="main-btn" th:href="@{/pdf/{file}(file=${latestJournal.pdf})}" target="_blank">Читать
                             выпуск</a>
                     </div>
@@ -118,52 +116,56 @@
 <div class="footer">
     <div class="container">
         <div class="footer-wrapper">
-        <div class="footer-adress footer-columns">
-            <h3 class="footer-block-title">Контакты</h3>
+            <div class="footer-adress footer-columns">
+                <h3 class="footer-block-title">Контакты</h3>
 
-            <ul class="info-footer-adress">
-                <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
-                <li class="mail">nvuc-uralconsv@rambler.ru</li>
-                <li class="phone"><a href="tel:+7 (343) 371‑21‑80">+7 (343) 371‑21‑80</a>&nbsp;/&nbsp;<a
-                        href="tel:+7 (343) 371‑67‑61">+7 (343) 371‑67‑61 (факс)</a></li>
-                <li class="time">Часы работы: 10:00 - 17:00</li>
-            </ul>
-        </div>
-
-        <div class="footer-links footer-columns">
-            <h3 class="footer-block-title">Полезные ссылки</h3>
-
-            <ul class="footer-menu-links">
-                <li class="item-632"><a href="https://culture.gov.ru/"> Министерство культуры РФ</a></li>
-                <li class="item-630"><a href="https://uralconsv.org/" target="_blank"> УГК им. М.П. Мусоргского</a></li>
-                <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"> Слово о
-                    музыке</a>
-                </li>
-                <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank"> eLIBRARY.RU</a>
-                </li>
-                <li class="item-634"><a href="https://eurasia.mosconsv.ru/"> Музыкальное искусство Евразии. Традиции и
-                    современность</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-information footer-columns">
-            <h3 class="footer-block-title">Информация</h3>
-            <div class="me-inline">
-                <h3>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h3>
-                <p>Научное периодическое издание</p>
-                <p>Четыре раза в год, формат В5</p>
+                <ul class="info-footer-adress">
+                    <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
+                    <li class="mail">nvuc-uralconsv@rambler.ru</li>
+                    <li class="phone"><a href="tel:+7 (343) 371‑21‑80">+7 (343) 371‑21‑80</a>&nbsp;/&nbsp;<a
+                            href="tel:+7 (343) 371‑67‑61">+7 (343) 371‑67‑61 (факс)</a></li>
+                    <li class="time">Часы работы: 10:00 - 17:00</li>
+                </ul>
             </div>
 
-            <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
-            <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
-            <p style="text-align: left;">ISSN 2658-7858</p>
-        </div>
+            <div class="footer-links footer-columns">
+                <h3 class="footer-block-title">Полезные ссылки</h3>
+
+                <ul class="footer-menu-links">
+                    <li class="item-632"><a href="https://culture.gov.ru/"> Министерство культуры РФ</a></li>
+                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank"> УГК им. М.П. Мусоргского</a>
+                    </li>
+                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"> Слово о
+                        музыке</a>
+                    </li>
+                    <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank"> eLIBRARY.RU</a>
+                    </li>
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/"> Музыкальное искусство Евразии. Традиции
+                        и
+                        современность</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-information footer-columns">
+                <h3 class="footer-block-title">Информация</h3>
+                <div class="me-inline">
+                    <h3>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h3>
+                    <p>Научное периодическое издание</p>
+                    <p>Четыре раза в год, формат В5</p>
+                </div>
+
+                <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
+                <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
+                <p style="text-align: left;">ISSN 2658-7858</p>
+            </div>
 
 
         </div>
     </div>
     <div class="copyright">
-        <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+        <div class="container">
+            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+        </div>
     </div>
 </div>
 </body>

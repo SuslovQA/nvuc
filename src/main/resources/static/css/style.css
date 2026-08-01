@@ -22,7 +22,6 @@ header .container {
     align-items:center;
     padding:0 25px;
     height:70px;
-    width: 100vw;
 }
 
 .container {
@@ -184,6 +183,7 @@ main{
     padding: 20px 20px 20px 10px;
     display: flex;
     flex-direction: column;
+    line-height: 20px;
 }
 
 .main-text>p {
@@ -230,6 +230,7 @@ main{
 
 .current-issue-data {
     padding: 20px;
+    line-height:20px;
 }
 
 .current-issue-data>p {
@@ -243,8 +244,8 @@ main{
 .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .footer-columns {
@@ -253,4 +254,41 @@ main{
 
 .info-footer-adress {
     list-style: none;
+}
+
+.current-issue-data h3 {
+    margin-bottom: 10px;
+}
+
+.current-issue-contents p {
+    font-size: 13px;
+}
+
+.current-issue-data a {
+    margin-top: 10px;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    background-color: #f7f8fa;
+}
+
+.footer-wrapper li {
+    list-style: none;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 20px;
+    color: #891f05;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer-wrapper a:hover {
+    background:#891f05;
+    color: white;
 }
