@@ -2,6 +2,7 @@
 <html lang="ru" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Музыка в системе культуры</title>
 
@@ -21,15 +22,13 @@
             <ul class="menu">
                 <li>
                     <a href="/">Архив выпусков</a>
-                    <ul>
-                        <li th:each="year : ${#numbers.sequence(T(java.time.Year).now().value,2008,-1)}">
-                            <a href="#" th:text="${year}"></a>
+                    <ul class="drop-down">
+                        <li th:each="entry : ${archive}">
+                            <a href="#" th:text="${entry.key}"></a>
                             <ul>
-                                <li th:each="journal : ${journals}"
-                                    th:if="${journal.year==year}">
+                                <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                       th:text="'Выпуск № ' + ${journal.issue}">
-                                    </a>
+                                       th:text="'Выпуск № ' + ${journal.issue}"></a>
                                 </li>
                             </ul>
                         </li>
@@ -37,7 +36,7 @@
                 </li>
                 <li class="sp-menu-item">
                     <a>Об издании</a>
-                    <ul>
+                    <ul class="drop-down">
                         <li>
                             <a href="/about">Информация об издании</a>
                         </li>
@@ -52,12 +51,14 @@
                         <li>
                             <a href="/editorial-ethics">Редакционная этика</a></li>
                     </ul>
-                        <li class="sp-menu-item">
-                            <a href="/for-authors ">Авторам</a>
-                        </li>
-                        <li class="sp-menu-item">
-                            <a href="/contacts">Контакты</a></li>
-                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/for-authors ">Авторам</a>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/contacts">Контакты</a>
+                </li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -71,44 +72,50 @@
 
 <div class="footer">
     <div class="container">
-        <h3 class="footer-block-title">Контакты</h3>
+        <div class="footer-wrapper">
+            <div class="footer-adress footer-columns">
+                <h3 class="footer-block-title">Контакты</h3>
 
-        <ul class="info-footer-adress">
-            <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
-            <li class="mail">nvuc-uralconsv@rambler.ru</li>
-            <li class="phone"><a href="tel:+7 (343) 371‑21‑80">+7 (343) 371‑21‑80</a>&nbsp;/&nbsp;<a
-                    href="tel:+7 (343) 371‑67‑61">+7 (343) 371‑67‑61 (факс)</a></li>
-            <li class="time">Часы работы: 10:00 - 17:00</li>
-        </ul>
+                <ul class="info-footer-adress">
+                    <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
+                    <li class="mail">nvuc-uralconsv@rambler.ru</li>
+                    <li class="phone"><p>+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343) 371‑67‑61 (факс)</p></li>
+                    <li class="time">Часы работы: 10:00 - 17:00</li>
+                </ul>
+            </div>
 
-        <h3 class="footer-block-title">Полезные ссылки</h3>
+            <div class="footer-links footer-columns">
+                <h3 class="footer-block-title">Полезные ссылки</h3>
 
-        <ul class="nav menu">
-            <li class="item-632"><a href="https://culture.gov.ru/"> Министерство культуры РФ</a></li>
-            <li class="item-630"><a href="https://uralconsv.org/" target="_blank"> УГК им. М.П. Мусоргского</a>
-            </li>
-            <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"> Слово о
-                музыке</a>
-            </li>
-            <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank"> eLIBRARY.RU</a>
-            </li>
-            <li class="item-634"><a href="https://eurasia.mosconsv.ru/"> Музыкальное искусство Евразии. Традиции
-                и
-                современность</a></li>
-        </ul>
-        <h3 class="footer-block-title">Информация</h3>
+                <ul class="footer-menu-links">
+                    <li class="item-632"><a href="https://culture.gov.ru/">Министерство культуры РФ</a></li>
+                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank">УГК им. М.П. Мусоргского</a>
+                    </li>
+                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank">Слово о
+                        музыке</a>
+                    </li>
+                    <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
+                    </li>
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традици и
+                        современность</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-information footer-columns">
+                <h3 class="footer-block-title">Информация</h3>
+                <h4>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h4>
+                <p>Научное периодическое издание</p>
+                <p>Четыре раза в год, формат В5</p>
+                <p>Свидетельство о регистрации средств массовой информации:</p>
+                <p>ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
+                <p>ISSN 2658-7858</p>
+            </div>
 
 
-        <div class="me-inline">
-            <h3>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h3>
-            <p>Научное периодическое издание</p>
-            <p>Четыре раза в год, формат В5</p>
         </div>
-
-        <p style="text-align: left;">Свидетельство о регистрации средств массовой информации:</p>
-        <p style="text-align: left;">ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
-        <p style="text-align: left;">ISSN 2658-7858</p>
-        <div class="copyright">
+    </div>
+    <div class="copyright">
+        <div class="container">
             <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
         </div>
     </div>

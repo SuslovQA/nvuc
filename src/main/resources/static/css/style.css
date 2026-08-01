@@ -111,7 +111,7 @@ header div img{
     transition:0.3s;
 }
 
-.archive-drop-down li a:hover{
+.drop-down li a:hover{
     background:#f0f0f0;
     color:#003366;
     border-radius: 5px;
@@ -278,17 +278,56 @@ main{
 }
 
 .footer-wrapper a {
-    text-decoration: none;
     font-weight: bold;
-    height: 20px;
+    height: 100%;
     color: #891f05;
     text-decoration: none;
     transition: 0.5s;
     border-radius: 20px;
     cursor: pointer;
+    padding: 5px;
 }
 
 .footer-wrapper a:hover {
     background:#891f05;
     color: white;
+    transition: .5s;
+}
+
+.footer-block-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.info-footer-adress li {
+    padding: 5px;
+}
+
+.footer-links h3 {
+    padding: 0px;
+}
+
+ul.footer-menu-links {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.footer-menu-links li {
+    padding: 1px;
+    display: flex;
+    width: fit-content;
+}
+
+.footer-information p {
+    padding-top: 10px;
+}
+
+.copyright {
+    border-top: 1px solid #ddd;
+    height: 20px;
+}
+
+.sp-copyright {
+    font-size: 12px;
+    padding: 2px;
 }
