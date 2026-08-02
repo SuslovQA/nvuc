@@ -239,6 +239,10 @@ main{
     margin-bottom: 20px;
 }
 
+.current-issue-data h4 {
+    padding: 10px 0 10px 0;
+}
+
 .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -367,4 +371,26 @@ ul.footer-menu-links li {
 .second-container p {
     font-size: 15px;
     line-height: 24px;
+}
+
+.about-wrapper {
+    padding: 20px;
+}
+
+.header-article {
+    margin-bottom: 20px;
+}
+
+.about-wrapper .article-content {
+    line-height: 24px;
+}
+
+.about-wrapper .article-content p {
+    padding-bottom: 15px;
+}
+
+.about-wrapper .article-content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 50px;
 }
