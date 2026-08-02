@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f5f5f5;
+    background-color:#fff;
 }
 
 /* Шапка */
@@ -132,7 +132,6 @@ main{
 }
 
 .content{
-    background:white;
     padding:40px;
     border-radius:8px;
     box-shadow:0 3px 10px rgba(0,0,0,.1);
@@ -153,10 +152,6 @@ main{
     color: white !important;
 }
 
-.latest-cover {
-    max-width: 500px;
-}
-
 .journal-cover {
     max-width: 500px;
 }
@@ -174,7 +169,8 @@ main{
 }
 
 .main-cover>img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
     border-radius: 5px;
 }
 
@@ -226,6 +222,8 @@ main{
 
 .current-issue-cover {
     min-width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .current-issue-data {
@@ -330,4 +328,43 @@ ul.footer-menu-links li {
 .sp-copyright {
     font-size: 12px;
     padding: 2px;
+}
+
+.issue-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.issue-data {
+    display: flex;
+}
+
+.issue-header-description {
+    padding: 20px;
+    line-height: 24px;
+}
+
+.issue-header {
+    padding-bottom: 15px;
+}
+
+.issue-description {
+    margin-bottom: 40px;
+}
+
+.second-container {
+    margin-top: 20px;
+}
+
+.second-container .issue-wrapper {
+    padding: 20px;
+}
+
+.second-container .issue-wrapper h3 {
+    margin-bottom: 20px;
+}
+
+.second-container p {
+    font-size: 15px;
+    line-height: 24px;
 }

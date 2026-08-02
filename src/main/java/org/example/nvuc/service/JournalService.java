@@ -35,5 +35,4 @@ public class JournalService {
                 .collect(Collectors.groupingBy(Journal::getYear,
                         () -> new TreeMap<>((a, b) -> b.compareTo(a)), Collectors.toList()));
     }
-
 }

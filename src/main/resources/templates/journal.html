@@ -62,13 +62,32 @@
         </nav>
     </div>
 </header>
-
-<div class="container">
-    <img class="journal-cover" th:src="@{/images/{f}(f=${journal.cover})}">
-    <h2 th:text="${journal.title}"></h2>
-    <p th:text="${journal.description}"></p>
-    <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="btn">Читать выпуск</a>
-</div>
+<main>
+    <article>
+        <div class="container">
+            <div class="issue-wrapper">
+                <div class="issue-data">
+                    <div class="main-cover current-issue-cover">
+                        <img class="latest-cover" th:src="@{/images/{f}(f=${journal.cover})}">
+                    </div>
+                    <div class="issue-header-description">
+                        <div class="issue-header">
+                            <h2 th:text="${journal.title}"></h2>
+                        </div>
+                        <div class="issue-description" th:text="${journal.description}"></div>
+                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container second-container">
+            <div class="issue-wrapper">
+                <h3>Содержание:</h3>
+                <div th:utext="${journal.contents}" class="current-issue-contents"></div>
+            </div>
+        </div>
+    </article>
+</main>
 
 <div class="footer">
     <div class="container">
