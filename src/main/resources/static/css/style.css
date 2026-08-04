@@ -201,7 +201,6 @@ main{
 }
 
 .main-btn:hover {
-    background-color: #f0f0f0;
     border: 1px solid #891f05;
     transition: .4s;
     color: black;
@@ -393,4 +392,27 @@ ul.footer-menu-links li {
     display: flex;
     flex-direction: column;
     padding: 0 0 20px 50px;
+}
+
+.header-founder {
+    padding: 20px;
+}
+
+.founder-text {
+    font-weight: 600;
+}
+
+.founder-text {
+    padding: 0 20px 20px 20px;
+}
+
+.founder-contacts {
+    max-width: 40%;
+    padding: 20px;
+}
+
+.founder-link {
+    color: #891f05;
+    text-decoration: none;
+    font-weight: 600;
 }
