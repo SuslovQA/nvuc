@@ -201,6 +201,7 @@ main{
 }
 
 .main-btn:hover {
+    background-color: #fff;
     border: 1px solid #891f05;
     transition: .4s;
     color: black;
@@ -415,4 +416,21 @@ ul.footer-menu-links li {
     color: #891f05;
     text-decoration: none;
     font-weight: 600;
+}
+
+.for-authors-article-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 20px;
+}
+
+.for-authors-article-content a {
+    line-height: 40px;
+    width: fit-content;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
