@@ -408,7 +408,7 @@ ul.footer-menu-links li {
 }
 
 .founder-contacts {
-    max-width: 40%;
+    max-width: 50%;
     padding: 20px;
 }
 
@@ -416,6 +416,11 @@ ul.footer-menu-links li {
     color: #891f05;
     text-decoration: none;
     font-weight: 600;
+}
+
+.founder-link:hover {
+    text-decoration: underline;
+    transition: .5s;
 }
 
 .for-authors-article-content {
