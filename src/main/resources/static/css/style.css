@@ -113,7 +113,6 @@ header div img{
 
 .drop-down li a:hover{
     background:#f0f0f0;
-    color:#003366;
     border-radius: 5px;
 }
 
@@ -291,8 +290,7 @@ main{
 }
 
 .footer-wrapper a:hover {
-    background:#891f05;
-    color: white;
+    text-decoration: underline;
     transition: .5s;
 }
 
