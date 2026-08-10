@@ -25,7 +25,7 @@ header .container {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -438,4 +438,43 @@ ul.footer-menu-links li {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+    .about-journal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cover {
+        max-width: 100%;
+    }
+
+    .main-text {
+        max-width: 100%;
+    }
+
+    .current-issue-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .issue-data {
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .fixed-footer {
+        position: relative;
+    }
 }
