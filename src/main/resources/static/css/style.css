@@ -498,7 +498,7 @@ ul.footer-menu-links li {
     nav {
         width: 100%;
         position: absolute;
-        top: 71px;
+        top: 70px;
         left: 0;
         right: 0;
         background: #f7f8fa;
@@ -514,7 +514,7 @@ ul.footer-menu-links li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
     }
 
     header {
@@ -525,5 +525,15 @@ ul.footer-menu-links li {
         z-index: 1000;
     }
 
+    .checked span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
 
+    .checked span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .checked span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
