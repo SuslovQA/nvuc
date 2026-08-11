@@ -12,6 +12,8 @@
 
 <body>
 
+<script src="/js/script.js"></script>
+
 <header>
     <div class="container">
         <div class="logo">
@@ -19,8 +21,14 @@
             <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul class="menu">
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav">
+            <ul class="menu" id="menu">
                 <li>
                     <a href="/">Архив выпусков</a>
                     <ul class="drop-down">

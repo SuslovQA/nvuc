@@ -27,12 +27,12 @@
 
         <nav id="nav">
             <ul class="menu" id="menu">
-                <li>
-                    <a href="/">Архив выпусков</a>
-                    <ul class="drop-down">
-                        <li th:each="entry : ${archive}">
-                            <a href="#" th:text="${entry.key}"></a>
-                            <ul>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Архив выпусков</a>
+                    <ul class="drop-down submenu">
+                        <li class="has-submenu" th:each="entry : ${archive}">
+                            <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
+                            <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
                                        th:text="'Выпуск № ' + ${journal.issue}"></a>
@@ -168,6 +168,56 @@
         </div>
     </div>
 </div>
+
+<!--<script>-->
+<!--    document.addEventListener('DOMContentLoaded', function() {-->
+<!--        const burger = document.getElementById('burger');-->
+<!--        const nav = document.getElementById('nav');-->
+
+<!--        // Открытие/закрытие бургер-меню-->
+<!--        burger.addEventListener('click', function() {-->
+<!--            nav.classList.toggle('open');-->
+<!--        });-->
+
+<!--        // Обработка кликов по пунктам с подменю (только на мобильных)-->
+<!--        const submenuToggles = document.querySelectorAll('.has-submenu > .submenu-toggle');-->
+<!--        submenuToggles.forEach(toggle => {-->
+<!--            toggle.addEventListener('click', function(e) {-->
+<!--                // Работаем только если мы в мобильной версии (бургер виден)-->
+<!--                if (window.innerWidth <= 768) {-->
+<!--                    e.preventDefault(); // отменяем переход по ссылке #-->
+<!--                    const parentLi = this.parentElement;-->
+<!--                    const submenu = parentLi.querySelector(':scope > .submenu');-->
+<!--                    if (submenu) {-->
+<!--                        // Закрываем другие подменю на том же уровне-->
+<!--                        const siblingSubmenus = parentLi.parentElement.querySelectorAll(':scope > li.has-submenu > .submenu');-->
+<!--                        siblingSubmenus.forEach(sub => {-->
+<!--                            if (sub !== submenu) {-->
+<!--                                sub.classList.remove('open');-->
+<!--                            }-->
+<!--                        });-->
+<!--                        // Переключаем текущее-->
+<!--                        submenu.classList.toggle('open');-->
+<!--                    }-->
+<!--                }-->
+<!--            });-->
+<!--        });-->
+
+<!--        // Закрытие меню при клике на ссылку без подменю-->
+<!--        nav.querySelectorAll('a:not(.submenu-toggle)').forEach(link => {-->
+<!--            link.addEventListener('click', () => {-->
+<!--                nav.classList.remove('open');-->
+<!--            });-->
+<!--        });-->
+
+<!--        // Закрытие меню при клике вне его-->
+<!--        document.addEventListener('click', function(event) {-->
+<!--            if (!nav.contains(event.target) && !burger.contains(event.target)) {-->
+<!--                nav.classList.remove('open');-->
+<!--            }-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 
 </body>
 </html>

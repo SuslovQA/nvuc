@@ -464,6 +464,7 @@ ul.footer-menu-links li {
     .about-journal {
         display: flex;
         flex-direction: column;
+        margin-top: 110px;
     }
 
     .main-cover {
@@ -477,6 +478,14 @@ ul.footer-menu-links li {
     .current-issue-wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .issue-wrapper {
+        margin-top: 110px;
+    }
+
+    .issue-wrapper {
+        margin-top: 110px;
     }
 
     .issue-data {
@@ -536,4 +545,120 @@ ul.footer-menu-links li {
     .checked span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .menu > li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .drop-down {
+        display: none;
+        width: 100%;
+    }
 }
+
+/*  Стили меню  */
+/*
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+}
+
+
+
+
+nav ul li.has-submenu > .submenu {
+    display: none;
+    top: 100%;
+    left: 0;
+    background: #f7f7f7;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 100;
+}
+nav ul li.has-submenu:hover > .submenu {
+    display: block;
+}
+.submenu li {
+    width: 100%;
+}
+.submenu li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+.submenu .has-submenu > .submenu {
+    left: 100%;
+    top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+    nav.open {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    nav ul li {
+        border-bottom: 1px solid #3b4b5a;
+    }
+    nav ul li a {
+        padding: 12px 0;
+    }
+
+
+    nav .submenu {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background: #34495e;
+        border-radius: 0;
+        position: static;
+        box-shadow: none;
+        margin: 0;
+        padding-left: 15px;
+    }
+    nav .submenu.open {
+        max-height: 300px;
+    }
+    nav .submenu li {
+        border-bottom: 1px solid #4a5b6a;
+    }
+    nav .submenu li:last-child {
+        border-bottom: none;
+    }
+
+
+    .submenu-toggle::after {
+        content: " ▾";
+    }
+}
+*/
