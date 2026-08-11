@@ -5,18 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     burger.addEventListener('click', function () {
-        menu.classList.toggle('open');
+        menu.style.display='block';
         burger.classList.toggle('checked')
-        nav.addEventListener('click', function () {
-            // Сбрасываем overflow
-            nav.style.overflow = 'unset';
-        });
+    //     nav.addEventListener('click', function () {
+    //         // Сбрасываем overflow
+    //         nav.style.overflow = 'unset';
+    //     });
     });
 
     // Закрывать меню при клике на ссылку (для удобства)
-    menu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menu.classList.remove('open');
-        });
-    });
+    // menu.querySelectorAll('a').forEach(link => {
+    //     link.addEventListener('click', () => {
+    //         menu.classList.remove('open');
+    //     });
+    // });
 });

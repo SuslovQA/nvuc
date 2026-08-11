@@ -511,12 +511,12 @@ ul.footer-menu-links li {
         left: 0;
         right: 0;
         background: #f7f8fa;
-        max-height: 300px;
         transition: max-height 0.4s ease;
     }
 
     .menu {
         display: none;
+        width: 100%;
     }
 
     .open {
@@ -560,7 +560,7 @@ ul.footer-menu-links li {
 }
 
 /*  Стили меню  */
-/*
+
 nav ul {
     list-style: none;
     display: flex;
@@ -609,6 +609,7 @@ nav ul li.has-submenu:hover > .submenu {
         display: flex;
     }
     nav {
+        display: none;
         position: absolute;
         top: 70px;
         left: 0;
@@ -619,10 +620,10 @@ nav ul li.has-submenu:hover > .submenu {
         transition: max-height 0.4s ease;
     }
     nav.open {
-        max-height: 600px;
+        /*max-height: 600px;*/
         overflow-y: auto;
     }
-    nav ul {
+    nav > ul {
         flex-direction: column;
         padding: 10px 20px;
     }
@@ -644,7 +645,6 @@ nav ul li.has-submenu:hover > .submenu {
         position: static;
         box-shadow: none;
         margin: 0;
-        padding-left: 15px;
     }
     nav .submenu.open {
         max-height: 300px;
@@ -661,4 +661,3 @@ nav ul li.has-submenu:hover > .submenu {
         content: " ▾";
     }
 }
-*/

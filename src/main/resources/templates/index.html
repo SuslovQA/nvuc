@@ -41,9 +41,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sp-menu-item">
-                    <a>Об издании</a>
-                    <ul class="drop-down">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Об издании</a>
+                    <ul class="drop-down submenu">
                         <li>
                             <a href="/about">Информация об издании</a>
                         </li>
@@ -169,55 +169,55 @@
     </div>
 </div>
 
-<!--<script>-->
-<!--    document.addEventListener('DOMContentLoaded', function() {-->
-<!--        const burger = document.getElementById('burger');-->
-<!--        const nav = document.getElementById('nav');-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
 
-<!--        // Открытие/закрытие бургер-меню-->
-<!--        burger.addEventListener('click', function() {-->
-<!--            nav.classList.toggle('open');-->
-<!--        });-->
+        // Открытие/закрытие бургер-меню
+        burger.addEventListener('click', function() {
+            nav.classList.toggle('open');
+        });
 
-<!--        // Обработка кликов по пунктам с подменю (только на мобильных)-->
-<!--        const submenuToggles = document.querySelectorAll('.has-submenu > .submenu-toggle');-->
-<!--        submenuToggles.forEach(toggle => {-->
-<!--            toggle.addEventListener('click', function(e) {-->
-<!--                // Работаем только если мы в мобильной версии (бургер виден)-->
-<!--                if (window.innerWidth <= 768) {-->
-<!--                    e.preventDefault(); // отменяем переход по ссылке #-->
-<!--                    const parentLi = this.parentElement;-->
-<!--                    const submenu = parentLi.querySelector(':scope > .submenu');-->
-<!--                    if (submenu) {-->
-<!--                        // Закрываем другие подменю на том же уровне-->
-<!--                        const siblingSubmenus = parentLi.parentElement.querySelectorAll(':scope > li.has-submenu > .submenu');-->
-<!--                        siblingSubmenus.forEach(sub => {-->
-<!--                            if (sub !== submenu) {-->
-<!--                                sub.classList.remove('open');-->
-<!--                            }-->
-<!--                        });-->
-<!--                        // Переключаем текущее-->
-<!--                        submenu.classList.toggle('open');-->
-<!--                    }-->
-<!--                }-->
-<!--            });-->
-<!--        });-->
+        // Обработка кликов по пунктам с подменю (только на мобильных)
+        const submenuToggles = document.querySelectorAll('.has-submenu > .submenu-toggle');
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                // Работаем только если мы в мобильной версии (бургер виден)
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // отменяем переход по ссылке #
+                    const parentLi = this.parentElement;
+                    const submenu = parentLi.querySelector(':scope > .submenu');
+                    if (submenu) {
+                        // Закрываем другие подменю на том же уровне
+                        const siblingSubmenus = parentLi.parentElement.querySelectorAll(':scope > li.has-submenu > .submenu');
+                        siblingSubmenus.forEach(sub => {
+                            if (sub !== submenu) {
+                                sub.classList.remove('open');
+                            }
+                        });
+                        // Переключаем текущее
+                        submenu.classList.toggle('open');
+                    }
+                }
+            });
+        });
 
-<!--        // Закрытие меню при клике на ссылку без подменю-->
-<!--        nav.querySelectorAll('a:not(.submenu-toggle)').forEach(link => {-->
-<!--            link.addEventListener('click', () => {-->
-<!--                nav.classList.remove('open');-->
-<!--            });-->
-<!--        });-->
+        // Закрытие меню при клике на ссылку без подменю
+        nav.querySelectorAll('a:not(.submenu-toggle)').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+            });
+        });
 
-<!--        // Закрытие меню при клике вне его-->
-<!--        document.addEventListener('click', function(event) {-->
-<!--            if (!nav.contains(event.target) && !burger.contains(event.target)) {-->
-<!--                nav.classList.remove('open');-->
-<!--            }-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
+        // Закрытие меню при клике вне его
+        document.addEventListener('click', function(event) {
+            if (!nav.contains(event.target) && !burger.contains(event.target)) {
+                nav.classList.remove('open');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
