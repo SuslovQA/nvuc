@@ -11,18 +11,18 @@ body {
 
 /* Шапка */
 
-header {
-    background-color: #f7f8fa;
-    border-bottom: 1px solid #ddd;
-}
+/*header {*/
+/*    background-color: #f7f8fa;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*}*/
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
-    height: 70px;
-}
+/*header .container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 0 25px;*/
+/*    height: 70px;*/
+/*}*/
 
 .container {
     max-width: 1200px;
@@ -32,115 +32,115 @@ header .container {
     margin-left: auto;
 }
 
-nav {
-    font-size: 15px;
-    width: 70%;
-}
+/*nav {*/
+/*    font-size: 15px;*/
+/*    width: 70%;*/
+/*}*/
 
-/* Логотип */
+/*!* Логотип *!*/
 
-.logo {
-    height: 100%;
-}
+/*.logo {*/
+/*    height: 100%;*/
+/*}*/
 
-header div img {
-    height: 100%;
-}
+/*header div img {*/
+/*    height: 100%;*/
+/*}*/
 
-/* Главное меню */
+/*!* Главное меню *!*/
 
-.menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/*.menu {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
-.menu > li {
-    position: relative;
-}
+/*.menu > li {*/
+/*    position: relative;*/
+/*}*/
 
-.menu > li > a {
-    display: flex;
-    font-weight: bold;
-    height: 20px;
-    color: #891f05;
-    text-decoration: none;
-    padding: 20px 15px;
-    transition: 0.5s;
-    border-radius: 20px;
-    align-items: center;
-    cursor: pointer;
-}
+/*.menu > li > a {*/
+/*    display: flex;*/
+/*    font-weight: bold;*/
+/*    height: 20px;*/
+/*    color: #891f05;*/
+/*    text-decoration: none;*/
+/*    padding: 20px 15px;*/
+/*    transition: 0.5s;*/
+/*    border-radius: 20px;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.menu > li > a:hover {
-    background: #891f05;
-    color: white;
-}
+/*.menu > li > a:hover {*/
+/*    background: #891f05;*/
+/*    color: white;*/
+/*}*/
 
-/* Выпадающее меню */
+/*!* Выпадающее меню *!*/
 
-.menu ul {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 220px;
-    list-style: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    z-index: 1000;
-    border-radius: 5px;
-}
+/*.menu ul {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    background: white;*/
+/*    min-width: 220px;*/
+/*    list-style: none;*/
+/*    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);*/
+/*    z-index: 1000;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-/* Показ подменю */
+/*!* Показ подменю *!*/
 
-.menu li:hover > ul {
-    display: block;
-}
+/*.menu li:hover > ul {*/
+/*    display: block;*/
+/*}*/
 
-/* Пункты меню */
+/*!* Пункты меню *!*/
 
-.menu ul li {
-    position: relative;
-}
+/*.menu ul li {*/
+/*    position: relative;*/
+/*}*/
 
-.menu ul li a {
-    display: block;
-    padding: 12px 18px;
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-}
+/*.menu ul li a {*/
+/*    display: block;*/
+/*    padding: 12px 18px;*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    transition: 0.3s;*/
+/*}*/
 
-.drop-down li a:hover {
-    background: #f0f0f0;
-    border-radius: 5px;
-}
+/*.drop-down li a:hover {*/
+/*    background: #f0f0f0;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-/* Меню выпусков */
+/*!* Меню выпусков *!*/
 
-.menu ul ul {
-    top: 0;
-    left: 100%;
-}
+/*.menu ul ul {*/
+/*    top: 0;*/
+/*    left: 100%;*/
+/*}*/
 
-/*  Бургер-меню */
+/*!*  Бургер-меню *!*/
 
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
+/*.burger {*/
+/*    display: none;*/
+/*    flex-direction: column;*/
+/*    cursor: pointer;*/
+/*    gap: 5px;*/
+/*}*/
 
-.burger span {
-    width: 25px;
-    height: 3px;
-    background: black;
-    border-radius: 3px;
-    transition: all 0.3s;
-}
+/*.burger span {*/
+/*    width: 25px;*/
+/*    height: 3px;*/
+/*    background: black;*/
+/*    border-radius: 3px;*/
+/*    transition: all 0.3s;*/
+/*}*/
 
-/* Контент */
+/*!* Контент *!*/
 
 main {
     max-width: 1200px;
@@ -163,10 +163,10 @@ main {
     line-height: 1.7;
 }
 
-.active {
-    background-color: #891f05;
-    color: white !important;
-}
+/*.active {*/
+/*    background-color: #891f05;*/
+/*    color: white !important;*/
+/*}*/
 
 .journal-cover {
     max-width: 500px;
@@ -499,165 +499,480 @@ ul.footer-menu-links li {
     .fixed-footer {
         position: relative;
     }
+}
 
-    .burger {
-        display: flex;
-    }
+/*    .burger {*/
+/*        display: flex;*/
+/*    }*/
 
-    nav {
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: #f7f8fa;
-        transition: max-height 0.4s ease;
-    }
+/*    nav {*/
+/*        width: 100%;*/
+/*        position: absolute;*/
+/*        top: 70px;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        background: #f7f8fa;*/
+/*        transition: max-height 0.4s ease;*/
+/*    }*/
 
-    .menu {
-        display: none;
-        width: 100%;
-    }
+/*    .menu {*/
+/*        display: none;*/
+/*        width: 100%;*/
+/*    }*/
 
-    .open {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid #ddd;
-    }
+/*    .open {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        border: 1px solid #ddd;*/
+/*    }*/
+
+/*    header {*/
+/*        position: fixed;*/
+/*        top: 0;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        z-index: 1000;*/
+/*    }*/
+
+/*    .checked span:nth-child(1) {*/
+/*        transform: translateY(8px) rotate(45deg);*/
+/*    }*/
+
+/*    .checked span:nth-child(2) {*/
+/*        opacity: 0;*/
+/*    }*/
+
+/*    .checked span:nth-child(3) {*/
+/*        transform: translateY(-8px) rotate(-45deg);*/
+/*    }*/
+
+/*    .menu > li {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        width: 100%;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .drop-down {*/
+/*        display: none;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .menu ul li a {*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+/*!*  Стили меню  *!*/
+
+/*nav ul {*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    gap: 20px*/
+/*}*/
+/*nav ul li {*/
+/*    position: relative;*/
+/*}*/
+/*nav ul li a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    padding: 8px 0;*/
+/*    display: block;*/
+/*}*/
+
+
+
+
+/*nav ul li.has-submenu > .submenu {*/
+/*    display: none;*/
+/*    top: 100%;*/
+/*    left: 0;*/
+/*    background: #f7f7f7;*/
+/*    width: 100%;*/
+/*    border-radius: 6px;*/
+/*    z-index: 100;*/
+/*}*/
+/*nav ul li.has-submenu:hover > .submenu {*/
+/*    display: block;*/
+/*}*/
+/*.submenu li {*/
+/*    width: 100%;*/
+/*}*/
+/*.submenu li a {*/
+/*    padding: 10px 15px;*/
+/*    white-space: nowrap;*/
+/*}*/
+/*.submenu .has-submenu > .submenu {*/
+/*    left: 100%;*/
+/*    top: 0;*/
+/*}*/
+
+
+/*@media (max-width: 768px) {*/
+/*    .burger {*/
+/*        display: flex;*/
+/*    }*/
+/*    nav {*/
+/*        display: none;*/
+/*        position: absolute;*/
+/*        top: 70px;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        background: #f7f7f7;*/
+/*        width: 100%;*/
+/*        overflow: hidden;*/
+/*        transition: max-height 0.4s ease;*/
+/*    }*/
+/*    nav.open {*/
+/*        !*max-height: 600px;*!*/
+/*        overflow-y: auto;*/
+/*    }*/
+/*    nav > ul {*/
+/*        flex-direction: column;*/
+/*        padding: 10px 20px;*/
+/*    }*/
+
+/*    nav ul li a {*/
+/*        width: 100%;*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    nav .submenu {*/
+/*        display: block;*/
+/*        max-height: 0;*/
+/*        overflow: hidden;*/
+/*        transition: max-height 0.3s ease;*/
+/*        background: #34495e;*/
+/*        border-radius: 0;*/
+/*        position: static;*/
+/*        box-shadow: none;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    nav .submenu.open {*/
+/*        max-height: 300px;*/
+/*    }*/
+
+/*    nav .submenu .open > li {*/
+/*        background: #f0f0f0;*/
+/*    }*/
+
+/*    .submenu-toggle::after {*/
+/*        content: " ▾";*/
+/*    }*/
+/*}*/
+
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: relative;
+    z-index: 1000;
+    background-color: #f7f8fa;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+/* Бургер по умолчанию скрыт */
+.burger {
+    display: none;
+    width: 32px;
+    height: 26px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1100;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #222;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   DESKTOP MENU
+========================= */
+
+#nav {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.menu > li > a {
+    color: #891f05;
+    font-weight: bold;
+}
+
+/* Первый уровень dropdown */
+.menu > li > .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 200px;
+
+    /*padding: 10px 0;*/
+    margin: 0;
+
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: all 0.25s ease;
+}
+
+/* Открытие dropdown на desktop */
+.menu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Элементы dropdown */
+.menu > li > .submenu > li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.menu > li > .submenu > li a:hover {
+    background: #f5f5f5;
+}
+
+/* Вложенное меню */
+.menu .submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    min-width: 200px;
+
+    /*padding: 10px 10px;*/
+    margin: 0;
+
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(10px);
+
+    transition: all 0.25s ease;
+}
+
+.menu .submenu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
 
     header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1000;
     }
 
-    .checked span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    header .container {
+        position: relative;
     }
 
-    .checked span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .checked span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .menu > li {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .drop-down {
-        display: none;
-        width: 100%;
-    }
-}
-
-/*  Стили меню  */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav ul li {
-    position: relative;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 0;
-    display: block;
-}
-
-
-
-
-nav ul li.has-submenu > .submenu {
-    display: none;
-    top: 100%;
-    left: 0;
-    background: #f7f7f7;
-    width: 100%;
-    border-radius: 6px;
-    z-index: 100;
-}
-nav ul li.has-submenu:hover > .submenu {
-    display: block;
-}
-.submenu li {
-    width: 100%;
-}
-.submenu li a {
-    padding: 10px 15px;
-    white-space: nowrap;
-}
-.submenu .has-submenu > .submenu {
-    left: 100%;
-    top: 0;
-}
-
-
-@media (max-width: 768px) {
+    /* Показываем бургер */
     .burger {
         display: flex;
     }
-    nav {
-        display: none;
+
+    /* Анимация бургера */
+    .burger.active span:nth-child(1) {
+        transform: translateY(11.5px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-11.5px) rotate(-45deg);
+    }
+
+    /* Навигация */
+    #nav {
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         right: 0;
-        background: #f7f7f7;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-    }
-    nav.open {
-        /*max-height: 600px;*/
-        overflow-y: auto;
-    }
-    nav > ul {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-    nav ul li {
-        border-bottom: 1px solid #3b4b5a;
-    }
-    nav ul li a {
-        padding: 12px 0;
-    }
 
+        background: #fff;
 
-    nav .submenu {
-        display: block;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
-        background: #34495e;
-        border-radius: 0;
-        position: static;
-        box-shadow: none;
-        margin: 0;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+                max-height 0.35s ease,
+                opacity 0.25s ease,
+                visibility 0.25s ease;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
     }
-    nav .submenu.open {
-        max-height: 300px;
+
+    #nav.active {
+        max-height: calc(100vh - 70px);
+        opacity: 1;
+        visibility: visible;
+        overflow-y: auto;
     }
-    nav .submenu li {
-        border-bottom: 1px solid #4a5b6a;
+
+    /* Главное меню становится вертикальным */
+    .menu {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
     }
-    nav .submenu li:last-child {
+
+    .menu > li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu > li:last-child {
         border-bottom: none;
     }
 
+    .menu > li > a {
+        padding: 15px 20px;
+    }
 
-    .submenu-toggle::after {
-        content: " ▾";
+    /* Убираем desktop dropdown */
+    .menu > li > .submenu,
+    .menu .submenu .submenu {
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin: 0;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        display: none;
+    }
+
+    /* Открытые подменю */
+    .menu li.open > .submenu {
+        display: block;
+    }
+
+    /* Первый уровень подменю */
+    .menu > li > .submenu {
+        background: #f7f7f7;
+    }
+
+    .menu > li > .submenu > li > a {
+        padding: 13px 20px 13px 35px;
+        white-space: normal;
+    }
+
+    /* Второй уровень */
+    .menu > li > .submenu > li > .submenu {
+        background: #eeeeee;
+    }
+
+    .menu > li > .submenu > li > .submenu > li > a {
+        padding: 12px 20px 12px 50px;
+    }
+
+    /* Стрелочка у пунктов с подменю */
+    .has-submenu > .submenu-toggle {
+        position: relative;
+        padding-right: 45px !important;
+    }
+
+    .has-submenu > .submenu-toggle::after {
+        content: "";
+        position: absolute;
+
+        right: 20px;
+        top: 50%;
+
+        width: 8px;
+        height: 8px;
+
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+
+        transform: translateY(-70%) rotate(45deg);
+
+        transition: transform 0.25s ease;
+    }
+
+    .has-submenu.open > .submenu-toggle::after {
+        transform: translateY(-30%) rotate(225deg);
+    }
+
+    /* Чтобы пункты Авторам/Контакты выглядели так же */
+    .sp-menu-item > a {
+        padding: 15px 20px;
     }
 }
