@@ -739,8 +739,19 @@ header .container {
 }
 
 .menu > li > a {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 20px;
     color: #891f05;
     font-weight: bold;
+    transition: .5s;
+}
+
+.menu>li>a:hover {
+    background: #891f05;
+    color: white;
 }
 
 /* Первый уровень dropdown */
@@ -779,8 +790,10 @@ header .container {
     white-space: nowrap;
 }
 
+/* Ховер для элементов подменю */
 .menu > li > .submenu > li a:hover {
-    background: #f5f5f5;
+    background: #f5f5f5 !important;
+    color: black !important;
 }
 
 /* Вложенное меню */
@@ -895,9 +908,6 @@ header .container {
         border-bottom: none;
     }
 
-    .menu > li > a {
-        padding: 15px 20px;
-    }
 
     /* Убираем desktop dropdown */
     .menu > li > .submenu,
@@ -974,5 +984,14 @@ header .container {
     /* Чтобы пункты Авторам/Контакты выглядели так же */
     .sp-menu-item > a {
         padding: 15px 20px;
+    }
+}
+
+
+/* Дефолтные значения для мобильной версии ховера для элемента */
+@media (hover: none) {
+    .submenu-toggle:hover {
+        background-color: white !important;
+        color: #891f05 !important;
     }
 }
