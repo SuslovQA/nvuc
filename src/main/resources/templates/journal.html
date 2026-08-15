@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+<script src="/js/script.js"></script>
+
 <header>
     <div class="container">
         <div class="logo">
@@ -18,14 +21,20 @@
             <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="/">Архив выпусков</a>
-                    <ul class="drop-down">
-                        <li th:each="entry : ${archive}">
-                            <a href="#" th:text="${entry.key}"></a>
-                            <ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav">
+            <ul class="menu" id="menu">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Архив выпусков</a>
+                    <ul class="drop-down submenu">
+                        <li class="has-submenu" th:each="entry : ${archive}">
+                            <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
+                            <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
                                        th:text="'Выпуск № ' + ${journal.issue}"></a>
@@ -62,20 +71,21 @@
         </nav>
     </div>
 </header>
+
 <main>
     <article>
         <div class="container">
             <div class="issue-wrapper">
                 <div class="issue-data">
                     <div class="main-cover current-issue-cover">
-                        <img class="latest-cover" th:src="@{/files/covers/{f}(f=${journal.cover})}">
+                        <img class="latest-cover" th:src="@{/images/{f}(f=${journal.cover})}">
                     </div>
                     <div class="issue-header-description">
                         <div class="issue-header">
                             <h2 th:text="${journal.title}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
+                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
                     </div>
                 </div>
             </div>

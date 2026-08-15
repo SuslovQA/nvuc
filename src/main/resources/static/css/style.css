@@ -1,156 +1,45 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background-color:#fff;
-}
-
-/* Шапка */
-
-header {
-    background-color: #f7f8fa;
-    border-bottom: 1px solid #ddd;
-}
-
-header .container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 25px;
-    height:70px;
+body {
+    background-color: #fff;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-nav {
-    font-size: 15px;
-    width: 70%;
+/*!* Контент *!*/
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
-/* Логотип */
-
-.logo {
-    height: 100%;
+.content {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
 }
 
-header div img{
-    height: 100%;
+.content h1 {
+    margin-bottom: 20px;
+    color: #003366;
 }
 
-/* Главное меню */
-
-.menu{
-    display:flex;
-    list-style:none;
-    align-items: center;
-    justify-content: space-evenly;
+.content p {
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-.menu>li{
-    position:relative;
-}
-
-.menu>li>a{
-    display:flex;
-    font-weight: bold;
-    height: 20px;
-    color:#891f05;
-    text-decoration:none;
-    padding:20px 15px;
-    transition:0.5s;
-    border-radius: 20px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menu>li>a:hover{
-    background:#891f05;
-    color: white;
-}
-
-/* Выпадающее меню */
-
-.menu ul{
-    display:none;
-    position:absolute;
-    background:white;
-    min-width:220px;
-    list-style:none;
-    box-shadow:0 5px 10px rgba(0,0,0,.2);
-    z-index:1000;
-    border-radius: 5px;
-}
-
-/* Показ подменю */
-
-.menu li:hover>ul{
-    display:block;
-}
-
-/* Пункты меню */
-
-.menu ul li{
-    position:relative;
-}
-
-.menu ul li a{
-    display:block;
-    padding:12px 18px;
-    text-decoration:none;
-    color:#333;
-    transition:0.3s;
-}
-
-.drop-down li a:hover{
-    background:#f0f0f0;
-    color:#003366;
-    border-radius: 5px;
-}
-
-/* Меню выпусков */
-
-.menu ul ul{
-    top:0;
-    left:100%;
-}
-
-/* Контент */
-
-main{
-    max-width:1200px;
-    margin:40px auto;
-}
-
-.content{
-    padding:40px;
-    border-radius:8px;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.content h1{
-    margin-bottom:20px;
-    color:#003366;
-}
-
-.content p{
-    font-size:18px;
-    line-height:1.7;
-}
-
-.active {
-    background-color: #891f05;
-    color: white !important;
-}
 
 .journal-cover {
     max-width: 500px;
@@ -168,7 +57,7 @@ main{
     padding: 20px 10px 20px 20px;
 }
 
-.main-cover>img {
+.main-cover > img {
     max-width: 100%;
     max-height: 400px;
     border-radius: 5px;
@@ -182,22 +71,22 @@ main{
     line-height: 20px;
 }
 
-.main-text>p {
+.main-text > p {
     padding-bottom: 10px;
 }
 
 .main-btn {
-        align-items: center;
-        height: 30px;
-        position: relative;
-        margin: auto;
-        justify-content: center;
-        width: 200px;
-        display: flex;
-        background: #891f05;
-        border-radius: 5px;
-        color: white;
-        text-decoration: none;
+    align-items: center;
+    height: 30px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    width: 200px;
+    display: flex;
+    background: #891f05;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 .main-btn:hover {
@@ -212,7 +101,7 @@ main{
     border-radius: 5px;
 }
 
-.current-issue-header>h1 {
+.current-issue-header > h1 {
     padding: 15px;
 }
 
@@ -228,10 +117,10 @@ main{
 
 .current-issue-data {
     padding: 20px;
-    line-height:20px;
+    line-height: 20px;
 }
 
-.current-issue-data>p {
+.current-issue-data > p {
     margin-bottom: 10px;
 }
 
@@ -291,8 +180,7 @@ main{
 }
 
 .footer-wrapper a:hover {
-    background:#891f05;
-    color: white;
+    text-decoration: underline;
     transition: .5s;
 }
 
@@ -395,6 +283,11 @@ ul.footer-menu-links li {
     padding: 0 0 20px 50px;
 }
 
+.founder-contacts {
+    max-width: 50%;
+    padding: 20px;
+}
+
 .header-founder {
     padding: 20px;
 }
@@ -405,11 +298,6 @@ ul.footer-menu-links li {
 
 .founder-text {
     padding: 0 20px 20px 20px;
-}
-
-.founder-contacts {
-    max-width: 50%;
-    padding: 20px;
 }
 
 .founder-link {
@@ -438,4 +326,385 @@ ul.footer-menu-links li {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .about-journal {
+        display: flex;
+        flex-direction: column;
+        margin-top: 110px;
+    }
+
+    .main-cover {
+        max-width: 100%;
+    }
+
+    .main-text {
+        max-width: 100%;
+    }
+
+    .current-issue-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .issue-wrapper {
+        margin-top: 110px;
+    }
+
+    .issue-wrapper {
+        margin-top: 110px;
+    }
+
+    .issue-data {
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .fixed-footer {
+        position: relative;
+    }
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: relative;
+    z-index: 1000;
+    background-color: #f7f8fa;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+/* Бургер по умолчанию скрыт */
+.burger {
+    display: none;
+    width: 26px;
+    height: 21px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1100;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #222;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   DESKTOP MENU
+========================= */
+
+#nav {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.menu > li > a {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #891f05;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.menu>li>a:hover {
+    background: #891f05;
+    color: white;
+}
+
+/* Первый уровень dropdown */
+.menu > li > .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 200px;
+
+    /*padding: 10px 0;*/
+    margin: 0;
+
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: all 0.25s ease;
+}
+
+/* Открытие dropdown на desktop */
+.menu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Элементы dropdown */
+.menu > li > .submenu > li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+/* Ховер для элементов подменю */
+.menu > li > .submenu > li a:hover {
+    background: #f5f5f5 !important;
+    color: black !important;
+}
+
+/* Вложенное меню */
+.menu .submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    min-width: 200px;
+
+    /*padding: 10px 10px;*/
+    margin: 0;
+
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(10px);
+
+    transition: all 0.25s ease;
+}
+
+.menu .submenu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+    }
+
+    header .container {
+        position: relative;
+    }
+
+    /* Показываем бургер */
+    .burger {
+        display: flex;
+    }
+
+    /* Анимация бургера */
+    .burger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Навигация */
+    #nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background: #fff;
+
+        max-height: 0;
+        overflow: hidden;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+                max-height 0.35s ease,
+                opacity 0.25s ease,
+                visibility 0.25s ease;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    #nav.active {
+        max-height: calc(100vh - 70px);
+        opacity: 1;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .logo > a {
+        display: flex;
+        height: 70px;
+    }
+
+    /* Главное меню становится вертикальным */
+    .menu {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu > li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu > li:last-child {
+        border-bottom: none;
+    }
+
+
+    /* Убираем desktop dropdown */
+    .menu > li > .submenu,
+    .menu .submenu .submenu {
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin: 0;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        display: none;
+    }
+
+    /* Открытые подменю */
+    .menu li.open > .submenu {
+        display: block;
+    }
+
+    /* Первый уровень подменю */
+    .menu > li > .submenu {
+        background: #f7f7f7;
+    }
+
+    .menu > li > .submenu > li > a {
+        padding: 13px 20px 13px 35px;
+        white-space: normal;
+    }
+
+    /* Второй уровень */
+    .menu > li > .submenu > li > .submenu {
+        background: #eeeeee;
+    }
+
+    .menu > li > .submenu > li > .submenu > li > a {
+        padding: 12px 20px 12px 50px;
+    }
+
+    /* Стрелочка у пунктов с подменю */
+    .has-submenu > .submenu-toggle {
+        position: relative;
+        padding-right: 45px !important;
+    }
+
+    .has-submenu > .submenu-toggle::after {
+        content: "";
+        position: absolute;
+
+        right: 20px;
+        top: 50%;
+
+        width: 8px;
+        height: 8px;
+
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+
+        transform: translateY(-70%) rotate(45deg);
+
+        transition: transform 0.25s ease;
+    }
+
+    .has-submenu.open > .submenu-toggle::after {
+        transform: translateY(-30%) rotate(225deg);
+    }
+
+    /* Чтобы пункты Авторам/Контакты выглядели так же */
+    .sp-menu-item > a {
+        padding: 15px 20px;
+    }
+}
+
+
+/* Дефолтные значения для мобильной версии ховера для элемента */
+@media (hover: none) {
+    .submenu-toggle:hover {
+        background-color: white !important;
+        color: #891f05 !important;
+    }
+
+    .sp-menu-item > a:hover {
+        background-color: white !important;
+        color: #891f05 !important;
+    }
 }

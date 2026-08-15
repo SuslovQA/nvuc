@@ -12,6 +12,8 @@
 
 <body>
 
+<script src="/js/script.js"></script>
+
 <header>
     <div class="container">
         <div class="logo">
@@ -19,14 +21,20 @@
             <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="/">Архив выпусков</a>
-                    <ul class="drop-down">
-                        <li th:each="entry : ${archive}">
-                            <a href="#" th:text="${entry.key}"></a>
-                            <ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav">
+            <ul class="menu" id="menu">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Архив выпусков</a>
+                    <ul class="drop-down submenu">
+                        <li class="has-submenu" th:each="entry : ${archive}">
+                            <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
+                            <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
                                        th:text="'Выпуск № ' + ${journal.issue}"></a>
@@ -35,9 +43,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sp-menu-item">
-                    <a>Об издании</a>
-                    <ul class="drop-down">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Об издании</a>
+                    <ul class="drop-down submenu">
                         <li>
                             <a href="/about">Информация об издании</a>
                         </li>
@@ -54,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a class="active" href="/for-authors">Авторам</a>
+                    <a href="/for-authors ">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
                     <a href="/contacts">Контакты</a>
@@ -112,7 +120,7 @@
                     </li>
                     <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
                     </li>
-                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традици и
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традиции и
                         современность</a></li>
                 </ul>
             </div>
