@@ -85,7 +85,7 @@
                             <h2 th:text="${journal.title}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
+                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
                     </div>
                 </div>
             </div>
