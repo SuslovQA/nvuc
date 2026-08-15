@@ -38,7 +38,6 @@ public class FileController {
 
     @GetMapping("/documents/{fileName}")
     public ResponseEntity<Resource> openDocument(@PathVariable String fileName) {
-        ClassPathResource resource = new ClassPathResource("/documents/" + fileName + ".pdf");
 
         return getFile(
                 fileStorageService.getDocument(fileName),

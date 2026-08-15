@@ -43,9 +43,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sp-menu-item">
-                    <a>Об издании</a>
-                    <ul class="drop-down">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">Об издании</a>
+                    <ul class="drop-down submenu">
                         <li>
                             <a href="/about">Информация об издании</a>
                         </li>
@@ -53,7 +53,7 @@
                             <a href="/founder">Учредитель и издатель</a>
                         </li>
                         <li>
-                            <a th:href="@{/pdf/documents/charter}" target="_blank">Устав</a>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank">Устав</a>
                         </li>
                         <li>
                             <a href="/editorial-board">Редакционная коллегия</a></li>
@@ -62,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/for-authors ">Авторам</a>
+                    <a href="/for-authors">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
                     <a href="/contacts">Контакты</a>
@@ -78,7 +78,7 @@
             <div class="issue-wrapper">
                 <div class="issue-data">
                     <div class="main-cover current-issue-cover">
-                        <img class="latest-cover" th:src="@{/images/{f}(f=${journal.cover})}">
+                        <img class="latest-cover" th:src="@{/files/covers/{f}(f=${journal.cover})}">
                     </div>
                     <div class="issue-header-description">
                         <div class="issue-header">
