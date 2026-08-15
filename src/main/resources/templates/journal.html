@@ -53,7 +53,7 @@
                             <a href="/founder">Учредитель и издатель</a>
                         </li>
                         <li>
-                            <a th:href="@{/pdf/documents/charter}" target="_blank">Устав</a>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank">Устав</a>
                         </li>
                         <li>
                             <a href="/editorial-board">Редакционная коллегия</a></li>
@@ -62,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/for-authors ">Авторам</a>
+                    <a href="/for-authors">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
                     <a href="/contacts">Контакты</a>
@@ -78,15 +78,14 @@
             <div class="issue-wrapper">
                 <div class="issue-data">
                     <div class="main-cover current-issue-cover">
-                        <img class="latest-cover" th:src="@{/images/{f}(f=${journal.cover})}">
+                        <img class="latest-cover" th:src="@{/files/covers/{f}(f=${journal.cover})}">
                     </div>
                     <div class="issue-header-description">
                         <div class="issue-header">
                             <h2 th:text="${journal.title}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать
-                            выпуск</a>
+                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
                     </div>
                 </div>
             </div>
@@ -126,8 +125,7 @@
                     </li>
                     <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
                     </li>
-                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традиции
-                        и
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традици и
                         современность</a></li>
                 </ul>
             </div>
