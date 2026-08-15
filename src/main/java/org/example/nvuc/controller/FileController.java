@@ -38,7 +38,7 @@ public class FileController {
 
     @GetMapping("/documents/{fileName}")
     public ResponseEntity<Resource> openDocument(@PathVariable String fileName) {
-        ClassPathResource resource = new ClassPathResource("static/pdf/documents/" + fileName + ".pdf");
+        ClassPathResource resource = new ClassPathResource("/documents/" + fileName + ".pdf");
 
         return getFile(
                 fileStorageService.getDocument(fileName),
@@ -47,11 +47,11 @@ public class FileController {
         );
     }
 
-    @GetMapping("/images/{fileName}")
-    public ResponseEntity<Resource> getImage(@PathVariable String fileName) {
+    @GetMapping("/covers/{fileName}")
+    public ResponseEntity<Resource> getCover(@PathVariable String fileName) {
 
         try {
-            Path file = fileStorageService.getImage(fileName);
+            Path file = fileStorageService.getCover(fileName);
 
             Resource resource = new UrlResource(file.toUri());
 

@@ -68,14 +68,14 @@
             <div class="issue-wrapper">
                 <div class="issue-data">
                     <div class="main-cover current-issue-cover">
-                        <img class="latest-cover" th:src="@{/images/{f}(f=${journal.cover})}">
+                        <img class="latest-cover" th:src="@{/files/covers/{f}(f=${journal.cover})}">
                     </div>
                     <div class="issue-header-description">
                         <div class="issue-header">
                             <h2 th:text="${journal.title}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
+                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
                     </div>
                 </div>
             </div>
