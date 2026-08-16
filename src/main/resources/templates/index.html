@@ -29,43 +29,48 @@
         <nav id="nav">
             <ul class="menu" id="menu">
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle">Архив выпусков</a>
+                    <a href="#" class="submenu-toggle" th:text="#{menu.archive}">Архив выпусков</a>
                     <ul class="drop-down submenu">
                         <li class="has-submenu" th:each="entry : ${archive}">
                             <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
                             <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                       th:text="'Выпуск № ' + ${journal.issue}"></a>
+                                       th:text="#{journal.issue} + ' № ' + ${journal.issue}"></a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle">Об издании</a>
+                    <a href="#" class="submenu-toggle" th:text="#{menu.about}">Об издании</a>
                     <ul class="drop-down submenu">
                         <li>
-                            <a href="/about">Информация об издании</a>
+                            <a href="/about" th:text="#{menu.about-information}">Информация об издании</a>
                         </li>
                         <li>
-                            <a href="/founder">Учредитель и издатель</a>
+                            <a href="/founder" th:text="#{menu.founder}">Учредитель и издатель</a>
                         </li>
                         <li>
-                            <a th:href="@{/files/documents/charter.pdf}" target="_blank">Устав</a>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank" th:text="#{menu.charter}">Устав</a>
                         </li>
                         <li>
-                            <a href="/editorial-board">Редакционная коллегия</a></li>
+                            <a href="/editorial-board" th:text="#{menu.editorial-board}">Редакционная коллегия</a></li>
                         <li>
-                            <a href="/editorial-ethics">Редакционная этика</a></li>
+                            <a href="/editorial-ethics" th:text="#{menu.editorial-ethic}">Редакционная этика</a></li>
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/for-authors">Авторам</a>
+                    <a href="/for-authors" th:text="#{menu.authors}">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/contacts">Контакты</a>
+                    <a href="/contacts" th:text="#{menu.contacts}">Контакты</a>
                 </li>
+<!--                <div class="language-switcer"> class="language-switcher">-->
+<!--                    <a th:href="@{${#httpServletRequest.requestURI}(lang='ru')}">RU</a>-->
+
+<!--                    <a th:href="@{${#httpServletRequest.requestURI}(lang='en')}">EN</a>-->
+<!--                </div>-->
             </ul>
         </nav>
     </div>
@@ -94,12 +99,12 @@
                         системе культуры». С 2013 г. издаётся под названием «Музыка в системе культуры: Научный вестник
                         Уральской
                         консерватории». Журнал включён в Российский индекс научного цитирования (РИНЦ).</p>
-                    <a class="main-btn" href="/about">Подробнее об издании<i class="fas fa-arrow-right ml-2"></i></a>
+                    <a class="main-btn" href="/about" th:text="#{home.about-the-edition}">Подробнее об издании</a>
                 </div>
             </div>
             <div class="current-issue">
                 <div class="current-issue-header">
-                    <h1>Текущий выпуск</h1>
+                    <h1 th:text="#{home.current-issue-header}">Текущий выпуск</h1>
                 </div>
                 <div class="current-issue-wrapper">
                     <div class="main-cover current-issue-cover">
@@ -108,9 +113,9 @@
                     <div class="current-issue-data">
                         <h3 th:text="${latestJournal.title}"></h3>
                         <div th:utext="${latestJournal.description}" class="current-issue-description"></div>
-                        <h4>Содержание:</h4>
+                        <h4 th:text="#{journal.content}">Содержание:</h4>
                         <div th:utext="${latestJournal.contents}" class="current-issue-contents"></div>
-                        <a class="main-btn" th:href="@{/files/pdf/{file}(file=${latestJournal.pdf})}" target="_blank">Читать
+                        <a class="main-btn" th:href="@{/files/pdf/{file}(file=${latestJournal.pdf})}" target="_blank" th:text="#{home.read}">Читать
                             выпуск</a>
                     </div>
                 </div>
