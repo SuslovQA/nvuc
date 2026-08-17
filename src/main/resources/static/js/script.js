@@ -78,3 +78,83 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// function changeLanguage(language) {
+//
+//     const url = new URL(window.location.href);
+//
+//     url.searchParams.set("lang", language);
+//
+//     window.location.href = url.toString();
+// }
+
+//     function changeLanguage(element) {
+//     const lang = element.checked ? 'en' : 'ru';
+//
+//     const url = new URL(window.location.href);
+//     url.searchParams.set('lang', lang);
+//
+//     window.location.href = url.toString();
+// }
+
+//
+    function changeLanguage(element) {
+
+    const lang = element.checked ? 'en' : 'ru';
+
+    const url = new URL(window.location.href);
+
+    url.searchParams.set('lang', lang);
+
+    window.location.href = url.toString();
+}
+//
+//
+//     function changeLanguageMobile(lang) {
+//
+//     const url = new URL(window.location.href);
+//
+//     url.searchParams.set('lang', lang);
+//
+//     window.location.href = url.toString();
+// }
+//
+//
+//     function toggleLanguages() {
+//
+//     const menu = document.getElementById('language-menu');
+//     const button = document.querySelector('.language-mobile-button');
+//
+//     menu.classList.toggle('active');
+//     button.classList.toggle('active');
+// }
+//
+//
+//     document.addEventListener('click', function(event) {
+//
+//     const switcher =
+//     document.querySelector('.language-switcher');
+//
+//     const menu =
+//     document.getElementById('language-menu');
+//
+//     const button =
+//     document.querySelector('.language-mobile-button');
+//
+//     if (!switcher.contains(event.target)) {
+//
+//     menu.classList.remove('active');
+//     button.classList.remove('active');
+//
+// }
+//
+// });
+
+function changeLanguageMobile(lang) {
+    const url = new URL(window.location.href);
+
+    url.searchParams.set('lang', lang);
+
+    window.location.href = url.toString();
+}
+

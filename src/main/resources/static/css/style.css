@@ -372,6 +372,10 @@ ul.footer-menu-links li {
     .fixed-footer {
         position: relative;
     }
+
+    .copyright {
+        height: 40px;
+    }
 }
 
 
@@ -506,7 +510,6 @@ header .container {
 
     min-width: 200px;
 
-    /*padding: 10px 10px;*/
     margin: 0;
 
     background: #fff;
@@ -526,6 +529,170 @@ header .container {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
+}
+
+/* =========================
+   DESKTOP
+   ========================= */
+
+/*.language-switcher {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.language-toggle {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 8px;*/
+/*}*/
+
+.language-switcher {
+    position: relative;
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 10px;
+    color: #891f05;
+    font-weight: bold;
+}
+
+.language-mobile-toggle,
+.language-mobile-menu {
+    display: none;
+}
+
+.language-mobile {
+    display: none;
+}
+
+
+/* Toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+    background-color: #333;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+@media (min-width: 769px) {
+
+    .language-switcher > .language-mobile-menu {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none;
+    }
+
+    .language-switcher:hover > .language-mobile-menu {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    .language-mobile-toggle {
+        display: none !important;
+    }
+
+    .language-toggle {
+        display: flex;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+    /* =========================
+    LANGUAGE SWITCHER MOBILE
+ ========================= */
+
+    .language-toggle {
+        display: none;
+    }
+
+    .language-switcher {
+        display: block;
+        width: 100%;
+    }
+
+    .language-switcher > .language-mobile-menu {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none;
+    }
+
+    /* Название текущего языка */
+    /*.language-mobile-toggle {*/
+    /*    display: flex !important;*/
+    /*    width: 100%;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    .language-mobile-toggle {
+        display: flex !important;
+    }
+
+
+    /* Меню языков */
+    /*.language-mobile-menu {*/
+    /*    background: #f7f7f7;*/
+    /*}*/
+    .language-mobile-menu {
+        display: none;
+    }
+
+    /* Пункты языков */
+    .language-mobile-menu > li > a {
+        padding: 13px 20px 13px 35px !important;
+    }
+
+    /* Чтобы работала существующая система .open */
+    .language-switcher.open > .language-mobile-menu {
+        display: block;
+    }
 }
 
 
@@ -604,7 +771,6 @@ header .container {
     .menu {
         display: block;
         width: 100%;
-        padding: 10px 0;
     }
 
     .menu > li {

@@ -66,11 +66,62 @@
                 <li class="sp-menu-item">
                     <a href="/contacts" th:text="#{menu.contacts}">Контакты</a>
                 </li>
-<!--                <div class="language-switcer"> class="language-switcher">-->
-<!--                    <a th:href="@{${#httpServletRequest.requestURI}(lang='ru')}">RU</a>-->
+<!--                <div class="language-switcher">-->
+<!--                    <span class="lang-label">RU</span>-->
 
-<!--                    <a th:href="@{${#httpServletRequest.requestURI}(lang='en')}">EN</a>-->
+<!--                    <label class="switch">-->
+<!--                        <input type="checkbox"-->
+<!--                               th:checked="${#locale.language == 'en'}"-->
+<!--                               onchange="changeLanguage(this)">-->
+<!--                        <span class="slider"></span>-->
+<!--                    </label>-->
+
+<!--                    <span class="lang-label">EN</span>-->
 <!--                </div>-->
+                <li class="language-switcher has-submenu">
+
+                    <!-- DESKTOP -->
+                    <div class="language-toggle">
+                        <span>RU</span>
+
+                        <label class="switch">
+                            <input type="checkbox"
+                                   th:checked="${#locale.language == 'en'}"
+                                   onchange="changeLanguage(this)">
+                            <span class="slider"></span>
+                        </label>
+
+                        <span>EN</span>
+                    </div>
+
+                    <!-- MOBILE -->
+                    <a href="#"
+                       class="submenu-toggle language-mobile-toggle"
+                       onclick="return false;"
+                       th:text="${#locale.language == 'en' ? 'English' : 'Русский'}">
+                        Русский
+                    </a>
+
+                    <ul class="submenu language-mobile-menu">
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('ru'); return false;">
+                                Русский
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('en'); return false;">
+                                English
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
         </nav>
     </div>
