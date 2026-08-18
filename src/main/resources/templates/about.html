@@ -30,43 +30,88 @@
         <nav id="nav">
             <ul class="menu" id="menu">
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle">Архив выпусков</a>
+                    <a href="#" class="submenu-toggle" th:text="#{menu.archive}">Архив выпусков</a>
                     <ul class="drop-down submenu">
                         <li class="has-submenu" th:each="entry : ${archive}">
                             <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
                             <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                       th:text="'Выпуск № ' + ${journal.issue}"></a>
+                                       th:text="#{journal.issue} + ' № ' + ${journal.issue}"></a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle">Об издании</a>
+                    <a href="#" class="submenu-toggle" th:text="#{menu.about}">Об издании</a>
                     <ul class="drop-down submenu">
                         <li>
-                            <a href="/about">Информация об издании</a>
+                            <a href="/about" th:text="#{menu.about-information}">Информация об издании</a>
                         </li>
                         <li>
-                            <a href="/founder">Учредитель и издатель</a>
+                            <a href="/founder" th:text="#{menu.founder}">Учредитель и издатель</a>
                         </li>
                         <li>
-                            <a th:href="@{/files/documents/charter.pdf}" target="_blank">Устав</a>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank"
+                               th:text="#{menu.charter}">Устав</a>
                         </li>
                         <li>
-                            <a href="/editorial-board">Редакционная коллегия</a></li>
+                            <a href="/editorial-board" th:text="#{menu.editorial-board}">Редакционная коллегия</a></li>
                         <li>
-                            <a href="/editorial-ethics">Редакционная этика</a></li>
+                            <a href="/editorial-ethics" th:text="#{menu.editorial-ethic}">Редакционная этика</a></li>
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/for-authors">Авторам</a>
+                    <a href="/for-authors" th:text="#{menu.authors}">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/contacts">Контакты</a>
+                    <a href="/contacts" th:text="#{menu.contacts}">Контакты</a>
                 </li>
+                <li class="language-switcher has-submenu">
+
+                    <!-- DESKTOP -->
+                    <div class="language-toggle">
+                        <span>RU</span>
+
+                        <label class="switch">
+                            <input type="checkbox"
+                                   th:checked="${#locale.language == 'en'}"
+                                   onchange="changeLanguage(this)">
+                            <span class="slider"></span>
+                        </label>
+
+                        <span>EN</span>
+                    </div>
+
+                    <!-- MOBILE -->
+                    <a href="#"
+                       class="submenu-toggle language-mobile-toggle"
+                       onclick="return false;"
+                       th:text="${#locale.language == 'en' ? 'EN' : 'RU'}">
+                        Русский
+                    </a>
+
+                    <ul class="submenu language-mobile-menu">
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('ru'); return false;">
+                                Русский
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('en'); return false;">
+                                English
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
         </nav>
     </div>
