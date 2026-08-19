@@ -1,5 +1,6 @@
 package org.example.nvuc.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.example.nvuc.service.JournalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@Slf4j
 @Controller
 @RequestMapping("/journal")
 public class JournalController {
@@ -17,6 +19,9 @@ public class JournalController {
 
     @GetMapping("/{id}")
     public String journal(@PathVariable Long id, Model model){
+
+        log.info("Открыт журнал с id={}", id);
+
         model.addAttribute("journal", service.getJournal(id));
         return "journal";
     }

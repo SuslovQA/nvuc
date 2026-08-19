@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Редакционная коллегия</title>
+    <meta charset="UTF-8">
+    <title th:text="#{menu.editorial-board}">Редакционная коллегия</title>
 
     <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
 </head>
+
+<body>
 
 <script src="/js/script.js"></script>
 
@@ -114,8 +117,6 @@
     </div>
 </header>
 
-
-<body>
 <main>
     <article>
         <div class="container">
@@ -233,45 +234,47 @@
         </div>
     </article>
 </main>
+
 <div class="footer">
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-adress footer-columns">
-                <h3 class="footer-block-title">Контакты</h3>
+                <h3 class="footer-block-title" th:text="#{home.footer-contacts-header}">Контакты</h3>
 
                 <ul class="info-footer-adress">
-                    <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
+                    <li><p th:text="#{home.footer-contacts-adress}"></p></li>
                     <li class="mail">nvuc-uralconsv@rambler.ru</li>
-                    <li class="phone"><p>+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343) 371‑67‑61 (факс)</p></li>
-                    <li class="time">Часы работы: 10:00 - 17:00</li>
+                    <li class="phone"><p th:utext="#{home.footer-contacts-tel}">+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343)
+                        371‑67‑61 (факс)</p></li>
+                    <li class="time" th:text="#{home.footer-contacts-hours}">Часы работы: 10:00 - 17:00</li>
                 </ul>
             </div>
 
             <div class="footer-links footer-columns">
-                <h3 class="footer-block-title">Полезные ссылки</h3>
+                <h3 class="footer-block-title" th:text="#{home.footer-links-header}">Полезные ссылки</h3>
 
                 <ul class="footer-menu-links">
-                    <li class="item-632"><a href="https://culture.gov.ru/">Министерство культуры РФ</a></li>
-                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank">УГК им. М.П. Мусоргского</a>
+                    <li class="item-632"><a href="https://culture.gov.ru/" th:text="#{home.footer-links-first}">Министерство
+                        культуры РФ</a></li>
+                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank"
+                                            th:text="#{home.footer-links-second}">УГК им. М.П. Мусоргского</a>
                     </li>
-                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank">Слово о
+                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"
+                                            th:text="#{home.footer-links-third}">Слово о
                         музыке</a>
                     </li>
                     <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
                     </li>
-                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традиции и
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/" th:text="#{home.footer-links-last}">Музыкальное
+                        искусство Евразии. Традиции
+                        и
                         современность</a></li>
                 </ul>
             </div>
 
             <div class="footer-information footer-columns">
-                <h3 class="footer-block-title">Информация</h3>
-                <h4>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h4>
-                <p>Научное периодическое издание</p>
-                <p>Четыре раза в год, формат В5</p>
-                <p>Свидетельство о регистрации средств массовой информации:</p>
-                <p>ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
-                <p>ISSN 2658-7858</p>
+                <h3 class="footer-block-title" th:text="#{home.footer-information-header}">Информация</h3>
+                <div th:utext="#{home.footer-information-text}"></div>
             </div>
 
 
@@ -283,6 +286,7 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
 

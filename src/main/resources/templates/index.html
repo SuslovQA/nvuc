@@ -4,13 +4,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Музыка в системе культуры</title>
+    <title th:text="#{head.main-title}">Музыка в системе культуры</title>
 
     <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
 </head>
 
 <body>
+
 <script src="/js/script.js"></script>
 
 <header>
@@ -124,23 +125,9 @@
                     <img src="images/main_page_image.jpg">
                 </div>
                 <div class="main-text">
-<!--                    <p><strong>«Музыка в системе культуры: Научный вестник Уральской консерватории»</strong> –-->
-<!--                        периодическое печатное издание, публикующее научные труды представителей российских-->
-<!--                        консерваторий,-->
-<!--                        вузов-->
-<!--                        искусств.</p>-->
-<!--                    <p>Тематика издания включает актуальные теоретические и исторические-->
-<!--                        проблемы-->
-<!--                        современного музыкознания, различные аспекты исполнительства, музыкального краеведения,-->
-<!--                        фольклористики,-->
-<!--                        духовно-музыкальной культуры, музыкальной педагогики, истории музыкального образования.</p>-->
-<!--                    <p>Журнал издаётся с 2005 г. В 2005–2011 гг. выходил под названием «Музыка-->
-<!--                        в-->
-<!--                        системе культуры». С 2013 г. издаётся под названием «Музыка в системе культуры: Научный вестник-->
-<!--                        Уральской-->
-<!--                        консерватории». Журнал включён в Российский индекс научного цитирования (РИНЦ).</p>-->
                     <div class="p-main-text" th:utext="#{home.about-the-edition-text}"></div>
-                    <a class="main-btn" href="/about" th:text="#{home.about-the-edition-button}">Подробнее об издании</a>
+                    <a class="main-btn" href="/about" th:text="#{home.about-the-edition-button}">Подробнее об
+                        издании</a>
                 </div>
             </div>
             <div class="current-issue">
@@ -175,7 +162,8 @@
                 <ul class="info-footer-adress">
                     <li><p th:text="#{home.footer-contacts-adress}"></p></li>
                     <li class="mail">nvuc-uralconsv@rambler.ru</li>
-                    <li class="phone"><p th:utext="#{home.footer-contacts-tel}">+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343) 371‑67‑61 (факс)</p></li>
+                    <li class="phone"><p th:utext="#{home.footer-contacts-tel}">+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343)
+                        371‑67‑61 (факс)</p></li>
                     <li class="time" th:text="#{home.footer-contacts-hours}">Часы работы: 10:00 - 17:00</li>
                 </ul>
             </div>
@@ -184,15 +172,19 @@
                 <h3 class="footer-block-title" th:text="#{home.footer-links-header}">Полезные ссылки</h3>
 
                 <ul class="footer-menu-links">
-                    <li class="item-632"><a href="https://culture.gov.ru/" th:text="#{home.footer-links-first}">Министерство культуры РФ</a></li>
-                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank" th:text="#{home.footer-links-second}">УГК им. М.П. Мусоргского</a>
+                    <li class="item-632"><a href="https://culture.gov.ru/" th:text="#{home.footer-links-first}">Министерство
+                        культуры РФ</a></li>
+                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank"
+                                            th:text="#{home.footer-links-second}">УГК им. М.П. Мусоргского</a>
                     </li>
-                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank" th:text="#{home.footer-links-third}">Слово о
+                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"
+                                            th:text="#{home.footer-links-third}">Слово о
                         музыке</a>
                     </li>
                     <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
                     </li>
-                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/" th:text="#{home.footer-links-last}">Музыкальное искусство Евразии. Традиции
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/" th:text="#{home.footer-links-last}">Музыкальное
+                        искусство Евразии. Традиции
                         и
                         современность</a></li>
                 </ul>
