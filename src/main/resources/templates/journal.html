@@ -127,10 +127,10 @@
                     </div>
                     <div class="issue-header-description">
                         <div class="issue-header">
-                            <h2 th:text="${journal.title}"></h2>
+                            <h2 th:text="${journalTitle}"></h2>
                         </div>
-                        <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать
+                        <div class="issue-description" th:utext="${journalDescription}"></div>
+                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn" th:text="#{home.read}">Читать
                             выпуск</a>
                     </div>
                 </div>
@@ -138,8 +138,8 @@
         </div>
         <div class="container second-container">
             <div class="issue-wrapper">
-                <h3>Содержание:</h3>
-                <div th:utext="${journal.contents}" class="current-issue-contents"></div>
+                <h3 th:text="#{journal.content}">Содержание:</h3>
+                <div th:utext="${journalContents}" class="current-issue-contents"></div>
             </div>
         </div>
     </article>
