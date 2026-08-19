@@ -130,7 +130,8 @@
                             <h2 th:text="${journal.title}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journal.description}"></div>
-                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать выпуск</a>
+                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn">Читать
+                            выпуск</a>
                     </div>
                 </div>
             </div>
@@ -191,7 +192,9 @@
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>

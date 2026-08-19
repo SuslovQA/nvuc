@@ -694,6 +694,10 @@ ul.footer-menu-links li {
     padding: 2px;
 }
 
+.copyright-wrapper {
+    padding: 0 20px;
+}
+
 
 /* =========================================================
    FIXED FOOTER

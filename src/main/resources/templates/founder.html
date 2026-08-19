@@ -122,24 +122,10 @@
         <div class="container">
             <div class="issue-wrapper">
                 <div class="header-article">
-                    <h2 class="header-founder">Учредитель и издатель</h2>
+                    <h2 class="header-founder" th:text="#{founder.header}">Учредитель и издатель</h2>
                 </div>
                 <div class="article-content">
-                    <p class="founder-text">Федеральное государственное бюджетное образовательное учреждение высшего
-                        образования «Уральская
-                        государственная
-                        консерватория имени М.П. Мусоргского».</p>
-                    <div class="founder-contacts">
-                        <h3 class="footer-block-title">Контакты</h3>
-                        <ul class="info-footer-adress">
-                            <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
-                            <li><a href="https://uralconsv.ru/" class="founder-link">uralconsv.ru</a></li>
-
-                            <li class="mail">nvuc-uralconsv@rambler.ru</li>
-                            <li class="phone"><p>+7 (343) 371‑21‑80&nbsp;/&nbsp;+7 (343) 371‑67‑61 (факс)</p></li>
-                            <li class="time">Часы работы: 10:00 - 17:00</li>
-                        </ul>
-                    </div>
+                    <div th:utext="#{founder.main-text}"></div>
                 </div>
             </div>
         </div>
@@ -193,7 +179,9 @@
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>

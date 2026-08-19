@@ -123,17 +123,10 @@
             <div class="issue-wrapper">
                 <div class="about-wrapper">
                     <div class="header-article">
-                        <h2>Контакты учредителя, издателя и редакции</h2>
+                        <h2 th:text="#{contacts.header}">Контакты учредителя, издателя и редакции</h2>
                     </div>
-                    <div>
-                        <ul class="info-footer-adress">
-                            <li class="adress">Адрес: 620014, Россия, Екатеринбург, пр. Ленина, 26</li>
-                            <li>Тел.: +7 (343) 371‑21‑80; +7 (343) 371‑67‑61 (факс)</li>
-                            <li class="email">E-mail: mail@uralconsv.org / nvuc-uralconsv@rambler.ru" / nvuc-uralconsv@rambler.ru</li>
-                            <li>Интернет-сайт учредителя журнала: <a href="https://uralconsv.ru/" class="founder-link">uralconsv.ru</a></li>
-                            <li>Интернет-сайт журнала: <a href="https://nvuc.ru/" class="founder-link">nvuc.ru</a></li>
-                        </ul>
-                        </div>
+                    <div th:utext="#{contacts.main-text}">
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,18 +169,17 @@
                         современность</a></li>
                 </ul>
             </div>
-
             <div class="footer-information footer-columns">
                 <h3 class="footer-block-title" th:text="#{home.footer-information-header}">Информация</h3>
                 <div th:utext="#{home.footer-information-text}"></div>
             </div>
-
-
         </div>
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>

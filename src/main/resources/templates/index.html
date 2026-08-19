@@ -189,18 +189,17 @@
                         современность</a></li>
                 </ul>
             </div>
-
             <div class="footer-information footer-columns">
                 <h3 class="footer-block-title" th:text="#{home.footer-information-header}">Информация</h3>
                 <div th:utext="#{home.footer-information-text}"></div>
             </div>
-
-
         </div>
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>

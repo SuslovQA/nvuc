@@ -122,17 +122,20 @@
         <div class="container">
             <div class="issue-wrapper">
                 <div class="header-article">
-                    <h2 class="header-founder">Авторам</h2>
+                    <h2 class="header-founder" th:text="#{menu.authors}">Авторам</h2>
                 </div>
                 <div class="for-authors-article-content">
-                    <a class="founder-link" th:href="@{/files/documents/design_requirements.pdf}" target="_blank" rel="noopener noreferrer">Требования
+                    <a class="founder-link" th:href="@{/files/documents/design_requirements.pdf}" target="_blank"
+                       rel="noopener noreferrer" th:text="#{for-authors.first-link}">Требования
                         к оформлению
-                        статей</a></h4>
-                    <a class="founder-link" th:href="@{/files/documents/copyright_agreement.pdf}" target="_blank" rel="noopener noreferrer">Авторский
+                        статей</a>
+                    <a class="founder-link" th:href="@{/files/documents/copyright_agreement.pdf}" target="_blank"
+                       rel="noopener noreferrer" th:text="#{for-authors.second-link}">Авторский
                         договор
-                        (публичная оферта)</a></h4>
-                    <a class="founder-link" th:href="@{/files/documents/procedure_for_reviewing.pdf}" target="_blank" rel="noopener noreferrer">Порядок
-                        рецензирования статей</a></h4>
+                        (публичная оферта)</a>
+                    <a class="founder-link" th:href="@{/files/documents/procedure_for_reviewing.pdf}" target="_blank"
+                       rel="noopener noreferrer" th:text="#{for-authors.third-link}">Порядок
+                        рецензирования статей</a>
                 </div>
             </div>
         </div>
@@ -186,7 +189,9 @@
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>
