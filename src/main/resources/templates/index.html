@@ -139,10 +139,10 @@
                         <img class="latest-cover" th:src="@{/files/covers/{f}(f=${latestJournal.cover})}">
                     </div>
                     <div class="current-issue-data">
-                        <h3 th:text="${latestJournal.title}"></h3>
-                        <div th:utext="${latestJournal.description}" class="current-issue-description"></div>
+                        <h3 th:text="${latestTitle}"></h3>
+                        <div th:utext="${latestDescription}" class="current-issue-description"></div>
                         <h4 th:text="#{journal.content}">Содержание:</h4>
-                        <div th:utext="${latestJournal.contents}" class="current-issue-contents"></div>
+                        <div th:utext="${latestContents}" class="current-issue-contents"></div>
                         <a class="main-btn" th:href="@{/files/pdf/{file}(file=${latestJournal.pdf})}" target="_blank"
                            th:text="#{home.read}">Читать
                             выпуск</a>

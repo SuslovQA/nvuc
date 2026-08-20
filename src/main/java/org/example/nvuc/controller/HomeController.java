@@ -1,11 +1,14 @@
 package org.example.nvuc.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.nvuc.entity.Journal;
 import org.example.nvuc.service.JournalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.Locale;
 
 @Slf4j
 @Controller
@@ -16,11 +19,26 @@ public class HomeController {
     private JournalService service;
 
     @GetMapping("/")
-    public String home(Model model) {
+    public String home(Model model, Locale locale) {
 
         log.info("Открыта главная страница");
 
-        model.addAttribute("latestJournal", service.getLastJournal());
+        Journal latest = service.getLastJournal();
+
+        model.addAttribute("latestJournal", latest);
+
+        if ("en".equals(locale.getLanguage())) {
+            model.addAttribute("latestTitle", latest.getTitleEn());
+            model.addAttribute("latestDescription", latest.getDescriptionEn());
+            model.addAttribute("latestContents", latest.getContentsEn());
+        } else {
+            model.addAttribute("latestTitle", latest.getTitle());
+            model.addAttribute("latestDescription", latest.getDescription());
+            model.addAttribute("latestContents", latest.getContents());
+        }
+
+        model.addAttribute("latestPdf", latest.getPdf());
+
         return "index";
     }
 
