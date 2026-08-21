@@ -177,6 +177,71 @@ INSERT INTO journals (year, issue, title, title_en, description, description_en,
                                                                         'cover17.jpg',
                                                                         '2019_17.pdf'),
 
+                                                                        (2024,
+                                                                        39,
+                                                                        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 39',
+                                                                        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 39',
+                                                                        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2024</p>
+                                                                        <p><em>Количество страниц: 66</em>&nbsp;с.</p>
+                                                                        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+                                                                        <p>ISSN:&nbsp;2658-7858</p>',
+                                                                        '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2024</p>
+                                                                        <p><em>Number of pages: 66</em>&nbsp;pp.</p>
+                                                                        <p><em>Circulation:</em> 100 copies.</p>
+                                                                        <p>ISSN:&nbsp;2658-7858',
+                                                                        '<p>ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+                                                                        <em>Ефремов Н.А.</em> Регентское преемство в московском храме пророка Илии Обыденном: В.А. Хлебников и судьба его нотной коллекции<br>
+                                                                        <em> Слатвинская С.А.</em> Эволюция открытой формы в композиторском творчестве Эрла Брауна<br><br>
+                                                                        ПРОБЛЕМЫ ЭТНОМУЗЫКОЛОГИИ<br>
+                                                                        <em>Бахтияри Ф.Ф.</em> Проявление оппозиции «певческий голос – музыкальный инструмент» в музыкальной культуре народов Волго-Уралья<br><br>
+                                                                        МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+                                                                        <em>Гагарина О.А., Кабилькова Н.Ю.</em> «Вариации на тему рококо» П.И. Чайковского: к проблеме редакций<br><br>
+                                                                        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+                                                                        <em>Городилова М.В., Мешкова А.С.</em> Музыка Макса Регера как дидактический материал<br><br>
+                                                                        СТРАНИЦЫ ИСТОРИИ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+                                                                        <em>Евдокимова Н.К.</em> «Научно-методические записки» – первое печатное издание Уральской консерватории (1957–1973)</p>',
+                                                                         '<p>FROM THE HISTORY OF MUSICAL CULTURE<br>
+                                                                         <em>Efremov N.A.</em> Regent Succession in the Moscow Church of the Prophet Elijah the Ordinary: V.A. Khlebnikov and the Fate of His Sheet Music Collection<br>
+                                                                         <em>Slatvinskaya S.A.</em> Evolution of Open Form in the Compositional Work of Earle Brown<br><br>
+                                                                         PROBLEMS OF ETHNOMUSICOLOGY<br>
+                                                                         <em>Bakhtiyari F.F.</em> Manifestation of the Opposition "Singing Voice – Musical Instrument" in the Musical Culture of the Volga-Ural Peoples<br><br>
+                                                                         MUSICAL SCIENCE AND PERFORMANCE<br>
+                                                                         <em>Gagarina O.A., Kabilkova N.Yu.</em> Tchaikovsky''s "Variations on a Rococo Theme": On the Problem of Editions<br><br>
+                                                                         MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
+                                                                         <em>Gorodilova M.V., Meshkova A.S.</em> The Music of Max Reger as Didactic Material<br><br>
+                                                                         PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
+                                                                         <em>Evdokimova N.K.</em> "Scientific and Methodological Notes" – The First Printed Publication of the Ural Conservatory (1957–1973)</p>',
+                                                                         'cover39.jpg',
+                                                                         '2024_39'),
+
+                                                                        (2025,
+                                                                        43,
+                                                                        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 43',
+                                                                        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 43',
+                                                                        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2025</p>
+                                                                        <p><em>Количество страниц: 93</em>&nbsp;с.</p>
+                                                                        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+                                                                        <p>ISSN:&nbsp;2658-7858</p>',
+                                                                        '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2025</p>
+                                                                        <p><em>Number of pages: 93</em>&nbsp;pp.</p>
+                                                                        <p><em>Circulation:</em> 100 copies.</p>
+                                                                        <p>ISSN:&nbsp;2658-7858',
+                                                                        '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+                                                                        <em>Ситдиков А. С. </em>Реквием Э. Н. Артемьева как пример претворения канонического жанра в современной музыке<br>&nbsp;</p>
+                                                                         <p>ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br><em>Поршнев И. Д. </em>«Нелегко родился этот спектакль…»: «Красный мак» – «поэма-либретто» М. П. Гальперина и балет Р. М. Глиэра</p>
+                                                                         <p><em>Кожевникова В. А. </em>Между иронией и искренностью: «Старинная музыка российских провинциальных цирков» и «Российские фотографии» Родиона Щедрина<br>&nbsp;</p>
+                                                                         <p>ПРОБЛЕМЫ ЭТНОМУЗЫКОЛОГИИ<br><em>Крылов К. А. </em>Особые формы соотношения стиха и напева в свадебных песнях оренбургских казаков</p>
+                                                                         <p><em>Арынова А. Д. </em>Народная терминология казахских обрядовых плачей как способ жанровой атрибуции<br>&nbsp;</p>
+                                                                         <p>МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br><em>Туринцева А. Б. </em>Эстетические баталии: Камилло Эверарди и русско-итальянский оперный конфликт</p>',
+                                                                         '<p>ISSUES OF MUSIC THEORY<br><em>Sitdikov A. S.</em> E. N. Artemyev''s Requiem as an Example of the Embodiment of the Canonical Genre in Contemporary Music<br>&nbsp;</p>
+                                                                          <p>FROM THE HISTORY OF MUSICAL CULTURE<br><em>Porshnev I. D.</em> "This performance was not born easily...": "The Red Poppy" – M. P. Galperin''s "poem-libretto" and R. M. Gliere''s ballet</p>
+                                                                          <p><em>Kozhevnikova V. A.</em> Between Irony and Sincerity: "Old Music of Russian Provincial Circuses" and "Russian Photographs" by Rodion Shchedrin<br>&nbsp;</p>
+                                                                          <p>PROBLEMS OF ETHNOMUSICOLOGY<br><em>Krylov K. A.</em> Special Forms of the Correlation between Verse and Melody in the Wedding Songs of the Orenburg Cossacks</p>
+                                                                          <p><em>Arynova A. D.</em> Folk Terminology of Kazakh Ritual Laments as a Means of Genre Attribution<br>&nbsp;</p>
+                                                                          <p>MUSICAL SCIENCE AND PERFORMANCE<br><em>Turintseva A. B.</em> Aesthetic Battles: Camillo Everardi and the Russo-Italian Opera Conflict</p>',
+                                                                          'cover43.jpg',
+                                                                          '2025_43'),
+
                                                                      (2026,
                                                                       45,
                                                                       'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 45',
@@ -189,7 +254,8 @@ INSERT INTO journals (year, issue, title, title_en, description, description_en,
                                                                       <p><em>Number of pages: 76</em>&nbsp;pp.</p>
                                                                       <p><em>Circulation:</em> 100 copies.</p>
                                                                       <p>ISSN:&nbsp;2658-7858',
-                                                                      '<p>ВОПРОСЫ ИСТОРИИ МУЗЫКИ<br> <em>Цильке Д. С.</em> Livre de clavecin: формирование жанровых и издательских стандартов во французской клавесинной музыке XVII–XVIII веков<br>
+                                                                      '<p>ВОПРОСЫ ИСТОРИИ МУЗЫКИ<br>
+                                                                      <em>Цильке Д. С.</em> Livre de clavecin: формирование жанровых и издательских стандартов во французской клавесинной музыке XVII–XVIII веков<br>
                                                                       <em>Пыжьянова А. Г.</em> Образ художника и его творчества в «Дальнем звоне» Франца Шрекера<br><br>
                                                                       МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br> <em>Бородин Б. Б.</em> Письма Ферруччо Бузони к жене за 1898–1899 годы: перевод и комментарии<br><br>
                                                                       МУЗЫКАЛЬНАЯ КУЛЬТУРА НАРОДОВ МИРА<br> <em>Рыжик О. Н.</em> Фанданго и севильяны: два корня андалузского фольклора в музыкальном и хореографическом искусстве фламенко XX века<br>
