@@ -212,7 +212,7 @@ INSERT INTO journals (year, issue, title, title_en, description, description_en,
                                                                          PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
                                                                          <em>Evdokimova N.K.</em> "Scientific and Methodological Notes" – The First Printed Publication of the Ural Conservatory (1957–1973)</p>',
                                                                          'cover39.jpg',
-                                                                         '2024_39'),
+                                                                         '2024_39.pdf'),
 
                                                                         (2025,
                                                                         43,
@@ -240,7 +240,7 @@ INSERT INTO journals (year, issue, title, title_en, description, description_en,
                                                                           <p><em>Arynova A. D.</em> Folk Terminology of Kazakh Ritual Laments as a Means of Genre Attribution<br>&nbsp;</p>
                                                                           <p>MUSICAL SCIENCE AND PERFORMANCE<br><em>Turintseva A. B.</em> Aesthetic Battles: Camillo Everardi and the Russo-Italian Opera Conflict</p>',
                                                                           'cover43.jpg',
-                                                                          '2025_43'),
+                                                                          '2025_43.pdf'),
 
                                                                      (2026,
                                                                       45,
