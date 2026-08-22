@@ -23,11 +23,19 @@ public class Journal {
 
     private String title;
 
+    private String titleEn;
+
     @Column(columnDefinition = "TEXT")
     private String contents;
 
+    @Column(columnDefinition = "TEXT")
+    private String contentsEn;
+
     @Column(length = 5000)
     private String description;
+
+    @Column(length = 5000)
+    private String descriptionEn;
 
     private String cover;
 

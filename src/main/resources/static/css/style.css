@@ -1,3 +1,7 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +21,10 @@ body {
     margin-left: auto;
 }
 
-/*!* Контент *!*/
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
 
 main {
     max-width: 1200px;
@@ -41,13 +48,17 @@ main {
 }
 
 
+/* =========================================================
+   JOURNAL
+========================================================= */
+
 .journal-cover {
     max-width: 500px;
 }
 
 .about-journal {
     display: flex;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -66,25 +77,33 @@ main {
 .main-text {
     max-width: 50%;
     padding: 20px 20px 20px 10px;
+
     display: flex;
     flex-direction: column;
+
     line-height: 20px;
 }
 
-.main-text > p {
+.p-main-text > p {
     padding-bottom: 10px;
 }
 
 .main-btn {
     align-items: center;
     height: 30px;
+
     position: relative;
     margin: auto;
+
     justify-content: center;
+
     width: 200px;
+
     display: flex;
+
     background: #891f05;
     border-radius: 5px;
+
     color: white;
     text-decoration: none;
 }
@@ -92,9 +111,16 @@ main {
 .main-btn:hover {
     background-color: #fff;
     border: 1px solid #891f05;
+
     transition: .4s;
+
     color: black;
 }
+
+
+/* =========================================================
+   CURRENT ISSUE
+========================================================= */
 
 .current-issue {
     border: 1px solid #ddd;
@@ -111,6 +137,7 @@ main {
 
 .current-issue-cover {
     min-width: 50%;
+
     display: flex;
     justify-content: center;
 }
@@ -128,99 +155,26 @@ main {
     margin-bottom: 20px;
 }
 
-.current-issue-data h4 {
-    padding: 10px 0 10px 0;
-}
-
-.footer-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.footer-columns {
-    padding: 20px;
-}
-
-.info-footer-adress {
-    list-style: none;
-}
-
 .current-issue-data h3 {
     margin-bottom: 10px;
 }
 
-.current-issue-contents p {
-    font-size: 13px;
+.current-issue-data h4 {
+    padding: 10px 0;
 }
 
 .current-issue-data a {
     margin-top: 10px;
 }
 
-.footer {
-    border-top: 1px solid #ddd;
-    background-color: #f7f8fa;
+.current-issue-contents p {
+    font-size: 13px;
 }
 
-.footer-wrapper li {
-    list-style: none;
-}
 
-.footer-wrapper a {
-    font-weight: bold;
-    height: 100%;
-    color: #891f05;
-    text-decoration: none;
-    transition: 0.5s;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.footer-wrapper a:hover {
-    text-decoration: underline;
-    transition: .5s;
-}
-
-.footer-block-title {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.info-footer-adress li {
-    padding: 5px;
-}
-
-.footer-links h3 {
-    padding: 0px;
-}
-
-ul.footer-menu-links {
-    display: flex;
-    flex-direction: column;
-}
-
-ul.footer-menu-links li {
-    padding: 1px;
-    display: flex;
-    width: fit-content;
-}
-
-.footer-information p {
-    padding-top: 10px;
-}
-
-.copyright {
-    border-top: 1px solid #ddd;
-    height: 20px;
-}
-
-.sp-copyright {
-    font-size: 12px;
-    padding: 2px;
-}
+/* =========================================================
+   ISSUE PAGE
+========================================================= */
 
 .issue-wrapper {
     border: 1px solid #ddd;
@@ -231,13 +185,13 @@ ul.footer-menu-links li {
     display: flex;
 }
 
+.issue-header {
+    padding-bottom: 15px;
+}
+
 .issue-header-description {
     padding: 20px;
     line-height: 24px;
-}
-
-.issue-header {
-    padding-bottom: 15px;
 }
 
 .issue-description {
@@ -261,6 +215,11 @@ ul.footer-menu-links li {
     line-height: 24px;
 }
 
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
 .about-wrapper {
     padding: 20px;
 }
@@ -280,8 +239,14 @@ ul.footer-menu-links li {
 .about-wrapper .article-content ul {
     display: flex;
     flex-direction: column;
+
     padding: 0 0 20px 50px;
 }
+
+
+/* =========================================================
+   FOUNDER
+========================================================= */
 
 .founder-contacts {
     max-width: 50%;
@@ -294,9 +259,6 @@ ul.footer-menu-links li {
 
 .founder-text {
     font-weight: 600;
-}
-
-.founder-text {
     padding: 0 20px 20px 20px;
 }
 
@@ -311,9 +273,15 @@ ul.footer-menu-links li {
     transition: .5s;
 }
 
+
+/* =========================================================
+   FOR AUTHORS
+========================================================= */
+
 .for-authors-article-content {
     display: flex;
     flex-direction: column;
+
     padding: 0 0 20px 20px;
 }
 
@@ -322,21 +290,777 @@ ul.footer-menu-links li {
     width: fit-content;
 }
 
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    position: relative;
+    z-index: 1000;
+
+    background-color: #f7f8fa;
+
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+
+/* =========================================================
+   BURGER
+========================================================= */
+
+.burger {
+    display: none;
+
+    width: 26px;
+    height: 19px;
+
+    cursor: pointer;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 1100;
+}
+
+.burger span {
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    background: #222;
+
+    border-radius: 3px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================================
+   DESKTOP MENU
+========================================================= */
+
+#nav {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+
+    text-decoration: none;
+    color: #222;
+
+    padding: 10px 15px;
+}
+
+
+/* =========================================================
+   MAIN MENU ITEMS
+========================================================= */
+
+.menu > li > a {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+
+    padding: 20px 15px;
+
+    border-radius: 20px;
+
+    color: #891f05;
+
+    font-weight: bold;
+
+    transition: .5s;
+}
+
+.menu > li > a:hover {
+    background: #891f05;
+    color: white;
+}
+
+
+/* =========================================================
+   DESKTOP DROPDOWN - FIRST LEVEL
+========================================================= */
+
+.menu > li > .submenu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    min-width: 200px;
+
+    margin: 0;
+
+    background: #fff;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: all 0.25s ease;
+}
+
+
+/* Open on hover */
+.menu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DESKTOP DROPDOWN ITEMS
+========================================================= */
+
+.menu > li > .submenu > li > a {
+    padding: 10px 15px;
+
+    white-space: nowrap;
+}
+
+.menu > li > .submenu > li > a:hover {
+    background: #f5f5f5 !important;
+    color: black !important;
+}
+
+
+/* =========================================================
+   DESKTOP SECOND LEVEL
+========================================================= */
+
+.menu .submenu .submenu {
+    position: absolute;
+
+    top: 0;
+    left: 100%;
+
+    min-width: 200px;
+
+    margin: 0;
+
+    background: #fff;
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(10px);
+
+    transition: all 0.25s ease;
+}
+
+.menu .submenu > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   LANGUAGE SWITCHER - DESKTOP
+========================================================= */
+
+.language-switcher {
+    position: relative;
+
+    /*display: flex;*/
+    align-items: center;
+}
+
+
+/*
+ * RU / toggle / EN
+ */
+.language-toggle {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #891f05;
+
+    white-space: nowrap;
+}
+
+.language-mobile-toggle,
+.language-mobile-menu {
+    display: none;
+}
+
+
+/* =========================================================
+   LANGUAGE TOGGLE
+========================================================= */
+
+.switch {
+    position: relative;
+
+    display: inline-block;
+
+    width: 42px;
+    height: 22px;
+
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+
+    inset: 0;
+
+    cursor: pointer;
+
+    background-color: #ccc;
+
+    border-radius: 22px;
+
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    left: 3px;
+    top: 3px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+
+/* Toggle ON */
+.switch input:checked + .slider {
+    background-color: #333;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    border-top: 1px solid #ddd;
+
+    background-color: #f7f8fa;
+}
+
+.footer-wrapper {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-columns {
+    padding: 20px;
+}
+
+.footer-wrapper li {
+    list-style: none;
+}
+
+.footer-wrapper a {
+    height: 100%;
+
+    padding: 5px;
+
+    color: #891f05;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.5s;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.footer-wrapper a:hover {
+    text-decoration: underline;
+
+    transition: .5s;
+}
+
+.footer-block-title {
+    text-align: center;
+
+    padding-bottom: 10px;
+}
+
+.info-footer-adress {
+    list-style: none;
+}
+
+.info-footer-adress li {
+    padding: 5px;
+}
+
+.footer-links h3 {
+    padding: 0;
+}
+
+ul.footer-menu-links {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.footer-menu-links li {
+    padding: 1px;
+
+    display: flex;
+
+    width: fit-content;
+}
+
+.footer-information p {
+    padding-top: 10px;
+}
+
+.copyright {
+    border-top: 1px solid #ddd;
+
+    height: 20px;
+}
+
+.sp-copyright {
+    font-size: 12px;
+
+    padding: 2px;
+}
+
+.copyright-wrapper {
+    padding: 0 20px;
+}
+
+
+/* =========================================================
+   FIXED FOOTER
+========================================================= */
+
 .fixed-footer {
     position: fixed;
+
     bottom: 0;
+
     width: 100%;
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       CONTAINER
+    ----------------------------------------------------- */
 
     .container {
         max-width: 768px;
     }
 
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
+
+    header {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 70px;
+    }
+
+    header .container {
+        position: relative;
+    }
+
+
+    /* -----------------------------------------------------
+       BURGER
+    ----------------------------------------------------- */
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+
+    /* -----------------------------------------------------
+       LOGO
+    ----------------------------------------------------- */
+
+    .logo > a {
+        display: flex;
+
+        height: 70px;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVIGATION
+    ----------------------------------------------------- */
+
+    #nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background: #fff;
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+                max-height 0.35s ease,
+                opacity 0.25s ease,
+                visibility 0.25s ease;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    #nav.active {
+        max-height: calc(100vh - 70px);
+
+        opacity: 1;
+        visibility: visible;
+
+        overflow-y: auto;
+
+        border-radius: 0 0 5px 5px;
+    }
+
+
+    /* -----------------------------------------------------
+       MAIN MENU
+    ----------------------------------------------------- */
+
+    .menu {
+        display: block;
+
+        width: 100%;
+
+        /*padding: 10px 0;*/
+    }
+
+    .menu > li {
+        width: 100%;
+
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu > li:last-child {
+        border-bottom: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE DROPDOWNS
+    ----------------------------------------------------- */
+
+    .menu > li > .submenu,
+    .menu .submenu .submenu {
+
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin: 0;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+
+        display: none;
+    }
+
+
+    .menu li.open > .submenu {
+        display: block;
+    }
+
+
+    .menu > li > .submenu {
+        background: #f7f7f7;
+    }
+
+
+    .menu > li > .submenu > li > a {
+        padding: 13px 20px 13px 35px;
+
+        white-space: normal;
+    }
+
+
+    .menu > li > .submenu > li > .submenu {
+        background: #eeeeee;
+    }
+
+
+    .menu > li > .submenu > li > .submenu > li > a {
+        padding: 12px 20px 12px 50px;
+    }
+
+
+    /* -----------------------------------------------------
+       ARROWS FOR SUBMENUS
+    ----------------------------------------------------- */
+
+    .has-submenu > .submenu-toggle {
+        position: relative;
+
+        padding-right: 45px !important;
+    }
+
+    .has-submenu > .submenu-toggle::after {
+        content: "";
+
+        position: absolute;
+
+        right: 20px;
+        top: 50%;
+
+        width: 8px;
+        height: 8px;
+
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+
+        transform:
+                translateY(-70%)
+                rotate(45deg);
+
+        transition:
+                transform 0.25s ease;
+    }
+
+
+    .has-submenu.open > .submenu-toggle::after {
+        transform:
+                translateY(-30%)
+                rotate(225deg);
+    }
+
+
+    /* -----------------------------------------------------
+       AUTHORS / CONTACTS
+    ----------------------------------------------------- */
+
+    .sp-menu-item > a {
+        padding: 15px 20px;
+    }
+
+
+    /* =====================================================
+       LANGUAGE - MOBILE
+    ===================================================== */
+
+    .language-toggle {
+        display: none;
+    }
+
+
+    .language-mobile-toggle {
+        display: flex;
+
+        width: 100%;
+
+        align-items: center;
+
+        padding:
+                15px 45px 15px 20px !important;
+
+        position: relative;
+
+        color: #891f05;
+
+        font-weight: bold;
+
+        text-decoration: none;
+    }
+
+
+    .language-mobile-menu {
+        display: none;
+
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin: 0;
+
+        background: #eeeeee;
+
+        box-shadow: none;
+
+        list-style: none;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+    }
+
+
+    .language-switcher.open > .language-mobile-menu {
+        display: block;
+    }
+
+
+    .language-mobile-menu > li > a {
+        display: block;
+
+        padding: 12px 20px 12px 50px;
+
+        color: #222;
+
+        text-decoration: none;
+
+        /*font-size: 14px;*/
+
+        font-weight: normal;
+    }
+
+
+    .language-mobile-menu > li > a:hover {
+        background-color: #f5f5f5;
+
+        color: #891f05;
+    }
+
+
+    .language-switcher > .language-mobile-toggle::after {
+        content: "";
+
+        position: absolute;
+
+        right: 20px;
+        top: 50%;
+
+        width: 8px;
+        height: 8px;
+
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+
+        transform:
+                translateY(-70%)
+                rotate(45deg);
+
+        transition:
+                transform 0.25s ease;
+    }
+
+
+    .language-switcher.open > .language-mobile-toggle::after {
+        transform:
+                translateY(-30%)
+                rotate(225deg);
+    }
+
+
+    /* -----------------------------------------------------
+       OTHER MOBILE CONTENT
+    ----------------------------------------------------- */
+
     .about-journal {
         display: flex;
         flex-direction: column;
+
         margin-top: 110px;
     }
 
@@ -357,10 +1081,6 @@ ul.footer-menu-links li {
         margin-top: 110px;
     }
 
-    .issue-wrapper {
-        margin-top: 110px;
-    }
-
     .issue-data {
         flex-direction: column;
     }
@@ -372,339 +1092,54 @@ ul.footer-menu-links li {
     .fixed-footer {
         position: relative;
     }
-}
 
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    position: relative;
-    z-index: 1000;
-    background-color: #f7f8fa;
-    border-bottom: 1px solid #ddd;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 25px;
-}
-
-/* Бургер по умолчанию скрыт */
-.burger {
-    display: none;
-    width: 26px;
-    height: 21px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 1100;
-}
-
-.burger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #222;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-
-/* =========================
-   DESKTOP MENU
-========================= */
-
-#nav {
-    display: block;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    position: relative;
-}
-
-.menu a {
-    display: block;
-    text-decoration: none;
-    color: #222;
-}
-
-.menu > li > a {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    padding: 20px 15px;
-    border-radius: 20px;
-    color: #891f05;
-    font-weight: bold;
-    transition: .5s;
-}
-
-.menu>li>a:hover {
-    background: #891f05;
-    color: white;
-}
-
-/* Первый уровень dropdown */
-.menu > li > .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    min-width: 200px;
-
-    /*padding: 10px 0;*/
-    margin: 0;
-
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
-    list-style: none;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-
-    transition: all 0.25s ease;
-}
-
-/* Открытие dropdown на desktop */
-.menu > li:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Элементы dropdown */
-.menu > li > .submenu > li a {
-    padding: 10px 15px;
-    white-space: nowrap;
-}
-
-/* Ховер для элементов подменю */
-.menu > li > .submenu > li a:hover {
-    background: #f5f5f5 !important;
-    color: black !important;
-}
-
-/* Вложенное меню */
-.menu .submenu .submenu {
-    position: absolute;
-    top: 0;
-    left: 100%;
-
-    min-width: 200px;
-
-    /*padding: 10px 10px;*/
-    margin: 0;
-
-    background: #fff;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
-
-    list-style: none;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateX(10px);
-
-    transition: all 0.25s ease;
-}
-
-.menu .submenu > li:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 70px;
+    .footer-columns {
+        border-bottom: 1px solid #ddd;
     }
 
-    header .container {
-        position: relative;
+    .footer-information.footer-columns {
+        border: none;
     }
 
-    /* Показываем бургер */
-    .burger {
-        display: flex;
+    .copyright {
+        height: 40px;
     }
 
-    /* Анимация бургера */
-    .burger.active span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .burger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-
-    /* Навигация */
-    #nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-
-        background: #fff;
-
-        max-height: 0;
-        overflow: hidden;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transition:
-                max-height 0.35s ease,
-                opacity 0.25s ease,
-                visibility 0.25s ease;
-
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    }
-
-    #nav.active {
-        max-height: calc(100vh - 70px);
-        opacity: 1;
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    .logo > a {
-        display: flex;
-        height: 70px;
-    }
-
-    /* Главное меню становится вертикальным */
-    .menu {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu > li {
-        width: 100%;
-        border-bottom: 1px solid #eee;
-    }
-
-    .menu > li:last-child {
-        border-bottom: none;
-    }
-
-
-    /* Убираем desktop dropdown */
-    .menu > li > .submenu,
-    .menu .submenu .submenu {
-        position: static;
-
-        width: 100%;
-        min-width: 0;
-
-        padding: 0;
-        margin: 0;
-
-        box-shadow: none;
-
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-
-        display: none;
-    }
-
-    /* Открытые подменю */
-    .menu li.open > .submenu {
-        display: block;
-    }
-
-    /* Первый уровень подменю */
-    .menu > li > .submenu {
-        background: #f7f7f7;
-    }
-
-    .menu > li > .submenu > li > a {
-        padding: 13px 20px 13px 35px;
-        white-space: normal;
-    }
-
-    /* Второй уровень */
-    .menu > li > .submenu > li > .submenu {
-        background: #eeeeee;
-    }
-
-    .menu > li > .submenu > li > .submenu > li > a {
-        padding: 12px 20px 12px 50px;
-    }
-
-    /* Стрелочка у пунктов с подменю */
-    .has-submenu > .submenu-toggle {
-        position: relative;
-        padding-right: 45px !important;
-    }
-
-    .has-submenu > .submenu-toggle::after {
-        content: "";
-        position: absolute;
-
-        right: 20px;
-        top: 50%;
-
-        width: 8px;
-        height: 8px;
-
-        border-right: 2px solid #222;
-        border-bottom: 2px solid #222;
-
-        transform: translateY(-70%) rotate(45deg);
-
-        transition: transform 0.25s ease;
-    }
-
-    .has-submenu.open > .submenu-toggle::after {
-        transform: translateY(-30%) rotate(225deg);
-    }
-
-    /* Чтобы пункты Авторам/Контакты выглядели так же */
-    .sp-menu-item > a {
-        padding: 15px 20px;
+    .founder-contacts {
+        max-width: 100%;
     }
 }
 
 
-/* Дефолтные значения для мобильной версии ховера для элемента */
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
 @media (hover: none) {
+
     .submenu-toggle:hover {
         background-color: white !important;
+
         color: #891f05 !important;
     }
 
     .sp-menu-item > a:hover {
         background-color: white !important;
+
         color: #891f05 !important;
+    }
+}
+
+@media (min-width: 769px) {
+    a.submenu-toggle.language-mobile-toggle {
+        display: none;
+    }
+
+    .menu > li > ul > li > ul > li > a:hover {
+        background-color: #f5f5f5;
+    }
+
+    .article-content h3.footer-block-title {
+        margin-right: 30%;
     }
 }
