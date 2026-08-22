@@ -71,9 +71,9 @@ jobs:
           ssh \
             -i ~/.ssh/id_ed25519 \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'if [ -f /opt/nvuc/nvuc-app.jar ]; then
-               cp /opt/nvuc/nvuc-app.jar \
-                  /opt/nvuc/nvuc-app.jar.backup;
+            'if [ -f /opt/nvuc/app/nvuc-app.jar ]; then
+               cp /opt/nvuc/app/nvuc-app.jar \
+                  /opt/nvuc/app/nvuc-app.jar.backup;
              fi'
 
       - name: Upload new JAR
@@ -81,7 +81,7 @@ jobs:
           scp \
             -i ~/.ssh/id_ed25519 \
             deploy/*.jar \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/opt/nvuc/nvuc-0.0.1-SNAPSHOT.jar
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/opt/nvuc/app/nvuc-app.jar
 
       - name: Restart application
         run: |
