@@ -308,8 +308,8 @@ VALUES (2019,
         <em>Kolganova O. V.</em> 25 years of artistic activity of composer and conductor Igor Sergeevich Miklashevsky (1894–1942): from the symphonic poem "Sisyphus" to the Concerto for Piano and Orchestra<br><br>
         ISSUES OF INSTRUMENTOLOGY<br>
         <em>Jiajun Lin.</em> Water metaphors in the structure and performance techniques of Chinese traditional musical instruments guqin and guzheng<br><br>
-        FIGURES OF MUSICAL CULTURE IN RUSSIAN REGIONS<br><em>Ermakov A. A.</em> Implementation of genre specifics of children''s opera for amateur theatre in the works of M. A. Baska</p>',
-        '<p>ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        FIGURES OF MUSICAL CULTURE IN RUSSIAN REGIONS<br><em>Ermakov A. A.</em> Implementation of genre specifics of children''s opera for amateur theatre in the works of M. A. Baska</p>
+        <p>ISSUES OF CONTEMPORARY MUSICOLOGY<br>
         <em>Demchenko A. I.</em> Cardinal paradigms of D. D. Shostakovich''s creative work: (to the 120th anniversary of his birth)<br>
         <em>Galkin A. A.</em> Poetics of nature in Gustav Mahler''s symphonies<br><br>MUSICAL SCIENCE AND PERFORMANCE<br>
         <em>Efimova N.I., Rudaya A.S.</em> Primo uomo in Settecento opera: status and position in society<br><br>
