@@ -136,7 +136,7 @@ main {
 }
 
 .current-issue-cover {
-    min-width: 30%;
+    min-width: 50%;
 
     display: flex;
     justify-content: center;
