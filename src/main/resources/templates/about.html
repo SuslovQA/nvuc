@@ -4,13 +4,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Об издании</title>
+    <title th:text="#{menu.about}">Об издании</title>
 
     <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
 </head>
 
 <body>
+
+<script src="/js/script.js"></script>
 
 <header>
     <div class="container">
@@ -19,46 +21,97 @@
             <a href="/"><img th:src="@{/images/logo.png}" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="/">Архив выпусков</a>
-                    <ul class="drop-down">
-                        <li th:each="entry : ${archive}">
-                            <a href="#" th:text="${entry.key}"></a>
-                            <ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav">
+            <ul class="menu" id="menu">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle" th:text="#{menu.archive}">Архив выпусков</a>
+                    <ul class="drop-down submenu">
+                        <li class="has-submenu" th:each="entry : ${archive}">
+                            <a href="#" class="submenu-toggle" th:text="${entry.key}"></a>
+                            <ul class="submenu">
                                 <li th:each="journal : ${entry.value}">
                                     <a th:href="@{/journal/{id}(id=${journal.id})}"
-                                       th:text="'Выпуск № ' + ${journal.issue}"></a>
+                                       th:text="#{journal.issue} + ' № ' + ${journal.issue}"></a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="sp-menu-item">
-                    <a>Об издании</a>
-                    <ul class="drop-down">
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle" th:text="#{menu.about}">Об издании</a>
+                    <ul class="drop-down submenu">
                         <li>
-                            <a href="/about">Информация об издании</a>
+                            <a href="/about" th:text="#{menu.about-information}">Информация об издании</a>
                         </li>
                         <li>
-                            <a href="/founder">Учредитель и издатель</a>
+                            <a href="/founder" th:text="#{menu.founder}">Учредитель и издатель</a>
                         </li>
                         <li>
-                            <a th:href="@{/pdf/documents/charter}" target="_blank">Устав</a>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank"
+                               th:text="#{menu.charter}">Устав</a>
                         </li>
                         <li>
-                            <a href="/editorial-board">Редакционная коллегия</a></li>
+                            <a href="/editorial-board" th:text="#{menu.editorial-board}">Редакционная коллегия</a></li>
                         <li>
-                            <a href="/editorial-ethics">Редакционная этика</a></li>
+                            <a href="/editorial-ethics" th:text="#{menu.editorial-ethic}">Редакционная этика</a></li>
                     </ul>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/for-authors ">Авторам</a>
+                    <a href="/for-authors" th:text="#{menu.authors}">Авторам</a>
                 </li>
                 <li class="sp-menu-item">
-                    <a href="/contacts">Контакты</a>
+                    <a href="/contacts" th:text="#{menu.contacts}">Контакты</a>
                 </li>
+                <li class="language-switcher has-submenu">
+
+                    <!-- DESKTOP -->
+                    <div class="language-toggle">
+                        <span>RU</span>
+
+                        <label class="switch">
+                            <input type="checkbox"
+                                   th:checked="${#locale.language == 'en'}"
+                                   onchange="changeLanguage(this)">
+                            <span class="slider"></span>
+                        </label>
+
+                        <span>EN</span>
+                    </div>
+
+                    <!-- MOBILE -->
+                    <a href="#"
+                       class="submenu-toggle language-mobile-toggle"
+                       onclick="return false;"
+                       th:text="${#locale.language == 'en' ? 'EN' : 'RU'}">
+                        Русский
+                    </a>
+
+                    <ul class="submenu language-mobile-menu">
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('ru'); return false;">
+                                Русский
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                               onclick="changeLanguageMobile('en'); return false;">
+                                English
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
         </nav>
     </div>
@@ -70,42 +123,10 @@
             <div class="issue-wrapper">
                 <div class="about-wrapper">
                 <div class="header-article">
-                    <h2>Об издании</h2>
+                    <h2 th:text="#{menu.about}">Об издании</h2>
                 </div>
                 <div class="article-content">
-                    <p><strong>«Музыка в системе культуры:</strong> Научный вестник Уральской консерватории»
-                        –
-                        периодическое печатное издание, публикующее научные труды представителей российских
-                        консерваторий, вузов
-                        искусств.</p>
-                    <p>Тематика издания включает актуальные теоретические и исторические
-                        проблемы
-                        современного музыкознания, различные аспекты исполнительства, музыкального краеведения,
-                        фольклористики,
-                        духовно-музыкальной культуры, музыкальной педагогики, истории музыкального образования.</p>
-                    <p>Журнал издаётся с 2005 г. В 2005–2011 гг. выходил под названием
-                        «Музыка в
-                        системе культуры». С 2013 г. издаётся под названием «Музыка в системе культуры: Научный вестник
-                        Уральской
-                        консерватории». Журнал включён в Российский индекс научного цитирования (РИНЦ).</p>
-                    <p>С 21 февраля 2022 г. журнал включен в перечень ВАК по следующим специальностям:</p>
-                    <ul>
-                        <li>5.10.1. Теория и история культуры, искусства (искусствоведение),</li>
-                        <li>5.10.1. Теория и история культуры, искусства (культурология),&nbsp;</li>
-                        <li style="text-align: justify;">5.10.3. Виды искусства (музыкальное искусство)
-                            (искусствоведение)
-                        </li>
-                    </ul>
-                    <p>Зарегистрирован в Федеральной службе по надзору в сфере связи,
-                        информационных
-                        технологий и массовых коммуникаций.</p>
-                    <p>Свидетельство о регистрации средств массовой информации: ПИ № ФС
-                        77-78783 от
-                        30
-                        июля 2020 г.</p>
-                    <p>ISSN 2658-7858</p>
-                    <p>Номер подписного индекса в каталоге «Урал-Пресс»: ВН018387</p>
-                    <p>12+</p>
+                    <div th:utext="#{about.main-text}"></div>
                 </div>
             </div>
         </div>
@@ -117,41 +138,42 @@
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-adress footer-columns">
-                <h3 class="footer-block-title">Контакты</h3>
+                <h3 class="footer-block-title" th:text="#{home.footer-contacts-header}">Контакты</h3>
 
                 <ul class="info-footer-adress">
-                    <li class="adress">620014, Россия, Екатеринбург, пр. Ленина, 26</li>
+                    <li><p th:text="#{home.footer-contacts-adress}"></p></li>
                     <li class="mail">nvuc-uralconsv@rambler.ru</li>
-                    <li class="phone"><p>+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343) 371‑67‑61 (факс)</p></li>
-                    <li class="time">Часы работы: 10:00 - 17:00</li>
+                    <li class="phone"><p th:utext="#{home.footer-contacts-tel}">+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343)
+                        371‑67‑61 (факс)</p></li>
+                    <li class="time" th:text="#{home.footer-contacts-hours}">Часы работы: 10:00 - 17:00</li>
                 </ul>
             </div>
 
             <div class="footer-links footer-columns">
-                <h3 class="footer-block-title">Полезные ссылки</h3>
+                <h3 class="footer-block-title" th:text="#{home.footer-links-header}">Полезные ссылки</h3>
 
                 <ul class="footer-menu-links">
-                    <li class="item-632"><a href="https://culture.gov.ru/">Министерство культуры РФ</a></li>
-                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank">УГК им. М.П. Мусоргского</a>
+                    <li class="item-632"><a href="https://culture.gov.ru/" th:text="#{home.footer-links-first}">Министерство
+                        культуры РФ</a></li>
+                    <li class="item-630"><a href="https://uralconsv.org/" target="_blank"
+                                            th:text="#{home.footer-links-second}">УГК им. М.П. Мусоргского</a>
                     </li>
-                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank">Слово о
+                    <li class="item-633"><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank"
+                                            th:text="#{home.footer-links-third}">Слово о
                         музыке</a>
                     </li>
                     <li class="item-631"><a href="https://www.elibrary.ru/defaultx.asp" target="_blank">eLIBRARY.RU</a>
                     </li>
-                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/">Музыкальное искусство Евразии. Традици и
+                    <li class="item-634"><a href="https://eurasia.mosconsv.ru/" th:text="#{home.footer-links-last}">Музыкальное
+                        искусство Евразии. Традиции
+                        и
                         современность</a></li>
                 </ul>
             </div>
 
             <div class="footer-information footer-columns">
-                <h3 class="footer-block-title">Информация</h3>
-                <h4>"Музыка в системе культуры: Научный вестник Уральской консерватории"</h4>
-                <p>Научное периодическое издание</p>
-                <p>Четыре раза в год, формат В5</p>
-                <p>Свидетельство о регистрации средств массовой информации:</p>
-                <p>ПИ № ФС 77-78783 от 30 июля 2020 г.</p>
-                <p>ISSN 2658-7858</p>
+                <h3 class="footer-block-title" th:text="#{home.footer-information-header}">Информация</h3>
+                <div th:utext="#{home.footer-information-text}"></div>
             </div>
 
 
@@ -159,7 +181,9 @@
     </div>
     <div class="copyright">
         <div class="container">
-            <span class="sp-copyright">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            <div class="copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+            </div>
         </div>
     </div>
 </div>

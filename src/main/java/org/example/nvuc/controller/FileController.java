@@ -1,7 +1,6 @@
 package org.example.nvuc.controller;
 
 import org.example.nvuc.service.FileStorageService;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
@@ -14,8 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.nio.file.Path;
+import java.util.Locale;
 
-import static org.springframework.util.ResourceUtils.getFile;
 
 @Controller
 @RequestMapping("/files")
@@ -37,21 +36,28 @@ public class FileController {
     }
 
     @GetMapping("/documents/{fileName}")
-    public ResponseEntity<Resource> openDocument(@PathVariable String fileName) {
-        ClassPathResource resource = new ClassPathResource("static/pdf/documents/" + fileName + ".pdf");
+    public ResponseEntity<Resource> openDocument(
+            @PathVariable String fileName,
+            Locale locale) {
+
+        String actualFileName = fileName;
+
+        if ("en".equals(locale.getLanguage())) {
+            actualFileName = addEnglishSuffix(fileName);
+        }
 
         return getFile(
-                fileStorageService.getDocument(fileName),
-                fileName,
+                fileStorageService.getDocument(actualFileName),
+                actualFileName,
                 MediaType.APPLICATION_PDF
         );
     }
 
-    @GetMapping("/images/{fileName}")
-    public ResponseEntity<Resource> getImage(@PathVariable String fileName) {
+    @GetMapping("/covers/{fileName}")
+    public ResponseEntity<Resource> getCover(@PathVariable String fileName) {
 
         try {
-            Path file = fileStorageService.getImage(fileName);
+            Path file = fileStorageService.getCover(fileName);
 
             Resource resource = new UrlResource(file.toUri());
 
@@ -71,9 +77,22 @@ public class FileController {
         }
     }
 
-    private ResponseEntity<Resource> getFile(Path file,
-                                              String filName,
-                                              MediaType mediaType) {
+    private String addEnglishSuffix(String fileName) {
+
+        if (!fileName.toLowerCase().endsWith(".pdf")) {
+            return fileName;
+        }
+
+        return fileName.substring(
+                0,
+                fileName.length() - 4
+        ) + "_en.pdf";
+    }
+
+    private ResponseEntity<Resource> getFile(
+            Path file,
+            String fileName,
+            MediaType mediaType) {
 
         try {
             Resource resource = new UrlResource(file.toUri());
@@ -85,7 +104,7 @@ public class FileController {
             return ResponseEntity.ok()
                     .contentType(mediaType)
                     .header(HttpHeaders.CONTENT_DISPOSITION,
-                            "inline; filename=\"" + filName + "\"")
+                            "inline; filename=\"" + fileName + "\"")
                     .body(resource);
         } catch (Exception e) {
             return ResponseEntity.internalServerError().build();

@@ -10,14 +10,14 @@ import java.nio.file.Paths;
 public class FileStorageService {
 
     private final Path pdfDirectory;
-    private final Path imagesDirectory;
+    private final Path coversDirectory;
     private final Path documentsDirectory;
 
     public FileStorageService(@Value("${journal.files.path}") String filePath) {
         Path root = Paths.get(filePath);
 
         this.pdfDirectory = root.resolve("pdf");
-        this.imagesDirectory = root.resolve("images");
+        this.coversDirectory = root.resolve("covers");
         this.documentsDirectory = root.resolve("documents");
     }
 
@@ -27,8 +27,8 @@ public class FileStorageService {
                 .normalize();
     }
 
-    public Path getImage(String fileName) {
-        return imagesDirectory
+    public Path getCover(String fileName) {
+        return coversDirectory
                 .resolve(fileName)
                 .normalize();
     }
