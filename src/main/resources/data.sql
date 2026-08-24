@@ -215,6 +215,39 @@ VALUES (2019,
         'cover39.jpg',
         '2024_39.pdf'),
 
+        (2025,
+        41,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 41',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 41',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2025</p>
+        <p><em>Количество страниц: 65</em>&nbsp;с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2025</p>
+         <p><em>Number of pages: 65</em>&nbsp;pp.</p>
+         <p><em>Circulation:</em> 100 copies.</p>
+         <p>ISSN:&nbsp;2658-7858',
+         '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+         <em>Молчанов А. С.</em> Вопросы симметрии, музыкальной формы и повтора в лекциях Карлоса Чавеса<br><br>
+         ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+         <em>Черниченко Д. В.</em> Ретроспектива секстетов Гаэтано Брунетти и Луиджи Боккерини: анализ музыкальных инноваций и их культурного контекста<br>
+         <em>Пыжьянова А. Г.</em> Романтический тип героя-художника и его преломление в австро-немецкой Künstleroper начала ХХ века<br>
+         <em>Денисова Г. А.</em> Шесть романсов на слова японских поэтов для тенора с оркестром ор. 21 Д. Шостаковича: к проблеме жанра Orchestergesang<br>
+         <em>Чумаченко Д. И.</em> «Новая простота» в произведениях Альфреда Шнитке 1970-х годов: «Stille Musik» и «Stille Nacht»<br><br>
+         ИСПОЛНИТЕЛЬ В ЗЕРКАЛЕ МУЗЫКИ<br>
+         <em>Юсупова В. В.</em> Нина Александровна Фриде в музыкальных стихотворениях Ц. А. Кюи op. 67 (1904)</p>',
+         '<p>ISSUES OF MUSIC THEORY<br>
+          <em>Molchanov A. S.</em> Questions of Symmetry, Musical Form, and Repetition in the Lectures of Carlos Chávez<br><br>
+          FROM THE HISTORY OF MUSICAL CULTURE<br>
+          <em>Chernichenko D. V.</em> A Retrospective of the Sextets by Gaetano Brunetti and Luigi Boccherini: Analysis of Musical Innovations and Their Cultural Context<br>
+          <em>Pyzhyanova A. G.</em> The Romantic Type of the Artist‑Hero and Its Refraction in the Austro‑German Künstleroper of the Early 20th Century<br>
+          <em>Denisova G. A.</em> Six Romances on Words by Japanese Poets for Tenor and Orchestra, Op. 21 by D. Shostakovich: On the Problem of the Orchestergesang Genre<br>
+          <em>Chumachenko D. I.</em> "New Simplicity" in the Works of Alfred Schnittke from the 1970s: "Stille Musik" and "Stille Nacht"<br><br>
+          PERFORMER IN THE MIRROR OF MUSIC<br>
+          <em>Yusupova V. V.</em> Nina Aleksandrovna Friede in the Musical Poems by Ts. A. Cui, Op. 67 (1904)</p>',
+          'cover41.jpg',
+          '2025_41.pdf'),
+
        (2025,
         42,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 42',
