@@ -227,21 +227,22 @@ VALUES (2019,
         <p><em>Number of pages: 56</em>&nbsp;pp.</p>
         <p><em>Circulation:</em> 100 copies.</p>
         <p>ISSN:&nbsp;2658-7858',
-        '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+        '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br><br>
         Тихомирова А. А. Рассредоточенный тематизм в Новейшей музыке: основные векторы проявления в формообразовании<br>
-        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>Возчиков Д. В. Музыкальная культура Южной и Юго-Восточной Азии в травелогах венецианских купцов XV–XVI веков<br>
+        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>Возчиков Д. В. Музыкальная культура Южной и Юго-Восточной Азии в травелогах венецианских купцов XV–XVI веков<br><br>
         Логинова Л. Н. Джон Кейдж – изобретатель языков и смыслов<br>
         Клочкова Е. В. Индивидуальный мир композиторского творчества: к 90-летию Алемдара Караманова<br>
         Воротынцева Л. А. Теоретическое осмысление «новой простоты» в отечественном культурном пространстве<br>
-        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br><br>
         Ковалёв А. Б. Русская духовная музыка как одно из ведущих направлений в концертной, образовательной и научной деятельности Академии хорового искусства имени В. С. Попова</p>',
-        '<p>ISSUES OF MUSIC THEORY<br>
+        '<p>ISSUES OF MUSIC THEORY<br><br>
          Tikhomirova A. A. Dispersed Thematicism in Newest Music: Main Vectors of Manifestation in Form‑Building<br>
-         FROM THE HISTORY OF MUSICAL CULTURE<br>Vozchikov D. V. Musical Culture of South and Southeast Asia in the Travelogues of Venetian Merchants of the 15th–16th Centuries<br>
+         FROM THE HISTORY OF MUSICAL CULTURE<br><br>
+         Vozchikov D. V. Musical Culture of South and Southeast Asia in the Travelogues of Venetian Merchants of the 15th–16th Centuries<br>
          Loginova L. N. John Cage – Inventor of Languages and Meanings<br>
          Klochkova E. V. The Individual World of Compositional Creativity: On the 90th Anniversary of Alemdar Karamanov<br>
          Vorotyntseva L. A. Theoretical Understanding of the "New Simplicity" in the Russian Cultural Space<br>
-         MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
+         MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br><br>
          Kovalyov A. B. Russian Sacred Music as One of the Leading Directions in the Concert, Educational, and Research Activities of the Popov Academy of Choral Art</p>',
          'cover40.jpg',
          '2025_40.pdf'),
