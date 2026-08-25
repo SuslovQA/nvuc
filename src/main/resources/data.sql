@@ -215,7 +215,42 @@ VALUES (2019,
         'cover39.jpg',
         '2024_39.pdf'),
 
-        (2025,
+       (2024,
+        38,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 38',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 38',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2024</p>
+        <p><em>Количество страниц: 56</em>&nbsp;с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2024</p>
+        <p><em>Number of pages: 56</em>&nbsp;pp.</p>
+        <p><em>Circulation:</em> 100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858',
+        '<p>ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+        <em>Шелудякова О. Е. </em>Стилевые тенденции православной музыки русской эмиграции<br><br>
+        МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+        <em>Бородин Б. Б. </em>Статья Ферруччо Бузони «Значимость обработки»: комментарии к переводу
+        <em>Субботина Е. И. </em>Ансамбль как форма художественного диалога<br><br>
+        ВОПРОСЫ ИНСТРУМЕНТОВЕДЕНИЯ<br>
+        <em>Вялухина В. И. </em>Lira organizzata и «культ экзотических инструментов» в музыке второй половины XVIII века
+        <em>Устюгова А. В. </em>К истории создания «баховского» смычка<br><br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Тереханова К. Ю. </em>Советская музыкальная школа в годы Великой Отечественной войны: к вопросу взаимодействия общего и специального музыкального образования</p>',
+        '<p>FROM THE HISTORY OF MUSICAL CULTURE<br>
+        <em>Sheludyakova O. E. </em>Stylistic trends of Orthodox music of the Russian emigration<br><br>
+        MUSICAL SCIENCE AND PERFORMANCE<br>
+        <em>Borodin B. B. </em>Ferruccio Busoni''s article "The Significance of Arrangement": commentary on the translation
+        <em>Subbotina E. I. </em>Ensemble as a form of artistic dialogue<br><br>
+        ISSUES OF INSTRUMENTOLOGY<br>
+        <em>Vyalukhina V. I. </em>Lira organizzata and the "cult of exotic instruments" in the music of the second half of the 18th century
+        <em>Ustyugova A. V. </em>On the history of the creation of the "Bach" bow<br><br>
+        MUSIC EDUCATION: HISTORY, THEORY, PRACTICE<br>
+        <em>Terekhanova K. Yu. </em>The Soviet music school during the Great Patriotic War: on the issue of interaction between general and special music education</p>',
+        'cover38.jpg',
+        '2024_38.pdf'),
+
+       (2025,
         40,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 40',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 40',
@@ -244,10 +279,10 @@ VALUES (2019,
          Vorotyntseva L. A. Theoretical Understanding of the "New Simplicity" in the Russian Cultural Space<br>
          MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br><br>
          Kovalyov A. B. Russian Sacred Music as One of the Leading Directions in the Concert, Educational, and Research Activities of the Popov Academy of Choral Art</p>',
-         'cover40.jpg',
-         '2025_40.pdf'),
+        'cover40.jpg',
+        '2025_40.pdf'),
 
-        (2025,
+       (2025,
         41,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 41',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 41',
@@ -255,30 +290,30 @@ VALUES (2019,
         <p><em>Количество страниц: 65</em>&nbsp;с.</p>
         <p><em>Тираж:</em>&nbsp;100 экз.</p>
          <p>ISSN:&nbsp;2658-7858</p>',
-         '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2025</p>
-         <p><em>Number of pages: 65</em>&nbsp;pp.</p>
-         <p><em>Circulation:</em> 100 copies.</p>
-         <p>ISSN:&nbsp;2658-7858',
-         '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
-         <em>Молчанов А. С.</em> Вопросы симметрии, музыкальной формы и повтора в лекциях Карлоса Чавеса<br><br>
-         ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
-         <em>Черниченко Д. В.</em> Ретроспектива секстетов Гаэтано Брунетти и Луиджи Боккерини: анализ музыкальных инноваций и их культурного контекста<br>
-         <em>Пыжьянова А. Г.</em> Романтический тип героя-художника и его преломление в австро-немецкой Künstleroper начала ХХ века<br>
-         <em>Денисова Г. А.</em> Шесть романсов на слова японских поэтов для тенора с оркестром ор. 21 Д. Шостаковича: к проблеме жанра Orchestergesang<br>
-         <em>Чумаченко Д. И.</em> «Новая простота» в произведениях Альфреда Шнитке 1970-х годов: «Stille Musik» и «Stille Nacht»<br><br>
-         ИСПОЛНИТЕЛЬ В ЗЕРКАЛЕ МУЗЫКИ<br>
-         <em>Юсупова В. В.</em> Нина Александровна Фриде в музыкальных стихотворениях Ц. А. Кюи op. 67 (1904)</p>',
-         '<p>ISSUES OF MUSIC THEORY<br>
-          <em>Molchanov A. S.</em> Questions of Symmetry, Musical Form, and Repetition in the Lectures of Carlos Chávez<br><br>
-          FROM THE HISTORY OF MUSICAL CULTURE<br>
-          <em>Chernichenko D. V.</em> A Retrospective of the Sextets by Gaetano Brunetti and Luigi Boccherini: Analysis of Musical Innovations and Their Cultural Context<br>
-          <em>Pyzhyanova A. G.</em> The Romantic Type of the Artist‑Hero and Its Refraction in the Austro‑German Künstleroper of the Early 20th Century<br>
-          <em>Denisova G. A.</em> Six Romances on Words by Japanese Poets for Tenor and Orchestra, Op. 21 by D. Shostakovich: On the Problem of the Orchestergesang Genre<br>
-          <em>Chumachenko D. I.</em> "New Simplicity" in the Works of Alfred Schnittke from the 1970s: "Stille Musik" and "Stille Nacht"<br><br>
-          PERFORMER IN THE MIRROR OF MUSIC<br>
-          <em>Yusupova V. V.</em> Nina Aleksandrovna Friede in the Musical Poems by Ts. A. Cui, Op. 67 (1904)</p>',
-          'cover41.jpg',
-          '2025_41.pdf'),
+        '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2025</p>
+        <p><em>Number of pages: 65</em>&nbsp;pp.</p>
+        <p><em>Circulation:</em> 100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858',
+        '<p>ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+        <em>Молчанов А. С.</em> Вопросы симметрии, музыкальной формы и повтора в лекциях Карлоса Чавеса<br><br>
+        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+        <em>Черниченко Д. В.</em> Ретроспектива секстетов Гаэтано Брунетти и Луиджи Боккерини: анализ музыкальных инноваций и их культурного контекста<br>
+        <em>Пыжьянова А. Г.</em> Романтический тип героя-художника и его преломление в австро-немецкой Künstleroper начала ХХ века<br>
+        <em>Денисова Г. А.</em> Шесть романсов на слова японских поэтов для тенора с оркестром ор. 21 Д. Шостаковича: к проблеме жанра Orchestergesang<br>
+        <em>Чумаченко Д. И.</em> «Новая простота» в произведениях Альфреда Шнитке 1970-х годов: «Stille Musik» и «Stille Nacht»<br><br>
+        ИСПОЛНИТЕЛЬ В ЗЕРКАЛЕ МУЗЫКИ<br>
+        <em>Юсупова В. В.</em> Нина Александровна Фриде в музыкальных стихотворениях Ц. А. Кюи op. 67 (1904)</p>',
+        '<p>ISSUES OF MUSIC THEORY<br>
+         <em>Molchanov A. S.</em> Questions of Symmetry, Musical Form, and Repetition in the Lectures of Carlos Chávez<br><br>
+         FROM THE HISTORY OF MUSICAL CULTURE<br>
+         <em>Chernichenko D. V.</em> A Retrospective of the Sextets by Gaetano Brunetti and Luigi Boccherini: Analysis of Musical Innovations and Their Cultural Context<br>
+         <em>Pyzhyanova A. G.</em> The Romantic Type of the Artist‑Hero and Its Refraction in the Austro‑German Künstleroper of the Early 20th Century<br>
+         <em>Denisova G. A.</em> Six Romances on Words by Japanese Poets for Tenor and Orchestra, Op. 21 by D. Shostakovich: On the Problem of the Orchestergesang Genre<br>
+         <em>Chumachenko D. I.</em> "New Simplicity" in the Works of Alfred Schnittke from the 1970s: "Stille Musik" and "Stille Nacht"<br><br>
+         PERFORMER IN THE MIRROR OF MUSIC<br>
+         <em>Yusupova V. V.</em> Nina Aleksandrovna Friede in the Musical Poems by Ts. A. Cui, Op. 67 (1904)</p>',
+        'cover41.jpg',
+        '2025_41.pdf'),
 
        (2025,
         42,
