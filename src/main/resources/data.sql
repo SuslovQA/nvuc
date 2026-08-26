@@ -92,7 +92,7 @@ VALUES (2019,
        (2019,
         17,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 17',
-        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 16',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 17',
         '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
          <p><strong>Материалы Международной научно-практической конференции</strong></p>
          <p>&nbsp;</p>
@@ -177,6 +177,53 @@ VALUES (2019,
          <p><em>Efimova N.</em>&nbsp;The Russian Musical Society / Imperial Russian Musical Society: Innovations of the Second Half of the 19th Century in the Projection of Dialogue between the Authorities and the Musical Community<br><br><br>&nbsp;&nbsp;</p>',
         'cover17.jpg',
         '2019_17.pdf'),
+
+        (2024,
+        36,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 36',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 36',
+        '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
+        <p><strong>Материалы Международной научно-практической конференции</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2024</p>
+        <p><em>Количество страниц:</em>&nbsp;107 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
+        <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2024</p>
+        <p><em>Number of pages:</em>&nbsp;107 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p>СОВРЕМЕННЫЕ ПРОБЛЕМЫ ИСКУССТВА<br>
+        <em>Лысенко С.Ю.</em> К проблеме композиторской режиссуры: музыкальная партитура и визуально-сценическое решение оперного спектакля<br><br>
+        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+        <em>Ионайтис О.Б.</em> А.Н. Радищев: музыка и поэзия в век Просвещения<br>
+        <em>Кадочников В.П.</em> Й. Гайдн «Семь слов Спасителя на кресте»: три версии – три жанра<br>
+        <em>Денисова Г.А.</em> Orchestergesang в творчестве Макса Регера: к вопросу о модели жанра<br>
+        <em>Петухова С.А.</em> «Огненный ангел»: премьеры и отклики (1928–1966)<br>
+        <em>Клочкова Е.В.</em> Творчество Алемдара Караманова в отечественных исследованиях второй половины XX – начала XXI веков<br><br>
+        МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+        <em>Меркулов А.М.</em> Л.А. Максимов как пианист-педагог в музыкальных классах и училищах ИРМО<br><br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Глушкова О.Р.</em> К вопросу включения предметов духовного содержания в современную образовательную программу подготовки музыкантов (на примере Московской консерватории РМО)</p>',
+        '<p>CONTEMPORARY PROBLEMS OF ART<br>
+        <em>Lysenko S.Yu.</em> On the Problem of Composer''s Direction: Musical Score and Visual‑Stage Solution of an Opera Performance<br><br>
+        FROM THE HISTORY OF MUSICAL CULTURE<br>
+        <em>Ionaĭtis O.B.</em> A.N. Radishchev: Music and Poetry in the Age of Enlightenment<br>
+        <em>Kadochnikov V.P.</em> J. Haydn''s "The Seven Last Words of Christ on the Cross": Three Versions – Three Genres<br>
+        <em>Denisova G.A.</em> Orchestergesang in the Works of Max Reger: On the Question of the Genre Model<br>
+        <em>Petukhova S.A.</em> "The Fiery Angel": Premieres and Responses (1928–1966)<br>
+        <em>Klochkova E.V.</em> The Works of Alemdar Karamanov in Russian Scholarship of the Second Half of the 20th – Early 21st Centuries<br><br>
+        MUSICAL SCIENCE AND PERFORMANCE<br>
+        <em>Merkulov A.M.</em> L.A. Maximov as a Pianist‑Teacher in the Music Classes and Schools of the IRMS (Imperial Russian Musical Society)<br><br>
+        MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
+        <em>Glushkova O.R.</em> On the Question of Including Subjects of Spiritual Content in the Modern Educational Curriculum for Musicians (on the Example of the Moscow Conservatory of the RMO)</p>',
+        'cover36.jpg',
+        '2025_36.pdf'),
 
         (2024,
         37,
