@@ -178,42 +178,42 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
-       (2024,
-        39,
-        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 39',
-        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 39',
+        (2024,
+        37,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 37',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 37',
         '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2024</p>
-        <p><em>Количество страниц: 66</em>&nbsp;с.</p>
+        <p><em>Количество страниц: 73</em>&nbsp;с.</p>
         <p><em>Тираж:</em>&nbsp;100 экз.</p>
         <p>ISSN:&nbsp;2658-7858</p>',
         '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2024</p>
-        <p><em>Number of pages: 66</em>&nbsp;pp.</p>
+        <p><em>Number of pages: 73</em>&nbsp;pp.</p>
         <p><em>Circulation:</em> 100 copies.</p>
         <p>ISSN:&nbsp;2658-7858',
-        '<p>ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
-        <em>Ефремов Н.А.</em> Регентское преемство в московском храме пророка Илии Обыденном: В.А. Хлебников и судьба его нотной коллекции<br>
-        <em> Слатвинская С.А.</em> Эволюция открытой формы в композиторском творчестве Эрла Брауна<br><br>
-        ПРОБЛЕМЫ ЭТНОМУЗЫКОЛОГИИ<br>
-        <em>Бахтияри Ф.Ф.</em> Проявление оппозиции «певческий голос – музыкальный инструмент» в музыкальной культуре народов Волго-Уралья<br><br>
+        '<p">ВОПРОСЫ ИСТОРИИ МУЗЫКИ<br>
+        <em>Любимов Д. В.</em> Сцена безумия Мелинды из оперы Ф. Эркеля «Банк Бан»: преломление европейских и национальных традиций<br>
+        <em>Пыжьянова А. Г.</em> Европейская Künstleroper первой трети XX века: конфликт художника и общества<br><br>
         МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
-        <em>Гагарина О.А., Кабилькова Н.Ю.</em> «Вариации на тему рококо» П.И. Чайковского: к проблеме редакций<br><br>
+        <em>Бородин Б. Б.</em> Ферруччо Бузони: мысли о фортепианном искусстве<br><br>МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Петухова С. А.</em> Оперный замысел Прокофьева и образ Александра Македонского<br><br>
         МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
-        <em>Городилова М.В., Мешкова А.С.</em> Музыка Макса Регера как дидактический материал<br><br>
-        СТРАНИЦЫ ИСТОРИИ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
-        <em>Евдокимова Н.К.</em> «Научно-методические записки» – первое печатное издание Уральской консерватории (1957–1973)</p>',
-        '<p>FROM THE HISTORY OF MUSICAL CULTURE<br>
-        <em>Efremov N.A.</em> Regent Succession in the Moscow Church of the Prophet Elijah the Ordinary: V.A. Khlebnikov and the Fate of His Sheet Music Collection<br>
-        <em>Slatvinskaya S.A.</em> Evolution of Open Form in the Compositional Work of Earle Brown<br><br>
-        PROBLEMS OF ETHNOMUSICOLOGY<br>
-        <em>Bakhtiyari F.F.</em> Manifestation of the Opposition "Singing Voice – Musical Instrument" in the Musical Culture of the Volga-Ural Peoples<br><br>
+        <em>Тереханова К. Ю.</em> Народные школы музыкального просвещения Петрограда после Октябрьской революции 1917 года: к вопросу о характере взаимодействия общего и специального музыкального образования<br>
+        <em>Евдокимова Н. К.</em> Кафедра сольного пения уральской консерватории: у истоков региональной науки (1934–1974)<br><br>
+        ПРОБЛЕМЫ МУЗЫКАЛЬНОЙ АКУСТИКИ<br>
+        <em>Рубин Л. С.</em> Слышим ли мы частоты выше 20 килогерц?</p>',
+        '<p">ISSUES OF MUSIC HISTORY<br>
+        <em>Lyubimov D. V.</em> Melinda''s Madness Scene from F. Erkel''s Opera "Bánk bán": Refraction of European and National Traditions<br>
+        <em>Pyzhyanova A. G.</em> European Künstleroper of the First Third of the 20th Century: Conflict of the Artist and Society<br><br>
         MUSICAL SCIENCE AND PERFORMANCE<br>
-        <em>Gagarina O.A., Kabilkova N.Yu.</em> Tchaikovsky''s "Variations on a Rococo Theme": On the Problem of Editions<br><br>
+        <em>Borodin B. B.</em> Ferruccio Busoni: Thoughts on Piano Art<br><br>MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Petukhova S. A.</em> Prokofiev''s Operatic Concept and the Image of Alexander the Great<br><br>
         MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
-        <em>Gorodilova M.V., Meshkova A.S.</em> The Music of Max Reger as Didactic Material<br><br>
-        PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
-        <em>Evdokimova N.K.</em> "Scientific and Methodological Notes" – The First Printed Publication of the Ural Conservatory (1957–1973)</p>',
-        'cover39.jpg',
-        '2024_39.pdf'),
+        <em>Terekhanova K. Yu.</em> People''s Schools of Musical Education in Petrograd after the October Revolution of 1917: On the Question of the Nature of Interaction between General and Special Musical Education<br>
+        <em>Evdokimova N. K.</em> The Department of Solo Singing of the Ural Conservatory: At the Origins of Regional Scholarship (1934–1974)<br><br>
+        PROBLEMS OF MUSICAL ACOUSTICS<br>
+        <em>Rubin L. S.</em> Can We Hear Frequencies Above 20 Kilohertz?</p">',
+        'cover37.jpg',
+        '2024_37.pdf'),
 
        (2024,
         38,
@@ -249,6 +249,43 @@ VALUES (2019,
         <em>Terekhanova K. Yu. </em>The Soviet music school during the Great Patriotic War: on the issue of interaction between general and special music education</p>',
         'cover38.jpg',
         '2024_38.pdf'),
+
+        (2024,
+         39,
+         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 39',
+         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 39',
+         '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2024</p>
+         <p><em>Количество страниц: 66</em>&nbsp;с.</p>
+         <p><em>Тираж:</em>&nbsp;100 экз.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p><em>Publisher:</em>&nbsp;Ural State Mussorgsky Conservatory. – Yekaterinburg: USMC, 2024</p>
+         <p><em>Number of pages: 66</em>&nbsp;pp.</p>
+         <p><em>Circulation:</em> 100 copies.</p>
+         <p>ISSN:&nbsp;2658-7858',
+         '<p>ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+         <em>Ефремов Н.А.</em> Регентское преемство в московском храме пророка Илии Обыденном: В.А. Хлебников и судьба его нотной коллекции<br>
+         <em> Слатвинская С.А.</em> Эволюция открытой формы в композиторском творчестве Эрла Брауна<br><br>
+         ПРОБЛЕМЫ ЭТНОМУЗЫКОЛОГИИ<br>
+         <em>Бахтияри Ф.Ф.</em> Проявление оппозиции «певческий голос – музыкальный инструмент» в музыкальной культуре народов Волго-Уралья<br><br>
+         МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+         <em>Гагарина О.А., Кабилькова Н.Ю.</em> «Вариации на тему рококо» П.И. Чайковского: к проблеме редакций<br><br>
+         МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+         <em>Городилова М.В., Мешкова А.С.</em> Музыка Макса Регера как дидактический материал<br><br>
+         СТРАНИЦЫ ИСТОРИИ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+         <em>Евдокимова Н.К.</em> «Научно-методические записки» – первое печатное издание Уральской консерватории (1957–1973)</p>',
+         '<p>FROM THE HISTORY OF MUSICAL CULTURE<br>
+         <em>Efremov N.A.</em> Regent Succession in the Moscow Church of the Prophet Elijah the Ordinary: V.A. Khlebnikov and the Fate of His Sheet Music Collection<br>
+         <em>Slatvinskaya S.A.</em> Evolution of Open Form in the Compositional Work of Earle Brown<br><br>
+         PROBLEMS OF ETHNOMUSICOLOGY<br>
+         <em>Bakhtiyari F.F.</em> Manifestation of the Opposition "Singing Voice – Musical Instrument" in the Musical Culture of the Volga-Ural Peoples<br><br>
+         MUSICAL SCIENCE AND PERFORMANCE<br>
+         <em>Gagarina O.A., Kabilkova N.Yu.</em> Tchaikovsky''s "Variations on a Rococo Theme": On the Problem of Editions<br><br>
+         MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
+         <em>Gorodilova M.V., Meshkova A.S.</em> The Music of Max Reger as Didactic Material<br><br>
+         PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
+         <em>Evdokimova N.K.</em> "Scientific and Methodological Notes" – The First Printed Publication of the Ural Conservatory (1957–1973)</p>',
+         'cover39.jpg',
+         '2024_39.pdf'),
 
        (2025,
         40,
