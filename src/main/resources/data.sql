@@ -178,6 +178,45 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
+        (2019,
+        19,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 19',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 19',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2019</p>
+        <p><em>Количество страниц:</em>&nbsp;60 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2019</p>
+        <p><em>Number of pages:</em>&nbsp;60 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ МУЗЫКАЛЬНОЙ ЭСТЕТИКИ<br>
+        <em>Бородин Б. Б.</em> Многоликий романтизм<br>
+        <em>Консон Г. Р.</em> О сущности трагических ораторий Г. Ф. Генделя<br><br>
+        ИЗ АРХИВОВ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>Григорьев В. Ю.</em> [О природе исполнительских движений]<br><br>
+        СОВЕТЫ МАСТЕРОВ<br>
+        <em>Рацер Д. Е.</em> Игра на рояле: как всегда быть в наилучшей форме<br><br>
+        К ИЗУЧЕНИЮ ИСПОЛНИТЕЛЬСКОГО РЕПЕРТУАРА ПИАНИСТА<br>
+        <em>Гаврилова М. В.</em> Исполнительские задачи пианиста в контексте интерпретации цикла М. П. Мусоргского «Картинки с выставки»<br><br>
+        СТРАНИЦЫ ИСТОРИИ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>Надельсон А. С.</em> О студенческом ансамбле старинной музыки УГК<br>
+        <em>Надельсон А. С.</em> Вспоминая друга</p>',
+        '<p>ISSUES OF MUSICAL AESTHETICS<br>
+        <em>Borodin B. B.</em> Multifaceted Romanticism<br>
+        <em>Konson G. R.</em> On the Essence of G. F. Handel''s Tragic Oratorios<br><br>
+        FROM THE ARCHIVES OF THE URAL CONSERVATORY<br>
+        <em>Grigoriev V. Yu.</em> [On the Nature of Performing Movements]<br><br>
+        ADVICE FROM MASTERS<br>
+        <em>Ratser D. E.</em> Piano Playing: How to Always Be in Top Form<br><br>
+        TO THE STUDY OF PIANIST PERFORMANCE REPERTOIRE<br>
+        <em>Gavrilova M. V.</em> Pianist''s Performance Tasks in the Context of Interpretation of M. P. Mussorgsky''s Cycle "Pictures at an Exhibition"<br><br>
+        PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
+        <em>Nadelson A. S.</em> On the Student Ensemble of Early Music at USMC<br>
+        <em>Nadelson A. S.</em> Remembering a Friend</p>',
+        'cover19.jpg',
+        '2019_19.pdf'),
+
         (2020,
         20,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 20',
