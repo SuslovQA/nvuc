@@ -179,6 +179,49 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2023,
+         32,
+         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 32',
+         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 32',
+         '<p><strong>Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 32</strong></p>
+         <p>&nbsp;</p>
+         <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
+         <p><em>Количество страниц:</em>&nbsp;97 с.</p>
+         <p><em>Тираж:</em>&nbsp;100 экз.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p><strong>Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 32</strong></p>
+         <p>&nbsp;</p>
+         <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
+         <p><em>Number of pages:</em>&nbsp;97 pp.</p>
+         <p><em>Circulation:</em>&nbsp;100 copies.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p">ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+         <em>Окунева Е. Г.</em> Теория полярности Зигфрида Карг-Элерта<br><br>
+         МУЗЫКАЛЬНАЯ КУЛЬТУРА: ИСТОРИЯ И СОВРЕМЕННОСТЬ<br>
+         <em>Панкина Е. В., Юшкова К. С.</em> Хосе де Каньисарес в истории придворной сарсуэлы<br>
+         <em>Максимова А. Е.</em> Балет Ф. Шольца «Пагубные следствия пылких страстей Дон Жуана, или привидение убитого им командора» (1821)<br>
+         <em>Ефимова Н. И., Матвеева А. И.</em> Конструкт РМО/ИРМО в истории развития академической музыки постоктябрьской России (на примере работы Владивостокского отделения в эпоху Дальневосточной республики)<br>
+         <em>Чупова А. Г.</em> Воплощение мифа в «Персее и Андромеде» С. Шаррино<br><br>
+         МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+         <em>Дабаева И. П.</em> Музыка русского барокко в музыковедческом осмыслении и исполнительской интерпретации<br>
+         <em>Сайгушкина О. П.</em> «Скиталец» Ф. Шуберта как вершина эволюции жанра фортепианной фантазии в творчестве композитора и объект исполнительской интерпретации<br><br>
+         ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ: ТЕОРИЯ И ПРАКТИКА<br>
+         <em>Цукер А. М.</em> Массовая музыка в системе академического музыкального образования</p>',
+         '<p>ISSUES OF MUSIC THEORY<br>
+         <em>Okuneva E. G.</em> Siegfried Karg-Elert''s Theory of Polarity<br><br>
+         MUSICAL CULTURE: HISTORY AND CONTEMPORARY<br>
+         <em>Pankina E. V., Yushkova K. S.</em> José de Cañizares in the History of Court Zarzuela<br>
+         <em>Maksimova A. E.</em> F. Scholz''s Ballet "The Fatal Consequences of Don Juan''s Ardent Passions, or the Ghost of the Commander He Killed" (1821)<br>
+         <em>Efimova N. I., Matveeva A. I.</em> The RMO/IRMS Construct in the History of Academic Music Development in Post-October Russia (on the Example of the Vladivostok Branch during the Far Eastern Republic Era)<br>
+         <em>Chupova A. G.</em> The Embodiment of Myth in "Perseus and Andromeda" by S. Sciarrino<br><br>
+         MUSICOLOGY AND PERFORMANCE<br>
+         <em>Dabaeva I. P.</em> Russian Baroque Music in Musicological Interpretation and Performance Practice<br>
+         <em>Saigushkina O. P.</em> Schubert''s "Der Wanderer" as the Culmination of the Composer''s Piano Fantasy Genre Evolution and an Object of Performance Interpretation<br><br>
+         ISSUES OF MUSIC EDUCATION: THEORY AND PRACTICE<br>
+         <em>Tzukker A. M.</em> Mass Music in the System of Academic Music Education</p>',
+         'cover32.jpg',
+         '2023_32.pdf'),
+
+        (2023,
         33,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 33',
          'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 33',
