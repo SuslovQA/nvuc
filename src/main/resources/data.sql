@@ -223,7 +223,7 @@ VALUES (2019,
         <em>Fidenko Yu. L.</em> Images of French Fairy Tales in Maurice Ravel''s Piano Cycle "Ma mère l''Oye"<br>
         <em>Gorodilova M. V., Ermakov A. A.</em> Arthur Lourié''s "Children''s Paradise": Works for Children by an Avant‑Garde Composer<br><br>
         FILM MUSIC<br>
-        <em>Zyryanov M. L.</em> A Graphic Method for Analysing Original Soundtracks Based on Work with the Score for "Star Wars: Episode I"</p>'
+        <em>Zyryanov M. L.</em> A Graphic Method for Analysing Original Soundtracks Based on Work with the Score for "Star Wars: Episode I"</p>',
         'cover34.jpg',
         '2023_34.pdf'),
 
