@@ -134,7 +134,7 @@
                            th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn"
                            th:text="#{home.read}">Читать
                             выпуск</a>
-                        <div th:unless="${pdfExist}" class="no-pdf">Цифровой вариант отсутствует
+                        <div th:unless="${pdfExist}" class="no-pdf" th:text="#{journal.no-pdf}">Электронный экземпляр отсутствует в базе
                         </div>
                     </div>
                 </div>
