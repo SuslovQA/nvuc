@@ -179,6 +179,49 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2022,
+        28,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 28',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 28',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2022</p>
+        <p><em>Количество страниц:</em>&nbsp;87 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2022</p>
+        <p><em>Number of pages:</em>&nbsp;87 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ФИЛОСОФИЯ МУЗЫКИ<br>
+        <em>Марков А. В.</em> «Алеко» С. Рахманинова с дополнениями Л. Нелидовой-Фивейской в рамке философского диалога<br><br>
+        МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Бородин Б. Б.</em> Ферруччо Бузони: мысли о мастерстве пианиста<br>
+        <em>Шабшаевич Е. М.</em> «Преданный вам Ю. Померанцев…» : Письма Ю. Н. Померанцева к С. И. Танееву (избранное). Часть III<br><br>
+        ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Коробова А. Г.</em> О роли пасторального жанра в становлении европейской оперы<br>
+        <em>Мельникова Е. В.</em> Новаторские формы взаимодействия музыки и слова в старинном жанре пассионов: «Страсти по Луке» Кшиштофа Пендерецкого для солистов, чтеца, трёх смешанных хоров, хора мальчиков и оркестра (1965)<br><br>
+        ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Кадочникова С. Ю.</em> Жест как движение души<br><br>
+        К ИТОГАМ ПРОКОФЬЕВСКОГО ФЕСТИВАЛЯ В УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>От редакции</em><br>
+        <em>Зисман В.</em> Историческое событие 2021 года (Четвёртая в отечественной истории постановка оперы Прокофьева «Игрок» состоялась в Екатеринбурге)<br>
+        <em>Ермаков А. А.</em> Отражение мира детства в произведениях С. С. Прокофьева (на примере фортепианного цикла «Детская музыка», ор. 65)</p>',
+        '<p>PHILOSOPHY OF MUSIC<br>
+        <em>Markov A. V.</em> "Aleko" by S. Rachmaninoff with Additions by L. Nelidova-Phiveyskaya in the Framework of a Philosophical Dialogue<br><br>
+        MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Borodin B. B.</em> Ferruccio Busoni: Thoughts on the Mastery of the Pianist<br>
+        <em>Shabshaevich E. M.</em> "Yours Devotedly, Yu. Pomerantsev...": Letters of Yu. N. Pomerantsev to S. I. Taneyev (Selected). Part III<br><br>
+        ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Korobova A. G.</em> On the Role of the Pastoral Genre in the Formation of European Opera<br>
+        <em>Melnikova E. V.</em> Innovative Forms of Interaction between Music and Text in the Old Genre of Passions: "St. Luke Passion" by Krzysztof Penderecki for Soloists, Narrator, Three Mixed Choirs, Boys'' Choir and Orchestra (1965)<br><br>
+        ISSUES OF MUSIC EDUCATION<br>
+        <em>Kadochnikova S. Yu.</em> Gesture as a Movement of the Soul<br><br>
+        TO THE RESULTS OF THE PROKOFIEV FESTIVAL AT THE URAL CONSERVATORY<br>
+        <em>From the Editorial Board</em><br>
+        <em>Zisman V.</em> A Historical Event of 2021 (The Fourth Production in Russian History of Prokofiev''s Opera "The Gambler" Took Place in Yekaterinburg)<br>
+        <em>Ermakov A. A.</em> Reflection of the World of Childhood in the Works of S. S. Prokofiev (on the Example of the Piano Cycle "Children''s Music", Op. 65)</p>',
+        'cover28.jpg',
+        '2022_28.pdf'),
+
+        (2022,
         29,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 29',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 29',
