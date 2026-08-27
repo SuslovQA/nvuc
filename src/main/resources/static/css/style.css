@@ -80,8 +80,6 @@ main {
 
     display: flex;
     flex-direction: column;
-
-    line-height: 20px;
 }
 
 .p-main-text > p {
