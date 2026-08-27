@@ -20,12 +20,12 @@ VALUES (2018,
        13,
        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 13. AD MEMORIAM',
        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 13. AD MEMORIAM',
-       '<p><em>Предлагаемое издание – четвёртый сборник, подготовленный кафедрой истории и теории исполнительского искусства Уральской государственной консерватории имени М.П. Мусоргского. Данный выпуск носит монотематический характер, что отражено в его подзаголовке AD MEMORIAM, и содержит материалы, связанные с историей Уральской государственной консерватории имени М.П. Мусоргского, с деятельностью выдающихся музыкантов, которые преподавали в её исполнительских классах. Издание приурочено к юбилейным датам ушедших мастеров: 90-летию со дня рождения скрипача и педагога, профессора, заслуженного артиста РСФСР Льва Моисеевича Мирчина и 75-летней годовщине баяниста и педагога Олега Сергеевича Панькова. Сборник завершает архивная публикация – фрагмент лекции «О Генрихе Густавовиче Нейгаузе», прочитанной в 1987 году Исааком Зусмановичем Зетелем. Авторами сборника являются преподаватели и выпускники Уральской консерватории. Издание адресовано музыкантам-профессионалам, всем интересующимся проблемами музыкального исполнительства и историей музыкальной культуры Урала.</em></p>
+       '<p><em>Предлагаемое издание – четвёртый сборник, подготовленный кафедрой истории и теории исполнительского искусства Уральской государственной консерватории имени М.П. Мусоргского. Данный выпуск носит монотематический характер, что отражено в его подзаголовке AD MEMORIAM, и содержит материалы, связанные с историей Уральской государственной консерватории имени М.П. Мусоргского, с деятельностью выдающихся музыкантов, которые преподавали в её исполнительских классах. Издание приурочено к юбилейным датам ушедших мастеров: 90-летию со дня рождения скрипача и педагога, профессора, заслуженного артиста РСФСР Льва Моисеевича Мирчина и 75-летней годовщине баяниста и педагога Олега Сергеевича Панькова. Сборник завершает архивная публикация – фрагмент лекции «О Генрихе Густавовиче Нейгаузе», прочитанной в 1987 году Исааком Зусмановичем Зетелем. Авторами сборника являются преподаватели и выпускники Уральской консерватории. Издание адресовано музыкантам-профессионалам, всем интересующимся проблемами музыкального исполнительства и историей музыкальной культуры Урала.</em></p><br>
        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2018</p>
        <p><em>Количество страниц:</em>&nbsp;111 с.</p>
        <p><em>Тираж:</em>&nbsp;100 экз.</p>
        <p>ISBN:&nbsp;978-5-98602-118-8</p>',
-       '<p><em>This publication is the fourth collection prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky. This issue is monographic in nature, as reflected in its subtitle AD MEMORIAM, and contains materials related to the history of the Ural State Conservatory named after M. P. Mussorgsky and to the activities of outstanding musicians who taught in its performance departments. The publication is timed to coincide with the anniversaries of departed masters: the 90th anniversary of the birth of violinist and teacher, professor, Honored Artist of the RSFSR Lev Moiseevich Mirchin, and the 75th anniversary of bayan player and teacher Oleg Sergeevich Pankov. The collection concludes with an archival publication – a fragment of a lecture "On Heinrich Gustavovich Neuhaus," delivered in 1987 by Isaac Zusmanovich Zetel. The authors of the collection are teachers and graduates of the Ural Conservatory. The edition is addressed to professional musicians and to all those interested in the problems of musical performance and the history of the musical culture of the Urals.</em></p>
+       '<p><em>This publication is the fourth collection prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky. This issue is monographic in nature, as reflected in its subtitle AD MEMORIAM, and contains materials related to the history of the Ural State Conservatory named after M. P. Mussorgsky and to the activities of outstanding musicians who taught in its performance departments. The publication is timed to coincide with the anniversaries of departed masters: the 90th anniversary of the birth of violinist and teacher, professor, Honored Artist of the RSFSR Lev Moiseevich Mirchin, and the 75th anniversary of bayan player and teacher Oleg Sergeevich Pankov. The collection concludes with an archival publication – a fragment of a lecture "On Heinrich Gustavovich Neuhaus," delivered in 1987 by Isaac Zusmanovich Zetel. The authors of the collection are teachers and graduates of the Ural Conservatory. The edition is addressed to professional musicians and to all those interested in the problems of musical performance and the history of the musical culture of the Urals.</em></p><br>
        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2018</p>
        <p><em>Number of pages:</em>&nbsp;111 pp.</p>
        <p><em>Circulation:</em>&nbsp;100 copies.</p>
@@ -104,7 +104,7 @@ VALUES (2018,
        III. FROM THE ARCHIVES OF THE URAL CONSERVATORY<br>
        <em>Zetel I.Z.</em> About Heinrich Gustavovich Neuhaus</p>',
        'cover14.jpg',
-       ''),
+       null),
 
        (2018,
        15,
@@ -209,7 +209,7 @@ VALUES (2018,
        <em>Zyryanov M.L.</em> The Manifestation of the Principles of Church Reading of the Russian Orthodox Tradition in the Sacred Works of S.V. Rachmaninoff<br>
        <em>Sheludyakova O.E.</em> On the Problem of Interaction between Melodic Element and Harmony in the Works of S.V. Rachmaninoff</p>',
        'cover15.jpg',
-       ''),
+       null),
 
         (2019,
         16,
