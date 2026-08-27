@@ -179,6 +179,45 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2021,
+        26,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 26',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 26',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2021</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2021</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Вялухина В. И.</em> Изабелла Леонарда и её латинские диалоги<br>
+        <em>Мешкова А. С.</em> Позднеромантический Шёнберг: закат эпохи или рождение новой?<br>
+        <em>Гагарина О. А.</em> «Академическая музыка неакадемического времени»: о композиторском творчестве Дмитрия Пейселя<br><br>
+        МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Шабшаевич Е. М.</em> «Преданный Вам Ю. Померанцев…»: Письма Ю. Н. Померанцева к С. И. Танееву (избранное). Часть первая<br><br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ И ПРАКТИКА<br>
+        <em>Алёшина А. О.</em> Особенности американской и российской педагогических арфовых школ 20-х годов XX века<br>
+        <em>Сердечная Е. В.</em> Ритмика и сольфеджио в специальной музыкальной школе: перспективы взаимодействия<br><br>
+        РЕЦЕНЗИИ, ОБЗОРЫ, АНОНСЫ КОНФЕРЕНЦИЙ<br>
+        <em>Полоцкая Е. Е.</em> Книга, которую надо читать: Отзыв о книге И. В. Степановой «Музыка как константа русской литературы. Александр Куприн»<br>
+        Анонсы</p>',
+        '<p>ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Vyalukhina V. I.</em> Isabella Leonarda and Her Latin Dialogues<br>
+        <em>Meshkova A. S.</em> Late-Romantic Schoenberg: The Decline of an Era or the Birth of a New One?<br>
+        <em>Gagarina O. A.</em> "Academic Music of Non-Academic Time": On the Composer''s Work of Dmitri Peysel<br><br>
+        MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Shabshaevich E. M.</em> "Yours Devotedly, Yu. Pomerantsev...": Letters of Yu. N. Pomerantsev to S. I. Taneyev (Selected). Part One<br><br>
+        MUSIC EDUCATION: HISTORY, THEORY AND PRACTICE<br>
+        <em>Alyoshina A. O.</em> Characteristics of American and Russian Pedagogical Harp Schools of the 1920s<br>
+        <em>Serdechnaya E. V.</em> Rhythmics and Solfège in a Special Music School: Prospects for Interaction<br><br>
+        REVIEWS, SURVEYS, CONFERENCE ANNOUNCEMENTS<br>
+        <em>Polotskaya E. E.</em> A Book That Must Be Read: Review of I. V. Stepanova''s Book "Music as a Constant of Russian Literature. Alexander Kuprin"<br>
+        Announcements</p>',
+        'cover26.jpg',
+        '2021_26.pdf'),
+
+        (2021,
         27,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 27',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 27',
