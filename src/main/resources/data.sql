@@ -179,6 +179,47 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2021,
+        25,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 25',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 25',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2021</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2021</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">МУЗЫКА В СИСТЕМЕ КУЛЬТУРЫ<br>
+        <em>Марков А. В.</em> Звучащие статуи: скрытый диалог Аверинцева и Бибихина о природе музыки<br>
+        <em>Бородин Б. Б.</em> Провинция, провинциальность и провинциализм в музыкальном искусстве<br><br>
+        ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Михайлова В. С., Максимова А. Е.</em> Реквием О. А. Козловского<br><br>
+        ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Алексеева И. В.</em> Инноватика в профессиональном музыкальном образовании вуза: теория и практика<br><br>
+        МУЗЫКАЛЬНАЯ ЖИЗНЬ РОССИЙСКИХ РЕГИОНОВ: ВЧЕРА И СЕГОДНЯ<br>
+        <em>Бородин А. Б.</em> Генрих Нейгауз в Свердловске. Хроника военных лет<br>
+        <em>Гун Г. Е.</em> Музыкальная культура индустриального города (на примере Магнитогорска)<br>
+        <em>Гуляева Е. С.</em> Театральные произведения Георгия Иванова в контексте социокультурных процессов 1960–1980-х годов<br><br>
+        AD MEMORIAM<br>
+        <em>Парин А. В.</em> Улица академика Парина, генетика и историческая справедливость</p>',
+        '<p>MUSIC IN THE SYSTEM OF CULTURE<br>
+        <em>Markov A. V.</em> Sounding Statues: The Hidden Dialogue of Averintsev and Bibikhin on the Nature of Music<br>
+        <em>Borodin B. B.</em> Province, Provinciality and Provincialism in Musical Art<br><br>
+        ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Mikhailova V. S., Maksimova A. E.</em> Requiem by O. A. Kozlovsky<br><br>
+        ISSUES OF MUSIC EDUCATION<br>
+        <em>Alekseeva I. V.</em> Innovations in Professional Music Education at University: Theory and Practice<br><br>
+        MUSICAL LIFE OF RUSSIAN REGIONS: YESTERDAY AND TODAY<br>
+        <em>Borodin A. B.</em> Heinrich Neuhaus in Sverdlovsk. Chronicle of the War Years<br>
+        <em>Gun G. E.</em> Musical Culture of an Industrial City (on the Example of Magnitogorsk)<br>
+        <em>Gulyaeva E. S.</em> Theatrical Works of Georgy Ivanov in the Context of Socio-Cultural Processes of the 1960s–1980s<br><br>
+        AD MEMORIAM<br>
+        <em>Parin A. V.</em> Academician Parin Street, Genetics and Historical Justice</p>',
+        'cover25.jpg',
+        '2021_25.pdf'),
+
+        (2021,
         26,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 26',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 26',
