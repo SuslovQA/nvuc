@@ -178,6 +178,53 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
+        (2023,
+        35,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 35',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 35',
+        '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
+        <p><strong>Материалы Международной научно-практической конференции</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
+        <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+        <em>Пылаева Л. Д.</em> К вопросу о принципах формообразования в пассакалиях Ф. Куперена<br><br>
+        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+        <em>Урванцева О. А.</em> «Контрапункт стилей» в творчестве Глинки<br>
+        <em>Чахвадзе Н. В.</em> Новый взгляд на симфоническую поэму А. Ф. Козловского «Танавар»<br>
+        <em>Девятова О. Л.</em> Музыкальная гофманиана Сергея Слонимского в балете «Волшебный орех»<br><br>
+        МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Сорокина У. В.</em> Православная церковно-певческая жизнь Харбина в свете периодической печати 1920–1940 годов<br><br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Хрулева И.</em> Вопросы дыхания в трактате «Метод пения» Парижской консерватории: мифы и реальность<br><br>
+        К ЮБИЛЕЮ УРАЛЬСКОЙ ГОСУДАРСТВЕННОЙ КОНСЕРВАТОРИИ<br>
+        <em>Городилова М. В., Вялухина В. И.</em> Кафедра теории музыки Уральской консерватории в XXI веке</p>',
+        '<p">ISSUES OF MUSIC THEORY<br>
+        <em>Pylaeva L. D.</em> On the Question of Principles of Form‑Building in F. Couperin''s Passacailles<br><br>
+        FROM THE HISTORY OF MUSICAL CULTURE<br>
+        <em>Urvantseva O. A.</em> "Counterpoint of Styles" in Glinka''s Works<br>
+        <em>Chakvadze N. V.</em> A New Look at A. F. Kozlovsky''s Symphonic Poem "Tanavar"<br>
+        <em>Devyatova O. L.</em> Sergei Slonimsky''s Musical Hoffmanniana in the Ballet "The Magic Nut"<br><br>
+        MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Sorokina U. V.</em> Orthodox Church‑Singing Life in Harbin in the Light of Periodical Press of the 1920s–1940s<br><br>
+        MUSICAL EDUCATION: HISTORY, THEORY, PRACTICE<br>
+        <em>Khruleva I.</em> Questions of Breathing in the Treatise "Singing Method" of the Paris Conservatory: Myths and Reality<br><br>
+        ON THE ANNIVERSARY OF THE URAL STATE CONSERVATORY<br>
+        <em>Gorodilova M. V., Vyalukhina V. I.</em> The Department of Music Theory of the Ural Conservatory in the 21st Century</p">',
+        'cover35.jpg',
+        '2023_35.pdf'),
+
         (2024,
         36,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 36',
