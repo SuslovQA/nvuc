@@ -179,6 +179,45 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2022,
+        30,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 30',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 30',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2022</p>
+        <p><em>Количество страниц:</em>&nbsp;108 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2022</p>
+        <p><em>Number of pages:</em>&nbsp;108 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+        <em>Коробова А. Г.</em> Проблематика жанрового статуса пасторали в теоретических представлениях XVI–XVIII веков и её отражение в музыкальном театре<br>
+        <em>Смирнова Т. В.</em> Династии итальянских музыкантов при дворе Тюдоров<br>
+        <em>Любимов Д. В.</em> «Карнавал» Роберта Шумана в оркестровке русских композиторов<br>
+        <em>Мельникова А. В.</em> Опера «Долгий рождественский ужин» Пауля Хиндемита: символизация как способ смыслового конструирования<br><br>
+        ПО МАТЕРИАЛАМ ЮБИЛЕЙНОЙ КОНФЕРЕНЦИИ К 130-ЛЕТИЮ С. С. ПРОКОФЬЕВА<br>
+        <em>Бородин А. Б.</em> К вопросу о скрябинском влиянии на раннее фортепианное творчество C. C. Прокофьева<br>
+        <em>Хуснутдинова Э. А.</em> С. С. Прокофьев и С. А. Кусевицкий: штрихи к двойному портрету<br>
+        <em>Поршнев И. Д.</em> «Ждали знакомого, а от незнакомого отмахнулись»: история концертных исполнений музыки балета «Стальной скок» С. С. Прокофьева в СССР (1928, 1929, 1932)<br>
+        <em>Милованова О. Э.</em> Композитор на войне – Н. Я. Мясковский<br><br>
+        ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Тереханова К. Ю.</em> Российская музыкальная школа 100 лет назад: из истории становления системы отечественного музыкального образования в первое десятилетие после Октябрьской революции 1917 года</p>',
+        '<p>FROM THE HISTORY OF MUSICAL CULTURE<br>
+        <em>Korobova A. G.</em> Problems of the Genre Status of Pastoral in Theoretical Concepts of the 16th–18th Centuries and Its Reflection in Musical Theatre<br>
+        <em>Smirnova T. V.</em> Dynasties of Italian Musicians at the Tudor Court<br>
+        <em>Lyubimov D. V.</em> Robert Schumann''s "Carnaval" in the Orchestrations of Russian Composers<br>
+        <em>Melnikova A. V.</em> Paul Hindemith''s Opera "The Long Christmas Dinner": Symbolization as a Means of Semantic Construction<br><br>
+        ON THE MATERIALS OF THE ANNIVERSARY CONFERENCE DEDICATED TO THE 130TH ANNIVERSARY OF S. S. PROKOFIEV<br>
+        <em>Borodin A. B.</em> On the Question of Scriabin''s Influence on the Early Piano Works of S. S. Prokofiev<br>
+        <em>Khusnutdinova E. A.</em> S. S. Prokofiev and S. A. Koussevitzky: Touches to a Double Portrait<br>
+        <em>Porshnev I. D.</em> "We Expected the Familiar, but Brushed Aside the Unfamiliar": The History of Concert Performances of Music from Prokofiev''s Ballet "Le Pas d''Acier" in the USSR (1928, 1929, 1932)<br>
+        <em>Milovanova O. E.</em> A Composer at War – N. Ya. Myaskovsky<br><br>
+        ISSUES OF MUSIC EDUCATION: HISTORY, THEORY, PRACTICE<br>
+        <em>Terekhonova K. Yu.</em> Russian Music School 100 Years Ago: From the History of the Formation of the National Music Education System in the First Decade after the October Revolution of 1917</p>',
+        'cover30.jpg',
+        '2022_30.pdf'),
+
+        (2022,
          31,
          'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 31',
          'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 31',
