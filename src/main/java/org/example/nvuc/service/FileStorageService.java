@@ -3,6 +3,7 @@ package org.example.nvuc.service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -37,5 +38,18 @@ public class FileStorageService {
         return documentsDirectory
                 .resolve(fileName)
                 .normalize();
+    }
+
+    public boolean pdfExists(String fileName) {
+
+        if (fileName == null || fileName.isBlank()) {
+            return false;
+        }
+
+        Path file = pdfDirectory.resolve(fileName);
+
+        return Files.exists(file)
+                && Files.isRegularFile(file)
+                && Files.isReadable(file);
     }
 }

@@ -2,6 +2,7 @@ package org.example.nvuc.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.nvuc.entity.Journal;
+import org.example.nvuc.service.FileStorageService;
 import org.example.nvuc.service.JournalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,8 @@ public class JournalController {
 
     @Autowired
     private JournalService service;
+    @Autowired
+    private FileStorageService fileStorageService;
 
     @GetMapping("/{id}")
     public String journal(
@@ -30,7 +33,14 @@ public class JournalController {
 
         Journal journal = service.getJournal(id);
 
+        if (journal == null) {
+            return "redirect:/";
+        }
+
+        boolean pdfExist = fileStorageService.pdfExists(journal.getPdf());
+
         model.addAttribute("journal", journal);
+        model.addAttribute("pdfExist", pdfExist);
 
         if ("en".equals(locale.getLanguage())) {
 

@@ -16,7 +16,112 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2019,
+VALUES (2018,
+       15,
+       'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 15',
+       'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 15',
+       '<p><em>В основе настоящего издания - тезисы научно-практической конференции, проходившей в Уральской консерватории 15-19 октября 2018 года. Конференция посвящена Император¬скому русскому музыкальному обществу и приурочена к его 145-летию. Тематика докладов представлена в публикуемых тезисах в своей совокупности, что позволяет оценить масшта¬бы и направления деятельности ИРМО, как организации, заложившей фундамент и опре¬делившей пути развития профессионального отечественного музыкального искусства и об¬разования на полтора столетия. В тезисах также представлена работа секции, посвящённой ещё одному 145-летию - С.В. Рахманинова, музыкально-общественная деятельность которо¬го также была связана с ИРМО. Это заседание предвосхищает проведение Рахманиновского фестиваля, который состоится в Уральской консерватории в декабре 2018 года.</em></p>
+       <p><em>Издательство:</em>&nbsp;АМБ, 2018</p>
+       <p><em>Количество страниц:</em>&nbsp;50 с.</p>
+       <p><em>Тираж:</em>&nbsp;80 экз.</p>
+       <p>ISBN:&nbsp;978-5-98602-115-7</p>',
+       '<p><em>This publication is based on the proceedings of the scientific-practical conference held at the Ural Conservatory on October 15–19, 2018. The conference is dedicated to the Imperial Russian Musical Society and timed to its 145th anniversary. The topics of the reports are presented in the published proceedings in their entirety, which allows us to assess the scope and directions of the IRMS''s activities as an organization that laid the foundation and determined the paths of development of professional national musical art and education for a century and a half. The proceedings also include the work of a section dedicated to another 145th anniversary – that of S.V. Rachmaninoff, whose musical and social activities were also connected with the IRMS. This session anticipates the Rachmaninoff Festival, which will take place at the Ural Conservatory in December 2018.</em></p>
+       <p><em>Publisher:</em>&nbsp;AMB, 2018</p>
+       <p><em>Number of pages:</em>&nbsp;50 pp.</p>
+       <p><em>Circulation:</em>&nbsp;80 copies.</p>
+       <p>ISBN:&nbsp;978-5-98602-115-7</p>',
+       '<p">ИРМО КАК СОЦИОКУЛЬТУРНОЕ ЯВЛЕНИЕ<br>
+       <em>Ефимова Н.И.</em> Императорское русское музыкальное общество в истории России<br>
+       <em>Моисеев Г.А.</em> Русское музыкальное общество под августейшим покровительством<br>
+       <em>Алексеев-Борецкий А.А.</em> «Утверждаю. Елена»... О роли Великой княгини Елены Павловны в основании и развитии деятельности РМО<br>
+       <em>Коларова-Гидишка Э.</em> Роль ИРМО в становлении болгарской музыкальной школы конца XIX-начала XX в.: к истории интеркультурного диалога<br>
+       <em>Кркотич К.</em> Сербско-русское сотрудничество композиторов в зеркале международных контактов ИРМО<br>
+       <em>Шабалина Л.K.</em> Екатеринбургское отделение ИРМО / РМО в годы революций и гражданской войны: 1917-1919<br>
+       <em>Шелудякова О.Е.</em> Музыкальные страницы архивов святых Царственных страстотерпцев<br><br>
+       РМО/ИРМО В РУССКОЙ МУЗЫКАЛЬНОЙ КУЛЬТУРЕ<br>
+       <em>Дабаева И.П.</em> Роль ИРМО в развитии профессиональной хоровой культуры в России<br>
+       <em>Шарма Е.Ю.</em> Императорское русское музыкальное общество в деле становления отечественного вокального образования<br>
+       <em>Полоцкая Е.Е.</em> П.И. Чайковский и Русское музыкальное общество. Социокультурный аспект взаимодействия<br>
+       <em>Комаров А.В.</em> Чайковский и Русское музыкальное общество. Творческий аспект взаимодействия<br>
+       <em>Жеурова В.К.</em> Семья Лодий в истории ИРМО<br>
+       <em>Валькова В.Б.</em> Провинциальные конфликты: к проблеме «центр - периферия» в деятельности ИРМО<br><br>
+       ОТДЕЛЕНИЯ РМО/ИРМО В РОССИЙСКОЙ ИМПЕРИИ<br>
+       <em>Шабшаевич Е.М.</em> Московское отделение ИРМО - попечитель музыкального образования (о стипендиях в Московской консерватории дореволюционного периода)<br>
+       <em>Глушкова О.Р., Глушков С.В.</em> Об учебно-педагогической работе Московской консерватории в дореволюционный период<br>
+       <em>Зинькевич Е.С.</em> «Человек-оркестр» - Александр Николаевич Виноградский<br>
+       <em>Порфирьева Е.В.</em> Казанское отделение ИРМО как центральное звено в развитии музыкального образования и просветительства в регионе Среднего Поволжья и Приуралья (начало XX века)<br>
+       <em>Полозова И.В.</em> Саратовское отделение Императорского русского музыкального общества: история в лицах<br>
+       <em>Демченко A.M.</em> Судьбоносная миссия<br>
+       <em>Рудякова А.Э.</em> Значение деятельности Саратовского отделения ИРМО в становлении местных вокальных традиций<br>
+       <em>Сиднева Т.Б., Куклев А.В.</em> От регионального отделения ИРМО к консерватории: становление профессионального музыкального образования в Нижнем Новгороде<br>
+       <em>Пыльнева Л.Л.</em> Деятельность Русского музыкального общества в городах Сибири в конце XIX - начале XX столетия<br>
+       <em>Кузённая О.С.</em> Отчёты Тобольского отделения Императорского русского музыкального общества как исторический источник<br>
+       <em>Каплун Т.М.</em> Одесское отделение Императорского русского музыкального общества: становление и итоги<br>
+       <em>Крылова А.В.</em> Практическое музицирование в контексте образовательного процесса музыкальных классов ИРМО Ростова и Новочеркасска<br>
+       <em>Дубровская М.Ю.</em> К изучению деятельности Императорского русского музыкального общества в Крыму<br>
+       <em>Фиденко Ю.Л.</em> Музыкальная жизнь Владивостока и деятельность местного отделения ИРМО (1909-1920 годы)<br>
+       <em>Смагина Е.В.</em> Царицынское отделение Императорского русского музыкального общества: к вопросу о «культурной революции» в дореволюционном Царицыне<br>
+       <em>Сиксимова М.В.</em> Музыкальные классы Царицынского отделения Императорского русского музыкального общества: история становления<br>
+       <em>Гарипова Н.Ф.</em> От любительского музицирования к профессионализму: специфические условия создания Уфимского отделения ИРМО<br><br>
+       РМО/ИРМО: НАСЛЕДИЕ И АЛЬТЕРНАТИВЫ В КУЛЬТУРЕ XX ВЕКА. ОСМЫСЛЕНИЕ ДЕЯТЕЛЬНОСТИ. НОВЕЙШАЯ ИСТОРИЯ ИРМО<br>
+       <em>Адищев В.И.</em> Московская консерватория: от РМО к Наркомпросу<br>
+       <em>Гармаш О.А.</em> ИРМО в деле учреждения вспомогательной кассы для музыкальных художников (социальный аспект)<br>
+       <em>Саввина Л.В.</em> Русское музыкальное общество Астрахани в трудах М.А. Этингера<br>
+       <em>Щапова Е.В.</em> Деятельность Императорского русского музыкального общества в немецкоязычной музыкальной критике начала XX века<br>
+       <em>Ефимова Н.И.</em> РМО / ИРМО: инновации второй половины XIX века в проекции диалога власти и музыкального сообщества<br><br>
+       НАВСТРЕЧУ РАХМАНИНОВСКОМУ ФЕСТИВАЛЮ В УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+       <em>Серебрякова Л.A.</em> Рахманинов и Римский-Корсаков: к постановке вопроса<br>
+       <em>Макарова А.Л.</em> «Франческа да Римини» С.В. Рахманинова в её связях с оперным театром П.И. Чайковского<br>
+       <em>Зырянов М.Л.</em> Проявление принципов церковного чтения русской православной традиции в духовных сочинениях С.В. Рахманинова<br>
+       <em>Шелудякова О.Е.</em> К проблеме взаимодействия мелодического начала и гармонии в произведениях С.В. Рахманинова</p>',
+       '<p>IRMS AS A SOCIOCULTURAL PHENOMENON<br>
+       <em>Efimova N.I.</em> The Imperial Russian Musical Society in the History of Russia<br>
+       <em>Moiseev G.A.</em> The Russian Musical Society under August Patronage<br>
+       <em>Alexeyev-Boretsky A.A.</em> "I Approve. Elena"... On the Role of Grand Duchess Elena Pavlovna in the Foundation and Development of the RMS<br>
+       <em>Kolarova-Gidishka E.</em> The Role of IRMS in the Formation of the Bulgarian Musical School at the Turn of the 19th–20th Centuries: Towards a History of Intercultural Dialogue<br>
+       <em>Krkotic K.</em> Serbian-Russian Cooperation of Composers in the Mirror of International Contacts of the IRMS<br>
+       <em>Shabalina L.K.</em> The Yekaterinburg Branch of IRMS / RMS during the Revolutions and Civil War: 1917–1919<br>
+       <em>Sheludyakova O.E.</em> Musical Pages of the Archives of the Holy Royal Passion-Bearers<br><br>
+       RMO/IRMS IN RUSSIAN MUSICAL CULTURE<br>
+       <em>Dabaeva I.P.</em> The Role of IRMS in the Development of Professional Choral Culture in Russia<br>
+       <em>Sharma E.Yu.</em> The Imperial Russian Musical Society in the Establishment of National Vocal Education<br>
+       <em>Polotskaya E.E.</em> P.I. Tchaikovsky and the Russian Musical Society. A Sociocultural Aspect of Interaction<br>
+       <em>Komarov A.V.</em> Tchaikovsky and the Russian Musical Society. A Creative Aspect of Interaction<br>
+       <em>Zheurova V.K.</em> The Lodyi Family in the History of IRMS<br>
+       <em>Valkova V.B.</em> Provincial Conflicts: On the Problem of "Centre – Periphery" in the Activities of IRMS<br><br>
+       BRANCHES OF RMO/IRMS IN THE RUSSIAN EMPIRE<br>
+       <em>Shabshaevich E.M.</em> The Moscow Branch of IRMS – Patron of Music Education (On Scholarships at the Moscow Conservatory in the Pre-Revolutionary Period)<br>
+       <em>Glushkova O.R., Glushkov S.V.</em> On the Educational and Pedagogical Work of the Moscow Conservatory in the Pre-Revolutionary Period<br>
+       <em>Zinkevich E.S.</em> "Man-Orchestra" – Alexander Nikolaevich Vinogradsky<br>
+       <em>Porfirieva E.V.</em> The Kazan Branch of IRMS as a Central Link in the Development of Music Education and Enlightenment in the Middle Volga and Ural Regions (Early 20th Century)<br>
+       <em>Polozova I.V.</em> The Saratov Branch of the Imperial Russian Musical Society: History in Persons<br>
+       <em>Demchenko A.M.</em> A Fateful Mission<br>
+       <em>Rudyakova A.E.</em> The Significance of the Saratov Branch of IRMS in the Formation of Local Vocal Traditions<br>
+       <em>Sidneva T.B., Kuklev A.V.</em> From a Regional Branch of IRMS to a Conservatory: The Formation of Professional Music Education in Nizhny Novgorod<br>
+       <em>Pylneva L.L.</em> The Activity of the Russian Musical Society in Siberian Cities at the End of the 19th – Beginning of the 20th Century<br>
+       <em>Kuzyonnaya O.S.</em> Reports of the Tobolsk Branch of the Imperial Russian Musical Society as a Historical Source<br>
+       <em>Kaplun T.M.</em> The Odessa Branch of the Imperial Russian Musical Society: Formation and Outcomes<br>
+       <em>Krylova A.V.</em> Practical Music-Making in the Context of the Educational Process of the IRMS Music Classes in Rostov and Novocherkassk<br>
+       <em>Dubrovskaya M.Yu.</em> Towards the Study of the Activity of the Imperial Russian Musical Society in Crimea<br>
+       <em>Fidenko Yu.L.</em> Musical Life of Vladivostok and the Activity of the Local Branch of IRMS (1909–1920)<br>
+       <em>Smagina E.V.</em> The Tsaritsyn Branch of the Imperial Russian Musical Society: On the Question of the "Cultural Revolution" in Pre-Revolutionary Tsaritsyn<br>
+       <em>Siksimova M.V.</em> Music Classes of the Tsaritsyn Branch of the Imperial Russian Musical Society: A History of Formation<br>
+       <em>Garipova N.F.</em> From Amateur Music-Making to Professionalism: Specific Conditions for the Creation of the Ufa Branch of IRMS<br><br>
+       RMO/IRMS: HERITAGE AND ALTERNATIVES IN 20TH CENTURY CULTURE. REASSESSMENT OF ACTIVITIES. RECENT HISTORY OF IRMS<br>
+       <em>Adishchev V.I.</em> The Moscow Conservatory: From RMS to Narkompros<br>
+       <em>Garmash O.A.</em> IRMS in the Establishment of a Relief Fund for Musical Artists (A Social Aspect)<br>
+       <em>Savvina L.V.</em> The Russian Musical Society of Astrakhan in the Works of M.A. Etinger<br>
+       <em>Shchapova E.V.</em> The Activity of the Imperial Russian Musical Society in German-Language Musical Criticism of the Early 20th Century<br>
+       <em>Efimova N.I.</em> RMS / IRMS: Innovations of the Second Half of the 19th Century in the Projection of the Dialogue between the Authorities and the Musical Community<br><br>
+       TOWARDS THE RACHMANINOFF FESTIVAL AT THE URAL CONSERVATORY<br>
+       <em>Serebryakova L.A.</em> Rachmaninoff and Rimsky-Korsakov: Towards a Formulation of the Question<br>
+       <em>Makarova A.L.</em> Rachmaninoff''s "Francesca da Rimini" in Its Connections with Tchaikovsky''s Opera Theatre<br>
+       <em>Zyryanov M.L.</em> The Manifestation of the Principles of Church Reading of the Russian Orthodox Tradition in the Sacred Works of S.V. Rachmaninoff<br>
+       <em>Sheludyakova O.E.</em> On the Problem of Interaction between Melodic Element and Harmony in the Works of S.V. Rachmaninoff</p>',
+       'cover15.jpg',
+       ''),
+
+        (2019,
         16,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 16',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 16',

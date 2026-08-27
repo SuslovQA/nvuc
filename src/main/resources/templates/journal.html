@@ -130,11 +130,16 @@
                             <h2 th:text="${journalTitle}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journalDescription}"></div>
-                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn" th:text="#{home.read}">Читать
+                        <a th:if="${pdfExist}"
+                           th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn"
+                           th:text="#{home.read}">Читать
                             выпуск</a>
+                        <div th:unless="${pdfExist}" class="no-pdf">Цифровой вариант отсутствует
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="container second-container">
             <div class="issue-wrapper">
