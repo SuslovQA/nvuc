@@ -119,6 +119,12 @@ main {
     color: black;
 }
 
+.no-pdf {
+    font-weight: bold;
+    color: #891f05;
+    text-align: center;
+}
+
 
 /* =========================================================
    CURRENT ISSUE
