@@ -179,6 +179,45 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2021,
+        24,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 24',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 24',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2021</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2021</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Городилова М. В.</em> Хроматический лабиринт в гармонии Л. ван Бетховена<br>
+        <em>Карташова Т. В.</em> Региональная традиция вокального жанра тхумри: исполнительская школа Варанаси<br>
+        <em>Гагарина О. А.</em> Музыка в звуковом пространстве современного Екатеринбурга: к проблеме анализа городской аудиосреды<br><br>
+        ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Шабалина Л. К.</em> Гармония и синтаксис в отечественных научно-методических трудах ХХ века (к внедрению в учебную практику)<br>
+        <em>Полякова Л. П.</em> Фонетика иностранных языков для вокалистов: проблемы и способы решения<br><br>
+        ДЕЯТЕЛИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ РОССИЙСКИХ РЕГИОНОВ<br>
+        <em>Вишневская Л. А.</em> Научно-педагогическое наследие Саратовской консерватории: Е. Д. Ершова (1942–2001)<br><br>
+        ОБЗОРЫ КОНФЕРЕНЦИЙ, РЕЦЕНЗИИ<br>
+        <em>Полоцкая Е. Е.</em> Музыковедение регионов и региональное музыковедение: обзор Всероссийской конференции с международным участием «Музыкальная наука, искусство и образование российских регионов: навстречу 300-летию города Екатеринбурга»<br>
+        <em>Марков А. В.</em> Рецензия на книгу Д. И. Макарова «Сад расходящихся судеб»</p>',
+        '<p>ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Gorodilova M. V.</em> Chromatic Labyrinth in the Harmony of L. van Beethoven<br>
+        <em>Kartashova T. V.</em> Regional Tradition of the Vocal Genre Thumri: Varanasi Performance School<br>
+        <em>Gagarina O. A.</em> Music in the Sound Space of Modern Yekaterinburg: On the Problem of Analysis of the Urban Audio Environment<br><br>
+        ISSUES OF MUSIC EDUCATION<br>
+        <em>Shabalina L. K.</em> Harmony and Syntax in Russian Scholarly and Methodological Works of the 20th Century (On Implementation into Educational Practice)<br>
+        <em>Polyakova L. P.</em> Phonetics of Foreign Languages for Singers: Problems and Solutions<br><br>
+        FIGURES OF MUSICAL CULTURE OF RUSSIAN REGIONS<br>
+        <em>Vishnevskaya L. A.</em> Scientific and Pedagogical Heritage of the Saratov Conservatory: E. D. Ershova (1942–2001)<br><br>
+        CONFERENCE SURVEYS, REVIEWS<br>
+        <em>Polotskaya E. E.</em> Musicology of Regions and Regional Musicology: A Review of the All-Russian Conference with International Participation "Musical Science, Art and Education of Russian Regions: Towards the 300th Anniversary of the City of Yekaterinburg"<br>
+        <em>Markov A. V.</em> Review of D. I. Makarov''s Book "The Garden of Diverging Destinies"</p>',
+        'cover24.jpg',
+        '2021_24.pdf'),
+
+        (2021,
         25,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 25',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 25',
