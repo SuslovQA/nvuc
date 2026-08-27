@@ -179,6 +179,39 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2020,
+        21,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 21',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 21',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2020</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2020</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ПРОКОФЬЕВ И РУССКАЯ КУЛЬТУРА НАЧАЛА ХХ ВЕКА<br>
+        <em>Серебрякова Л. А., Кордюкова Л. В.</em> С. Прокофьев и русский авангард 1910-х годов. Халдейское заклинание «Семеро их»<br>
+        <em>Милованова О. Э.</em> Н. Мясковский и С. Прокофьев в зеркале музыкальной критики начала ХХ века (по материалам российской прессы)<br>
+        <em>Серебрякова Л. А., Москалёва Л. В.</em> Балет «Сказка про шута» в стилевом контексте раннего творчества С. Прокофьева и Русского Балета С. Дягилева<br>
+        <em>Суриц Е. Я.</em> Зарубежная критика о первом балете Прокофьева «Шут» в труппе Русский Балет Сергея Дягилева<br><br>
+        ЖИЗНЬ ЗА РУБЕЖОМ<br>
+        <em>Рахманова М. П.</em> Грогий – секретарь Прокофьева<br><br>
+        ПОСЛЕ ВОЗВРАЩЕНИЯ<br>
+        <em>Соломонова О. Б.</em> Самая «советская» советская музыка (преодоление соцреалистического канона в кантатах С. Прокофьева «Славься, наш могучий край» и «Здравица»)</p>',
+        '<p>PROKOFIEV AND RUSSIAN CULTURE OF THE EARLY 20TH CENTURY<br>
+        <em>Serebryakova L. A., Kordyukova L. V.</em> S. Prokofiev and the Russian Avant-Garde of the 1910s. The Chaldean Incantation "The Seven of Them"<br>
+        <em>Milovanova O. E.</em> N. Myaskovsky and S. Prokofiev in the Mirror of Musical Criticism of the Early 20th Century (Based on Materials from the Russian Press)<br>
+        <em>Serebryakova L. A., Moskaleva L. V.</em> Ballet "The Tale of the Buffoon" in the Stylistic Context of S. Prokofiev''s Early Works and S. Diaghilev''s Russian Ballet<br>
+        <em>Surits E. Ya.</em> Foreign Criticism on Prokofiev''s First Ballet "The Buffoon" in Serge Diaghilev''s Russian Ballet Company<br><br>
+        LIFE ABROAD<br>
+        <em>Rakhmanova M. P.</em> Grogiy – Prokofiev''s Secretary<br><br>
+        AFTER THE RETURN<br>
+        <em>Solomonova O. B.</em> The Most "Soviet" Soviet Music (Overcoming the Socialist Realist Canon in S. Prokofiev''s Cantatas "Glory to Our Mighty Land" and "Zdravitsa")</p>',
+        'cover21.jpg',
+        '2020_21.pdf'),
+
+        (2020,
         22,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 22',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 22',
