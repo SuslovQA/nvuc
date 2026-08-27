@@ -178,6 +178,57 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
+        (2020,
+        23,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 23',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 23',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2020</p>
+        <p><em>Количество страниц:</em>&nbsp;120 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2020</p>
+        <p><em>Number of pages:</em>&nbsp;120 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+        <em>Зенкин К. В.</em> У истоков русского музыковедения: А. Н. Серов (к 200-летию со дня рождения)<br>
+        <em>Захарьина Н. Б., Герасимова И. В.</em> Источники по изучению церковно-певческой культуры Пскова XIV–XVII веков<br>
+        <em>Мельникова Е. В.</em> Проблема «слово и музыка» в современном музыкальном искусстве и музыковедении (к 25-летию со дня смерти А. В. Михайлова)<br>
+        <em>Гагарина О. А., Иванов Ю. Н.</em> Тромбон в творчестве Н. А. Римского-Корсакова: к вопросу о расширении технических и выразительных возможностей тромбона в XIX веке<br><br>
+        К ЮБИЛЕЯМ БЕТХОВЕНА И ЧАЙКОВСКОГО<br>
+        <em>Моховикова М. В.</em> Симфонические сочинения Людвига ван Бетховена в собраниях Московского отделения Императорского Русского музыкального общества<br>
+        <em>Поспелова Р. Л., Говердовская М. А.</em> Тонально-интонационная фабула в Большой сонате для фортепиано ор. 37 G-dur П. И. Чайковского<br><br>
+        ЗНАМЕНАТЕЛЬНЫЕ ДАТЫ ГОДА<br>
+        <em>Купровская Е. О.</em> Опера Эдисона Денисова «Пена дней»: создание, постановка, критика (к 35-летию со дня премьеры)<br>
+        <em>Гаврилова М. В., Лопатникова А. Н.</em> Роль авторских ремарок в формировании исполнительской интерпретации Сонаты op. 1 Альбана Берга (к 135-летию со дня рождения и 85-летию со дня смерти композитора)<br>
+        <em>Егорова М. А.</em> Идея Кармен: от Пушкина к Бизе<br><br>
+        МУЗЫКАЛЬНАЯ ЖИЗНЬ РОССИЙСКИХ РЕГИОНОВ<br>
+        <em>Екименко Т. С.</em> Союз композиторов Республики Карелия и его председатель Гельмер Синисало (к 100-летию со дня рождения)<br>
+        <em>Куприна Е. Ю.</em> Музыкальное образование Тольятти: ретроспектива и перспектива (65-летию художественного образования Ставрополя-на-Волге–Тольятти посвящается)<br><br>
+        AD MEMORIAM<br>
+        <em>Хайбуллина Д. Н., Недоспасова А. П.</em> Мери Лебензон – личность, музыкант, педагог<br>
+        <em>Басок М. А.</em> Н. М. Пузей как представитель старшего поколения уральских композиторов</p>',
+        '<p>MUSICOLOGY AND PERFORMANCE<br>
+        <em>Zenkin K. V.</em> At the Origins of Russian Musicology: A. N. Serov (On the 200th Anniversary of His Birth)<br>
+        <em>Zakharyina N. B., Gerasimova I. V.</em> Sources for the Study of Church Singing Culture of Pskov in the 14th–17th Centuries<br>
+        <em>Melnikova E. V.</em> The Problem of "Word and Music" in Contemporary Musical Art and Musicology (On the 25th Anniversary of the Death of A. V. Mikhailov)<br>
+        <em>Gagarina O. A., Ivanov Yu. N.</em> The Trombone in the Works of N. A. Rimsky-Korsakov: On the Question of Expanding the Technical and Expressive Capabilities of the Trombone in the 19th Century<br><br>
+        TO THE ANNIVERSARIES OF BEETHOVEN AND TCHAIKOVSKY<br>
+        <em>Mokhovikova M. V.</em> Symphonic Works of Ludwig van Beethoven in the Collections of the Moscow Branch of the Imperial Russian Musical Society<br>
+        <em>Pospelova R. L., Goverdovskaya M. A.</em> Tonal-Intonational Fabula in the Grand Piano Sonata Op. 37 in G Major by P. I. Tchaikovsky<br><br>
+        NOTABLE DATES OF THE YEAR<br>
+        <em>Kuprovskaya E. O.</em> Edison Denisov''s Opera "The Foam of Days": Creation, Production, Criticism (On the 35th Anniversary of the Premiere)<br>
+        <em>Gavrilova M. V., Lopatnikova A. N.</em> The Role of Author''s Remarks in Shaping Performance Interpretation of Sonata op. 1 by Alban Berg (On the 135th Anniversary of the Composer''s Birth and 85th Anniversary of His Death)<br>
+        <em>Egorova M. A.</em> The Idea of Carmen: From Pushkin to Bizet<br><br>
+        MUSICAL LIFE OF RUSSIAN REGIONS<br>
+        <em>Ekimenko T. S.</em> The Composers'' Union of the Republic of Karelia and Its Chairman Helmer Sinisalo (On the 100th Anniversary of His Birth)<br>
+        <em>Kuprina E. Yu.</em> Music Education in Tolyatti: Retrospective and Prospect (Dedicated to the 65th Anniversary of Art Education in Stavropol-on-Volga–Tolyatti)<br><br>
+        AD MEMORIAM<br>
+        <em>Khaybullina D. N., Nedospasova A. P.</em> Meri Lebenzon – Personality, Musician, Teacher<br>
+        <em>Basok M. A.</em> N. M. Puzei as a Representative of the Older Generation of Ural Composers</p>',
+        'cover23.jpg',
+        '2020_23.pdf'),
+
         (2021,
         24,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 24',
