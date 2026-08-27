@@ -178,6 +178,41 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
+        (2021,
+        27,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 27',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 27',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2021</p>
+        <p><em>Количество страниц:</em>&nbsp;62 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2021</p>
+        <p><em>Number of pages:</em>&nbsp;62 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Гагарина О. А.</em> Столкновение Аркадии и Элизиума как основа драматургического конфликта в балете «Сильфида»<br>
+        <em>Зырянов М. Л.</em> «Александр Невский» С. Прокофьева и С. Эйзенштейна: начало истории саундтрека<br><br>
+        МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Бородин Б. Б.</em> Ферруччо Бузони: мысли о мастерстве композитора<br>
+        <em>Шабшаевич Е. М.</em> «Преданный вам Ю. Померанцев…»: Письма Ю. Н. Померанцева к С. И. Танееву (избранное). Часть вторая<br><br>
+        КОМПОЗИТОР, ИСПОЛНИТЕЛЬ, ПЕДАГОГ<br>
+        <em>Басок М. А.</em> Через век: от автора, «из первых рук»… (Вокальные циклы «Пять стихотворений А. Ахматовой» С. Прокофьева и М. Баска)<br><br>
+        РЕЦЕНЗИИ, ОБЗОРЫ, АНОНСЫ КОНФЕРЕНЦИЙ<br>
+        Анонсы</p>',
+        '<p>ISSUES OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Gagarina O. A.</em> The Clash of Arcadia and Elysium as the Basis of the Dramatic Conflict in the Ballet "La Sylphide"<br>
+        <em>Zyryanov M. L.</em> "Alexander Nevsky" by S. Prokofiev and S. Eisenstein: The Beginning of the History of the Soundtrack<br><br>
+        MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Borodin B. B.</em> Ferruccio Busoni: Thoughts on the Mastery of the Composer<br>
+        <em>Shabshaevich E. M.</em> "Yours Devotedly, Yu. Pomerantsev...": Letters of Yu. N. Pomerantsev to S. I. Taneyev (Selected). Part Two<br><br>
+        COMPOSER, PERFORMER, TEACHER<br>
+        <em>Basok M. A.</em> Through a Century: From the Author, "First-Hand"... (Vocal Cycles "Five Poems of A. Akhmatova" by S. Prokofiev and M. Bask)<br><br>
+        REVIEWS, SURVEYS, CONFERENCE ANNOUNCEMENTS<br>
+        Announcements</p>',
+        'cover27.jpg',
+        '2021_27.pdf'),
+
         (2022,
         28,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 28',
