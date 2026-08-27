@@ -179,6 +179,55 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2023,
+        34,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 34',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 34',
+        '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
+        <p><strong>Материалы Международной научно-практической конференции</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
+        <p><em>Количество страниц:</em>&nbsp;103 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
+        <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
+        <p>&nbsp;</p>
+        <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
+        <p><em>Number of pages:</em>&nbsp;103 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p>ВОПРОСЫ ИСТОРИИ МУЗЫКИ<br>
+        <em>Чахвадзе Н. В.</em> Об оперном творчестве Вернера Эгка: свой путь<br>
+        <em>Шелудякова О. Е.</em> Отечественная православная духовная музыка рубежа ХХ–ХХI веков: традиция и обновление <br><br>
+        МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+        <em>Бородин Б. Б.</em> «Апокрифы» Рахманинова<br>
+        <em>Меркулов А. М.</em> «Разрушитель устоев, способствующих рутине»: Л. А. Максимов (1873–1904) как музыкальный критик<br><br>
+        ИЗ ИСТОРИИ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+        <em>Подгузова М. М.</em> Забытые имена. Ида Цабель-Рашат (1865–1913) – профессор Санкт-Петербургской консерватории по классу арфы<br><br>
+        МУЗЫКА ХХ ВЕКА ДЛЯ ДЕТЕЙ<br>
+        <em>Фиденко Ю. Л.</em> Образы французских сказок в фортепианном цикле Мориса Равеля «Моя Матушка-Гусыня»<br>
+        <em>Городилова М. В., Ермаков А. А.</em> «Детский рай» Артура Лурье: опусы для детей композитора-авангардиста<br><br>
+        МУЗЫКА КИНО<br>
+        <em>Зырянов М. Л.</em> Графический метод исследования оригинальных саундтреков на примере работы с партитурой к фильму «Звёздные войны: Эпизод I»</p>'
+        '<p>ISSUES OF MUSIC HISTORY<br>
+        <em>Chakhvadze N. V.</em> On the Operatic Work of Werner Egk: A Path of His Own<br><
+        em>Sheludyakova O. E.</em> Russian Orthodox Sacred Music at the Turn of the 20th–21st Centuries: Tradition and Renewal<br><br>
+        MUSICAL SCIENCE AND PERFORMANCE<br>
+        <em>Borodin B. B.</em> Rachmaninoff''s "Apocrypha"<br>
+        <em>Merkulov A. M.</em> "A Destroyer of Foundations That Foster Routine": L. A. Maximov (1873–1904) as a Music Critic<br><br>
+        FROM THE HISTORY OF PERFORMING ARTS<br>
+        <em>Podguzova M. M.</em> Forgotten Names. Ida Zabel-Raschat (1865–1913) – Professor of Harp at the St. Petersburg Conservatory<br><br>
+        20TH‑CENTURY MUSIC FOR CHILDREN<br>
+        <em>Fidenko Yu. L.</em> Images of French Fairy Tales in Maurice Ravel''s Piano Cycle "Ma mère l''Oye"<br>
+        <em>Gorodilova M. V., Ermakov A. A.</em> Arthur Lourié''s "Children''s Paradise": Works for Children by an Avant‑Garde Composer<br><br>
+        FILM MUSIC<br>
+        <em>Zyryanov M. L.</em> A Graphic Method for Analysing Original Soundtracks Based on Work with the Score for "Star Wars: Episode I"</p>'
+        'cover34.jpg',
+        '2023_34.pdf'),
+
+        (2023,
         35,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 35',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 35',
