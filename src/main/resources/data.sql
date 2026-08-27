@@ -179,6 +179,39 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2020,
+        22,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 22',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 22',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2020</p>
+        <p><em>Количество страниц:</em>&nbsp;100 с.</p>
+        <p><em>Тираж:</em>&nbsp;66 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2020</p>
+        <p><em>Number of pages:</em>&nbsp;100 pp.</p>
+        <p><em>Circulation:</em>&nbsp;66 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ОСОБЕННОСТИ ТВОРЧЕСКОГО ПРОЦЕССА<br>
+        <em>Петухова С. А.</em> Семантика повторений и возвращений в творчестве С. Прокофьева<br><br>
+        МУЗЫКА ДЛЯ ТЕАТРА И КИНО<br>
+        <em>Поршнев И. Д.</em> Музыка С. Прокофьева к драме А. Пушкина «Борис Годунов» в постановке В. Мейерхольда<br><br>
+        ПРОКОФЬЕВ И УРАЛ<br>
+        <em>Фефелова А. Г.</em> Сергей Прокофьев в Перми (к истории создания «Золушки»)<br>
+        <em>Синецкая Т. М.</em> Музыка С. Прокофьева в театральной и концертной жизни Челябинска 1935–2016 годов<br><br>
+        ИЗ ОПЫТА ПРЕПОДАВАНИЯ<br>
+        <em>Ситникова Ж. Ю.</em> Применение компьютерных средств к анализу музыки С. Прокофьева</p>',
+        '<p>PECULIARITIES OF THE CREATIVE PROCESS<br>
+        <em>Petukhova S. A.</em> Semantics of Repetitions and Returns in the Works of S. Prokofiev<br><br>
+        MUSIC FOR THEATRE AND CINEMA<br>
+        <em>Porshnev I. D.</em> S. Prokofiev''s Music for A. Pushkin''s Drama "Boris Godunov" in V. Meyerhold''s Production<br><br>
+        PROKOFIEV AND THE URALS<br>
+        <em>Fefelova A. G.</em> Sergei Prokofiev in Perm (On the History of the Creation of "Cinderella")<br>
+        <em>Sinetskaya T. M.</em> S. Prokofiev''s Music in Theatrical and Concert Life of Chelyabinsk from 1935 to 2016<br><br>
+        FROM TEACHING EXPERIENCE<br>
+        <em>Sitnikova Zh. Yu.</em> Application of Computer Tools to the Analysis of S. Prokofiev''s Music</p>',
+        'cover22.jpg',
+        '2020_22.pdf'),
+
+        (2020,
         23,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 23',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 23',
