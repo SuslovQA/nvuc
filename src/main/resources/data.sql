@@ -17,6 +17,49 @@ CREATE TABLE journals
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
 VALUES (2018,
+       13,
+       'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 13. AD MEMORIAM',
+       'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 13. AD MEMORIAM',
+       '<p><em>Предлагаемое издание – четвёртый сборник, подготовленный кафедрой истории и теории исполнительского искусства Уральской государственной консерватории имени М.П. Мусоргского. Данный выпуск носит монотематический характер, что отражено в его подзаголовке AD MEMORIAM, и содержит материалы, связанные с историей Уральской государственной консерватории имени М.П. Мусоргского, с деятельностью выдающихся музыкантов, которые преподавали в её исполнительских классах. Издание приурочено к юбилейным датам ушедших мастеров: 90-летию со дня рождения скрипача и педагога, профессора, заслуженного артиста РСФСР Льва Моисеевича Мирчина и 75-летней годовщине баяниста и педагога Олега Сергеевича Панькова. Сборник завершает архивная публикация – фрагмент лекции «О Генрихе Густавовиче Нейгаузе», прочитанной в 1987 году Исааком Зусмановичем Зетелем. Авторами сборника являются преподаватели и выпускники Уральской консерватории. Издание адресовано музыкантам-профессионалам, всем интересующимся проблемами музыкального исполнительства и историей музыкальной культуры Урала.</em></p>
+       <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2018</p>
+       <p><em>Количество страниц:</em>&nbsp;111 с.</p>
+       <p><em>Тираж:</em>&nbsp;100 экз.</p>
+       <p>ISBN:&nbsp;978-5-98602-118-8</p>',
+       '<p><em>This publication is the fourth collection prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky. This issue is monographic in nature, as reflected in its subtitle AD MEMORIAM, and contains materials related to the history of the Ural State Conservatory named after M. P. Mussorgsky and to the activities of outstanding musicians who taught in its performance departments. The publication is timed to coincide with the anniversaries of departed masters: the 90th anniversary of the birth of violinist and teacher, professor, Honored Artist of the RSFSR Lev Moiseevich Mirchin, and the 75th anniversary of bayan player and teacher Oleg Sergeevich Pankov. The collection concludes with an archival publication – a fragment of a lecture "On Heinrich Gustavovich Neuhaus," delivered in 1987 by Isaac Zusmanovich Zetel. The authors of the collection are teachers and graduates of the Ural Conservatory. The edition is addressed to professional musicians and to all those interested in the problems of musical performance and the history of the musical culture of the Urals.</em></p>
+       <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2018</p>
+       <p><em>Number of pages:</em>&nbsp;111 pp.</p>
+       <p><em>Circulation:</em>&nbsp;100 copies.</p>
+       <p>ISBN:&nbsp;978-5-98602-118-8</p>',
+       '<p>I. К 90-ЛЕТИЮ СО ДНЯ РОЖДЕНИЯ ЛЬВА МОИСЕЕВИЧА МИРЧИНА<br>
+       <em>Ивонина Л.Ф.</em> Лев Мирчин – человек со скрипкой в руках<br>
+       <em>Ивонина Л.Ф.</em> В классе скрипки Льва Моисеевича Мирчина<br>
+       <em>Бородин Б.Б.</em> Лев Моисеевич Мирчин, каким его помню<br>
+       <em>Визель З.А.</em> Настоящий интеллигент<br>
+       <em>Надельсон А.С.</em> Вспоминая Льва Моисеевича Мирчина<br>
+       <em>Петухов Д.П.</em> Воспоминания о моём наставнике<br>
+       <em>Пешков С.Ф.</em> Л.М. Мирчин в квартете имени Мясковского<br>
+       <em>Сендерова И.Г.</em> Штрихи к портрету Льва Моисеевича Мирчина<br><br>
+       II. К 75-ЛЕТИЮ СО ДНЯ РОЖДЕНИЯ ОЛЕГА СЕРГЕЕВИЧА ПАНЬКОВА<br>
+       <em>Гареева И.В.</em> Олег Паньков – четверть века на Урале<br><br>
+       III. ИЗ АРХИВОВ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+       <em>Зетель И.З.</em> О Генрихе Густавовиче Нейгаузе</p>',
+       '<p>I. TO THE 90TH ANNIVERSARY OF THE BIRTH OF LEV MOISEEVICH MIRCHIN<br>
+       <em>Ivonina L.F.</em> Lev Mirchin – A Man with a Violin in His Hands<br>
+       <em>Ivonina L.F.</em> In Lev Moiseevich Mirchin''s Violin Class<br>
+       <em>Borodin B.B.</em> Lev Moiseevich Mirchin as I Remember Him<br>
+       <em>Wiesel Z.A.</em> A True Intellectual<br>
+       <em>Nadelson A.S.</em> Remembering Lev Moiseevich Mirchin<br>
+       <em>Petukhov D.P.</em> Memories of My Mentor<br>
+       <em>Peshkov S.F.</em> L.M. Mirchin in the Myaskovsky Quartet<br>
+       <em>Senderova I.G.</em> Touches to the Portrait of Lev Moiseevich Mirchin<br><br>
+       II. TO THE 75TH ANNIVERSARY OF THE BIRTH OF OLEG SERGEEVICH PANKOV<br>
+       <em>Gareeva I.V.</em> Oleg Pankov – A Quarter of a Century in the Urals<br><br>
+       III. FROM THE ARCHIVES OF THE URAL CONSERVATORY<br>
+       <em>Zetel I.Z.</em> About Heinrich Gustavovich Neuhaus</p>',
+       'cover13.jpg',
+       null),
+
+       (2018,
        14,
        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 14. Музыкальная наука и образование на Урале: К 80-летию историко-теоретического отделения Уральской консерватории: сб. ст.',
        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 14. Musical Science and Education in the Urals: To the 80th Anniversary of the Historical-Theoretical Department of the Ural Conservatory: Collection of Articles',
@@ -61,7 +104,7 @@ VALUES (2018,
        III. FROM THE ARCHIVES OF THE URAL CONSERVATORY<br>
        <em>Zetel I.Z.</em> About Heinrich Gustavovich Neuhaus</p>',
        'cover14.jpg',
-       '2018_14.pdf'),
+       ''),
 
        (2018,
        15,
