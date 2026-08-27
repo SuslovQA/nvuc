@@ -179,6 +179,55 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2023,
+        33,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 33',
+         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 33',
+         '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
+         <p><strong>Материалы Международной научно-практической конференции</strong></p>
+         <p>&nbsp;</p>
+         <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+         <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
+         <p><em>Количество страниц:</em>&nbsp;103 с.</p>
+         <p><em>Тираж:</em>&nbsp;100 экз.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
+         <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
+         <p>&nbsp;</p>
+         <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+         <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
+         <p><em>Number of pages:</em>&nbsp;103 pp.</p>
+         <p><em>Circulation:</em>&nbsp;100 copies.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p">ВОПРОСЫ МУЗЫКАЛЬНОЙ ЭСТЕТИКИ<br>
+         <em>Субботина Н. М.</em> «Таинство пленения мечты» (философско-эстетических основаниях творчества А. Н. Скрябина)<br><br>
+         СОВРЕМЕННЫЕ ПРОБЛЕМЫ ТЕОРИИ МУЗЫКИ<br>
+         <em>Мальцева А. А.</em> Figurenlehre и «больше, чем Figurenlehre» в аналитике музыкальных фигур эпохи Барокко<br>
+         <em>Пылаев М. Е.</em> К вопросу о гармоническом четырёхголосии и его роли в музыке Нового времени<br><br>
+         ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ<br>
+         <em>Кадочников В. П.</em> Судьба хорала Страстной Пятницы «O Haupt voll Blut und Wunden»<br>
+         <em>Любимов Д. В.</em> Лючия и Жизель: безумные героини в музыкальном театре XIX века<br>
+         <em>Клочкова Е. В.</em> «Симфонический музыкальный Апокалипсис» Алемдара Караманова<br>
+         <em>Чахвадзе Н. В.</em> Мифопоэтические и ритуальные мотивы как способ отражения национального в творчестве русских композиторов, работавших в Узбекистане<br>
+         <em>Карташова Т. В.</em> Музыкальная культура Северной Индии в свете влияния ислама<br><br>
+         ДЕЯТЕЛИ МУЗЫКАЛЬНОЙ КУЛЬТУРЫ РОССИЙСКИХ РЕГИОНОВ<br>
+         <em>Евдокимова Н. К.</em> Акустический подход к процессу голосообразования в научных трудах Е. Е. Егорова</p>',
+         '<p>ISSUES OF MUSICAL AESTHETICS<br>
+         <em>Subbotina N. M.</em> "The Mystery of Capturing the Dream" (On the Philosophical and Aesthetic Foundations of A. N. Scriabin''s Work)<br><br>
+         CONTEMPORARY PROBLEMS OF MUSIC THEORY<br>
+         <em>Maltseva A. A.</em> Figurenlehre and "More than Figurenlehre" in the Analytics of Musical Figures of the Baroque Era<br>
+         <em>Pylaev M. E.</em> On the Question of Harmonic Four-Part Writing and Its Role in the Music of Modern Times<br><br>
+         FROM THE HISTORY OF MUSICAL CULTURE<br>
+         <em>Kadochnikov V. P.</em> The Fate of the Good Friday Chorale "O Haupt voll Blut und Wunden"<br>
+         <em>Lyubimov D. V.</em> Lucia and Giselle: Mad Heroines in 19th-Century Musical Theatre<br>
+         <em>Klochkova E. V.</em> "Symphonic Musical Apocalypse" by Alemdar Karamanov<br>
+         <em>Chakhvadze N. V.</em> Mythopoetic and Ritual Motifs as a Means of Reflecting the National in the Works of Russian Composers Who Worked in Uzbekistan<br>
+         <em>Kartashova T. V.</em> Musical Culture of North India in the Light of Islamic Influence<br><br>
+         FIGURES OF MUSICAL CULTURE OF RUSSIAN REGIONS<br>
+         <em>Evdokimova N. K.</em> Acoustic Approach to the Process of Voice Production in the Scholarly Works of E. E. Egorov</p>',
+         'cover33.jpg',
+         '2023_33.pdf'),
+
+        (2023,
         34,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 34',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 34',
