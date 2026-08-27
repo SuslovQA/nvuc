@@ -178,19 +178,56 @@ VALUES (2019,
         'cover17.jpg',
         '2019_17.pdf'),
 
+        (2022,
+         31,
+         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 31',
+         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 31',
+         '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2022</p>
+         <p><em>Количество страниц:</em>&nbsp;97 с.</p>
+         <p><em>Тираж:</em>&nbsp;100 экз.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2022</p>
+         <p><em>Number of pages:</em>&nbsp;97 pp.</p>
+         <p><em>Circulation:</em>&nbsp;100 copies.</p>
+         <p>ISSN:&nbsp;2658-7858</p>',
+         '<p">СОВРЕМЕННЫЕ ПРОБЛЕМЫ ИСКУССТВА<br>
+         <em>Марков А. В.</em> Традиции церковной гимнографии в проекте «Страсти по Матфею-2000»: к социологии русских художественных сообществ<br><br>
+         ВОПРОСЫ ТЕОРИИ МУЗЫКИ<br>
+         <em>Позднякова Л. В.</em> Черты музыкального конструктивизма в циклических сонатах А. В. Мосолова<br><br>
+         МУЗЫКАЛЬНАЯ НАУКА И ИСПОЛНИТЕЛЬСТВО<br>
+         <em>Зенкин К. В.</em> Музыкальный смысл и исполнительский жест<br>
+         <em>Бородин Б. Б.</em> «Авторецензия» Ферруччо Бузони: комментарии к переводу<br><br>
+         ИЗ ИСТОРИИ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+         <em>Меркулов А. В.</em> «Первоклассный пианист в ряду самых выдающихся пианистов нашего времени»: о рахманиновском современнике Леониде Александровиче Максимове<br>
+         <em>Подгузова М. М.</em> Арфистка Санкт-Петербургских императорских театров Екатерина Вальтер-Кюне<br><br>
+         ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+         <em>Адищев В. И.</em> Научный совет как форма сотрудничества учёных-музыкантов российских регионов<br>
+         <em>Денисова Г. А.</em> Кафедра сольного пения Уральской консерватории: от прошлого к настоящему</p>',
+         '<p>CONTEMPORARY PROBLEMS OF ART<br>
+         <em>Markov A. V.</em> Traditions of Church Hymnography in the Project "St. Matthew Passion-2000": Toward a Sociology of Russian Artistic Communities<br><br>
+         ISSUES OF MUSIC THEORY<br>
+         <em>Pozdnyakova L. V.</em> Features of Musical Constructivism in the Cyclic Sonatas of A. V. Mosolov<br><br>
+         MUSICOLOGY AND PERFORMANCE<br>
+         <em>Zenkin K. V.</em> Musical Meaning and Performance Gesture<br>
+         <em>Borodin B. B.</em> Ferruccio Busoni''s "Self-Review": Comments on the Translation<br><br>
+         FROM THE HISTORY OF PERFORMING ARTS<br>
+         <em>Merkulov A. V.</em> "A First-Class Pianist Among the Most Outstanding Pianists of Our Time": On Rachmaninoff''s Contemporary Leonid Alexandrovich Maksimov<br>
+         <em>Podguzova M. M.</em> Harpist of the St. Petersburg Imperial Theatres Ekaterina Walter-Kühne<br><br>
+         ISSUES OF MUSIC EDUCATION: HISTORY, THEORY, PRACTICE<br>
+         <em>Adishchev V. I.</em> Scientific Council as a Form of Cooperation among Music Scholars of Russian Regions<br>
+         <em>Denisova G. A.</em> Department of Solo Singing of the Ural Conservatory: From the Past to the Present</p>',
+         'cover31.jpg',
+         '2022_31.pdf'),
+
         (2023,
          32,
          'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 32',
          'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 32',
-         '<p><strong>Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 32</strong></p>
-         <p>&nbsp;</p>
-         <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
+         '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
          <p><em>Количество страниц:</em>&nbsp;97 с.</p>
          <p><em>Тираж:</em>&nbsp;100 экз.</p>
          <p>ISSN:&nbsp;2658-7858</p>',
-         '<p><strong>Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 32</strong></p>
-         <p>&nbsp;</p>
-         <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
+         '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
          <p><em>Number of pages:</em>&nbsp;97 pp.</p>
          <p><em>Circulation:</em>&nbsp;100 copies.</p>
          <p>ISSN:&nbsp;2658-7858</p>',
@@ -225,18 +262,12 @@ VALUES (2019,
         33,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 33',
          'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 33',
-         '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
-         <p><strong>Материалы Международной научно-практической конференции</strong></p>
-         <p>&nbsp;</p>
-         <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+         '<p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
          <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
          <p><em>Количество страниц:</em>&nbsp;103 с.</p>
          <p><em>Тираж:</em>&nbsp;100 экз.</p>
          <p>ISSN:&nbsp;2658-7858</p>',
-         '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
-         <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
-         <p>&nbsp;</p>
-         <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+         '<p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
          <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
          <p><em>Number of pages:</em>&nbsp;103 pp.</p>
          <p><em>Circulation:</em>&nbsp;100 copies.</p>
@@ -274,18 +305,12 @@ VALUES (2019,
         34,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 34',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 34',
-        '<p><strong>Императорское Русское музыкальное общество: на переломах истории</strong></p>
-        <p><strong>Материалы Международной научно-практической конференции</strong></p>
-        <p>&nbsp;</p>
-        <p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
+        '<p><em>Редакторы:</em>&nbsp;Е.Е. Полоцкая (отв. ред.), М.В. Городилова, А.Г. Коробова</p>
         <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2023</p>
         <p><em>Количество страниц:</em>&nbsp;103 с.</p>
         <p><em>Тираж:</em>&nbsp;100 экз.</p>
         <p>ISSN:&nbsp;2658-7858</p>',
-        '<p><strong>The Imperial Russian Musical Society: At the Turning Points of History</strong></p>
-        <p><strong>Proceedings of the International Research and Practical Conference</strong></p>
-        <p>&nbsp;</p>
-        <p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
+        '<p><em>Editors:</em>&nbsp;E.E. Polotskaya (Executive Editor), M.V. Gorodilova, A.G. Korobova</p>
         <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2023</p>
         <p><em>Number of pages:</em>&nbsp;103 pp.</p>
         <p><em>Circulation:</em>&nbsp;100 copies.</p>
