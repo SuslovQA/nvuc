@@ -179,6 +179,45 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2022,
+        29,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 29',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 29',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2022</p>
+        <p><em>Количество страниц:</em>&nbsp;80 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2022</p>
+        <p><em>Number of pages:</em>&nbsp;80 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">МУЗЫКАЛЬНЫЕ АРХИВЫ: НОВЫЕ ИССЛЕДОВАНИЯ И ПУБЛИКАЦИИ<br>
+        <em>Светлова О. А.</em> Иркутская музыкально-театральная критика об итальянской опере в Сибири на рубеже XIX–XX веков (по материалам газеты «Восточное обозрение»)<br><br>
+        ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Литвинова Т. А.</em> Формат тембрового диктанта: каков он?<br><br>
+        ИЗ ИСТОРИИ МУЗЫКАЛЬНОЙ НАУКИ<br>
+        <em>Евдокимова Н. К.</em> Государственный институт музыкальной науки (1921–1931): история, направления, перспективы<br><br>
+        ИЗ МАТЕРИАЛОВ ЮБИЛЕЙНОЙ КОНФЕРЕНЦИИ К 130-ЛЕТИЮ С. С. ПРОКОФЬЕВА<br>
+        <em>Бородин Б. Б.</em> С. С. Прокофьев и С. В. Рахманинов как современники<br>
+        <em>Петухова С. А.</em> Прокофьев и Скрябин: опыт приближения<br>
+        <em>Масловская Т. Ю.</em> Отрицание отрицания: Л. Сабанеев о С. Прокофьеве<br>
+        <em>Городилова М. В.</em> Нотация в расширенной тональности C. Прокофьева<br>
+        <em>Шелудякова О. Е.</em> Православные песнопения и обряды в музыке С. Прокофьева к кинофильму «Иван Грозный»</p>',
+        '<p>MUSICAL ARCHIVES: NEW RESEARCH AND PUBLICATIONS<br>
+        <em>Svetlova O. A.</em> Irkutsk Musical and Theatre Criticism on Italian Opera in Siberia at the Turn of the 19th–20th Centuries (Based on Materials from the Newspaper "Vostochnoye Obozreniye")<br><br>
+        ISSUES OF MUSIC EDUCATION: HISTORY, THEORY, PRACTICE<br>
+        <em>Litvinova T. A.</em> The Format of Timbre Dictation: What Is It?<br><br>
+        FROM THE HISTORY OF MUSICOLOGY<br>
+        <em>Evdokimova N. K.</em> The State Institute of Music Science (1921–1931): History, Directions, Prospects<br><br>
+        FROM THE MATERIALS OF THE ANNIVERSARY CONFERENCE DEDICATED TO THE 130TH ANNIVERSARY OF S. S. PROKOFIEV<br>
+        <em>Borodin B. B.</em> S. S. Prokofiev and S. V. Rachmaninoff as Contemporaries<br>
+        <em>Petukhova S. A.</em> Prokofiev and Scriabin: An Experience of Approximation<br>
+        <em>Maslovskaya T. Yu.</em> The Negation of Negation: L. Sabaneyev on S. Prokofiev<br>
+        <em>Gorodilova M. V.</em> Notation in Prokofiev''s Extended Tonality<br>
+        <em>Sheludyakova O. E.</em> Orthodox Chants and Rites in Prokofiev''s Music for the Film "Ivan the Terrible"</p>',
+        'cover29.jpg',
+        '2022_29.pdf'),
+
+        (2022,
         30,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 30',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 30',
