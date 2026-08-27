@@ -179,6 +179,51 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2020,
+        20,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 20',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 20',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2020</p>
+        <p><em>Количество страниц:</em>&nbsp;100 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2020</p>
+        <p><em>Number of pages:</em>&nbsp;100 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">ВОПРОСЫ МУЗЫКАЛЬНОЙ ЭСТЕТИКИ<br>
+        <em>Субботина Н. М.</em> В.-Г. Вакенродер о сущности музыки<br><br>
+        ТЕОРЕТИЧЕСКИЕ АСПЕКТЫ ИЗУЧЕНИЯ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+        <em>Бородин Б. Б.</em> Фортепианная фактура романтизма как формообразующий фактор<br>
+        <em>Заитов Г. С.</em> Применение компьютерных программ в анализе и формировании вокальной резонансной стратегии<br><br>
+        ПЕДАГОГИКА МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Лукьянова Е. П., Ивакина В. А.</em> Роль исполнительской практики в системе профессиональной подготовки студентов консерватории<br>
+        <em>Овчинников В. П.</em> Исполнительские мастер-классы в практике современного музыкального образования (заметки педагога)<br><br>
+        К ИЗУЧЕНИЮ ИСПОЛНИТЕЛЬСКОГО РЕПЕРТУАРА ПИАНИСТА<br>
+        <em>Панкова Н. Г.</em> Тридцать два шага за грозовой перевал: заметки о цикле Бетховена «Тридцать две вариации для фортепиано на собственную тему» (WoO 8о, c-moll)<br>
+        <em>Приложение: Меркулов А. М.</em> Бетховен в исполнении Н. Г. Панковой<br><br>
+        СТРАНИЦЫ ИСТОРИИ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>Басок М. А.</em> Г. Н. Рождественский: несколько мимолётных встреч...<br>
+        <em>Басок М. А.</em> О друзьях...<br>
+        <em>Бородин А. Б.</em> О времени и о себе: интервью с Вольфом Усминским</p>',
+        '<p>ISSUES OF MUSICAL AESTHETICS<br>
+        <em>Subbotina N. M.</em> W.-H. Wackenroder on the Essence of Music<br><br>
+        THEORETICAL ASPECTS OF THE STUDY OF PERFORMING ARTS<br>
+        <em>Borodin B. B.</em> Romantic Piano Texture as a Form-Shaping Factor<br>
+        <em>Zaitov G. S.</em> Application of Computer Programs in the Analysis and Formation of Vocal Resonance Strategy<br><br>
+        PEDAGOGY OF MUSIC EDUCATION<br>
+        <em>Lukyanova E. P., Ivakina V. A.</em> The Role of Performance Practice in the System of Professional Training of Conservatory Students<br>
+        <em>Ovchinnikov V. P.</em> Performance Master Classes in the Practice of Contemporary Music Education (Notes of a Teacher)<br><br>
+        TO THE STUDY OF PIANIST PERFORMANCE REPERTOIRE<br>
+        <em>Pankova N. G.</em> Thirty-Two Steps Beyond the Stormy Pass: Notes on Beethoven''s Cycle "Thirty-Two Variations for Piano on an Original Theme" (WoO 80, C minor)<br>
+        <em>Appendix: Merkulov A. M.</em> Beethoven Performed by N. G. Pankova<br><br>
+        PAGES OF THE HISTORY OF THE URAL CONSERVATORY<br>
+        <em>Basok M. A.</em> G. N. Rozhdestvensky: A Few Fleeting Encounters...<br>
+        <em>Basok M. A.</em> About Friends...<br>
+        <em>Borodin A. B.</em> On Time and About Myself: An Interview with Wolf Usminsky</p>',
+        'cover20.jpg',
+        '2020_20.pdf'),
+
+        (2020,
         21,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 21',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 21',
