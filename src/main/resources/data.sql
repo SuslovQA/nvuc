@@ -179,6 +179,59 @@ VALUES (2019,
         '2019_17.pdf'),
 
         (2019,
+        18,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 18',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 18',
+        '<p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2019</p>
+        <p><em>Количество страниц:</em>&nbsp;152 с.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2019</p>
+        <p><em>Number of pages:</em>&nbsp;152 pp.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies.</p>
+        <p>ISSN:&nbsp;2658-7858</p>',
+        '<p">К ЮБИЛЕЮ УРАЛЬСКОЙ ГОСУДАРСТВЕННОЙ КОНСЕРВАТОРИИ ИМЕНИ М. П. МУСОРГСКОГО<br>
+        <em>Шабалина Л. К.</em> 80 лет с именем М. П. Мусоргского<br><br>
+        ТЕОРИЯ МУЗЫКИ<br>
+        <em>Курленя К. М.</em> К уточнению смысла термина «интонация»: о логических основаниях теорий Б. Яворского, Б. Асафьева и К. Закса<br><br>
+        СОВРЕМЕННАЯ МУЗЫКА<br>
+        <em>Купровская Е. О.</em> Вариации для фортепиано Эдисона Денисова как пример серийной техники в раннем творчестве композитора<br>
+        <em>Шабшаевич Е. М.</em> Лейтмотивная система в анимации: метод Шнитке<br>
+        <em>Окунева Е. Г.</em> Вопросы развития серийной техники в теоретических взглядах и музыкальной практике Эрнста Кшенека<br>
+        <em>Алексеева А. Ю.</em> Комбинаторные приёмы в музыке британского постминимализма<br>
+        <em>Чупова А. Г.</em> «VANITAS VANITATUM»: композиторские стратегии смыслообразования в «Vanitas» С. Шаррино<br><br>
+        МУЗЫКАЛЬНАЯ КУЛЬТУРА УРАЛА<br>
+        <em>Базилевич М. В.</em> «Музыка для исполнения» и «Музыка для слушания» в инструментальных сочинениях В. Г. Трапезникова для детей<br><br>
+        ДУХОВНАЯ МУЗЫКА<br>
+        <em>Шелудякова О. Е.</em> Русские православные роспевщики XX столетия<br><br>
+        МУЗЫКАЛЬНОЕ ИСПОЛНИТЕЛЬСТВО И ОБРАЗОВАНИЕ<br>
+        <em>Бородин Б. Б.</em> Cвобода творчества музыканта-исполнителя: в перекрёстке мнений<br>
+        <em>Адищев В. И.</em> «Школа должна дать учащимся умение сознательно слушать и понимать музыку…» (к истории создания программы по музыке для единой трудовой школы)<br><br>
+        МЕЖДИСЦИПЛИНАРНЫЕ ИССЛЕДОВАНИЯ<br>
+        <em>Рубин Л. С.</em> Звук и музыки (о закономерностях восприятия музыкальной информации)</p>',
+        '<p>TO THE ANNIVERSARY OF THE URAL STATE CONSERVATORY NAMED AFTER M. P. MUSSORGSKY<br>
+        <em>Shabalina L. K.</em> 80 Years with the Name of M. P. Mussorgsky<br><br>
+        MUSIC THEORY<br>
+        <em>Kurlenya K. M.</em> Towards Clarifying the Meaning of the Term "Intonation": On the Logical Foundations of the Theories of B. Yavorsky, B. Asafiev and K. Sachs<br><br>
+        CONTEMPORARY MUSIC<br>
+        <em>Kuprovskaya E. O.</em> Edison Denisov''s Piano Variations as an Example of Serial Technique in the Composer''s Early Work<br>
+        <em>Shabshaevich E. M.</em> Leitmotif System in Animation: Schnittke''s Method<br>
+        <em>Okuneva E. G.</em> Issues of the Development of Serial Technique in the Theoretical Views and Musical Practice of Ernst Krenek<br>
+        <em>Alekseeva A. Yu.</em> Combinatorial Techniques in British Postminimalist Music<br>
+        <em>Chupova A. G.</em> "VANITAS VANITATUM": Composer''s Strategies of Meaning Formation in S. Sciarrino''s "Vanitas"<br><br>
+        MUSICAL CULTURE OF THE URALS<br>
+        <em>Basilevich M. V.</em> "Music for Performance" and "Music for Listening" in V. G. Trapeznikov''s Instrumental Works for Children<br><br>
+        SACRED MUSIC<br>
+        <em>Sheludyakova O. E.</em> Russian Orthodox Chant Composers of the 20th Century<br><br>
+        MUSICAL PERFORMANCE AND EDUCATION<br>
+        <em>Borodin B. B.</em> Freedom of Creative Work of a Performing Musician: At the Crossroads of Opinions<br>
+        <em>Adishchev V. I.</em> "The School Should Give Students the Ability to Consciously Listen to and Understand Music..." (On the History of the Creation of the Music Curriculum for the Unified Labour School)<br><br>
+        INTERDISCIPLINARY RESEARCH<br>
+        <em>Rubin L. S.</em> Sound and Music (On the Patterns of Perception of Musical Information)</p>',
+        'cover18.jpg',
+        '2019_18.pdf'),
+
+        (2019,
         19,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 19',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 19',
