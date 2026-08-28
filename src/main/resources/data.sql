@@ -121,7 +121,7 @@ VALUES (2016,
          <em>Ivukin V. P.</em> Mikhail Petrovich Vagin – "The Caruso of the Trumpet"<br>
          <em>Peshkov S. F.</em> About My Teacher – Hertz Davydovich Tsomyk</p>',
         'cover12.jpg',
-        null)
+        null),
 
        (2018,
        13,
