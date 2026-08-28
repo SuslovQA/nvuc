@@ -16,7 +16,114 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2018,
+VALUES (2016,
+        12,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 12',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 12',
+        '<p><strong>Актуальные проблемы теории и истории исполнительского искусства: сб. ст.</strong></p><br>
+        <p><em>Предлагаемое издание – третий сборник, подготовленный кафедрой истории и теории исполнительского искусства Уральской государственной консерватории им. М. П. Мусоргского. В нём в целом сохранена структура и последовательность разделов, принятая в предшествующих выпусках (см.: Музыка в системе культуры : Науч. вестн. Урал. консерватории. Вып. 8. Актуальные проблемы теории и истории исполнительского искусства / ред.-сост. Б. Б. Бородин ; Урал. гос. консерватория им. М. П. Мусоргского. Екатеринбург : УГК, 2014; Музыка в системе культуры : Науч. вестн. Урал. консерватории. Вып. 10. Актуальные проблемы теории и истории исполнительского искусства / ред.-сост. Б. Б. Бородин ; Урал. гос. консерватория им. М. П. Мусоргского. Екатеринбург : УГК, 2015).</em></p>
+
+        <p><em>Первый раздел, посвящённый теоретическим вопросам музыкального исполнительства, открывается статьёй Б. Б. Бородина, в которой рассматривается воздействие культуры фортепиано на становление композиторского стиля С. С. Прокофьева. В статье А. М. Меркулова впервые анализируются в контексте музыкальной культуры 2-й половины XIX в. стилевые особенности недавно найденных каденций В. И. Сафонова (соч. 1879 г.) к клавирному концерту В. А. Моцарта d-moll KV 466 (№ 20). Раздел завершает исследование профессора Уральской консерватории Е. А. Рубахи (1952–2010), в котором на примере произведений Моцарта сравнивается трактовка понятий «быстрого» и «медленного» в музыкальной эстетике классицизма и романтизма.</em></p>
+
+        <p><em>Второй раздел включает эссе Н. Г. Панковой, рисующее творческий портрет известной пианистки Екатерины Георгиевны Новицкой, и впервые издаваемые фрагменты воспоминаний мемуарной книги выдающегося пианиста, педагога и учёного Г. М. Когана, подготовленные к печати профессором Московской консерватории С. В. Грохотовым. Памятная дата – 110-летие со дня рождения Д. Д. Шостаковича – отмечена выделенной в специальный раздел публикацией статей Б. Б. Бородина и И. В. Чуковской о фортепианных произведениях композитора, относящихся к экспериментальному периоду его творчества.</em></p>
+
+        <p><em>В разделе «Изучение исполнительского и педагогического репертуара» представлены работы преимущественно методической направленности: об особенностях интерпретации «Прелюдии и Токкаты» А. И. Пирумова (М. В. Гаврилова), о жанровых традициях русского мемориального трио (В. Е. Карпенко) и о работе над этюдами К. Черни в классе фортепиано (М. А. Краснова).</em></p>
+
+        <p><em>В структуру сборника введён новый раздел «Беседы с мастерами», содержащий интервью с выдающимся виолончелистом, профессором Уральской консерватории Г. Д. Цомыком (1914–1980) и с главным дирижёром Московского академического театра им. К. С. Станиславского и В. И. Немировича-Данченко Ф. П. Коробовым.</em></p>
+
+        <p><em>Шестой раздел объединяет работы по педагогике музыкального образования. Ю. И. Бучуков делится своим опытом работы со студенческим духовым оркестром. И. Г. Сендерова повествует о личности и педагогическом мастерстве известного музыковеда Веры Михайловны Мезриной, многогранная деятельность которой оставила значительный след в музыкальной культуре Уральского региона.</em></p>
+
+        <p><em>В завершающем сборник традиционном разделе AD MEMORIAM публикуются материалы, связанные с музыкальной культурой Урала и Уральской консерваторией. Это воспоминания екатеринбургского композитора М. А. Баска о легендарном преподавателе эстетики Я. С. Тубине, заметки о валторнисте В. Н. Соколове (В. С. Гусельников), трубаче М. П. Вагине (В. П. Ивукин) и статья профессора С. Ф. Пешкова о своём учителе – Г. Д. Цомыке.</em></p>
+
+        <p><em>Помимо преподавателей и выпускников Уральской консерватории, представивших основной массив предлагаемых вниманию читателя публикаций, авторами данного сборника стали сотрудники Московской государственной консерватории, Российской академии музыки им. Гнесиных и Иркутского областного колледжа культуры.</em></p>
+
+        <p><em>Издание адресовано музыкантам-профессионалам и всем интересующимся проблемами музыкального исполнительства.</em></p>
+
+        <p><em>Редакторы:</em> <em>Б. Б. Бородин</em> (ред., сост.), <em>А. Б. Бородин</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2016</p>
+        <p><em>Количество страниц:</em>&nbsp;259 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860208-9-1</p>',
+
+        '<p><strong>Current Problems of Theory and History of Performing Arts: Collected Articles</strong></p><br>
+        <p><em>This publication is the third collection prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky. It generally preserves the structure and sequence of sections adopted in the previous issues (see: Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 8. Current Problems of Theory and History of Performing Arts / ed.-comp. B. B. Borodin; Ural State Conservatory named after M. P. Mussorgsky. Yekaterinburg: USMC, 2014; Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 10. Current Problems of Theory and History of Performing Arts / ed.-comp. B. B. Borodin; Ural State Conservatory named after M. P. Mussorgsky. Yekaterinburg: USMC, 2015).</em></p>
+
+        <p><em>The first section, devoted to theoretical issues of musical performance, opens with an article by B. B. Borodin, which examines the influence of piano culture on the formation of S. S. Prokofiev''s compositional style. In the article by A. M. Merkulov, for the first time, the stylistic features of the recently found cadenzas by V. I. Safonov (composed in 1879) to W. A. Mozart''s Piano Concerto in D minor, KV 466 (No. 20), are analysed in the context of the musical culture of the second half of the 19th century. The section concludes with a study by Ural Conservatory professor E. A. Rubakha (1952–2010), which compares the interpretation of the concepts of "fast" and "slow" in the musical aesthetics of Classicism and Romanticism, using Mozart''s works as examples.</em></p>
+
+        <p><em>The second section includes an essay by N. G. Pankova, which paints a creative portrait of the renowned pianist Yekaterina Georgievna Novitskaya, as well as previously unpublished fragments from the memoirs of the outstanding pianist, pedagogue and scholar G. M. Kogan, prepared for publication by Moscow Conservatory professor S. V. Grokhotov. The commemorative date – the 110th anniversary of D. D. Shostakovich''s birth – is marked by a special section containing articles by B. B. Borodin and I. V. Chukovskaya on the composer''s piano works from his experimental period.</em></p>
+
+        <p><em>The section "Study of Performance and Pedagogical Repertoire" presents works of a predominantly methodological nature: on the interpretation of A. I. Pirumov''s Prelude and Toccata (M. V. Gavrilova), on the genre traditions of the Russian memorial trio (V. E. Karpenko), and on working on C. Czerny''s études in the piano class (M. A. Krasnova).</em></p>
+
+        <p><em>A new section, "Conversations with Masters", has been introduced into the collection''s structure, containing interviews with the outstanding cellist and Ural Conservatory professor G. D. Tsomyk (1914–1980) and with the chief conductor of the Moscow Academic Theatre named after K. S. Stanislavsky and V. I. Nemirovich-Danchenko, F. P. Korobov.</em></p>
+
+        <p><em>The sixth section brings together works on the pedagogy of music education. Yu. I. Buchukov shares his experience of working with a student brass orchestra. I. G. Senderova recounts the personality and pedagogical mastery of the well-known musicologist Vera Mikhailovna Mezrina, whose multifaceted activities left a significant mark on the musical culture of the Ural region.</em></p>
+
+        <p><em>The concluding traditional section AD MEMORIAM publishes materials related to the musical culture of the Urals and the Ural Conservatory. These include reminiscences by Yekaterinburg composer M. A. Basok about the legendary aesthetics teacher Ya. S. Tubin, notes about horn player V. N. Sokolov (V. S. Guselnikov), trumpeter M. P. Vagin (V. P. Ivukin), and an article by Professor S. F. Peshkov about his teacher – G. D. Tsomyk.</em></p>
+
+        <p><em>In addition to the faculty and graduates of the Ural Conservatory, who make up the bulk of the publications presented here, the authors of this collection also include staff from the Moscow State Conservatory, the Gnessin Russian Academy of Music, and the Irkutsk Regional College of Culture.</em></p>
+
+        <p><em>The edition is addressed to professional musicians and all those interested in the problems of musical performance.</em></p>
+
+        <p><em>Editors:</em> <em>B. B. Borodin</em> (ed., comp.), <em>A. B. Borodin</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2016</p>
+        <p><em>Number of pages:</em>&nbsp;259 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies</p>
+        <p>ISBN:&nbsp;978-5-9860208-9-1</p>',
+
+        'I. ТЕОРЕТИЧЕСКИЕ АСПЕКТЫ ИЗУЧЕНИЯ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+        <em>Бородин Б. Б.</em> Фортепиано в жизни и творчестве С. С. Прокофьева (по материалам «Автобиографии» и «Дневника» композитора)<br>
+        <em>Меркулов А. М.</em> Каденции В. И. Сафонова к Концерту Моцарта d-moll KV 466 в контексте фортепианного искусства второй половины XIX в.<br>
+        <em>Рубаха Е. А.</em> Писал ли Моцарт медленные части?<br><br>
+        II. ИЗ ИСТОРИИ МУЗЫКАЛЬНОГО ИСПОЛНИТЕЛЬСТВА<br>
+        «Случилось так, что я родился...» (Из воспоминаний <em>Г. М. Когана</em>) (материал подготовлен <em>С. В. Грохотовым</em>)<br>
+        <em>Панкова Н. Г.</em> О пианистке Екатерине Новицкой<br><br>
+        III. К 110-ЛЕТИЮ Д. Д. ШОСТАКОВИЧА<br>
+        <em>Бородин Б. Б.</em> Традиционное и новаторское в Первой фортепианной сонате Д. Д. Шостаковича<br>
+        <em>Чуковская И. В., Бородин Б. Б.</em> К проблеме интерпретации фортепианного цикла «Афоризмы» (соч. 13) Д. Д. Шостаковича (аналитические и методические заметки)<br><br>
+        IV. ИЗУЧЕНИЕ ИСПОЛНИТЕЛЬСКОГО И ПЕДАГОГИЧЕСКОГО РЕПЕРТУАРА<br>
+        <em>Гаврилова М. В.</em> Особенности интерпретации Прелюдии и Токкаты ре минор А. И. Пирумова<br>
+        <em>Карпенко В. Е.</em> Традиции фортепианного трио (соч. 50) П. И. Чайковского в отечественной музыке<br>
+        <em>Краснова М. А.</em> Работа над этюдами К. Черни в классе фортепиано.<br><br>
+        V. БЕСЕДЫ С МАСТЕРАМИ<br>
+        <em>Басок М. А.</em> Герц Цомык: «Виолончель – очень романтический инструмент» (интервью с музыкантом)<br>
+        <em>Бородин А. Б.</em> Феликс Коробов: «Мы служим музыке»<br><br>
+        VI. ВОПРОСЫ ПЕДАГОГИКИ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Бучуков Ю. И.</em> Духовой оркестр в консерватории (размышления дирижёра)<br>
+        <em>Сендерова И. Г.</em> Слово о любимом учителе<br><br>
+        VII. AD MEMORIAM<br>
+        <em>Басок М. А.</em> Яков Соломонович Тубин – «человек понимающий»<br>
+        <em>Гусельников В. С.</em> Мастер уральской валторновой школы<br>
+        <em>Ивукин В. П.</em> Михаил Петрович Вагин – «Карузо трубы»<br>
+        <em>Пешков С. Ф.</em> О моём Учителе – Герце Давыдовиче Цомыке</p>',
+        'I. THEORETICAL ASPECTS OF THE STUDY OF PERFORMING ARTS<br>
+         <em>Borodin B. B.</em> Piano in the Life and Work of S. S. Prokofiev (Based on the Composer''s "Autobiography" and "Diary")<br>
+         <em>Merkulov A. M.</em> V. I. Safonov''s Cadenzas to Mozart''s Concerto in D minor KV 466 in the Context of Piano Art of the Second Half of the 19th Century<br>
+         <em>Rubakha E. A.</em> Did Mozart Write Slow Movements?<br><br>
+         II. FROM THE HISTORY OF MUSICAL PERFORMANCE<br>
+         "It Happened That I Was Born..." (From the Memoirs of <em>G. M. Kogan</em>) (prepared by <em>S. V. Grokhotov</em>)<br>
+         <em>Pankova N. G.</em> About the Pianist Yekaterina Novitskaya<br><br>
+         III. ON THE 110TH ANNIVERSARY OF D. D. SHOSTAKOVICH<br>
+         <em>Borodin B. B.</em> Traditional and Innovative in D. D. Shostakovich''s First Piano Sonata<br>
+         <em>Chukovskaya I. V., Borodin B. B.</em> On the Problem of Interpreting the Piano Cycle "Aphorisms" (Op. 13) by D. D. Shostakovich (Analytical and Methodological Notes)<br><br>
+         IV. STUDY OF PERFORMANCE AND PEDAGOGICAL REPERTOIRE<br>
+         <em>Gavrilova M. V.</em> Interpretation Features of A. I. Pirumov''s Prelude and Toccata in D minor<br>
+         <em>Karpenko V. E.</em> Traditions of P. I. Tchaikovsky''s Piano Trio (Op. 50) in Russian Music<br>
+         <em>Krasnova M. A.</em> Working on Czerny Études in the Piano Class.<br><br>
+         V. CONVERSATIONS WITH MASTERS<br>
+         <em>Basok M. A.</em> Hertz Tsomyk: "The Cello is a Very Romantic Instrument" (Interview with the Musician)<br>
+         <em>Borodin A. B.</em> Felix Korobov: "We Serve Music"<br><br>
+         VI. ISSUES OF MUSIC EDUCATION PEDAGOGY<br>
+         <em>Buchukov Yu. I.</em> Brass Orchestra at the Conservatory (A Conductor''s Reflections)<br>
+         <em>Senderova I. G.</em> A Word about a Beloved Teacher<br><br>
+         VII. AD MEMORIAM<br>
+         <em>Basok M. A.</em> Yakov Solomonovich Tubin – a "Man of Understanding"<br>
+         <em>Guselnikov V. S.</em> Master of the Ural Horn School<br>
+         <em>Ivukin V. P.</em> Mikhail Petrovich Vagin – "The Caruso of the Trumpet"<br>
+         <em>Peshkov S. F.</em> About My Teacher – Hertz Davydovich Tsomyk</p>',
+        'cover12.jpg',
+        null)
+
+       (2018,
        13,
        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 13. AD MEMORIAM',
        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 13. AD MEMORIAM',
