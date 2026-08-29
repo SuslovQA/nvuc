@@ -17,6 +17,74 @@ CREATE TABLE journals
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
 VALUES (2016,
+        11,
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 11, часть 2',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 11, part 2',
+        '<p><strong>Чайковскому посвящается: по материалам Междунар. науч. конф., посвящ. 175-летию со дня рождения П. И. Чайковского: сб. науч. ст. Часть 2</strong></p><br>
+        <p>ОТ РЕДКОЛЛЕГИИ</p>
+        <p><em>Предлагаемый сборник представляет собой вторую часть издания материалов Международной научно-практической конференции «Екатеринбургские ассамблеи – 2015: Чайковскому посвящается», состоявшейся в Уральской консерватории в год празднования 175-летия со дня рождения великого русского композитора. Как было анонсировано нами ранее, в настоящий сборник вошли статьи под знаком «Чайковский и...». Помимо этого, сюда включены материалы, обращённые к наследию С. И. Танеева и А. Н. Скрябина и также обсуждавшиеся на конференции в связи со столетием со дня смерти композиторов.</em></p><br>
+        <p><em>Статьи скомпонованы в четыре раздела. В первом – «П. И. Чайковский и культура XIX столетия» – представлены некоторые параллели творчества Чайковского с музыкальной и, шире, художественной культурой его столетия. В исследовании Е. М. Шабшаевич сравниваются первое музыкальное воплощение пушкинской «Пиковой дамы» в комической опере Скриба – Галеви и прочтение этого сюжета братьями Чайковскими. Гипотезу о существовании литературного прообраза князя Гремина в опере «Евгений Онегин» обосновывает в своей работе В. А. Савинцева.</em></p><br>
+        <p><em>Во втором разделе – «П. И. Чайковский в диалогах с XX веком» – авторами статей выявляются те или иные точки соприкосновения с великим мастером. Е. С. Власова, исследуя степень и качество влияния П. И. Чайковского на симфонический стиль Н. Я. Мясковского, впервые представляет читателю архивный документ – «Хронограф русской и советской симфонической музыки», создававшийся Мясковским с позиции своего рода «чайковскоцентризма» в эволюции отечественной симфонии. Г. П. Овсянкина сопоставляет творчество двух Чайковских – Петра и Бориса – не только по созвучию имён, но, прежде всего, в контексте содержательных предпочтений композиторов. Апеллируя к полистилистическим тенденциям творчества Р. К. Щедрина, О. В. Синельникова прослеживает многомерность его стилевого диалога с композиторами разных эпох и направлений, но, прежде всего, с П. И. Чайковским.</em></p><br>
+        <p><em>Третий раздел сборника составляют работы, проникнутые атмосферой сегодняшнего дня. Это статья А. В. Комарова об электронной базе данных рукописного наследия «Чайковский, открытый мир»: её создании, назначении и функциональных возможностях, немыслимых в прошлом веке. Это проведённый Е. В. Кривоноговой анализ современного режиссёрского прочтения оперного «Онегина» Д. Черняковым – режиссёром, постановки оперной классики которого неизменно будоражат публику и критику. Наконец, это единственная в своём роде религиозно-философская интерпретация В. В. Медушевским содержания сочинений Чайковского с позиции особой миссии музыки – преображать земное неотмирной красотой божественного.</em></p><br>
+        <p><em>От статьи В. В. Медушевского протягиваются нити к исследованию, открывающему четвёртый раздел «К столетию со дня смерти С. И. Танеева и А. Н. Скрябина». Сквозь призму философии музыки Танеева Г. У. Лукина высвечивает в его «Орестее» евангельскую сверхидею восхождения духа, с которой соотнесён весь интонационный строй оперы. «Визуальной гармонии» как скрябинскому феномену и, одновременно, тенденции композиторской практики XX столетия посвящена работа М. В. Городиловой. В параллелях с французской философией и поэзией, в перекличках с музыкой Дебюсси предстаёт Скрябин в статье Е. О. Купровской.</em></p><br>
+        <p><em>Объединённые пространством Чайковского и представленные в двух выпусках статьи свидетельствуют о великом множестве направлений исследований, о бесконечной филиации смыслов, обусловленных, с одной стороны, гением композитора, с другой – сегодняшним днём в музыкальной науке и исполнительском искусстве. Эту непохожесть, индивидуальность авторской интонации каждой работы, своеобразие и новизну концепций мы стремились сохранить в неприкосновенности, предоставляя читателю возможность в диалоге с исследователями генерировать собственные смыслы и открывать новые духовные пространства.</em></p><br>
+        <p><em>Издание адресовано исследователям, преподавателям и студентам высших и средних специальных учебных заведений, а также широкому кругу читателей, интересующихся историей и теорией русской музыки.</em></p><br>
+        <p><em>Редакционная коллегия:</em> <em>Б. Б. Бородин</em> (науч. ред., сост.), <em>А. Б. Бородин</em>, <em>Е. М. Шабшаевич</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2016</p>
+        <p><em>Количество страниц:</em>&nbsp;312 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;120 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860209-2-1</p>',
+
+        '<p><strong>Dedicated to Tchaikovsky: Based on the Materials of the International Scientific Conference Dedicated to the 175th Anniversary of the Birth of P. I. Tchaikovsky: Collection of Scientific Articles. Part 2</strong></p><br>
+        <p>FROM THE EDITORIAL BOARD</p>
+        <p><em>This collection is the second part of the publication of materials from the International Scientific and Practical Conference "Yekaterinburg Assemblies – 2015: Dedicated to Tchaikovsky," held at the Ural Conservatory in the year of the 175th anniversary of the great Russian composer. As previously announced, this collection includes articles under the sign "Tchaikovsky and..." In addition, it includes materials devoted to the legacy of S. I. Taneyev and A. N. Scriabin, which were also discussed at the conference in connection with the centenary of the composers'' deaths.</em></p><br>
+        <p><em>The articles are divided into four sections. The first – "P. I. Tchaikovsky and the Culture of the 19th Century" – presents some parallels between Tchaikovsky''s work and the musical and, more broadly, artistic culture of his century. In the study by E. M. Shabshaevich, the first musical embodiment of Pushkin''s "The Queen of Spades" in the comic opera by Scribe and Halévy is compared with the interpretation of this plot by the Tchaikovsky brothers. V. A. Savintseva substantiates in her work the hypothesis of the existence of a literary prototype for Prince Gremin in the opera "Eugene Onegin."</em></p><br>
+        <p><em>In the second section – "P. I. Tchaikovsky in Dialogues with the 20th Century" – the authors identify various points of contact with the great master. E. S. Vlasova, investigating the degree and quality of Tchaikovsky''s influence on the symphonic style of N. Ya. Myaskovsky, presents to the reader for the first time an archival document – the "Chronograph of Russian and Soviet Symphonic Music," created by Myaskovsky from a perspective of a kind of "Tchaikovsky-centrism" in the evolution of the Russian symphony. G. P. Ovsyankina compares the work of two Tchaikovskys – Pyotr and Boris – not only by the consonance of names, but, above all, in the context of the composers'' content preferences. Appealing to the polystylistic tendencies in the work of R. K. Shchedrin, O. V. Sinelnikova traces the multidimensionality of his stylistic dialogue with composers of different eras and movements, but above all, with P. I. Tchaikovsky.</em></p><br>
+        <p><em>The third section of the collection comprises works imbued with the atmosphere of the present day. These include an article by A. V. Komarov on the electronic database of the manuscript heritage "Tchaikovsky, Open World": its creation, purpose, and functionality, unthinkable in the past century. This is also an analysis by E. V. Krivonogova of the contemporary directorial reading of the opera "Onegin" by D. Chernyakov – a director whose productions of operatic classics invariably stir the public and critics. Finally, this is a unique religious-philosophical interpretation by V. V. Medushevsky of the content of Tchaikovsky''s works from the standpoint of the special mission of music – to transform the earthly with the unearthly beauty of the divine.</em></p><br>
+        <p><em>Threads extend from V. V. Medushevsky''s article to the study that opens the fourth section, "On the Centenary of the Death of S. I. Taneyev and A. N. Scriabin." Through the prism of Taneyev''s philosophy of music, G. U. Lukina highlights in his "Oresteia" the evangelical super-idea of the ascent of the spirit, with which the entire intonational structure of the opera is correlated. "Visual harmony" as a Scriabinian phenomenon and, simultaneously, a tendency in the compositional practice of the 20th century is the subject of work by M. V. Gorodilova. In parallels with French philosophy and poetry, and in echoes with Debussy''s music, Scriabin appears in the article by E. O. Kuprovskaya.</em></p><br>
+        <p><em>United by the space of Tchaikovsky and presented in two issues, the articles testify to the great multitude of research directions, to the endless filiation of meanings, conditioned, on the one hand, by the genius of the composer, and on the other, by the present day in musicology and performing arts. We have strived to preserve this distinctiveness, the individuality of the author''s intonation in each work, and the uniqueness and novelty of the concepts, providing the reader with the opportunity, in dialogue with the researchers, to generate their own meanings and discover new spiritual spaces.</em></p><br>
+        <p><em>The edition is addressed to researchers, teachers and students of higher and secondary specialized educational institutions, as well as a wide range of readers interested in the history and theory of Russian music.</em></p><br>
+        <p><em>Editorial Board:</em> <em>B. B. Borodin</em> (scientific ed., comp.), <em>A. B. Borodin</em>, <em>E. M. Shabshaevich</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2016</p>
+        <p><em>Number of pages:</em>&nbsp;312 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;120 copies</p>
+        <p>ISBN:&nbsp;978-5-9860209-2-1</p>',
+
+        'I. П. И. Чайковский и культура XIX столетия<br>
+        <em>Шабшаевич Е. М.</em> «La Dame de Pique» Э. Скриба – Ф. Галеви и «Пиковая дама» М. И. и П. И. Чайковских<br>
+        <em>Савинцева В. А.</em> Князь Гремин А. Бестужева-Марлинского: об одном гипотетическом прообразе персонажа из оперы «Евгений Онегин» П. И. Чайковского<br><br>
+        II. П. И. Чайковский в диалогах с XX веком<br>
+        <em>Власова Е. С.</em> «Эпоха Чайковского» в «Хронографе» Н. Я. Мясковского<br>
+        <em>Овсянкина Г. П.</em> Облик лирического героя в творчестве П. И. Чайковского и Б. А. Чайковского<br>
+        <em>Синельникова О. В.</em> Родион Щедрин в диалоге с П. И. Чайковским<br><br>
+        III. П. И. Чайковский в начале XXI века<br>
+        <em>Комаров А. В.</em> Автографы музыкальных произведений в электронной базе данных рукописного наследия «Чайковский, открытый мир». Перспективы изучения<br>
+        <em>Кривоногова Е. В.</em> «Евгений Онегин» Дмитрия Чернякова<br>
+        <em>Медушевский В. В.</em> Как исполнять Чайковского?<br><br>
+        IV. К столетию со дня смерти С. И. Танеева и А. Н. Скрябина<br>
+        <em>Лукина Г. У.</em> Особенности интонационного развития в «Орестее» Танеева<br>
+        <em>Городилова М. В.</em> Нотография А. Н. Скрябина: к вопросу о «визуальной гармонии»<br>
+        <em>Купровская Е. О.</em> А. Скрябин: взгляд из Франции',
+
+        'I. P. I. Tchaikovsky and the Culture of the 19th Century<br>
+         <em>Shabshaevich E. M.</em> "La Dame de Pique" by E. Scribe – F. Halévy and "The Queen of Spades" by M. I. and P. I. Tchaikovsky<br>
+         <em>Savintseva V. A.</em> Prince Gremin by A. Bestuzhev-Marlinsky: On a Hypothetical Prototype of a Character from P. I. Tchaikovsky''s Opera "Eugene Onegin"<br><br>
+         II. P. I. Tchaikovsky in Dialogues with the 20th Century<br>
+         <em>Vlasova E. S.</em> "The Era of Tchaikovsky" in the "Chronograph" by N. Ya. Myaskovsky<br>
+         <em>Ovsyankina G. P.</em> The Image of the Lyrical Hero in the Works of P. I. Tchaikovsky and B. A. Tchaikovsky<br>
+         <em>Sinelnikova O. V.</em> Rodion Shchedrin in Dialogue with P. I. Tchaikovsky<br><br>
+         III. P. I. Tchaikovsky at the Beginning of the 21st Century<br>
+         <em>Komarov A. V.</em> Autographs of Musical Works in the Electronic Database of the Manuscript Heritage "Tchaikovsky, Open World". Prospects for Study<br>
+         <em>Krivonogova E. V.</em> "Eugene Onegin" by Dmitry Chernyakov<br>
+         <em>Medushevsky V. V.</em> How to Perform Tchaikovsky?<br><br>
+         IV. On the Centenary of the Death of S. I. Taneyev and A. N. Scriabin<br>
+         <em>Lukina G. U.</em> Features of Intonational Development in Taneyev''s "Oresteia"<br>
+         <em>Gorodilova M. V.</em> Scriabin''s Notation: On the Question of "Visual Harmony"<br>
+         <em>Kuprovskaya E. O.</em> A. Scriabin: A View from France',
+        'cover11-2.jpg',
+        null),
+
+        (2016,
         12,
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 12',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 12',
