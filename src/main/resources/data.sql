@@ -17,6 +17,157 @@ CREATE TABLE journals
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
 VALUES (2015,
+        '9',
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 9',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 9',
+        '<p><strong>Музыкальная наука в начале XXI века: достижения, проблемы, перспективы: сб. материалов Междунар. науч. конф., посвящ. 80-летию Уральской консерватории и 175-летию М. П. Мусоргского</strong></p><br>
+        <p>ОТ РЕДКОЛЛЕГИИ</p>
+        <p><em>Издание содержит материалы Международной научной конференции, проходившей в Уральской консерватории 18–21 ноября 2014 г. и приуроченной к двум юбилейным датам: 80-летия вуза и 175-летия со дня рождения М. П. Мусоргского. В сборник вошли статьи, посвященные теоретическим и историческим проблемам современного музыкознания, вопросам музыкального образования и педагогики, а также публикации, связанные с историей Уральской консерватории и творчеством Мусоргского, имя которого носит этот музыкальный вуз.</em></p><br>
+        <p><em>Редакционная коллегия:</em></p>
+        <p><em>А. Г. Коробова</em> (отв. ред.),</p>
+        <p><em>М. В. Городилова</em> (ред.-сост.),</p>
+        <p><em>Б. Б. Бородин</em>,</p>
+        <p><em>Е. Е. Полоцкая</em>,</p>
+        <p><em>Л. В. Романова</em>,</p>
+        <p><em>Л. А. Серебрякова</em></p><br>
+        <p><em>Ред.-сост.:</em> <em>А. Г. Коробова</em> (отв. ред.), <em>М. В. Городилова</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2015</p>
+        <p><em>Количество страниц:</em>&nbsp;417 с.: нот., ил.</p>
+        <p><em>Тираж:</em>&nbsp;500 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860209-7-6</p>',
+
+        '<p><strong>Musicology at the Beginning of the 21st Century: Achievements, Problems, Prospects: Collection of Materials of the International Scientific Conference Dedicated to the 80th Anniversary of the Ural Conservatory and the 175th Anniversary of M. P. Mussorgsky</strong></p><br>
+        <p>FROM THE EDITORIAL BOARD</p>
+        <p><em>The publication contains materials from the International Scientific Conference held at the Ural Conservatory on November 18–21, 2014, and dedicated to two anniversary dates: the 80th anniversary of the institution and the 175th anniversary of the birth of M. P. Mussorgsky. The collection includes articles devoted to theoretical and historical problems of contemporary musicology, issues of music education and pedagogy, as well as publications related to the history of the Ural Conservatory and the work of Mussorgsky, whose name this music institution bears.</em></p><br>
+        <p><em>Editorial Board:</em> <em>A. G. Korobova</em> (exec. ed.), <em>M. V. Gorodilova</em> (ed.-comp.), <em>B. B. Borodin</em>, <em>E. E. Polotskaya</em>, <em>L. V. Romanova</em>, <em>L. A. Serebryakova</em></p>
+        <p><em>Ed.-comp.:</em> <em>A. G. Korobova</em> (exec. ed.), <em>M. V. Gorodilova</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2015</p>
+        <p><em>Number of pages:</em>&nbsp;417 p. : music, ill.</p>
+        <p><em>Circulation:</em>&nbsp;500 copies</p>
+        <p>ISBN:&nbsp;978-5-9860209-7-6</p>',
+
+        'К ЮБИЛЕЮ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>Коробова А. Г.</em> Восемьдесят лет консерватории на Урале<br>
+        <em>Шабалина Л. К.</em> Первые 10 лет истории консерватории<br>
+        <em>Евдокимова Н. К.</em> Научно-методическая работа в Уральской консерватории в 1950-е – начале 1960-х годов<br>
+        <em>Полоцкая Е. Е.</em> Уральская консерватория от оттепели до перестройки<br>
+        <em>Бородин А. Б.</em> От кабинета звукозаписи к студии «Урал». Исторический аспект<br>
+        <em>Басок М. А.</em> Оперные постановки в Уральской консерватории: взгляд летописца и композитора<br>
+        <em>Ермаков А. А.</em> Детские оперы для любительского театра композиторов – педагогов Уральской консерватории в контексте жанровых тенденций 1950-х – 2010-х годов на Урале<br>
+        <em>Абашеева Л. И.</em> Роль УГК в формировании бурятской композиторской школы<br><br>
+        К 175-ЛЕТИЮ М. П. МУСОРГСКОГО<br>
+        <em>Пинчуков Е. А.</em> Глубокое исследование. Книга профессора Костарева о Мусоргском<br>
+        <em>Денисова-Купровская Е. О.</em> Спирали истории: Мусоргский – Дебюсси – Денисов<br>
+        <em>Соломонова О. Б.</em> Смеховой дуэт «М. Мусоргский – А. Бородин»: парадоксы «Могучей кучки»<br>
+        <em>Шабшаевич Е. М.</em> Мусоргский в московской музыкальной жизни 1870-1910-х годов<br>
+        <em>Карабань М. Г.</em> Ладовый ген звукового пространства Модеста Мусоргского<br>
+        <em>Карпенко В. Е.</em> О вариационности у М. П. Мусоргского<br>
+        <em>Ярош О. В.</em> Живописно-изобразительные свойства музыки М. П. Мусоргского как средство передачи эмоционально-психологического содержания<br>
+        <em>Цветкова Е. О.</em> «Картинки с выставки» М. Мусоргского как музыкальный текст хореографической постановки (к проблеме пластической интерпретации небалетной музыки)<br>
+        <em>Романова Л. В.</em> Педагогические аспекты «Детской» М. П. Мусоргского<br><br>
+        ТЕОРЕТИЧЕСКИЕ И ИСТОРИЧЕСКИЕ ПРОБЛЕМЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        1. ТЕОРЕТИЧЕСКИЕ ВОПРОСЫ ИСТОРИИ МУЗЫКИ<br>
+        <em>Пылаев М. Е.</em> Некоторые вопросы периодизации истории европейской музыки в немецком музыкознании<br>
+        <em>Giuliani Marco.</em> Verso una bibliografia musicale del XXI secolo: edizioni collettive, antologie e miscellanee nel repertorio di musica vocale profana italiana del XVI e XVII secolo. Indagini, classificazioni e ricerche sui libri di diversi autori<br>
+        <em>Джулиани М.</em> Музыкальная библиография XXI века: коллективные издания, антологии и разрозненные издания, посвященные репертуару светской вокальной итальянской музыки XVI и XVII вв. Исследования, классификации и анализы книг разных авторов (перевод в сокращении М. В. Дворкиной и А. Г. Коробовой)<br>
+        <em>Тарасевич Н. И.</em> «Assumpta est Maria»: мотет и месса Дж. Палестрины. К вопросу о тематических заимствованиях<br>
+        <em>Пылаева Л. Д.</em> О понятии danse de caractère во французской музыке XVII – первой половины XVIII веков<br>
+        <em>Бочаров Ю. С.</em> Барочная сюита: мифы и реальность<br>
+        <em>Зенкин К. В.</em> Темповая драматургия в фортепианных сонатах Бетховена<br>
+        <em>Савинцева В. А.</em> Вновь о «роли одного мотива в целой опере»: некоторые наблюдения над функциями тематизма в опере М. И. Глинки «Жизнь за царя»<br><br>
+        2. МУЗЫКА XX ВЕКА: ИСТОРИЯ, ТЕОРИЯ, ПРАКТИКА<br>
+        <em>Долинская Е. Б.</em> Заметки о музыкально-литературном слухе Сергея Слонимского<br>
+        <em>Девятова О. Л.</em> Культурные пересечения русских и европейских духовных традиций в концепции «Реквиема» Сергея Слонимского<br>
+        <em>Милованова О. Э.</em> Н. Я. Мясковский в контексте Серебряного века<br>
+        <em>Найко Н. М.</em> Лирический герой четвертой симфонии Шостаковича: опыт художественной антропологии<br>
+        <em>Овсянкина Г. П.</em> Роль цикла «Dante-симфоний» в творчестве Бориса Тищенко<br>
+        <em>Городилова М. В.</em> «Звучащий крест» в музыке Николая Обухова. К проблеме «визуальной» гармонии<br>
+        <em>Приданова Е. В.</em> Театральность в вокальном творчестве Чарльза Айвза<br>
+        <em>Власова Е. С.</em> Коллективный балет «Четыре Москвы» Большого театра в эстетике советского музыкального искусства<br>
+        <em>Перепич Н. В.</em> «Знамя алое – наша надежда и вера»: о славильных кантатах и ораториях конца 1950-х – начала 1980-х для детского хора<br>
+        <em>Синецкая Т. М.</em> «Mather''s Lamentations» M. Зеленой – Ч. Айтматова как вневременной символ любви (из музыкальных редкостей репертуара челябинского камерного оркестра «Классика» под управлением Адика Абдурахманова)<br>
+        <em>Забегин И. В.</em> Формообразующие возможности оркестра в музыке XX века<br>
+        <em>Фишер А. Н.</em> Джазовые метаморфозы середины XX века<br>
+        <em>Фиденко Ю. Л.</em> Песенный литургический гимн как феномен современной мессы<br>
+        <em>Безгинова И. В.</em> Музыкознание и культурология: традиции и перспективы взаимодействия<br>
+        <em>Зайцева М. Л.</em> Духовный синестикон как реальность религиозного и художественного мышления<br><br>
+        МУЗЫКАЛЬНОЕ ОБРАЗОВАНИЕ И ПЕДАГОГИКА<br>
+        <em>Адищев В. И.</em> Историческое знание как источник развития современного музыкального образования<br>
+        <em>Костенок П. И., Безгинова И. В.</em> Проблемы реорганизации вузов искусства и культуры в контексте региональной культурной политики<br>
+        <em>Ефимова Н. И., Асташев Д. А.</em> Музыкально-теоретические дисциплины в контексте развития учебных предметов: европейский опыт реализации идеи гармонизации образовательной среды<br>
+        <em>Логинова Л. Н.</em> Воспитание музыкального слуха в системе музыкального образования<br>
+        <em>Галло-Макарова Е.</em> О музыкальном развитии детей в начальной школе Франции (на примере общеобразовательных школ департамента Приморские Альпы)<br>
+        <em>Поспелова Р. Л.</em> И вновь о некоторых проблемах курса музыкальной формы<br>
+        <em>Шелудякова О. Е.</em> Нравственно-воспитательные аспекты древнерусского певческого искусства<br>
+        <em>Шестакова О. В.</em> О целевом компоненте образовательной концепции в специальных музыкальных школах для одаренных детей (из истории вопроса)<br>
+        <em>Байбикова Г. В.</em> Коммуникативные умения педагога-музыканта: специфика, содержание, пути развития<br>
+        <em>Коротаев Л. А.</em> Тематический модуль «Музыкальная культура Урала» на уроках музыки в общеобразовательной школе (из опыта работы)<br><br>
+        IN MEMORIAM. ПАМЯТИ АВЕТА ТЕРТЕРЯНА<br>
+        <em>Рис Е.</em> Авет Тертерян: попытка диалога 20 лет спустя<br>
+        <em>Саркисян С. К.</em> Старинные театральные формы в опере «Землетрясение» А. Тертеряна',
+        'ON THE ANNIVERSARY OF THE URAL CONSERVATORY<br>
+        <em>Korobova A. G.</em> Eighty Years of the Conservatory in the Urals<br>
+        <em>Shabalina L. K.</em> The First 10 Years of the Conservatory''s History<br>
+        <em>Evdokimova N. K.</em> Scientific and Methodological Work at the Ural Conservatory in the 1950s – Early 1960s<br>
+        <em>Polotskaya E. E.</em> The Ural Conservatory from the Thaw to Perestroika<br>
+        <em>Borodin A. B.</em> From the Sound Recording Office to the "Ural" Studio. A Historical Aspect<br>
+        <em>Basok M. A.</em> Opera Productions at the Ural Conservatory: A Chronicler and Composer''s View<br>
+        <em>Ermakov A. A.</em> Children''s Operas for Amateur Theatre by Composers – Teachers of the Ural Conservatory in the Context of Genre Trends of the 1950s – 2010s in the Urals<br>
+        <em>Abasheeva L. I.</em> The Role of the USMC in the Formation of the Buryat Composers'' School<br><br>
+        ON THE 175TH ANNIVERSARY OF M. P. MUSSORGSKY<br>
+        <em>Pinchukov E. A.</em> A Deep Study. Professor Kostarev''s Book on Mussorgsky<br>
+        <em>Denisova-Kuprovskaya E. O.</em> Spirals of History: Mussorgsky – Debussy – Denisov<br>
+        <em>Solomonova O. B.</em> The Comic Duo "M. Mussorgsky – A. Borodin": Paradoxes of the "Mighty Handful"<br>
+        <em>Shabshaevich E. M.</em> Mussorgsky in Moscow Musical Life of the 1870s–1910s<br>
+        <em>Karaban M. G.</em> The Modal Gene of Modest Mussorgsky''s Sound Space<br>
+        <em>Karpenko V. E.</em> On Variation in M. P. Mussorgsky''s Music<br>
+        <em>Yarosh O. V.</em> The Pictorial and Depictive Properties of M. P. Mussorgsky''s Music as a Means of Conveying Emotional and Psychological Content<br>
+        <em>Tsvetkova E. O.</em> Mussorgsky''s "Pictures at an Exhibition" as a Musical Text for a Choreographic Production (On the Problem of Plastic Interpretation of Non-Ballet Music)<br>
+        <em>Romanova L. V.</em> Pedagogical Aspects of M. P. Mussorgsky''s "Children''s"<br><br>
+        THEORETICAL AND HISTORICAL PROBLEMS OF CONTEMPORARY MUSICOLOGY<br>
+        1. THEORETICAL QUESTIONS OF MUSIC HISTORY<br>
+        <em>Pylaev M. E.</em> Some Questions of Periodization of the History of European Music in German Musicology<br>
+        <em>Giuliani Marco.</em> Verso una bibliografia musicale del XXI secolo: edizioni collettive, antologie e miscellanee nel repertorio di musica vocale profana italiana del XVI e XVII secolo. Indagini, classificazioni e ricerche sui libri di diversi autori<br>
+        <em>Giuliani M.</em> Musical Bibliography of the 21st Century: Collective Editions, Anthologies and Miscellaneous Publications on the Repertoire of Secular Vocal Italian Music of the 16th and 17th Centuries. Research, Classifications and Analyses of Books by Various Authors (abridged translation by M. V. Dvorkina and A. G. Korobova)<br>
+        <em>Tarasevich N. I.</em> "Assumpta est Maria": Motet and Mass by G. Palestrina. On the Question of Thematic Borrowings<br>
+        <em>Pylaeva L. D.</em> On the Concept of danse de caractère in French Music of the 17th – First Half of the 18th Centuries<br>
+        <em>Bocharov Yu. S.</em> The Baroque Suite: Myths and Reality<br>
+        <em>Zenkin K. V.</em> Tempo Dramaturgy in Beethoven''s Piano Sonatas<br>
+        <em>Savintseva V. A.</em> Again on the "Role of One Motif in an Entire Opera": Some Observations on the Functions of Thematicism in M. I. Glinka''s Opera "A Life for the Tsar"<br><br>
+        2. MUSIC OF THE 20TH CENTURY: HISTORY, THEORY, PRACTICE<br>
+        <em>Dolinskaya E. B.</em> Notes on Sergei Slonimsky''s Musical-Literary Ear<br>
+        <em>Devyatova O. L.</em> Cultural Intersections of Russian and European Spiritual Traditions in the Concept of Sergei Slonimsky''s "Requiem"<br>
+        <em>Milovanova O. E.</em> N. Ya. Myaskovsky in the Context of the Silver Age<br>
+        <em>Naiko N. M.</em> The Lyrical Hero of Shostakovich''s Fourth Symphony: An Experience of Artistic Anthropology<br>
+        <em>Ovsyankina G. P.</em> The Role of the "Dante-Symphonies" Cycle in the Work of Boris Tishchenko<br>
+        <em>Gorodilova M. V.</em> The "Sounding Cross" in the Music of Nikolai Obukhov. On the Problem of "Visual" Harmony<br>
+        <em>Pridanova E. V.</em> Theatricality in the Vocal Works of Charles Ives<br>
+        <em>Vlasova E. S.</em> The Collective Ballet "Four Moscow" of the Bolshoi Theatre in the Aesthetics of Soviet Musical Art<br>
+        <em>Perepich N. V.</em> "The Scarlet Banner – Our Hope and Faith": On Glorifying Cantatas and Oratorios of the Late 1950s – Early 1980s for Children''s Choir<br>
+        <em>Sinetskaya T. M.</em> "Mather''s Lamentations" by M. Zelenaya – Ch. Aitmatov as a Timeless Symbol of Love (From Musical Rarities of the Repertoire of the Chelyabinsk Chamber Orchestra "Classica" Conducted by Adik Abdurakhmanov)<br>
+        <em>Zabegin I. V.</em> Form-Building Possibilities of the Orchestra in 20th Century Music<br>
+        <em>Fischer A. N.</em> Jazz Metamorphoses of the Mid-20th Century<br>
+        <em>Fidenko Yu. L.</em> The Sung Liturgical Hymn as a Phenomenon of the Contemporary Mass<br>
+        <em>Bezginova I. V.</em> Musicology and Cultural Studies: Traditions and Prospects of Interaction<br>
+        <em>Zaitseva M. L.</em> Spiritual Synesticon as a Reality of Religious and Artistic Thinking<br><br>
+        MUSIC EDUCATION AND PEDAGOGY<br>
+        <em>Adishchev V. I.</em> Historical Knowledge as a Source of Development of Contemporary Music Education<br>
+        <em>Kostenok P. I., Bezginova I. V.</em> Problems of Reorganization of Art and Culture Universities in the Context of Regional Cultural Policy<br>
+        <em>Efimova N. I., Astashev D. A.</em> Music-Theoretical Disciplines in the Context of the Development of Academic Subjects: European Experience in Implementing the Idea of Harmonizing the Educational Environment<br>
+        <em>Loginova L. N.</em> Development of Musical Ear in the System of Music Education<br>
+        <em>Gallo-Makarova E.</em> On the Musical Development of Children in French Primary Schools (Using the Example of General Education Schools in the Alpes-Maritimes Department)<br>
+        <em>Pospelova R. L.</em> Again on Some Problems of the Course of Musical Form<br>
+        <em>Sheludyakova O. E.</em> Moral and Educational Aspects of Old Russian Singing Art<br>
+        <em>Shestakova O. V.</em> On the Target Component of the Educational Concept in Special Music Schools for Gifted Children (From the History of the Issue)<br>
+        <em>Baybikova G. V.</em> Communicative Skills of a Music Teacher: Specifics, Content, Paths of Development<br>
+        <em>Korotaev L. A.</em> The Thematic Module "Musical Culture of the Urals" in Music Lessons in Secondary School (From Work Experience)<br><br>
+        IN MEMORIAM. IN MEMORY OF AVET TERTERYAN<br>
+        <em>Ries E.</em> Avet Terteryan: An Attempt at Dialogue 20 Years Later<br>
+        <em>Sarkisyan S. K.</em> Ancient Theatrical Forms in A. Terteryan''s Opera "Earthquake"',
+        'cover9.jpg',
+        null),
+
+        (2015,
         '10',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 10',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 10',
