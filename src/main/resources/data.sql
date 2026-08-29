@@ -16,7 +16,114 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2015,
+VALUES (2014,
+        '8',
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 8',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 8',
+        '<p><strong>Актуальные проблемы теории и истории исполнительского искусства: сб. ст.</strong></p><br>
+        <p>ОТ РЕДАКТОРА-СОСТАВИТЕЛЯ</p>
+        <p><em>Предлагаемое издание подготовлено кафедрой истории и теории исполнительского искусства Уральской государственной консерватории имени М. П. Мусоргского, организованной в 2013 году с целью координации производимых в вузе психолого-педагогических, методических и историко-теоретических исследований в области музыкально-исполнительского искусства. Кафедра также призвана осуществлять творческие контакты с родственными структурными подразделениями других творческих вузов. Результатом этой деятельности стал данный сборник, составленный из статей преподавателей Уральской консерватории и материалов, предоставленных сотрудниками других учебных заведений Екатеринбурга, Москвы, Челябинска, Кемерово, Краснодара и Гамбурга (ФРГ).</em></p><br>
+        <p><em>Структура сборника состоит из шести разделов, каждый из которых отдан определённому аспекту истории и теории исполнительского искусства.</em></p><br>
+        <p><em>Первый раздел содержит статьи обобщающего характера. Культурологические вопросы музыкального исполнительства рассматриваются в публикациях Л. А. Закса, М. В. Гавриловой и В. Н. Шерстова. О. В. Расковалова прослеживает параллели между искусством С. В. Рахманинова и философией Н. А. Бердяева. В статье Л. В. Романовой даётся комплексный анализ последнего произведения Н. Н. Сидельникова «Лабиринты. — Роман-симфония в пяти фресках для фортепиано по мотивам древнегреческих мифов о Тесее», небесполезный для потенциальных интерпретаторов этого опуса. Г. С. Заитов раскрывает возможности искусствометрического подхода к явлениям музыкального исполнительства.</em></p><br>
+        <p><em>Второй раздел объединяет работы исторического плана. Совсем недавнему, но уже ушедшему в историю событию — московскому фестивалю «Фортепианная транскрипция – история и современность» посвящена статья Б. Б. Бородина. А. Г. Коробова обозревает панораму бытования жанра мадригала в эпоху Возрождения, В. А. Фролкин рассуждает о роли Д. Альберти в истории европейского инструментализма, А. М. Меркулов повествует о традиции сольной каденции в XVIII–XIX веках, А. В. Старикова анализирует способы обозначения педализации, предложенные выдающимся австрийским пианистом Г. Гальстоном.</em></p><br>
+        <p><em>В третьем разделе рассматриваются различные вопросы педагогики музыкального образования — от наиболее общих (статья С. Е. Беляева о трудах О. А. Апраксиной, размышления А. М. Меркулова о русском пианизме) до частных: о работе над полифоническими произведениями (А. Я. Задонский), о педагогике в оперном классе (П. И. Коблик), об аппликатуре (А. В. Макаренко).</em></p><br>
+        <p><em>Четвёртый раздел включает работы в жанре исполнительского анализа, посвященные произведениям И. С. Баха (А. Б. Бородин), П. И. Чайковского (Е. А. Левитан), С. В. Рахманинова (Н. П. Газелериди, Н. С. Кузьмина, В. Д. Шкарупа), М. Равеля (А. Я. Задонский) и К. А. Кацман (Г. И. Резников).</em></p><br>
+        <p><em>Пятый раздел содержит материалы навстречу 80-летнему юбилею Уральской консерватории: об уральской школе игры на балалайке (И. В. Гареева), об известных трубачах В. И. Щёлокове и Е. П. Матюшине (В. П. Ивукин) и об истории оперной студии УГК (П. И. Коблик).</em></p><br>
+        <p><em>Завершает сборник раздел IN MEMORIAM, где публикуются краткие заметки С. Г. Белоглазова и А. В. Макаренко о выдающейся пианистке и педагоге Т. П. Николаевой, 90-летний юбилей которой отмечается в текущем году, и воспоминания о Москве и Московской консерватории Н. Г. Панковой.</em></p><br>
+        <p><em>Издание адресовано музыкантам-профессионалам и всем интересующимся проблемами музыкального исполнительства.</em></p><br>
+        <p><em>Ред.-сост.:</em> <em>Б. Б. Бородин</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2014</p>
+        <p><em>Количество страниц:</em>&nbsp;350 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860208-9-1</p>',
+        '<p><strong>Current Problems of Theory and History of Performing Arts: Collected Articles</strong></p><br>
+        <p>FROM THE EDITOR-COMPILER</p>
+        <p><em>This publication has been prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky, established in 2013 with the aim of coordinating psychological-pedagogical, methodological and historical-theoretical research in the field of musical performing arts conducted at the institution. The department is also intended to facilitate creative contacts with similar structural units of other creative universities. The result of this activity is this collection, composed of articles by teachers of the Ural Conservatory and materials provided by staff from other educational institutions in Yekaterinburg, Moscow, Chelyabinsk, Kemerovo, Krasnodar and Hamburg (Germany).</em></p><br>
+        <p><em>The structure of the collection consists of six sections, each devoted to a specific aspect of the history and theory of performing arts.</em></p><br>
+        <p><em>The first section contains articles of a general nature. Cultural issues of musical performance are examined in publications by L. A. Zaks, M. V. Gavrilova and V. N. Sherstov. O. V. Raskovalova traces parallels between the art of S. V. Rachmaninoff and the philosophy of N. A. Berdyaev. In the article by L. V. Romanova, a comprehensive analysis is given of N. N. Sidelnikov''s last work, "Labyrinths. — A Novel-Symphony in Five Frescoes for Piano Based on Ancient Greek Myths about Theseus," useful for potential interpreters of this opus. G. S. Zaitov reveals the possibilities of an art-metric approach to the phenomena of musical performance.</em></p><br>
+        <p><em>The second section brings together works of a historical nature. An article by B. B. Borodin is devoted to a very recent, but already historical event – the Moscow festival "Piano Transcription – History and Modernity." A. G. Korobova surveys the panorama of the existence of the madrigal genre in the Renaissance, V. A. Frolkin discusses the role of D. Alberti in the history of European instrumentalism, A. M. Merkulov recounts the tradition of the solo cadenza in the 18th–19th centuries, and A. V. Starikova analyzes the methods of indicating pedalling proposed by the outstanding Austrian pianist G. Galston.</em></p><br>
+        <p><em>The third section examines various issues of music education pedagogy – from the most general (S. E. Belyaev''s article on the works of O. A. Apraksina, A. M. Merkulov''s reflections on Russian pianism) to the particular: on working with polyphonic works (A. Ya. Zadonsky), on pedagogy in the opera class (P. I. Koblik), on fingering (A. V. Makarenko).</em></p><br>
+        <p><em>The fourth section includes works in the genre of performance analysis, devoted to works by I. S. Bach (A. B. Borodin), P. I. Tchaikovsky (E. A. Levitan), S. V. Rachmaninoff (N. P. Gazeleridi, N. S. Kuzmina, V. D. Shkarupa), M. Ravel (A. Ya. Zadonsky) and K. A. Katsman (G. I. Reznikov).</em></p><br>
+        <p><em>The fifth section contains materials for the 80th anniversary of the Ural Conservatory: on the Ural school of playing the balalaika (I. V. Gareeva), on the famous trumpeters V. I. Shchelokov and E. P. Matyushin (V. P. Ivukin), and on the history of the opera studio of the USMC (P. I. Koblik).</em></p><br>
+        <p><em>The collection concludes with the IN MEMORIAM section, which publishes brief notes by S. G. Beloglazov and A. V. Makarenko about the outstanding pianist and pedagogue T. P. Nikolaeva, whose 90th anniversary is celebrated this year, and memoirs about Moscow and the Moscow Conservatory by N. G. Pankova.</em></p><br>
+        <p><em>The edition is addressed to professional musicians and all those interested in the problems of musical performance.</em></p><br>
+        <p><em>Ed.-comp.:</em> <em>B. B. Borodin</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2014</p>
+        <p><em>Number of pages:</em>&nbsp;350 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies</p>
+        <p>ISBN:&nbsp;978-5-9860208-9-1</p>',
+        'I. ТЕОРЕТИЧЕСКИЕ АСПЕКТЫ ИЗУЧЕНИЯ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+        <em>Закс Л. А.</em> Искусство – интонация – культура<br>
+        <em>Гаврилова М. В.</em> Фигура музыканта-исполнителя с точки зрения аксиологии<br>
+        <em>Заитов Г. С.</em> Искусствометрический подход в исследовании исполнительского творчества<br>
+        <em>Расковалова О. В.</em> С. Рахманинов и Н. Бердяев: параллели между музыкой и философией начала XX века<br>
+        <em>Романова Л. В.</em> Мифопоэтический финал Николая Сидельникова<br>
+        <em>Шерстов В. Н.</em> Homo cantor – человек поющий<br><br>
+        II. ИЗ ИСТОРИИ МУЗЫКАЛЬНОГО ИСПОЛНИТЕЛЬСТВА<br>
+        <em>Бородин Б. Б.</em> Парад транскрипций, или «Зачем Джоконде усы?»<br>
+        <em>Коробова А. Г.</em> Мадригал в пространстве ренессансного музицирования<br>
+        <em>Меркулов А. М.</em> Двенадцать типичных заблуждений, касающихся каденции солиста в XVIII – начале XIX века<br>
+        <em>Старикова А. В.</em> О графическом способе обозначения педализации в «Рабочей книге» Г. Гальстона<br>
+        <em>Фролкин В. А.</em> Размышления о Доменико Альберти<br><br>
+        III. ВОПРОСЫ ПЕДАГОГИКИ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Беляев С. Е.</em> Перечитывая труды О. А. Апраксиной<br>
+        <em>Задонский А. Я.</em> Особенности работы над полифоническими произведениями И. С. Баха (на примере Прелюдии и Фуги фа минор из II тома ХТК)<br>
+        <em>Коблик П. И.</em> Овладение искусством перевоплощения – важнейшая задача воспитания творческой личности в оперном классе<br>
+        <em>Макаренко А. В.</em> Размышляя об аппликатуре<br>
+        <em>Меркулов А. М.</em> Русская фортепианно-исполнительская школа или школы?<br><br>
+        IV. К ИЗУЧЕНИЮ ИСПОЛНИТЕЛЬСКОГО РЕПЕРТУАРА<br>
+        <em>Бородин А. Б.</em> О Largo из концерта № 5 (BWV 1056) для клавира с оркестром И. С. Баха<br>
+        <em>Газелериди Н. П., Кузьмина Н. С.</em> «Шесть пьес» ор. 11 С. В. Рахманинова – к проблеме интерпретации<br>
+        <em>Задонский А. Я., Ковалева М. В.</em> О пьесах М. Равеля «À la manière de…»<br>
+        <em>Левитан Е. А.</em> П. И. Чайковский. «Времена года»: к вопросу об интерпретации цикла<br>
+        <em>Резников Г. И.</em> Фортепианный цикл К. Кацман «По Каслинскому павильону»: исполнительский анализ<br>
+        <em>Шкарупа В. Д.</em> Синтез художественного и виртуозного начал в этюдах-картинах ор. 39 С. В. Рахманинова<br><br>
+        V. К 80-ЛЕТИЮ УРАЛЬСКОЙ КОНСЕРВАТОРИИ: СТРАНИЦЫ ИСТОРИИ<br>
+        <em>Гареева И. В.</em> Становление и развитие академического направления в исполнительстве на балалайке на Урале<br>
+        <em>Ивукин В. П.</em> Из истории исполнительства на духовых инструментах: В. И. Щёлоков и Е. П. Матюшин<br>
+        <em>Коблик П. И.</em> Из истории оперной студии Уральской консерватории<br><br>
+        VI. IN MEMORIAM<br>
+        <em>Белоглазов С. Г.</em> Драгоценные впечатления моей жизни<br>
+        <em>Макаренко А. В.</em> О Татьяне Петровне Николаевой<br>
+        <em>Панкова Н. Г.</em> Воспоминания о Москве и Московской консерватории 70–90 гг.',
+        'I. THEORETICAL ASPECTS OF THE STUDY OF PERFORMING ARTS<br>
+         <em>Zaks L. A.</em> Art – Intonation – Culture<br>
+         <em>Gavrilova M. V.</em> The Figure of a Musician-Performer from the Perspective of Axiology<br>
+         <em>Zaitov G. S.</em> The Art-Metric Approach in the Study of Performance Creativity<br>
+         <em>Raskovalova O. V.</em> S. Rachmaninoff and N. Berdyaev: Parallels between Music and Philosophy of the Early 20th Century<br>
+         <em>Romanova L. V.</em> Nikolai Sidelnikov''s Mythopoetic Finale<br>
+         <em>Sherstov V. N.</em> Homo cantor – The Singing Man<br><br>
+         II. FROM THE HISTORY OF MUSICAL PERFORMANCE<br>
+         <em>Borodin B. B.</em> The Parade of Transcriptions, or "Why Does the Mona Lisa Need a Moustache?"<br>
+         <em>Korobova A. G.</em> The Madrigal in the Space of Renaissance Music-Making<br>
+         <em>Merkulov A. M.</em> Twelve Typical Misconceptions Concerning the Soloist''s Cadenza in the 18th – Early 19th Century<br>
+         <em>Starikova A. V.</em> On the Graphic Method of Indicating Pedalling in H. Galston''s "Workbook"<br>
+         <em>Frolkin V. A.</em> Reflections on Domenico Alberti<br><br>
+         III. ISSUES OF MUSIC EDUCATION PEDAGOGY<br>
+         <em>Belyaev S. E.</em> Re-reading the Works of O. A. Apraksina<br>
+         <em>Zadonsky A. Ya.</em> Features of Working on Polyphonic Works by J. S. Bach (Using the Example of the Prelude and Fugue in F minor from Volume II of the WTC)<br>
+         <em>Koblik P. I.</em> Mastering the Art of Transformation – The Most Important Task of Educating a Creative Personality in the Opera Class<br>
+         <em>Makarenko A. V.</em> Reflecting on Fingering<br>
+         <em>Merkulov A. M.</em> The Russian Piano Performance School or Schools?<br><br>
+         IV. ON THE STUDY OF PERFORMANCE REPERTOIRE<br>
+         <em>Borodin A. B.</em> On the Largo from Concerto No. 5 (BWV 1056) for Keyboard and Orchestra by J. S. Bach<br>
+         <em>Gazeleridi N. P., Kuzmina N. S.</em> "Six Pieces" Op. 11 by S. V. Rachmaninoff – On the Problem of Interpretation<br>
+         <em>Zadonsky A. Ya., Kovaleva M. V.</em> On M. Ravel''s Pieces "À la manière de…"<br>
+         <em>Levitán E. A.</em> P. I. Tchaikovsky. "The Seasons": On the Question of Interpreting the Cycle<br>
+         <em>Reznikov G. I.</em> K. Katsman''s Piano Cycle "Through the Kasli Pavilion": Performance Analysis<br>
+         <em>Shkarupa V. D.</em> The Synthesis of Artistic and Virtuosic Elements in S. V. Rachmaninoff''s Études-Tableaux Op. 39<br><br>
+         V. ON THE 80TH ANNIVERSARY OF THE URAL CONSERVATORY: PAGES OF HISTORY<br>
+         <em>Gareeva I. V.</em> The Formation and Development of the Academic Direction in Balalaika Performance in the Urals<br>
+         <em>Ivukin V. P.</em> From the History of Performance on Wind Instruments: V. I. Shchelokov and E. P. Matyushin<br>
+         <em>Koblik P. I.</em> From the History of the Opera Studio of the Ural Conservatory<br><br>
+         VI. IN MEMORIAM<br>
+         <em>Beloglazov S. G.</em> Precious Impressions of My Life<br>
+         <em>Makarenko A. V.</em> About Tatyana Petrovna Nikolaeva<br>
+         <em>Pankova N. G.</em> Memoirs of Moscow and the Moscow Conservatory of the 70s–90s',
+        'cover8.jpg',
+        null),
+
+        (2015,
         '9',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 9',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 9',
