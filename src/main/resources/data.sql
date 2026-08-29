@@ -16,7 +16,66 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2014,
+VALUES (2013,
+        '7',
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 7',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 7',
+        '<p><strong>Актуальные проблемы ансамблевого исполнительства и педагогики: сб. ст.</strong></p><br>
+        <p>ОТ РЕДКОЛЛЕГИИ</p>
+        <p><em>Предлагаемый сборник посвящен проблемам ансамблевого исполнительства и педагогики. Авторами сборника стали представители музыкальных вузов России и Украины, от докторов наук до начинающих свой путь исследователей. В издании затронуты различные аспекты заявленной в названии проблематики: от психолого-педагогических и методических вопросов до исполнительского анализа конкретных сочинений.</em></p><br>
+        <p><em>Издание адресовано музыкантам-практикам и всем интересующимся данной тематикой.</em></p><br>
+        <p><em>Ред.-сост.:</em> <em>А. Г. Коробова</em> (отв. ред.), <em>Е. П. Лукьянова</em>, <em>Е. Е. Полоцкая</em>, <em>О. Е. Шелудякова</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2013</p>
+        <p><em>Количество страниц:</em>&nbsp;168 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860208-4-6</p>',
+        '<p><strong>Current Problems of Ensemble Performance and Pedagogy: Collected Articles</strong></p><br>
+        <p>FROM THE EDITORIAL BOARD</p>
+        <p><em>This collection is devoted to the problems of ensemble performance and pedagogy. The authors of the collection are representatives of music universities in Russia and Ukraine, from doctors of sciences to beginning researchers. The publication touches upon various aspects of the stated issues: from psychological-pedagogical and methodological questions to performance analysis of specific compositions.</em></p><br>
+        <p><em>The edition is addressed to practicing musicians and all those interested in this subject matter.</em></p><br>
+        <p><em>Ed.-comp.:</em> <em>A. G. Korobova</em> (exec. ed.), <em>E. P. Lukyanova</em>, <em>E. E. Polotskaya</em>, <em>O. E. Sheludyakova</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2013</p>
+        <p><em>Number of pages:</em>&nbsp;168 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies</p>
+        <p>ISBN:&nbsp;978-5-9860208-4-6</p>',
+        '<em>Эндеберя Е. В.</em> Некоторые особенности дуэтного инструментального исполнительства<br>
+        <em>Ханин Е. В.</em> Роль фортепианно-ансамблевой практики в развитии исполнительских навыков пианиста<br>
+        <em>Фролкин В. А.</em> Жесты как регуляторы исполнения фортепианного дуэта<br>
+        <em>Лукьянова Е. П., Саламатова А. С.</em> Подготовка пианиста-аккомпаниатора для работы с хореографическим коллективом<br>
+        <em>Федорович Е. Н.</em> Ансамблевое творчество Э. Г. Гилельса<br>
+        <em>Макушкин В. В.</em> Камерно-ансамблевая музыка XX века: от традиции к эксперименту<br>
+        <em>Романова Л. В.</em> Мирообразность Секстета Ф. Пуленка<br>
+        <em>Купровская К. О.</em> Камерная инструментальная музыка Эдисона Денисова<br>
+        <em>Рыжкова Е. В.</em> О чем поет «флейта на реке»? (К ансамблевой интерпретации вокального цикла Эдисона Денисова «Ноктюрны»)<br>
+        <em>Гуркова О. М.</em> Инструментальный театр в камерных произведениях Ивана Карабица 1970–1980-х годов<br>
+        <em>Зима Л. В.</em> Символика музыки Фортепианного квинтета Зигмунда Краузе<br>
+        <em>Поляков В. С.</em> Соната для альта и фортепиано А. Онеггера в классе камерного ансамбля<br>
+        <em>Юрашевич И. В.</em> Р. Штраус. Соната ор. 6 для виолончели и фортепиано: к проблеме интерпретации<br>
+        <em>Кузьмина Н. С., Морев М. Н.</em> Сочинения Ф. Мендельсона и К. Бермана в ансамблевом репертуаре кларнетистов<br>
+        <em>Земерова Л. Н., Манакова И. П.</em> Из вокальной лирики А. Т. Гречанинова (заметки концертмейстера)<br><br>
+        ИЗ АРХИВОВ УРАЛЬСКОЙ КОНСЕРВАТОРИИ<br>
+        <em>Лидская С. М.</em> Педагогические заметки об искусстве аккомпанемента (воспитание навыков свободной ориентировки в полной фактуре вокальных произведений)',
+        '<em>Endeberya E. V.</em> Some Features of Duet Instrumental Performance<br>
+        <em>Khanin E. V.</em> The Role of Piano-Ensemble Practice in the Development of a Pianist''s Performance Skills<br>
+        <em>Frolkin V. A.</em> Gestures as Regulators of Piano Duet Performance<br>
+        <em>Lukyanova E. P., Salamatova A. S.</em> Preparation of a Piano Accompanist for Work with a Choreographic Ensemble<br>
+        <em>Fedorovich E. N.</em> Ensemble Work of E. G. Gilels<br>
+        <em>Makushkin V. V.</em> Chamber Ensemble Music of the 20th Century: From Tradition to Experiment<br>
+        <em>Romanova L. V.</em> The World-Imagery of F. Poulenc''s Sextet<br>
+        <em>Kuprovskaya K. O.</em> Chamber Instrumental Music of Edison Denisov<br>
+        <em>Ryzhkova E. V.</em> What Does the "Flute on the River" Sing About? (On the Ensemble Interpretation of Edison Denisov''s Vocal Cycle "Nocturnes")<br>
+        <em>Gurkova O. M.</em> Instrumental Theatre in Ivan Karabits'' Chamber Works of the 1970s–1980s<br>
+        <em>Zima L. V.</em> The Symbolism of the Music of Sigmund Krause''s Piano Quintet<br>
+        <em>Polyakov V. S.</em> A. Honegger''s Sonata for Viola and Piano in the Chamber Ensemble Class<br>
+        <em>Yurashevich I. V.</em> R. Strauss. Sonata Op. 6 for Cello and Piano: On the Problem of Interpretation<br>
+        <em>Kuzmina N. S., Morev M. N.</em> Works by F. Mendelssohn and K. Bermann in the Ensemble Repertoire of Clarinetists<br>
+        <em>Zemerova L. N., Manakova I. P.</em> From the Vocal Lyrics of A. T. Grechaninov (Notes of a Concertmaster)<br><br>
+        FROM THE ARCHIVES OF THE URAL CONSERVATORY<br>
+        <em>Lidskaya S. M.</em> Pedagogical Notes on the Art of Accompaniment (Developing Skills of Free Orientation in the Full Texture of Vocal Works)',
+        'cover7.jpg',
+        null),
+
+        (2014,
         '8',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 8',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 8',
