@@ -16,7 +16,105 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2016,
+VALUES (2015,
+        '10',
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 10',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 10',
+        '<p><strong>Актуальные проблемы теории и истории исполнительского искусства: сб. ст.</strong></p><br>
+        <p>ОТ РЕДАКТОРА-СОСТАВИТЕЛЯ</p>
+        <p><em>Предлагаемое издание – второй сборник, подготовленный кафедрой истории и теории исполнительского искусства Уральской государственной консерватории имени М. П. Мусоргского, и он тематически связан с предшествующим (восьмым) выпуском. Сборник состоит из пяти разделов, каждый из которых отдан определённому аспекту названной тематики, – от статей обобщающего характера до работ практической направленности. В сборнике представлены статьи и материалы по проблемам теории и истории исполнительского искусства, педагогики музыкального образования. В разделе AD MEMORIAM публикуются материалы, связанные с музыкальной культурой Урала. Продолжается также начатая в предыдущем сборнике публикация воспоминаний А. В. Макаренко и Н. Г. Панковой о Москве и Московской консерватории. Авторами сборника являются преподаватели Уральской консерватории, а также представители других учебных заведений искусства из Екатеринбурга, Москвы и Гамбурга (ФРГ). Издание адресовано музыкантам-профессионалам и всем интересующимся проблемами музыкального исполнительства.</em></p><br>
+        <p><em>Редакторы:</em> <em>Б. Б. Бородин</em> (ред.-составитель), <em>А. Б. Бородин</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2015</p>
+        <p><em>Количество страниц:</em>&nbsp;200 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860210-1-0</p>',
+        '<p><strong>Current Problems of Theory and History of Performing Arts: Collected Articles</strong></p><br>
+        <p>FROM THE EDITOR-COMPILER</p>
+        <p><em>This publication is the second collection prepared by the Department of History and Theory of Performing Arts of the Ural State Conservatory named after M. P. Mussorgsky, and it is thematically linked to the preceding (eighth) issue. The collection consists of five sections, each devoted to a specific aspect of the stated theme – from articles of a general nature to works of practical orientation. The collection presents articles and materials on problems of theory and history of performing arts and music education pedagogy. The AD MEMORIAM section publishes materials related to the musical culture of the Urals. The publication of memoirs by A. V. Makarenko and N. G. Pankova about Moscow and the Moscow Conservatory, begun in the previous collection, is also continued. The authors of the collection are teachers of the Ural Conservatory, as well as representatives of other art educational institutions from Yekaterinburg, Moscow and Hamburg (Germany). The edition is addressed to professional musicians and all those interested in the problems of musical performance.</em></p><br>
+        <p><em>Editors:</em> <em>B. B. Borodin</em> (ed.-compiler), <em>A. B. Borodin</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2015</p>
+        <p><em>Number of pages:</em>&nbsp;200 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies</p>
+        <p>ISBN:&nbsp;978-5-9860210-1-0</p>',
+
+        'I. ТЕОРЕТИЧЕСКИЕ АСПЕКТЫ ИЗУЧЕНИЯ ИСПОЛНИТЕЛЬСКОГО ИСКУССТВА<br>
+        <em>Бородин Б. Б.</em> К проблеме идентичности отечественной фортепианно-исполнительской школы<br>
+        <em>Меркулов А. М.</em> О технике фортепианных транскрипций А. И. Зилоти<br><br>
+        II. ИЗ ИСТОРИИ МУЗЫКАЛЬНОГО ИСПОЛНИТЕЛЬСТВА<br>
+        <em>Бородин Б. Б.</em> Доменико Скарлатти и «cembalo con martelli»<br>
+        <em>Бурштейн Д. А.</em> Соната-вокализ Н. К. Метнера: проблемы исполнения в свете авторской интерпретации<br>
+        <em>Заитов Г. С.</em> Франко Корелли и его роль в вокальном искусстве XX века<br><br>
+        III. ВОПРОСЫ ПЕДАГОГИКИ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ<br>
+        <em>Гаврилова М. В.</em> О необходимости учебной дисциплины «Основы психологии музыкального исполнительства»<br>
+        <em>Добровольская В. М.</em> О камерном пении<br>
+        <em>Заволжанская И. Ю.</em> Как научиться играть по слуху?<br>
+        <em>Захаров В. П.</em> О воспитании молодых певцов<br>
+        <em>Ивукин В. П.</em> О формировании исполнительского аппарата в процессе обучения игре на трубе<br>
+        <em>Шерстов В. Н.</em> Натаскивание, копирование, подражание и пародирование в вокальной педагогике<br>
+        <em>Яфальян А. Ф.</em> Традиционное музыкально-эстетическое воспитание в Индии: взгляд из России<br><br>
+        IV. К ИЗУЧЕНИЮ ИСПОЛНИТЕЛЬСКОГО РЕПЕРТУАРА<br>
+        <em>Батагова Т. Э., Чуковская И. В.</em> На перекрёстке традиций и авангарда: о фортепианной музыке Жака Этю<br>
+        <em>Бызов А. Б.</em> Формирование репертуара ансамблей баянистов: на примере деятельности Уральского трио баянистов<br><br>
+        V. AD MEMORIAM<br>
+        <em>Басок М. А.</em> Страницы воспоминаний<br>
+        &nbsp;&nbsp;&nbsp;О мудрости житейской, или Загадочный индус<br>
+        &nbsp;&nbsp;&nbsp;Эффект цирковой лошади<br>
+        &nbsp;&nbsp;&nbsp;Композитор и примадонна<br>
+        &nbsp;&nbsp;&nbsp;Режиссёрский урок Федосеева<br>
+        <em>Бородин А. Б.</em> «Это ж надо было придумать!», или Мимолётные встречи с Сергеем Ивановичем Сиротиным<br>
+        <em>Бородин Б. Б.</em> Два дирижёра: М. И. Паверман и А. Г. Фридлендер<br>
+        <em>Макаренко А. В.</em> О Тамаре Николаевне Гусевой и немного о пианизме<br>
+        <em>Панкова Н. Г.</em> Из воспоминаний о московской артистической среде (Часть вторая, 1970–1989 гг.)<br>
+        &nbsp;&nbsp;&nbsp;Вступление<br>
+        &nbsp;&nbsp;&nbsp;Первые шаги<br>
+        &nbsp;&nbsp;&nbsp;А. Г. Руббах и Е. В. Софронова-Руббах<br>
+        &nbsp;&nbsp;&nbsp;Подготовка и выступление на конкурсе<br>
+        &nbsp;&nbsp;&nbsp;Знакомство с кинорежиссёрами Г. Л. Рошалем и В. П. Строевой. Их друзья и родственники<br>
+        &nbsp;&nbsp;&nbsp;Начало концертной деятельности<br>
+        &nbsp;&nbsp;&nbsp;«А напоследок я скажу...»<br>
+        <em>Савич Т. Л.</em> Дроздова Людмила Флегонтовна<br>
+        <em>Смирнова И. Л.</em> О моём учителе – Марии Григорьевне Богомаз',
+        'I. THEORETICAL ASPECTS OF THE STUDY OF PERFORMING ARTS<br>
+         <em>Borodin B. B.</em> On the Problem of Identity of the Russian Piano Performance School<br>
+         <em>Merkulov A. M.</em> On the Technique of A. I. Ziloti''s Piano Transcriptions<br><br>
+         II. FROM THE HISTORY OF MUSICAL PERFORMANCE<br>
+         <em>Borodin B. B.</em> Domenico Scarlatti and "cembalo con martelli"<br>
+         <em>Burshtein D. A.</em> N. K. Medtner''s Sonata-Vocalise: Problems of Performance in the Light of the Author''s Interpretation<br>
+         <em>Zaitov G. S.</em> Franco Corelli and His Role in the Vocal Art of the 20th Century<br><br>
+         III. ISSUES OF MUSIC EDUCATION PEDAGOGY<br>
+         <em>Gavrilova M. V.</em> On the Necessity of the Academic Discipline "Fundamentals of Psychology of Musical Performance"<br>
+         <em>Dobrovolskaya V. M.</em> On Chamber Singing<br>
+         <em>Zavolzhanskaya I. Yu.</em> How to Learn to Play by Ear?<br>
+         <em>Zakharov V. P.</em> On the Education of Young Singers<br>
+         <em>Ivukin V. P.</em> On the Formation of the Performance Apparatus in the Process of Learning to Play the Trumpet<br>
+         <em>Sherstov V. N.</em> Drilling, Copying, Imitation and Parody in Vocal Pedagogy<br>
+         <em>Yafalyan A. F.</em> Traditional Musical and Aesthetic Education in India: A View from Russia<br><br>
+         IV. ON THE STUDY OF PERFORMANCE REPERTOIRE<br>
+         <em>Batagova T. E., Chukovskaya I. V.</em> At the Crossroads of Traditions and Avant-Garde: On the Piano Music of Jacques Hetu<br>
+         <em>Byzov A. B.</em> Formation of the Repertoire of Bayan Ensembles: On the Example of the Ural Bayan Trio''s Activity<br><br>
+         V. AD MEMORIAM<br>
+         <em>Basok M. A.</em> Pages of Memoirs<br>
+         &nbsp;&nbsp;&nbsp;On Worldly Wisdom, or the Mysterious Hindu<br>
+         &nbsp;&nbsp;&nbsp;The Circus Horse Effect<br>
+         &nbsp;&nbsp;&nbsp;The Composer and the Prima Donna<br>
+         &nbsp;&nbsp;&nbsp;Fedoseev''s Directorial Lesson<br>
+         <em>Borodin A. B.</em> "You Had to Come Up with That!" or Fleeting Encounters with Sergei Ivanovich Sirotin<br>
+         <em>Borodin B. B.</em> Two Conductors: M. I. Paverman and A. G. Friedländer<br>
+         <em>Makarenko A. V.</em> About Tamara Nikolaevna Guseva and a Little About Pianism<br>
+         <em>Pankova N. G.</em> From Memoirs of the Moscow Artistic Environment (Part Two, 1970–1989)<br>
+         &nbsp;&nbsp;&nbsp;Introduction<br>
+         &nbsp;&nbsp;&nbsp;First Steps<br>
+         &nbsp;&nbsp;&nbsp;A. G. Rubakh and E. V. Sofronova-Rubakh<br>
+         &nbsp;&nbsp;&nbsp;Preparation and Performance at the Competition<br>
+         &nbsp;&nbsp;&nbsp;Acquaintance with Film Directors G. L. Roshal and V. P. Stroeva. Their Friends and Relatives<br>
+         &nbsp;&nbsp;&nbsp;The Beginning of Concert Activity<br>
+         &nbsp;&nbsp;&nbsp;"And Finally, I Will Say..."<br>
+         <em>Savich T. L.</em> Drozdova Lyudmila Flegontovna<br>
+         <em>Smirnova I. L.</em> About My Teacher – Maria Grigorievna Bogomaz',
+        'cover10.jpg',
+        null),
+
+        (2016,
         '11-1',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 11, часть 1',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 11, part 1',
