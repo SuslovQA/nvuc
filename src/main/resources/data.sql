@@ -16,7 +16,100 @@ CREATE TABLE journals
 );
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
-VALUES (2013,
+VALUES (2011,
+        '5',
+        'Музыка в системе культуры: сб. статей. Вып. 5',
+        'Music in the System of Culture: Collected Articles. Issue 5',
+        '<p><strong>Музыка в системе культуры: сб. науч. тр.</strong></p><br>
+        <p>ОТ РЕДКОЛЛЕГИИ</p>
+        <p><em>Представленный сборник продолжает периодическое издание научных трудов Уральской государственной консерватории имени М. П. Мусоргского и сохраняет двухчастную структуру предыдущих выпусков. Первый раздел включает исследования, посвященные актуальным теоретическим и историческим проблемам современного музыкознания. В соответствии с названием, определяющим направленность научных поисков, явления отечественного и зарубежного музыкального творчества разных эпох рассматриваются здесь в системе культуры, в ее философско-эстетических, содержательных и историко-стилевых координатах. Второй раздел составляют работы по истории музыкального образования, различным аспектам музыкальной педагогики, исполнительства и музыкальной звукорежиссуры.</em></p><br>
+        <p><em>В сборник вошли труды ученых Уральской и Саратовской консерваторий, Уфимской академии искусств им. З. Исмагилова, Уральского федерального университета (УрГУ), Уральского педагогического университета, статьи молодых преподавателей и аспирантов УГК.</em></p><br>
+        <p><em>Издание адресовано специалистам в сфере музыкальной науки и образования, а также всем интересующимся проблемами музыкального искусства и культуры.</em></p><br>
+        <p><em>Ред.-сост.:</em> <em>Л. А. Серебрякова</em>, <em>Т. И. Калужникова</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2011</p>
+        <p><em>Количество страниц:</em>&nbsp;383 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;150 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860208-1-5</p>',
+        '<p><strong>Music in the System of Culture: Collected Scholarly Works</strong></p><br>
+        <p>FROM THE EDITORIAL BOARD</p>
+        <p><em>This collection continues the periodical publication of scholarly works of the Ural State Conservatory named after M. P. Mussorgsky and preserves the two-part structure of previous issues. The first section includes research devoted to current theoretical and historical problems of contemporary musicology. In accordance with the title defining the direction of scholarly inquiry, phenomena of Russian and foreign musical creativity of different eras are examined here in the system of culture, in its philosophical-aesthetic, substantive, and historical-stylistic coordinates. The second section consists of works on the history of music education, various aspects of music pedagogy, performance, and music sound engineering.</em></p><br>
+        <p><em>The collection includes works by scholars from the Ural and Saratov Conservatories, the Ufa Academy of Arts named after Z. Ismagilov, the Ural Federal University (UrGU), the Ural Pedagogical University, as well as articles by young teachers and postgraduates of the USMC.</em></p><br>
+        <p><em>The edition is addressed to specialists in the field of music scholarship and education, as well as to all those interested in the problems of musical art and culture.</em></p><br>
+        <p><em>Ed.-comp.:</em> <em>L. A. Serebryakova</em>, <em>T. I. Kaluzhnikova</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2011</p>
+        <p><em>Number of pages:</em>&nbsp;383 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;150 copies</p>
+        <p>ISBN:&nbsp;978-5-9860208-1-5</p>',
+        'РАЗДЕЛ I. МЕТОДОЛОГИЧЕСКИЕ, ТЕОРЕТИЧЕСКИЕ И ИСТОРИЧЕСКИЕ ПРОБЛЕМЫ МУЗЫКОЗНАНИЯ<br>
+        1. Век нынешний и век минувший<br>
+        <em>Коробова Н. И.</em> Современная художественная культура. Структура и функционирование<br>
+        <em>Лабзенко Н. П.</em> В поисках методологии исследования национального в русской музыке<br>
+        <em>Коробова А. Г.</em> Пастораль в современном мире<br>
+        <em>Скурко Е. Р.</em> Симфонизм как отражение эволюции музыкального мышления в национальных культурах XX–XXI веков<br>
+        <em>Шелудякова О. Е.</em> Претворение православных богослужебных жанров в отечественной духовной хоровой музыке XX столетия (на примере кондака)<br>
+        <em>Городилова М. В.</em> О визуальной гармонии А. Шнитке<br>
+        <em>Серебрякова Л. А.</em> Н. Я. Мясковский и Н. А. Римский-Корсаков<br><br>
+        2. Музыкальное прошлое в современных исследованиях<br>
+        <em>Макарова А. Л.</em> Философско-религиозные воззрения П. И. Чайковского (по материалам эпистолярного наследия)<br>
+        <em>Полоцкая Е. Е.</em> Ф. О. Геварт в переводе П. И. Чайковского<br>
+        <em>Пешкова Г. Н.</em> Балет «Волшебный барабан или Следствие Волшебной флейты»: неизвестный Алябьев<br>
+        <em>Шакирьянова А. А.</em> Музыка в культуре досуга Австрии второй половины XVIII века<br>
+        <em>Немковская В. И.</em> Миланская жемчужина: Кьяра Маргарита Коццолани и ее латинские диалоги<br>
+        <em>Романова Л. В.</em> Ценностная картина мира и культура инструментализма Средневековья<br>
+        <em>Мешкова А. С.</em> Общее представление о формах существования музыки в трактатах Средневековья и Возрождения<br>
+        <em>Бородин Б. Б.</em> Функции слова в нотном тексте<br><br>
+        3. Уральский топос в актуальном научном контексте<br>
+        <em>Калужникова Т. И., Халецкая О. Б.</em> Мифопоэтический универсум сочинений Маргариты Кесаревой<br>
+        <em>Базилевич М. В.</em> Образы куклы в детской фортепианной музыке композиторов Свердловска-Екатеринбурга<br>
+        <em>Бекирова Г. И.</em> Фольклор в творчестве Леонида Гуревича<br>
+        <em>Чижов В. П.</em> Композитор Николай Пузей – сын славного рода<br><br>
+        РАЗДЕЛ II. ВОПРОСЫ МУЗЫКАЛЬНОГО ОБРАЗОВАНИЯ, ПЕДАГОГИКИ, ИСПОЛНИТЕЛЬСТВА И ЗВУКОРЕЖИССУРЫ<br>
+        <em>Нестерова Т. П.</em> Музыкальное образование в Италии 1920–1940-х годов<br>
+        <em>Богатырев А. И.</em> Патриотизм как составляющая ценностного мира современной молодежи и его воспитание в музыкальном вузе<br>
+        <em>Зеленкова Е. В.</em> Современные тенденции профессионального становления музыканта в вузе<br>
+        <em>Ананьева М. В.</em> Импровизация как метод развития музыкально-исполнительского мышления в классе специального фортепиано<br>
+        <em>Горский А. Ю.</em> Подготовка студентов музыкального училища к самостоятельному совершенствованию в игре на духовых инструментах<br>
+        <em>Бутина П.</em> Исполнительское творчество Кристиана Цимермана<br>
+        <em>Шевцов С. Е., Рубин Л. С.</em> Принцип электронной архитектуры в концерте академической музыки как отдельный тип звукоусиления<br><br>
+        IN MEMORIAM<br>
+        <em>Панкова Н. Г.</em> Об Аврелиане Григорьевиче Руббахе',
+        'SECTION I. METHODOLOGICAL, THEORETICAL AND HISTORICAL PROBLEMS OF MUSICOLOGY<br>
+        1. The Present Age and the Past Age<br>
+        <em>Korobova N. I.</em> Contemporary Artistic Culture. Structure and Functioning<br>
+        <em>Labzenko N. P.</em> In Search of a Methodology for Studying the National in Russian Music<br>
+        <em>Korobova A. G.</em> Pastoral in the Modern World<br>
+        <em>Skurko E. R.</em> Symphonism as a Reflection of the Evolution of Musical Thinking in National Cultures of the 20th–21st Centuries<br>
+        <em>Sheludyakova O. E.</em> The Realization of Orthodox Liturgical Genres in Russian Sacred Choral Music of the 20th Century (Using the Example of the Kontakion)<br>
+        <em>Gorodilova M. V.</em> On A. Schnittke''s Visual Harmony<br>
+        <em>Serebryakova L. A.</em> N. Ya. Myaskovsky and N. A. Rimsky-Korsakov<br><br>
+        2. The Musical Past in Contemporary Research<br>
+        <em>Makarova A. L.</em> Philosophical and Religious Views of P. I. Tchaikovsky (Based on Materials from His Epistolary Legacy)<br>
+        <em>Polotskaya E. E.</em> F. O. Gevaert in P. I. Tchaikovsky''s Translation<br>
+        <em>Peshkova G. N.</em> The Ballet "The Magic Drum or The Consequence of The Magic Flute": An Unknown Alyabyev<br>
+        <em>Shakiryanova A. A.</em> Music in the Leisure Culture of Austria in the Second Half of the 18th Century<br>
+        <em>Nemkovskaya V. I.</em> A Milanese Gem: Chiara Margarita Cozzolani and Her Latin Dialogues<br>
+        <em>Romanova L. V.</em> The Value System of the World and the Culture of Medieval Instrumentalism<br>
+        <em>Meshkova A. S.</em> A General Concept of the Forms of Existence of Music in Treatises of the Middle Ages and the Renaissance<br>
+        <em>Borodin B. B.</em> Functions of the Word in Musical Notation<br><br>
+        3. The Ural Topos in the Current Scholarly Context<br>
+        <em>Kaluzhnikova T. I., Khaletskaya O. B.</em> The Mythopoetic Universe of Margarita Kesareva''s Compositions<br>
+        <em>Basilevich M. V.</em> Images of the Doll in Children''s Piano Music by Composers of Sverdlovsk-Yekaterinburg<br>
+        <em>Bekirova G. I.</em> Folklore in the Work of Leonid Gurevich<br>
+        <em>Chizhov V. P.</em> Composer Nikolay Puzei – Son of a Glorious Lineage<br><br>
+        SECTION II. ISSUES OF MUSIC EDUCATION, PEDAGOGY, PERFORMANCE AND SOUND ENGINEERING<br>
+        <em>Nesterova T. P.</em> Music Education in Italy in the 1920s–1940s<br>
+        <em>Bogatyrev A. I.</em> Patriotism as a Component of the Value System of Contemporary Youth and Its Cultivation in a Music University<br>
+        <em>Zelenkova E. V.</em> Contemporary Trends in the Professional Development of a Musician at a University<br>
+        <em>Ananyeva M. V.</em> Improvisation as a Method of Developing Musical-Performance Thinking in the Special Piano Class<br>
+        <em>Gorsky A. Yu.</em> Preparing Music College Students for Independent Improvement in Playing Wind Instruments<br>
+        <em>Butina P.</em> The Performance Art of Krystian Zimerman<br>
+        <em>Shevtsov S. E., Rubin L. S.</em> The Principle of Electronic Architecture in an Academic Music Concert as a Separate Type of Sound Reinforcement<br><br>
+        IN MEMORIAM<br>
+        <em>Pankova N. G.</em> About Avrelian Grigorievich Rubakh',
+        'cover5.jpg',
+        null),
+
+        (2013,
         '6',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 6',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 6',
