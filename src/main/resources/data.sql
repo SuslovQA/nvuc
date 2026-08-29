@@ -17,6 +17,94 @@ CREATE TABLE journals
 
 INSERT INTO journals (year, issue, title, title_en, description, description_en, contents, contents_en, cover, pdf)
 VALUES (2013,
+        '6',
+        'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 6',
+        'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 6',
+        '<p><strong>Творчество Родиона Щедрина в контексте времени: сб. материалов Междунар. науч. конф., посвящ. 80-летию со дня рождения композитора</strong></p><br>
+        <p>ОТ РЕДКОЛЛЕГИИ</p>
+        <p><em>Настоящее издание представляет собой собрание материалов конференции «Творчество Родиона Щедрина в контексте времени», которая проходила в Уральской государственной консерватории имени М. П. Мусоргского 6–7 декабря 2012 года и была приурочена к 80-летию со дня рождения композитора. Значение творчества Щедрина и широта его взглядов предопределили тематику конференции, затрагивающую большой круг проблем теоретического и исторического музыкознания, музыкальной культуры, исполнительства и педагогики.</em></p><br>
+        <p><em>Издание адресовано широкому кругу музыкантов-специалистов, а также всем, кто интересуется проблемами музыкального искусства и науки.</em></p><br>
+        <p><em>Ред.-сост.:</em> <em>А. Г. Коробова</em> (отв. ред.), <em>М. В. Городилова</em>, <em>Л. А. Серебрякова</em></p>
+        <p><em>Издательство:</em>&nbsp;Урал. гос. консерватория им. М. П. Мусоргского. – Екатеринбург: УГК, 2013</p>
+        <p><em>Количество страниц:</em>&nbsp;204 с.: нот.</p>
+        <p><em>Тираж:</em>&nbsp;100 экз.</p>
+        <p>ISBN:&nbsp;978-5-9860208-2-2</p>',
+        '<p><strong>Rodion Shchedrin''s Work in the Context of Time: Collection of Materials of the International Scientific Conference Dedicated to the 80th Anniversary of the Composer''s Birth</strong></p><br>
+        <p>FROM THE EDITORIAL BOARD</p>
+        <p><em>This publication is a collection of materials from the conference "Rodion Shchedrin''s Work in the Context of Time," which was held at the Ural State Conservatory named after M. P. Mussorgsky on December 6–7, 2012, and was dedicated to the 80th anniversary of the composer''s birth. The significance of Shchedrin''s work and the breadth of his views predetermined the conference''s thematic scope, covering a wide range of problems in theoretical and historical musicology, musical culture, performance and pedagogy.</em></p><br>
+        <p><em>The edition is addressed to a wide circle of professional musicians, as well as to all those interested in the problems of musical art and scholarship.</em></p><br>
+        <p><em>Ed.-comp.:</em> <em>A. G. Korobova</em> (exec. ed.), <em>M. V. Gorodilova</em>, <em>L. A. Serebryakova</em></p>
+        <p><em>Publisher:</em>&nbsp;Ural State Conservatory named after M. P. Mussorgsky. – Yekaterinburg: USMC, 2013</p>
+        <p><em>Number of pages:</em>&nbsp;204 p. : music.</p>
+        <p><em>Circulation:</em>&nbsp;100 copies</p>
+        <p>ISBN:&nbsp;978-5-9860208-2-2</p>',
+
+        'I. ОБЩИЕ ВОПРОСЫ СОВРЕМЕННОГО МУЗЫКОЗНАНИЯ<br>
+        <em>Зенкин К. В.</em> О переосмыслении некоторых базовых категорий эстетики в музыкальном мышлении XX века<br>
+        <em>Коробова А. Г.</em> Жанр в музыкальной теории и практике новейшей эпохи<br><br>
+        II. МУЗЫКА И ТВОРЧЕСКАЯ ЛИЧНОСТЬ Р. ЩЕДРИНА КАК ОБЪЕКТ ИЗУЧЕНИЯ<br>
+        <em>Шелудякова О. Е.</em> Претворение православных канонических напевов в «Стихире» и литургии «Запечатленный ангел» Р. Щедрина<br>
+        <em>Урванцева О. А.</em> Топосфера духовно-концертной музыки русских композиторов XX века (на примере «Запечатленного ангела» Р. Щедрина)<br>
+        <em>Шабалина Н. И.</em> Претворение литургических традиций в цикле Родиона Щедрина «Запечатленный ангел»<br>
+        <em>Серебрякова Л. А.</em> Эпопея народной жизни в «Мертвых душах» Родиона Щедрина<br>
+        <em>Городилова М. В.</em> О типах звуковысотной организации в фортепианных концертах Р. Щедрина<br>
+        <em>Немковская В. И.</em> Р. К. Щедрин: «Автопортрет» художника в зрелости<br>
+        <em>Силагина Н. С.</em> Время — история — жизнь (Р. Щедрин «Диптих на стихи А. Вознесенского»)<br>
+        <em>Огарёва Л. В.</em> Страницы русской истории в хоровой музыке Р. Щедрина<br>
+        <em>Трофимова Е. Н.</em> Фортепианная транскрипция «Ревизской сказки» Гоголя — Шнитке<br>
+        <em>Иванов В. С.</em> Родион Щедрин и Самара<br><br>
+        III. КОМПОЗИТОРСКОЕ ТВОРЧЕСТВО «ЭПОХИ ЩЕДРИНА»<br>
+        <em>Владимирцева Н. Н.</em> Принципы воплощения великопостных и страстных молитв в современном композиторском творчестве<br>
+        <em>Девятова О. Л.</em> Диалог культур в новых симфониях Сергея Слонимского<br>
+        <em>Ганул Н. Г.</em> Опера-притча «Визит Дамы» Сергея Кортеса в контексте художественных исканий времени<br>
+        <em>Макарова А. Л.</em> Тема преступной совести в русской опере: монолог Мазепы<br>
+        <em>Дятлов Д. А.</em> Программа в пьесе О. Мессиана: вариант решения<br>
+        <em>Петров В. О.</em> «Для сцены» — первый опыт синтеза искусств в творчестве Маурисио Кагеля<br>
+        <em>Ещенко А. Б.</em> О роли сонорных звучностей в сочинениях для баяна Анатолия Кусякова<br>
+        <em>Рыдкина В. К.</em> Додекафонные рукописи К. Караева<br><br>
+        IV. ВОПРОСЫ МУЗЫКАЛЬНОГО КРАЕВЕДЕНИЯ И СОВРЕМЕННОЙ ПЕДАГОГИКИ<br>
+        <em>Безгинова И. В.</em> Культурный ландшафт Южного Урала в прошлом и настоящем<br>
+        <em>Винкевич И. В.</em> Из истории теоретико-композиторского отделения Свердловского музыкального училища<br>
+        <em>Карабатов Р. П.</em> История хоровой капеллы Свердловской республиканской филармонии в 1940-е — 1970-е годы (по материалам архивов)<br>
+        <em>Полоцкая Е. Е.</em> У истоков современного теоретико-композиторского образования в России (по материалам архивов)<br>
+        <em>Семёнов В. Т.</em> Слайд-фильм как средство пояснения образного содержания музыкального произведения<br>
+        <em>Камусина Н. Ю.</em> Современные выразительные возможности и приёмы игры на флейте<br>
+        <em>Андреев Д. И., Гурьева И. Ю.</em> Массовая культура как форма выражения исторического сознания современной российской молодёжи',
+        'I. GENERAL QUESTIONS OF CONTEMPORARY MUSICOLOGY<br>
+        <em>Zenkin K. V.</em> On the Reinterpretation of Some Basic Categories of Aesthetics in 20th Century Musical Thinking<br>
+        <em>Korobova A. G.</em> Genre in Musical Theory and Practice of the Modern Era<br><br>
+        II. MUSIC AND R. SHCHEDRIN''S CREATIVE PERSONALITY AS AN OBJECT OF STUDY<br>
+        <em>Sheludyakova O. E.</em> The Realization of Orthodox Canonical Chants in R. Shchedrin''s "Stichera" and the Liturgy "The Sealed Angel"<br>
+        <em>Urvantseva O. A.</em> The Toposphere of Sacred Concert Music by Russian Composers of the 20th Century (Using the Example of R. Shchedrin''s "The Sealed Angel")<br>
+        <em>Shabalina N. I.</em> The Realization of Liturgical Traditions in Rodion Shchedrin''s Cycle "The Sealed Angel"<br>
+        <em>Serebryakova L. A.</em> The Epic of Folk Life in Rodion Shchedrin''s "Dead Souls"<br>
+        <em>Gorodilova M. V.</em> On the Types of Pitch Organization in R. Shchedrin''s Piano Concertos<br>
+        <em>Nemkovskaya V. I.</em> R. K. Shchedrin: "Self-Portrait" of the Artist in Maturity<br>
+        <em>Silagina N. S.</em> Time — History — Life (R. Shchedrin "Diptych on Verses by A. Voznesensky")<br>
+        <em>Ogareva L. V.</em> Pages of Russian History in R. Shchedrin''s Choral Music<br>
+        <em>Trofimova E. N.</em> Piano Transcription of Gogol''s "The Inspector General''s Tale" by Shnitke<br>
+        <em>Ivanov V. S.</em> Rodion Shchedrin and Samara<br><br>
+        III. COMPOSERS'' CREATIVITY OF THE "SHCHEDRIN ERA"<br>
+        <em>Vladimirtseva N. N.</em> Principles of Realizing Lenten and Passion Prayers in Contemporary Compositional Work<br>
+        <em>Devyatova O. L.</em> Dialogue of Cultures in Sergei Slonimsky''s New Symphonies<br>
+        <em>Ganul N. G.</em> The Parable-Opera "The Visit of the Lady" by Sergei Cortes in the Context of the Artistic Quest of the Time<br>
+        <em>Makarova A. L.</em> The Theme of Criminal Conscience in Russian Opera: Mazeppa''s Monologue<br>
+        <em>Dyatlov D. A.</em> Programme in O. Messiaen''s Piece: A Variant of Solution<br>
+        <em>Petrov V. O.</em> "For Stage" – The First Experience of Synthesis of Arts in the Work of Mauricio Kagel<br>
+        <em>Eshchenko A. B.</em> On the Role of Sonorities in Anatoly Kusyakov''s Compositions for Bayan<br>
+        <em>Rydkina V. K.</em> Dodecaphonic Manuscripts of K. Karaev<br><br>
+        IV. ISSUES OF MUSICAL REGIONAL STUDIES AND CONTEMPORARY PEDAGOGY<br>
+        <em>Bezginova I. V.</em> The Cultural Landscape of the Southern Urals in the Past and Present<br>
+        <em>Vinkevich I. V.</em> From the History of the Theory and Composition Department of the Sverdlovsk Music College<br>
+        <em>Karabatov R. P.</em> The History of the Choir Chapel of the Sverdlovsk Republican Philharmonic in the 1940s – 1970s (Based on Archival Materials)<br>
+        <em>Polotskaya E. E.</em> At the Origins of Modern Theory and Composition Education in Russia (Based on Archival Materials)<br>
+        <em>Semenov V. T.</em> Slide Film as a Means of Explaining the Figurative Content of a Musical Work<br>
+        <em>Kamusina N. Yu.</em> Contemporary Expressive Possibilities and Playing Techniques for the Flute<br>
+        <em>Andreev D. I., Guryeva I. Yu.</em> Mass Culture as a Form of Expression of the Historical Consciousness of Modern Russian Youth',
+        'cover6.jpg',
+        null),
+
+        (2013,
         '7',
         'Музыка в системе культуры: Научный вестник Уральской консерватории. Вып. 7',
         'Music in the System of Culture: Scientific Bulletin of the Ural Conservatory. Issue 7',
