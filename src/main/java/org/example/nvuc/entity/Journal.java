@@ -17,7 +17,7 @@ public class Journal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer year;
+    private String year;
 
     private Integer issue;
 
