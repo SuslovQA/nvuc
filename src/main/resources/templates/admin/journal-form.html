@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title th:text="${journal.id == null
+        ? 'Добавление журнала'
+        : 'Редактирование журнала'}">
+    </title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            max-width: 1100px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .editor {
+            height: 200px;
+            background: white;
+        }
+
+        .file-info {
+            margin-top: 8px;
+            color: #666;
+        }
+
+        button {
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<a href="/admin" class="back">
+    ← Вернуться в админку
+</a>
+
+<h1 th:text="${journal.id == null
+        ? 'Добавление журнала'
+        : 'Редактирование журнала'}">
+</h1>
+
+<form th:action="${journal.id == null
+        ? '/admin/journals'
+        : '/admin/journals/' + journal.id}"
+      method="post"
+      enctype="multipart/form-data">
+
+    <!-- Год -->
+
+    <div class="form-group">
+
+        <label for="year">
+            Год
+        </label>
+
+        <input
+                type="number"
+                id="year"
+                name="year"
+                th:value="${journal.year}"
+                min="2008"
+                required>
+
+    </div>
+
+
+    <!-- Выпуск -->
+
+    <div class="form-group">
+
+        <label for="issue">
+            Выпуск
+        </label>
+
+        <input
+                type="number"
+                id="issue"
+                name="issue"
+                th:value="${journal.issue}"
+                min="1"
+                max="4"
+                required>
+
+    </div>
+
+
+    <!-- Название RU -->
+
+    <div class="form-group">
+
+        <label for="title">
+            Название
+        </label>
+
+        <input
+                type="text"
+                id="title"
+                name="title"
+                th:value="${journal.title}"
+                required>
+
+    </div>
+
+
+    <!-- Название EN -->
+
+    <div class="form-group">
+
+        <label for="titleEn">
+            Название EN
+        </label>
+
+        <input
+                type="text"
+                id="titleEn"
+                name="titleEn"
+                th:value="${journal.titleEn}">
+
+    </div>
+
+
+    <!-- Описание RU -->
+
+    <div class="form-group">
+
+        <label>
+            Описание
+        </label>
+
+        <div id="descriptionEditor"
+             class="editor"
+             th:utext="${journal.description}">
+        </div>
+
+        <input type="hidden"
+               id="description"
+               name="description">
+
+    </div>
+
+
+    <!-- Описание EN -->
+
+    <div class="form-group">
+
+        <label>
+            Описание EN
+        </label>
+
+        <div id="descriptionEnEditor"
+             class="editor"
+             th:utext="${journal.descriptionEn}">
+        </div>
+
+        <input type="hidden"
+               id="descriptionEn"
+               name="descriptionEn">
+
+    </div>
+
+
+    <!-- Содержание RU -->
+
+    <div class="form-group">
+
+        <label>
+            Содержание
+        </label>
+
+        <div id="contentEditor"
+             class="editor"
+             th:utext="${journal.content}">
+        </div>
+
+        <input type="hidden"
+               id="content"
+               name="content">
+
+    </div>
+
+
+    <!-- Содержание EN -->
+
+    <div class="form-group">
+
+        <label>
+            Содержание EN
+        </label>
+
+        <div id="contentEnEditor"
+             class="editor"
+             th:utext="${journal.contentEn}">
+        </div>
+
+        <input type="hidden"
+               id="contentEn"
+               name="contentEn">
+
+    </div>
+
+
+    <!-- Обложка -->
+
+    <div class="form-group">
+
+        <label for="coverFile">
+            Обложка
+        </label>
+
+        <input
+                type="file"
+                id="coverFile"
+                name="coverFile"
+                accept="image/jpeg,image/png,image/webp">
+
+        <div class="file-info"
+             th:if="${journal.cover != null}"
+             th:text="'Текущая обложка: ' + ${journal.cover}">
+        </div>
+
+    </div>
+
+
+    <!-- PDF -->
+
+    <div class="form-group">
+
+        <label for="pdfFile">
+            PDF журнала
+        </label>
+
+        <input
+                type="file"
+                id="pdfFile"
+                name="pdfFile"
+                accept="application/pdf">
+
+        <div class="file-info"
+             th:if="${journal.pdf != null}"
+             th:text="'Текущий PDF: ' + ${journal.pdf}">
+        </div>
+
+    </div>
+
+
+    <button type="submit">
+        Сохранить
+    </button>
+
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js">
+</script>
+
+
+<script>
+
+    const descriptionEditor =
+        new Quill('#descriptionEditor', {
+            theme: 'snow'
+        });
+
+    const descriptionEnEditor =
+        new Quill('#descriptionEnEditor', {
+            theme: 'snow'
+        });
+
+    const contentEditor =
+        new Quill('#contentEditor', {
+            theme: 'snow'
+        });
+
+    const contentEnEditor =
+        new Quill('#contentEnEditor', {
+            theme: 'snow'
+        });
+
+
+    document.querySelector('form')
+        .addEventListener('submit', function () {
+
+            document.getElementById('description').value =
+                descriptionEditor.root.innerHTML;
+
+            document.getElementById('descriptionEn').value =
+                descriptionEnEditor.root.innerHTML;
+
+            document.getElementById('content').value =
+                contentEditor.root.innerHTML;
+
+            document.getElementById('contentEn').value =
+                contentEnEditor.root.innerHTML;
+
+        });
+
+</script>
+
+</body>
+
+</html>

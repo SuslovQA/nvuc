@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="ru"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Вход в административную панель</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .login-container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>Админ-панель</h1>
+
+    <div th:if="${param.error}"
+         class="error">
+
+        Неверный логин или пароль
+
+    </div>
+
+    <div th:if="${param.logout}"
+         class="success">
+
+        Вы вышли из системы
+
+    </div>
+
+    <form method="post"
+          action="/admin/login">
+
+        <label>
+            Логин
+        </label>
+
+        <input
+                type="text"
+                name="username"
+                required>
+
+
+        <label>
+            Пароль
+        </label>
+
+        <input
+                type="password"
+                name="password"
+                required>
+
+
+        <button type="submit">
+            Войти
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
