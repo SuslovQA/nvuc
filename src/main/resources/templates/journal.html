@@ -130,16 +130,21 @@
                             <h2 th:text="${journalTitle}"></h2>
                         </div>
                         <div class="issue-description" th:utext="${journalDescription}"></div>
-                        <a th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn" th:text="#{home.read}">Читать
+                        <a th:if="${pdfExist}"
+                           th:href="@{/files/pdf/{file}(file=${journal.pdf})}" target="_blank" class="main-btn"
+                           th:text="#{home.read}">Читать
                             выпуск</a>
+                        <div th:unless="${pdfExist}" class="no-pdf" th:text="#{journal.no-pdf}">Электронный экземпляр отсутствует в базе
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
         <div class="container second-container">
             <div class="issue-wrapper">
                 <h3 th:text="#{journal.content}">Содержание:</h3>
-                <div th:utext="${journalContents}" class="current-issue-contents"></div>
+                <div th:utext="${journalContents}" class="current-issue-contents p-main-text"></div>
             </div>
         </div>
     </article>

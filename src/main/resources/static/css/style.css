@@ -65,7 +65,7 @@ main {
 
 .main-cover {
     max-width: 70%;
-    padding: 20px 10px 20px 20px;
+    padding: 20px;
 }
 
 .main-cover > img {
@@ -80,12 +80,14 @@ main {
 
     display: flex;
     flex-direction: column;
-
-    line-height: 20px;
 }
 
 .p-main-text > p {
     padding-bottom: 10px;
+}
+
+.p-main-text {
+    line-height: 24px;
 }
 
 .main-btn {
@@ -117,6 +119,12 @@ main {
     color: black;
 }
 
+.no-pdf {
+    font-weight: bold;
+    color: #891f05;
+    text-align: center;
+}
+
 
 /* =========================================================
    CURRENT ISSUE
@@ -144,7 +152,6 @@ main {
 
 .current-issue-data {
     padding: 20px;
-    line-height: 20px;
 }
 
 .current-issue-data > p {
@@ -165,10 +172,6 @@ main {
 
 .current-issue-data a {
     margin-top: 10px;
-}
-
-.current-issue-contents p {
-    font-size: 13px;
 }
 
 

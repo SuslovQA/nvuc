@@ -138,7 +138,7 @@
                     <div class="main-cover current-issue-cover">
                         <img class="latest-cover" th:src="@{/files/covers/{f}(f=${latestJournal.cover})}">
                     </div>
-                    <div class="current-issue-data">
+                    <div class="current-issue-data p-main-text">
                         <h3 th:text="${latestTitle}"></h3>
                         <div th:utext="${latestDescription}" class="current-issue-description"></div>
                         <h4 th:text="#{journal.content}">Содержание:</h4>
