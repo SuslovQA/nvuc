@@ -3,7 +3,6 @@ package org.example.nvuc.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name="journals")
@@ -12,14 +11,13 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 public class Journal {
 
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Integer year;
 
-    private Integer issue;
+    private String issue;
 
     private String title;
 
