@@ -66,7 +66,7 @@
 <body>
 
 <a href="/admin" class="back">
-    ← Вернуться в админку
+    ← Назад
 </a>
 
 <h1 th:text="${journal.id == null
@@ -79,6 +79,10 @@
         : '/admin/journals/' + journal.id}"
       method="post"
       enctype="multipart/form-data">
+
+    <input type="hidden"
+           th:name="${_csrf.parameterName}"
+           th:value="${_csrf.token}">
 
     <!-- Год -->
 
@@ -108,12 +112,10 @@
         </label>
 
         <input
-                type="number"
+                type="text"
                 id="issue"
                 name="issue"
                 th:value="${journal.issue}"
-                min="1"
-                max="4"
                 required>
 
     </div>
@@ -204,7 +206,7 @@
 
         <div id="contentEditor"
              class="editor"
-             th:utext="${journal.content}">
+             th:utext="${journal.contents}">
         </div>
 
         <input type="hidden"
@@ -224,7 +226,7 @@
 
         <div id="contentEnEditor"
              class="editor"
-             th:utext="${journal.contentEn}">
+             th:utext="${journal.contentsEn}">
         </div>
 
         <input type="hidden"

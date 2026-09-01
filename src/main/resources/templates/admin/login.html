@@ -11,11 +11,51 @@
 
     <link rel="stylesheet"
           th:href="@{/css/style.css}">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .login-container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .success {
+            color: green;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-<div class="admin-login">
+<div class="login-container">
 
     <h1>Вход в панель администратора</h1>
 
@@ -64,12 +104,12 @@
     </form>
 
     <!-- Сообщение об ошибке -->
-    <div th:if="${param.error}">
+    <div th:if="${param.error}" class="error">
         Неверный логин или пароль
     </div>
 
     <!-- Сообщение после выхода -->
-    <div th:if="${param.logout}">
+    <div th:if="${param.logout}" class="success">
         Вы вышли из системы
     </div>
 
