@@ -14,52 +14,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css">
 
-    <style>
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            max-width: 1100px;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="number"] {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 10px;
-        }
-
-        .editor {
-            height: 200px;
-            background: white;
-        }
-
-        .file-info {
-            margin-top: 8px;
-            color: #666;
-        }
-
-        button {
-            padding: 12px 25px;
-            cursor: pointer;
-        }
-
-        .back {
-            display: inline-block;
-            margin-bottom: 25px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="/css/style_admin.css" th:href="@{/css/style_admin.css}">
 
 </head>
 
@@ -84,7 +39,6 @@
            th:name="${_csrf.parameterName}"
            th:value="${_csrf.token}">
 
-    <!-- Год -->
 
     <div class="form-group">
 
@@ -103,8 +57,6 @@
     </div>
 
 
-    <!-- Выпуск -->
-
     <div class="form-group">
 
         <label for="issue">
@@ -120,8 +72,6 @@
 
     </div>
 
-
-    <!-- Название RU -->
 
     <div class="form-group">
 
@@ -139,8 +89,6 @@
     </div>
 
 
-    <!-- Название EN -->
-
     <div class="form-group">
 
         <label for="titleEn">
@@ -155,8 +103,6 @@
 
     </div>
 
-
-    <!-- Описание RU -->
 
     <div class="form-group">
 
@@ -174,9 +120,6 @@
                name="description">
 
     </div>
-
-
-    <!-- Описание EN -->
 
     <div class="form-group">
 
@@ -196,8 +139,6 @@
     </div>
 
 
-    <!-- Содержание RU -->
-
     <div class="form-group">
 
         <label>
@@ -216,8 +157,6 @@
     </div>
 
 
-    <!-- Содержание EN -->
-
     <div class="form-group">
 
         <label>
@@ -235,8 +174,6 @@
 
     </div>
 
-
-    <!-- Обложка -->
 
     <div class="form-group">
 
@@ -257,8 +194,6 @@
 
     </div>
 
-
-    <!-- PDF -->
 
     <div class="form-group">
 
