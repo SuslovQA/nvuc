@@ -11,9 +11,14 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    private final AdminUserService adminUserService;
+
+    public SecurityConfig(AdminUserService adminUserService) {
+        this.adminUserService = adminUserService;
+    }
+
     @Bean
     public PasswordEncoder passwordEncoder() {
-
         return new BCryptPasswordEncoder();
     }
 
@@ -22,11 +27,20 @@ public class SecurityConfig {
             HttpSecurity http) throws Exception {
 
         http
+
+                .userDetailsService(adminUserService)
+
                 .authorizeHttpRequests(auth -> auth
 
                         .requestMatchers(
-                                "/css/**",
-                                "/js/**",
+                                "/css/**"
+                        ).permitAll()
+
+                        .requestMatchers(
+                                "/js/**"
+                        ).permitAll()
+
+                        .requestMatchers(
                                 "/images/**"
                         ).permitAll()
 
@@ -61,7 +75,9 @@ public class SecurityConfig {
 
                 .logout(logout -> logout
 
-                        .logoutUrl("/admin/logout")
+                        .logoutUrl(
+                                "/admin/logout"
+                        )
 
                         .logoutSuccessUrl(
                                 "/admin/login?logout"
