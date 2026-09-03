@@ -1,7 +1,5 @@
 package org.example.nvuc.controller;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.example.nvuc.dto.JournalForm;
 import org.example.nvuc.entity.Journal;
 import org.example.nvuc.repository.JournalRepository;
@@ -32,8 +30,7 @@ public class AdminController {
 
         this.journalRepository = journalRepository;
         this.fileStorageService = fileStorageService;
-        this.htmlSanitizerService =
-                htmlSanitizerService;
+        this.htmlSanitizerService = htmlSanitizerService;
     }
 
 

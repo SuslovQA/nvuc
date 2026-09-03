@@ -4,6 +4,10 @@ body {
     margin: 40px;
 }
 
+.admin-header {
+    margin-bottom: 25px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -32,9 +36,8 @@ button {
 }
 
 .logout-button {
-    padding: 5px 20px;
     margin-top: 40px;
-    width: auto;
+    width: 177px;
 }
 
 
@@ -70,11 +73,14 @@ button {
     cursor: pointer;
 }
 
-.back {
-    display: inline-block;
-    margin-bottom: 25px;
+button > a {
+    color: #000;
+    text-decoration: none;
 }
 
+.login-button {
+    width: 100%;
+}
 
 .login-container {
     width: 350px;
@@ -92,9 +98,12 @@ input {
 }
 
 button {
-    width: 100%;
     padding: 12px;
     cursor: pointer;
+}
+
+.save-button {
+    width: 100%;
 }
 
 .error {
