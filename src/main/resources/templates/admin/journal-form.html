@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title th:text="${journal.id == null
+        ? 'Добавление журнала'
+        : 'Редактирование журнала'}">
+    </title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css">
+
+    <link rel="stylesheet" href="/css/style_admin.css" th:href="@{/css/style_admin.css}">
+
+</head>
+
+<body>
+
+<a href="/admin" class="back">
+    ← Назад
+</a>
+
+<h1 th:text="${journal.id == null
+        ? 'Добавление журнала'
+        : 'Редактирование журнала'}">
+</h1>
+
+<form th:action="${journal.id == null
+        ? '/admin/journals'
+        : '/admin/journals/' + journal.id}"
+      method="post"
+      enctype="multipart/form-data">
+
+    <input type="hidden"
+           th:name="${_csrf.parameterName}"
+           th:value="${_csrf.token}">
+
+
+    <div class="form-group">
+
+        <label for="year">
+            Год
+        </label>
+
+        <input
+                type="number"
+                id="year"
+                name="year"
+                th:value="${journal.year}"
+                min="2005"
+                max="2099"
+                required>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="issue">
+            Выпуск
+        </label>
+
+        <input
+                type="text"
+                id="issue"
+                name="issue"
+                th:value="${journal.issue}"
+                required>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="title">
+            Название
+        </label>
+
+        <input
+                type="text"
+                id="title"
+                name="title"
+                th:value="${journal.title}"
+                required>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="titleEn">
+            Название EN
+        </label>
+
+        <input
+                type="text"
+                id="titleEn"
+                name="titleEn"
+                th:value="${journal.titleEn}">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Описание
+        </label>
+
+        <div id="descriptionEditor"
+             class="editor"
+             th:utext="${journal.description}">
+        </div>
+
+        <input type="hidden"
+               id="description"
+               name="description">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>
+            Описание EN
+        </label>
+
+        <div id="descriptionEnEditor"
+             class="editor"
+             th:utext="${journal.descriptionEn}">
+        </div>
+
+        <input type="hidden"
+               id="descriptionEn"
+               name="descriptionEn">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Содержание
+        </label>
+
+        <div id="contentEditor"
+             class="editor"
+             th:utext="${journal.contents}">
+        </div>
+
+        <input type="hidden"
+               id="content"
+               name="content">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Содержание EN
+        </label>
+
+        <div id="contentEnEditor"
+             class="editor"
+             th:utext="${journal.contentsEn}">
+        </div>
+
+        <input type="hidden"
+               id="contentEn"
+               name="contentEn">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="coverFile">
+            Обложка
+        </label>
+
+        <input
+                type="file"
+                id="coverFile"
+                name="coverFile"
+                accept="image/jpeg,image/png,image/webp">
+
+        <div class="file-info"
+             th:if="${journal.cover != null}"
+             th:text="'Текущая обложка: ' + ${journal.cover}">
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="pdfFile">
+            PDF файл
+        </label>
+
+        <input
+                type="file"
+                id="pdfFile"
+                name="pdfFile"
+                accept="application/pdf">
+
+        <div class="file-info"
+             th:if="${journal.pdf != null}"
+             th:text="'Текущий PDF: ' + ${journal.pdf}">
+        </div>
+
+    </div>
+
+
+    <button type="submit" class="save-button">
+        Сохранить
+    </button>
+
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js">
+</script>
+
+
+<script>
+
+    const descriptionEditor =
+        new Quill('#descriptionEditor', {
+            theme: 'snow'
+        });
+
+    const descriptionEnEditor =
+        new Quill('#descriptionEnEditor', {
+            theme: 'snow'
+        });
+
+    const contentEditor =
+        new Quill('#contentEditor', {
+            theme: 'snow'
+        });
+
+    const contentEnEditor =
+        new Quill('#contentEnEditor', {
+            theme: 'snow'
+        });
+
+
+    document.querySelector('form')
+        .addEventListener('submit', function () {
+
+            document.getElementById('description').value =
+                descriptionEditor.root.innerHTML;
+
+            document.getElementById('descriptionEn').value =
+                descriptionEnEditor.root.innerHTML;
+
+            document.getElementById('content').value =
+                contentEditor.root.innerHTML;
+
+            document.getElementById('contentEn').value =
+                contentEnEditor.root.innerHTML;
+
+        });
+
+</script>
+
+</body>
+
+</html>
