@@ -34,7 +34,7 @@ public class AdminController {
     }
 
 
-    @GetMapping
+    @GetMapping({"", "/"})
     public String index(Model model) {
 
         List<Journal> journals =
