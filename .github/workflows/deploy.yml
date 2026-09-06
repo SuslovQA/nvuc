@@ -1,391 +1,104 @@
-name: Deploy NVUC
+name: Build and Deploy NVUC
 
 on:
   push:
     branches:
       - master
 
+  workflow_dispatch:
+
 jobs:
-  build-and-deploy:
+
+  build:
+    name: Build application
     runs-on: ubuntu-latest
 
     steps:
 
-      # ============================================================
-      # 1. Получаем исходный код
-      # ============================================================
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
 
-
-      # ============================================================
-      # 2. Устанавливаем Java
-      # ============================================================
-      - name: Set up JDK 17
+      - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
+          distribution: temurin
           java-version: '17'
-          distribution: 'temurin'
           cache: maven
 
+      - name: Build JAR
+        run: mvn --batch-mode clean package -DskipTests
 
-      # ============================================================
-      # 3. Собираем приложение
-      # ============================================================
-      - name: Build application
+      - name: Find JAR
         run: |
-          chmod +x mvnw
-          ./mvnw clean package -DskipTests
+          ls -lh target/*.jar
+
+      - name: Upload JAR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nvuc-jar
+          path: target/*.jar
+          if-no-files-found: error
 
 
-      # ============================================================
-      # 4. Настраиваем SSH
-      # ============================================================
+  deploy:
+    name: Deploy to server
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+
+      - name: Download JAR artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: nvuc-jar
+          path: deploy
+
+      - name: Check downloaded JAR
+        run: |
+          ls -lh deploy/*.jar
+
       - name: Configure SSH
         run: |
           mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
 
           ssh-keyscan -H "${{ secrets.SERVER_HOST }}" >> ~/.ssh/known_hosts
 
-          chmod 644 ~/.ssh/known_hosts
-
-
-      # ============================================================
-      # 5. Останавливаем приложение и создаём backup
-      # ============================================================
-      - name: Prepare server
+      - name: Backup current JAR
         run: |
-          ssh -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
-              set -e
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'if [ -f /opt/nvuc/app/nvuc-app.jar ]; then
+               cp /opt/nvuc/app/nvuc-app.jar \
+                  /opt/nvuc/app/nvuc-app.jar.backup;
+             fi'
 
-              echo "======================================"
-              echo "Preparing server"
-              echo "======================================"
-
-              echo "Stopping nvuc..."
-
-              sudo systemctl stop nvuc || true
-
-              echo "Creating backup..."
-
-              if [ -f /opt/nvuc/app/nvuc-app.jar ]; then
-                cp /opt/nvuc/app/nvuc-app.jar \
-                   /opt/nvuc/app/nvuc-app.jar.backup
-              else
-                echo "No previous JAR found"
-              fi
-
-              echo "Server prepared"
-            '
-
-
-      # ============================================================
-      # 6. Загружаем новый JAR
-      # ============================================================
-      - name: Upload application
+      - name: Upload new JAR
         run: |
-          scp -i ~/.ssh/id_ed25519 \
-            target/*.jar \
+          scp \
+            -i ~/.ssh/id_ed25519 \
+            deploy/*.jar \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/opt/nvuc/app/nvuc-app.jar
 
-
-      # ============================================================
-      # 7. Запускаем новую версию
-      # ============================================================
-      - name: Start application
+      - name: Restart application
         run: |
-          ssh -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
-              set -e
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'sudo systemctl restart nvuc'
 
-              echo "======================================"
-              echo "Starting nvuc"
-              echo "======================================"
-
-              sudo systemctl start nvuc
-
-              echo "Start command completed"
-            '
-
-
-      # ============================================================
-      # 8. HEALTH-CHECK №1
-      #
-      # Проверяем, что systemd считает сервис активным.
-      #
-      # Не делаем sleep 5, потому что Spring Boot может запускаться
-      # дольше.
-      # ============================================================
-      - name: Health check 1 - systemd
+      - name: Check application
         run: |
-          echo "======================================"
-          echo "Health check #1: systemd"
-          echo "======================================"
-
-          for i in {1..60}; do
-
-            if ssh \
-              -i ~/.ssh/id_ed25519 \
-              ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-              'sudo systemctl is-active --quiet nvuc'
-            then
-              echo "nvuc service is ACTIVE"
-              break
-            fi
-
-            echo "Attempt $i/60: nvuc is not active yet..."
-
-            if [ "$i" -eq 60 ]; then
-              echo "ERROR: nvuc service did not become active"
-
-              echo "Last service status:"
-              ssh \
-                -i ~/.ssh/id_ed25519 \
-                ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-                'sudo systemctl status nvuc --no-pager -l || true'
-
-              echo "Recent application logs:"
-              ssh \
-                -i ~/.ssh/id_ed25519 \
-                ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-                'sudo journalctl -u nvuc -n 100 --no-pager || true'
-
-              exit 1
-            fi
-
-            sleep 1
-          done
-
-
-      # ============================================================
-      # 9. HEALTH-CHECK №2
-      #
-      # Проверяем уже не только systemd, а реальный HTTP.
-      #
-      # Spring Boot должен начать слушать:
-      #
-      # 127.0.0.1:8080
-      #
-      # Даём приложению до 60 секунд.
-      # ============================================================
-      - name: Health check 2 - HTTP
-        run: |
-          echo "======================================"
-          echo "Health check #2: HTTP"
-          echo "======================================"
-
-          for i in {1..60}; do
-
-            if ssh \
-              -i ~/.ssh/id_ed25519 \
-              ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-              'curl -fsS http://127.0.0.1:8080/ > /dev/null'
-            then
-              echo "HTTP health-check PASSED"
-              exit 0
-            fi
-
-            echo "Attempt $i/60: HTTP is not ready yet..."
-
-            sleep 1
-          done
-
-          echo "ERROR: application did not respond on port 8080"
-
-          echo ""
-          echo "======================================"
-          echo "SYSTEMD STATUS"
-          echo "======================================"
+          sleep 10
 
           ssh \
             -i ~/.ssh/id_ed25519 \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo systemctl status nvuc --no-pager -l || true'
+            'sudo systemctl is-active --quiet nvuc'
 
-          echo ""
-          echo "======================================"
-          echo "LISTENING PORTS"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo ss -lntp | grep ":8080" || true'
-
-          echo ""
-          echo "======================================"
-          echo "APPLICATION LOGS"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo journalctl -u nvuc -n 150 --no-pager || true'
-
-          exit 1
-
-
-      # ============================================================
-      # 10. Успешный deploy
-      # ============================================================
       - name: Deployment successful
         run: |
-          echo "======================================"
-          echo "DEPLOYMENT SUCCESSFUL"
-          echo "======================================"
-
-          echo "Application is running and responding on port 8080."
-
-
-      # ============================================================
-      # 11. ROLLBACK
-      #
-      # Выполняется только если один из предыдущих шагов
-      # завершился ошибкой.
-      # ============================================================
-      - name: Rollback
-        if: failure()
-        run: |
-          echo "======================================"
-          echo "DEPLOYMENT FAILED"
-          echo "STARTING ROLLBACK"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
-              set -e
-
-              echo "Stopping failed application..."
-
-              sudo systemctl stop nvuc || true
-
-              echo "Checking backup..."
-
-              if [ ! -f /opt/nvuc/app/nvuc-app.jar.backup ]; then
-                echo "ERROR: backup JAR does not exist!"
-                exit 1
-              fi
-
-              echo "Restoring previous version..."
-
-              cp /opt/nvuc/app/nvuc-app.jar.backup \
-                 /opt/nvuc/app/nvuc-app.jar
-
-              echo "Starting previous version..."
-
-              sudo systemctl start nvuc
-            '
-
-
-      # ============================================================
-      # 12. ROLLBACK HEALTH-CHECK №1
-      #
-      # После rollback тоже нельзя делать просто sleep 5.
-      # ============================================================
-      - name: Rollback health check 1 - systemd
-        if: failure()
-        run: |
-          echo "======================================"
-          echo "ROLLBACK HEALTH CHECK #1"
-          echo "======================================"
-
-          for i in {1..60}; do
-
-            if ssh \
-              -i ~/.ssh/id_ed25519 \
-              ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-              'sudo systemctl is-active --quiet nvuc'
-            then
-              echo "Previous version service is ACTIVE"
-              break
-            fi
-
-            echo "Rollback attempt $i/60: service is not active yet..."
-
-            if [ "$i" -eq 60 ]; then
-              echo "ERROR: previous version did not start"
-
-              ssh \
-                -i ~/.ssh/id_ed25519 \
-                ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-                'sudo systemctl status nvuc --no-pager -l || true'
-
-              ssh \
-                -i ~/.ssh/id_ed25519 \
-                ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-                'sudo journalctl -u nvuc -n 150 --no-pager || true'
-
-              exit 1
-            fi
-
-            sleep 1
-          done
-
-
-      # ============================================================
-      # 13. ROLLBACK HEALTH-CHECK №2
-      #
-      # Проверяем HTTP старой версии.
-      # ============================================================
-      - name: Rollback health check 2 - HTTP
-        if: failure()
-        run: |
-          echo "======================================"
-          echo "ROLLBACK HEALTH CHECK #2"
-          echo "======================================"
-
-          for i in {1..60}; do
-
-            if ssh \
-              -i ~/.ssh/id_ed25519 \
-              ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-              'curl -fsS http://127.0.0.1:8080/ > /dev/null'
-            then
-              echo "ROLLBACK HTTP HEALTH-CHECK PASSED"
-              exit 0
-            fi
-
-            echo "Rollback HTTP attempt $i/60: application is not ready yet..."
-
-            sleep 1
-          done
-
-          echo "ERROR: previous version is not responding"
-
-          echo ""
-          echo "======================================"
-          echo "SYSTEMD STATUS"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo systemctl status nvuc --no-pager -l || true'
-
-          echo ""
-          echo "======================================"
-          echo "PORT 8080"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo ss -lntp | grep ":8080" || true'
-
-          echo ""
-          echo "======================================"
-          echo "APPLICATION LOGS"
-          echo "======================================"
-
-          ssh \
-            -i ~/.ssh/id_ed25519 \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'sudo journalctl -u nvuc -n 150 --no-pager || true'
-
-          exit 1
+          echo "NVUC deployment completed successfully."
