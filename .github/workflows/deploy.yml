@@ -1,4 +1,3 @@
-```yaml
 name: Deploy NVUC
 
 on:
@@ -390,4 +389,3 @@ jobs:
             'sudo journalctl -u nvuc -n 150 --no-pager || true'
 
           exit 1
-```
