@@ -9,6 +9,10 @@ on:
 
 jobs:
 
+  # ==========================================================
+  # BUILD
+  # ==========================================================
+
   build:
     name: Build application
     runs-on: ubuntu-latest
@@ -26,7 +30,8 @@ jobs:
           cache: maven
 
       - name: Build JAR
-        run: mvn --batch-mode clean package -DskipTests
+        run: |
+          mvn --batch-mode clean package -DskipTests
 
       - name: Find JAR
         run: |
@@ -40,6 +45,10 @@ jobs:
           if-no-files-found: error
 
 
+  # ==========================================================
+  # DEPLOY
+  # ==========================================================
+
   deploy:
     name: Deploy to server
     runs-on: ubuntu-latest
@@ -47,6 +56,10 @@ jobs:
     needs: build
 
     steps:
+
+      # ------------------------------------------------------
+      # Download artifact
+      # ------------------------------------------------------
 
       - name: Download JAR artifact
         uses: actions/download-artifact@v4
@@ -58,40 +71,163 @@ jobs:
         run: |
           ls -lh deploy/*.jar
 
+
+      # ------------------------------------------------------
+      # SSH
+      # ------------------------------------------------------
+
       - name: Configure SSH
         run: |
           mkdir -p ~/.ssh
+
           echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_ed25519
+
           chmod 600 ~/.ssh/id_ed25519
 
-          ssh-keyscan -H "${{ secrets.SERVER_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -H "${{ secrets.SERVER_HOST }}" \
+            >> ~/.ssh/known_hosts
 
-      - name: Backup current JAR
+
+      # ======================================================
+      # DATABASE BACKUP
+      # ======================================================
+
+      - name: Backup PostgreSQL database
         run: |
+
           ssh \
             -i ~/.ssh/id_ed25519 \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-            'if [ -f /opt/nvuc/app/nvuc-app.jar ]; then
-               cp /opt/nvuc/app/nvuc-app.jar \
-                  /opt/nvuc/app/nvuc-app.jar.backup;
-             fi'
+            "DB_NAME='${{ secrets.DB_NAME }}' \
+             DB_USERNAME='${{ secrets.DB_USERNAME }}' \
+             DB_PASSWORD='${{ secrets.DB_PASSWORD }}' \
+             bash -s" <<'REMOTE_SCRIPT'
+
+          set -e
+
+          BACKUP_DIR="/opt/nvuc/backups/db"
+
+          TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+          BACKUP_FILE="${BACKUP_DIR}/nvuc_${TIMESTAMP}.dump"
+
+          echo "Creating PostgreSQL backup..."
+
+          mkdir -p "$BACKUP_DIR"
+
+          export PGPASSWORD="$DB_PASSWORD"
+
+          pg_dump \
+            -h 127.0.0.1 \
+            -U "$DB_USERNAME" \
+            -d "$DB_NAME" \
+            -Fc \
+            -f "$BACKUP_FILE"
+
+          unset PGPASSWORD
+
+          if [ ! -s "$BACKUP_FILE" ]; then
+              echo "ERROR: Database backup was not created."
+              exit 1
+          fi
+
+          echo "Database backup created:"
+          ls -lh "$BACKUP_FILE"
+
+          REMOTE_SCRIPT
+
+
+      # ======================================================
+      # BACKUP CURRENT JAR
+      # ======================================================
+
+      - name: Backup current JAR
+        run: |
+
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'set -e
+
+             if [ ! -f /opt/nvuc/app/nvuc-app.jar ]; then
+                 echo "ERROR: Current JAR does not exist."
+                 exit 1
+             fi
+
+             cp \
+               /opt/nvuc/app/nvuc-app.jar \
+               /opt/nvuc/app/nvuc-app.jar.backup
+
+             echo "Current JAR backed up."
+
+             ls -lh \
+               /opt/nvuc/app/nvuc-app.jar \
+               /opt/nvuc/app/nvuc-app.jar.backup'
+
+
+      # ======================================================
+      # UPLOAD NEW JAR AS TEMPORARY FILE
+      # ======================================================
 
       - name: Upload new JAR
         run: |
+
           scp \
             -i ~/.ssh/id_ed25519 \
             deploy/*.jar \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/opt/nvuc/app/nvuc-app.jar
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/opt/nvuc/app/nvuc-app.jar.new
+
+
+      # ======================================================
+      # INSTALL NEW JAR
+      # ======================================================
+
+      - name: Install new JAR
+        run: |
+
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'set -e
+
+             if [ ! -s /opt/nvuc/app/nvuc-app.jar.new ]; then
+                 echo "ERROR: New JAR is empty."
+                 exit 1
+             fi
+
+             mv \
+               /opt/nvuc/app/nvuc-app.jar.new \
+               /opt/nvuc/app/nvuc-app.jar
+
+             echo "New JAR installed."
+
+             ls -lh /opt/nvuc/app/nvuc-app.jar'
+
+
+      # ======================================================
+      # RESTART APPLICATION
+      # ======================================================
 
       - name: Restart application
+        id: restart
+        continue-on-error: true
         run: |
+
           ssh \
             -i ~/.ssh/id_ed25519 \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
             'sudo systemctl restart nvuc'
 
-      - name: Check application
+
+      # ======================================================
+      # CHECK SYSTEMD
+      # ======================================================
+
+      - name: Check application service
+        id: service_check
+        continue-on-error: true
         run: |
+
           sleep 10
 
           ssh \
@@ -99,6 +235,110 @@ jobs:
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
             'sudo systemctl is-active --quiet nvuc'
 
-      - name: Deployment successful
+
+      # ======================================================
+      # HEALTH CHECK
+      # ======================================================
+
+      - name: Check application HTTP
+        id: health_check
+        continue-on-error: true
         run: |
+
+          sleep 5
+
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'curl -f http://127.0.0.1:8080/ > /dev/null'
+
+
+      # ======================================================
+      # ROLLBACK
+      # ======================================================
+
+      - name: Rollback if deployment failed
+        if: |
+          steps.restart.outcome != 'success' ||
+          steps.service_check.outcome != 'success' ||
+          steps.health_check.outcome != 'success'
+
+        run: |
+
+          echo "======================================"
+          echo "DEPLOYMENT FAILED"
+          echo "Starting rollback..."
+          echo "======================================"
+
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'set -e
+
+             echo "Stopping failed application..."
+
+             sudo systemctl stop nvuc || true
+
+             echo "Restoring previous JAR..."
+
+             if [ ! -f /opt/nvuc/app/nvuc-app.jar.backup ]; then
+                 echo "ERROR: Backup JAR does not exist!"
+                 exit 1
+             fi
+
+             cp \
+               /opt/nvuc/app/nvuc-app.jar.backup \
+               /opt/nvuc/app/nvuc-app.jar
+
+             echo "Starting previous version..."
+
+             sudo systemctl start nvuc
+
+             sleep 10
+
+             echo "Checking previous version..."
+
+             sudo systemctl is-active --quiet nvuc
+
+             curl -f http://127.0.0.1:8080/ > /dev/null
+
+             echo "======================================"
+             echo "ROLLBACK SUCCESSFUL"
+             echo "Previous version is running."
+             echo "======================================"'
+
+
+      # ======================================================
+      # FAIL WORKFLOW IF DEPLOYMENT FAILED
+      # ======================================================
+
+      - name: Fail deployment
+        if: |
+          steps.restart.outcome != 'success' ||
+          steps.service_check.outcome != 'success' ||
+          steps.health_check.outcome != 'success'
+
+        run: |
+
+          echo "Deployment failed."
+
+          echo "Previous version has been restored."
+
+          exit 1
+
+
+      # ======================================================
+      # SUCCESS
+      # ======================================================
+
+      - name: Deployment successful
+        if: |
+          steps.restart.outcome == 'success' &&
+          steps.service_check.outcome == 'success' &&
+          steps.health_check.outcome == 'success'
+
+        run: |
+
+          echo "======================================"
           echo "NVUC deployment completed successfully."
+          echo "======================================"
