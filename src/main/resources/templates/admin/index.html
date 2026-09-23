@@ -117,6 +117,12 @@
 
 </table>
 
+<nav aria-label="Страницы журналов" th:if="${journalPage.totalPages > 1}">
+    <a th:if="${journalPage.hasPrevious()}" th:href="@{/admin(page=${journalPage.number - 1})}">Назад</a>
+    <span th:text="${journalPage.number + 1} + ' / ' + ${journalPage.totalPages}"></span>
+    <a th:if="${journalPage.hasNext()}" th:href="@{/admin(page=${journalPage.number + 1})}">Далее</a>
+</nav>
+
 
 <form method="post"
       action="/admin/logout"

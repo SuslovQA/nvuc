@@ -32,6 +32,7 @@
 <form th:action="${journal.id == null
         ? '/admin/journals'
         : '/admin/journals/' + journal.id}"
+      th:object="${form}"
       method="post"
       enctype="multipart/form-data">
 
@@ -50,7 +51,7 @@
                 type="number"
                 id="year"
                 name="year"
-                th:value="${journal.year}"
+                th:field="*{year}"
                 min="2005"
                 max="2099"
                 required>
@@ -68,7 +69,7 @@
                 type="text"
                 id="issue"
                 name="issue"
-                th:value="${journal.issue}"
+                th:field="*{issue}"
                 required>
 
     </div>
@@ -84,7 +85,7 @@
                 type="text"
                 id="title"
                 name="title"
-                th:value="${journal.title}"
+                th:field="*{title}"
                 required>
 
     </div>
@@ -100,7 +101,7 @@
                 type="text"
                 id="titleEn"
                 name="titleEn"
-                th:value="${journal.titleEn}">
+                th:field="*{titleEn}">
 
     </div>
 
@@ -113,12 +114,12 @@
 
         <div id="descriptionEditor"
              class="editor"
-             th:utext="${journal.description}">
+             th:utext="${@htmlSanitizerService.sanitize(form.description)}">
         </div>
 
         <input type="hidden"
                id="description"
-               name="description">
+               name="description" th:field="*{description}">
 
     </div>
 
@@ -130,12 +131,12 @@
 
         <div id="descriptionEnEditor"
              class="editor"
-             th:utext="${journal.descriptionEn}">
+             th:utext="${@htmlSanitizerService.sanitize(form.descriptionEn)}">
         </div>
 
         <input type="hidden"
                id="descriptionEn"
-               name="descriptionEn">
+               name="descriptionEn" th:field="*{descriptionEn}">
 
     </div>
 
@@ -148,12 +149,12 @@
 
         <div id="contentEditor"
              class="editor"
-             th:utext="${journal.contents}">
+             th:utext="${@htmlSanitizerService.sanitize(form.content)}">
         </div>
 
         <input type="hidden"
                id="content"
-               name="content">
+               name="content" th:field="*{content}">
 
     </div>
 
@@ -166,12 +167,12 @@
 
         <div id="contentEnEditor"
              class="editor"
-             th:utext="${journal.contentsEn}">
+             th:utext="${@htmlSanitizerService.sanitize(form.contentEn)}">
         </div>
 
         <input type="hidden"
                id="contentEn"
-               name="contentEn">
+               name="contentEn" th:field="*{contentEn}">
 
     </div>
 
@@ -216,6 +217,10 @@
     </div>
 
 
+    <div class="error" role="alert" th:if="${#fields.hasAnyErrors()}">
+        <p>Исправьте ошибки и повторно выберите файлы, если они были прикреплены.</p>
+        <ul><li th:each="error : ${#fields.allErrors()}" th:text="${error}"></li></ul>
+    </div>
     <button type="submit" class="save-button">
         Сохранить
     </button>

@@ -134,16 +134,17 @@
                 <div class="current-issue-header">
                     <h1 th:text="#{home.current-issue-header}">Текущий выпуск</h1>
                 </div>
-                <div class="current-issue-wrapper">
+                <p th:if="${latestJournal == null}" th:text="#{home.no-issues}">Выпуски пока не опубликованы.</p>
+                <div class="current-issue-wrapper" th:if="${latestJournal != null}">
                     <div class="main-cover current-issue-cover">
-                        <img class="latest-cover" th:src="@{/files/covers/{f}(f=${latestJournal.cover})}">
+                        <img class="latest-cover" th:if="${latestJournal.cover != null}" th:src="@{/files/covers/{f}(f=${latestJournal.cover})}">
                     </div>
                     <div class="current-issue-data p-main-text">
                         <h3 th:text="${latestTitle}"></h3>
                         <div th:utext="${latestDescription}" class="current-issue-description"></div>
                         <h4 th:text="#{journal.content}">Содержание:</h4>
                         <div th:utext="${latestContents}" class="current-issue-contents"></div>
-                        <a class="main-btn" th:href="@{/files/pdf/{file}(file=${latestJournal.pdf})}" target="_blank"
+                        <a class="main-btn" th:if="${latestJournal.pdf != null}" th:href="@{/files/pdf/{file}(file=${latestJournal.pdf})}" target="_blank"
                            th:text="#{home.read}">Читать
                             выпуск</a>
                     </div>

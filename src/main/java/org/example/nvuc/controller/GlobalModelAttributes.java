@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 
-@ControllerAdvice
+@ControllerAdvice(assignableTypes = {HomeController.class, JournalController.class})
 @RequiredArgsConstructor
 public class GlobalModelAttributes {
     private final JournalService service;

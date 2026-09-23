@@ -27,6 +27,10 @@ public class HomeController {
 
         model.addAttribute("latestJournal", latest);
 
+        if (latest == null) {
+            return "index";
+        }
+
         if ("en".equals(locale.getLanguage())) {
             model.addAttribute("latestTitle", latest.getTitleEn());
             model.addAttribute("latestDescription", latest.getDescriptionEn());
