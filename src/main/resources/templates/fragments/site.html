@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/layout.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script defer th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<header class="site-header" th:fragment="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img th:src="@{/images/logo.png}" th:alt="#{head.main-title}"></a>
+        </div>
+
+        <button type="button" class="burger" id="burger" aria-controls="nav" aria-expanded="false" th:aria-label="#{accessibility.menu}">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="nav" th:aria-label="#{accessibility.navigation}">
+            <ul class="menu" id="menu">
+                <li class="has-submenu">
+                    <button type="button" class="submenu-toggle" th:text="#{menu.archive}">Архив выпусков</button>
+                    <ul class="drop-down submenu">
+                        <li class="has-submenu" th:each="entry : ${archive}">
+                            <button type="button" class="submenu-toggle" th:text="${entry.key}"></button>
+                            <ul class="submenu">
+                                <li th:each="journal : ${entry.value}">
+                                    <a th:href="@{/journal/{id}(id=${journal.id})}"
+                                       th:text="#{journal.issue} + ' № ' + ${journal.issue}"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button type="button" class="submenu-toggle" th:text="#{menu.about}">Об издании</button>
+                    <ul class="drop-down submenu">
+                        <li>
+                            <a href="/about" th:text="#{menu.about-information}">Информация об издании</a>
+                        </li>
+                        <li>
+                            <a href="/founder" th:text="#{menu.founder}">Учредитель и издатель</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/files/documents/charter.pdf}" target="_blank" rel="noopener noreferrer"
+                               th:text="#{menu.charter}">Устав</a>
+                        </li>
+                        <li>
+                            <a href="/editorial-board" th:text="#{menu.editorial-board}">Редакционная коллегия</a></li>
+                        <li>
+                            <a href="/editorial-ethics" th:text="#{menu.editorial-ethic}">Редакционная этика</a></li>
+                    </ul>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/for-authors" th:text="#{menu.authors}">Авторам</a>
+                </li>
+                <li class="sp-menu-item">
+                    <a href="/contacts" th:text="#{menu.contacts}">Контакты</a>
+                </li>
+                <li class="language-switcher has-submenu">
+                    <div class="language-toggle">
+                        <span>RU</span>
+
+                        <label class="switch">
+                            <input type="checkbox" th:aria-label="#{accessibility.language}"
+                                   th:checked="${#locale.language == 'en'}"
+                                   onchange="changeLanguage(this)">
+                            <span class="slider"></span>
+                        </label>
+
+                        <span>EN</span>
+                    </div>
+                    <button type="button"
+                       class="submenu-toggle language-mobile-toggle"
+                       th:text="${#locale.language == 'en' ? 'EN' : 'RU'}">
+                        Русский
+                    </button>
+
+                    <ul class="submenu language-mobile-menu">
+
+                        <li>
+                            <button type="button"
+                               onclick="changeLanguageMobile('ru'); return false;">
+                                Русский
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button"
+                               onclick="changeLanguageMobile('en'); return false;">
+                                English
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<footer class="site-footer" th:fragment="footer">
+    <div class="container footer-wrapper">
+            <div class="footer-adress footer-columns">
+                <h2 class="footer-block-title" th:text="#{home.footer-contacts-header}">Контакты</h2>
+
+                <address>
+                <ul class="info-footer-adress">
+                    <li><p th:text="#{home.footer-contacts-adress}"></p></li>
+                    <li class="mail"><a href="mailto:nvuc-uralconsv@rambler.ru">nvuc-uralconsv@rambler.ru</a></li>
+                    <li class="phone"><p th:utext="#{home.footer-contacts-tel}">+7 (343) 371‑21‑80&nbsp;/&nbsp+7 (343)
+                        371‑67‑61 (факс)</p></li>
+                    <li class="time" th:text="#{home.footer-contacts-hours}">Часы работы: 10:00 - 17:00</li>
+                </ul>
+                </address>
+            </div>
+
+            <div class="footer-links footer-columns">
+                <h2 class="footer-block-title" th:text="#{home.footer-links-header}">Полезные ссылки</h2>
+
+                <ul class="footer-menu-links">
+                    <li><a href="https://culture.gov.ru/" th:text="#{home.footer-links-first}">Министерство
+                        культуры РФ</a></li>
+                    <li><a href="https://uralconsv.org/" target="_blank" rel="noopener noreferrer"
+                                            th:text="#{home.footer-links-second}">УГК им. М.П. Мусоргского</a>
+                    </li>
+                    <li><a href="https://uralconsv.org/nauka/mag-usc/som" target="_blank" rel="noopener noreferrer"
+                                            th:text="#{home.footer-links-third}">Слово о
+                        музыке</a>
+                    </li>
+                    <li><a href="https://www.elibrary.ru/defaultx.asp" target="_blank" rel="noopener noreferrer">eLIBRARY.RU</a>
+                    </li>
+                    <li><a href="https://eurasia.mosconsv.ru/" th:text="#{home.footer-links-last}">Музыкальное
+                        искусство Евразии. Традиции
+                        и
+                        современность</a></li>
+                </ul>
+            </div>
+            <div class="footer-information footer-columns">
+                <h2 class="footer-block-title" th:text="#{home.footer-information-header}">Информация</h2>
+                <div th:utext="#{home.footer-information-text}"></div>
+            </div>
+    </div>
+    <div class="copyright">
+        <div class="container copyright-wrapper">
+                <span class="sp-copyright" th:text="#{copyright.main-text}">©2022 "Музыка в системе культуры: Научный вестник Уральской консерватории"</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

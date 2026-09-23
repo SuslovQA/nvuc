@@ -29,7 +29,7 @@ import static org.springframework.security.test.web.servlet.request.SecurityMock
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest({AdminController.class, HomeController.class, FileController.class})
+@WebMvcTest({AdminController.class, AdminAuthController.class, HomeController.class, JournalController.class, FileController.class})
 @Import({SecurityConfig.class, JournalWebTests.SanitizerConfig.class})
 class JournalWebTests {
     @TestConfiguration
@@ -107,6 +107,24 @@ class JournalWebTests {
 
     @Test
     @WithMockUser(roles = "ADMIN")
+    void editFormKeepsValuesAndAccessibleEditorLabels() throws Exception {
+        Journal journal = new Journal();
+        journal.setId(1L);
+        journal.setTitle("Existing title");
+        journal.setDescription("<p>Existing description</p>");
+        when(admin.get(1L)).thenReturn(journal);
+        String html = mvc.perform(get("/admin/journals/1/edit")).andExpect(status().isOk())
+                .andReturn().getResponse().getContentAsString();
+        var document = org.jsoup.Jsoup.parse(html);
+        org.assertj.core.api.Assertions.assertThat(document.select("main h1")).hasSize(1);
+        org.assertj.core.api.Assertions.assertThat(document.select("form").attr("action")).isEqualTo("/admin/journals/1");
+        org.assertj.core.api.Assertions.assertThat(document.select("input[name=title]").val()).isEqualTo("Existing title");
+        org.assertj.core.api.Assertions.assertThat(document.select("#descriptionEditor").text()).isEqualTo("Existing description");
+        org.assertj.core.api.Assertions.assertThat(document.select("#descriptionLabel")).hasSize(1);
+    }
+
+    @Test
+    @WithMockUser(roles = "ADMIN")
     void paginatedListRendersNavigationWithoutArchiveQuery() throws Exception {
         Journal journal = new Journal();
         journal.setId(1L);
@@ -143,5 +161,61 @@ class JournalWebTests {
     void writesStillRequireCsrfToken() throws Exception {
         mvc.perform(post("/admin/journals/1/delete")).andExpect(status().isForbidden());
         verifyNoInteractions(admin);
+    }
+
+    @Test
+    void publicTemplatesRenderSharedLayoutInBothLanguages() throws Exception {
+        Journal journal = new Journal();
+        journal.setId(1L);
+        journal.setTitle("Тестовый выпуск");
+        journal.setTitleEn("Test issue");
+        journal.setCover("cover.png");
+        journal.setPdf("issue.pdf");
+        journal.setContents("<p>Содержание выпуска</p>");
+        journal.setContentsEn("<p>Issue contents</p>");
+        when(journals.getLastJournal()).thenReturn(journal);
+        when(journals.getJournal(1L)).thenReturn(journal);
+        when(storage.pdfExists("issue.pdf")).thenReturn(true);
+        var entry = mock(JournalRepository.ArchiveEntry.class);
+        when(entry.getId()).thenReturn(1L);
+        when(entry.getYear()).thenReturn(2026);
+        when(entry.getIssue()).thenReturn("1");
+        when(journals.getArchive()).thenReturn(java.util.Map.of(2026, List.of(entry)));
+
+        for (String language : List.of("ru", "en")) {
+            for (String path : List.of("/", "/about", "/founder", "/contacts", "/editorial-board",
+                    "/editorial-ethics", "/for-authors", "/journal/1")) {
+                String html = mvc.perform(get(path).param("lang", language))
+                        .andExpect(status().isOk()).andReturn().getResponse().getContentAsString();
+                var document = org.jsoup.Jsoup.parse(html);
+                org.assertj.core.api.Assertions.assertThat(document.select("body > header.site-header")).hasSize(1);
+                org.assertj.core.api.Assertions.assertThat(document.select("body > footer.site-footer")).hasSize(1);
+                org.assertj.core.api.Assertions.assertThat(document.select("main")).hasSize(1);
+                org.assertj.core.api.Assertions.assertThat(document.select("main h1")).hasSize(1);
+                org.assertj.core.api.Assertions.assertThat(document.select(".container .container")).isEmpty();
+                org.assertj.core.api.Assertions.assertThat(document.select("img:not([alt])")).isEmpty();
+                org.assertj.core.api.Assertions.assertThat(document.select("html").attr("lang")).isEqualTo(language);
+                org.assertj.core.api.Assertions.assertThat(document.select("a[href='/journal/1']")).isNotEmpty();
+                org.assertj.core.api.Assertions.assertThat(document.select("script[src='/js/script.js'][defer]")).hasSize(1);
+                var ids = document.select("[id]").eachAttr("id");
+                org.assertj.core.api.Assertions.assertThat(ids).doesNotHaveDuplicates();
+                // Rendered fixtures also allow a browser check without a running database.
+                var directory = java.nio.file.Path.of("target", "template-previews");
+                java.nio.file.Files.createDirectories(directory);
+                String name = path.equals("/") ? "index" : path.substring(1).replace('/', '-');
+                java.nio.file.Files.writeString(directory.resolve(language + "-" + name + ".html"), html);
+            }
+        }
+    }
+
+    @Test
+    void loginUsesSharedAdminHeadAndMainLandmark() throws Exception {
+        String html = mvc.perform(get("/admin/login")).andExpect(status().isOk())
+                .andReturn().getResponse().getContentAsString();
+        var document = org.jsoup.Jsoup.parse(html);
+        org.assertj.core.api.Assertions.assertThat(document.select("main h1")).hasSize(1);
+        org.assertj.core.api.Assertions.assertThat(document.select("meta[name=viewport]")).hasSize(1);
+        org.assertj.core.api.Assertions.assertThat(document.select("link[href='/css/layout.css']")).hasSize(1);
+        org.assertj.core.api.Assertions.assertThat(document.select("input[name=_csrf]")).isNotEmpty();
     }
 }

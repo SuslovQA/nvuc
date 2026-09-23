@@ -1,146 +1,85 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const burger = document.getElementById("burger");
     const nav = document.getElementById("nav");
+    if (!burger || !nav) return;
 
+    function setSubmenu(item, open) {
+        item.classList.toggle("open", open);
+        const toggle = item.querySelector(":scope > .submenu-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", String(open));
+        if (!open) {
+            item.querySelectorAll(".has-submenu.open").forEach(child => setSubmenu(child, false));
+        }
+    }
 
-    /* =====================================================
-       BURGER MENU
-    ===================================================== */
+    function closeMenu() {
+        nav.classList.remove("active");
+        burger.classList.remove("active");
+        burger.setAttribute("aria-expanded", "false");
+        nav.querySelectorAll(".has-submenu").forEach(item => setSubmenu(item, false));
+    }
 
-    burger.addEventListener("click", function (event) {
-
-        event.stopPropagation();
-
-        burger.classList.toggle("active");
-        nav.classList.toggle("active");
-
+    burger.addEventListener("click", function () {
+        const open = !nav.classList.contains("active");
+        closeMenu();
+        nav.classList.toggle("active", open);
+        burger.classList.toggle("active", open);
+        burger.setAttribute("aria-expanded", String(open));
     });
 
-
-    /* =====================================================
-       SUBMENUS
-    ===================================================== */
-
-    const submenuToggles =
-        document.querySelectorAll(".submenu-toggle");
-
-
-    submenuToggles.forEach(function (toggle) {
-
-        toggle.addEventListener("click", function (event) {
-
-            if (window.innerWidth > 768) {
-                return;
-            }
-
-            event.preventDefault();
-
-            const parent = toggle.parentElement;
-
-            const siblings = parent.parentElement.children;
-
-
-            Array.from(siblings).forEach(function (sibling) {
-
-                if (sibling !== parent) {
-                    sibling.classList.remove("open");
-                }
-
-            });
-
-            parent.classList.toggle("open");
-
+    nav.querySelectorAll(".submenu-toggle").forEach(function (toggle, index) {
+        const parent = toggle.parentElement;
+        const submenu = parent.querySelector(":scope > .submenu");
+        if (!submenu) return;
+        submenu.id = "submenu-" + index;
+        toggle.setAttribute("aria-controls", submenu.id);
+        toggle.setAttribute("aria-expanded", "false");
+        parent.addEventListener("pointerenter", function (event) {
+            if (event.pointerType === "mouse" && window.innerWidth > 768) setSubmenu(parent, true);
         });
-
+        parent.addEventListener("pointerleave", function (event) {
+            if (event.pointerType === "mouse" && window.innerWidth > 768 && !parent.contains(document.activeElement)) {
+                setSubmenu(parent, false);
+            }
+        });
+        parent.addEventListener("focusout", function (event) {
+            if (!parent.contains(event.relatedTarget)) setSubmenu(parent, false);
+        });
+        toggle.addEventListener("click", function () {
+            const open = !parent.classList.contains("open");
+            Array.from(parent.parentElement.children).forEach(sibling => {
+                if (sibling !== parent) setSubmenu(sibling, false);
+            });
+            setSubmenu(parent, open);
+        });
     });
-
-
-    /* =====================================================
-       CLICK OUTSIDE MENU
-    ===================================================== */
 
     document.addEventListener("click", function (event) {
-
-        if (!nav.classList.contains("active")) {
-            return;
-        }
-
-        if (
-            !nav.contains(event.target) &&
-            !burger.contains(event.target)
-        ) {
-
-            nav.classList.remove("active");
-            burger.classList.remove("active");
-
-            document
-                .querySelectorAll(".has-submenu.open")
-                .forEach(function (item) {
-
-                    item.classList.remove("open");
-
-                });
-
-        }
-
+        if (!nav.contains(event.target) && !burger.contains(event.target)) closeMenu();
     });
 
-
-    /* =====================================================
-       RESIZE
-    ===================================================== */
-
-    window.addEventListener("resize", function () {
-
-        if (window.innerWidth > 768) {
-
-            nav.classList.remove("active");
-            burger.classList.remove("active");
-
-
-            document
-                .querySelectorAll(".has-submenu.open")
-                .forEach(function (item) {
-
-                    item.classList.remove("open");
-
-                });
-
+    nav.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") return;
+        const item = event.target.closest(".has-submenu.open");
+        if (item) {
+            setSubmenu(item, false);
+            item.querySelector(":scope > .submenu-toggle").focus();
+        } else {
+            closeMenu();
+            burger.focus();
         }
-
+        event.preventDefault();
     });
 
+    window.matchMedia("(min-width: 769px)").addEventListener("change", closeMenu);
 });
 
-
-/* =========================================================
-   LANGUAGE - DESKTOP
-========================================================= */
-
 function changeLanguage(element) {
-
-    const lang = element.checked ? "en" : "ru";
-
-    const url = new URL(window.location.href);
-
-    url.searchParams.set("lang", lang);
-
-    window.location.href = url.toString();
-
+    changeLanguageMobile(element.checked ? "en" : "ru");
 }
 
-
-/* =========================================================
-   LANGUAGE - MOBILE
-========================================================= */
-
 function changeLanguageMobile(lang) {
-
     const url = new URL(window.location.href);
-
     url.searchParams.set("lang", lang);
-
     window.location.href = url.toString();
-
 }

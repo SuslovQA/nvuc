@@ -3,17 +3,10 @@
 <html lang="ru"
       xmlns:th="http://www.thymeleaf.org">
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="/css/style_admin.css" th:href="@{/css/style_admin.css}">
-
-    <title>Административная панель</title>
-
-</head>
+<head th:replace="~{fragments/admin :: head('Административная панель', false)}"></head>
 
 <body>
+<main class="container admin-main">
 
 <h1>
     Административная панель
@@ -23,23 +16,25 @@
     + Добавить журнал
 </a>
 
+<div class="table-scroll" role="region" aria-label="Список журналов" tabindex="0">
 <table>
+    <caption class="visually-hidden">Журналы</caption>
 
     <thead>
 
     <tr>
 
-        <th>ID</th>
+        <th scope="col">ID</th>
 
-        <th>Год</th>
+        <th scope="col">Год</th>
 
-        <th>Выпуск</th>
+        <th scope="col">Выпуск</th>
 
-        <th>Название</th>
+        <th scope="col">Название</th>
 
-        <th>PDF</th>
+        <th scope="col">PDF</th>
 
-        <th>Действия</th>
+        <th scope="col">Действия</th>
 
     </tr>
 
@@ -116,6 +111,7 @@
     </tbody>
 
 </table>
+</div>
 
 <nav aria-label="Страницы журналов" th:if="${journalPage.totalPages > 1}">
     <a th:if="${journalPage.hasPrevious()}" th:href="@{/admin(page=${journalPage.number - 1})}">Назад</a>
@@ -138,6 +134,7 @@
 
 </form>
 
+</main>
 </body>
 
 </html>

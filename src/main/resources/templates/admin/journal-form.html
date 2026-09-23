@@ -2,23 +2,10 @@
 <html lang="ru"
       xmlns:th="http://www.thymeleaf.org">
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <title th:text="${journal.id == null
-        ? 'Добавление журнала'
-        : 'Редактирование журнала'}">
-    </title>
-
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css">
-
-    <link rel="stylesheet" href="/css/style_admin.css" th:href="@{/css/style_admin.css}">
-
-</head>
+<head th:replace="~{fragments/admin :: head(${journal.id == null ? 'Добавление журнала' : 'Редактирование журнала'}, true)}"></head>
 
 <body>
+<main class="container admin-main">
 
 <a href="/admin" class="back">
     ← Назад
@@ -108,9 +95,9 @@
 
     <div class="form-group">
 
-        <label>
+        <span class="form-label" id="descriptionLabel">
             Описание
-        </label>
+        </span>
 
         <div id="descriptionEditor"
              class="editor"
@@ -125,9 +112,9 @@
 
     <div class="form-group">
 
-        <label>
+        <span class="form-label" id="descriptionEnLabel">
             Описание EN
-        </label>
+        </span>
 
         <div id="descriptionEnEditor"
              class="editor"
@@ -143,9 +130,9 @@
 
     <div class="form-group">
 
-        <label>
+        <span class="form-label" id="contentLabel">
             Содержание
-        </label>
+        </span>
 
         <div id="contentEditor"
              class="editor"
@@ -161,9 +148,9 @@
 
     <div class="form-group">
 
-        <label>
+        <span class="form-label" id="contentEnLabel">
             Содержание EN
-        </label>
+        </span>
 
         <div id="contentEnEditor"
              class="editor"
@@ -228,6 +215,7 @@
 </form>
 
 
+</main>
 <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js">
 </script>
 
@@ -254,6 +242,13 @@
             theme: 'snow'
         });
 
+
+    [descriptionEditor, descriptionEnEditor, contentEditor, contentEnEditor].forEach((editor, index) => {
+        const names = ['description', 'descriptionEn', 'content', 'contentEn'];
+        editor.root.setAttribute('role', 'textbox');
+        editor.root.setAttribute('aria-multiline', 'true');
+        editor.root.setAttribute('aria-labelledby', names[index] + 'Label');
+    });
 
     document.querySelector('form')
         .addEventListener('submit', function () {

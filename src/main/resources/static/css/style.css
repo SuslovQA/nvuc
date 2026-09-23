@@ -1,1148 +1,651 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Public page content. Geometry is shared through layout.css. */
 body {
-    background-color: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-/* =========================================================
-   MAIN CONTENT
-========================================================= */
-
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-}
-
-.content {
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
-}
-
-.content h1 {
-    margin-bottom: 20px;
-    color: #003366;
-}
-
-.content p {
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   JOURNAL
-========================================================= */
-
-.journal-cover {
-    max-width: 500px;
-}
-
-.about-journal {
+    margin: 0;
+    min-height: 100vh;
     display: flex;
-    margin: 40px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
 }
-
+body, h1, h2, h3, h4, p, ul, figure {
+    margin: 0;
+}
+button, input {
+    font: inherit;
+}
+address {
+    font-style: normal;
+}
+.page-main {
+    margin-block: 40px;
+}
+.site-footer {
+    margin-top: auto;
+}
+.page-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.panel-title {
+    font-size: 2rem;
+    padding: 15px;
+}
+.prose {
+    line-height: 24px;
+    overflow-wrap: anywhere;
+}
+.prose p {
+    padding-bottom: 15px;
+}
+.prose ul {
+    padding: 0 0 20px 50px;
+}
 .main-cover {
     max-width: 70%;
     padding: 20px;
 }
-
 .main-cover > img {
     max-width: 100%;
     max-height: 400px;
+    height: auto;
     border-radius: 5px;
 }
-
 .main-text {
     max-width: 50%;
+    min-width: 0;
     padding: 20px 20px 20px 10px;
-
     display: flex;
     flex-direction: column;
 }
-
-.p-main-text > p {
-    padding-bottom: 10px;
-}
-
-.p-main-text {
-    line-height: 24px;
-}
-
-.main-btn {
-    align-items: center;
-    height: 30px;
-
-    position: relative;
-    margin: auto;
-
-    justify-content: center;
-
-    width: 200px;
-
-    display: flex;
-
-    background: #891f05;
-    border-radius: 5px;
-
-    color: white;
-    text-decoration: none;
-}
-
-.main-btn:hover {
-    background-color: #fff;
-    border: 1px solid #891f05;
-
-    transition: .4s;
-
-    color: black;
-}
-
-.no-pdf {
-    font-weight: bold;
-    color: #891f05;
-    text-align: center;
-}
-
-
-/* =========================================================
-   CURRENT ISSUE
-========================================================= */
-
-.current-issue {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.current-issue-header > h1 {
-    padding: 15px;
-}
-
-.current-issue-wrapper {
-    display: flex;
-}
-
 .current-issue-cover {
     min-width: 30%;
-
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
-
-.current-issue-data {
-    padding: 20px;
-}
-
-.current-issue-data > p {
-    margin-bottom: 10px;
-}
-
-.current-issue-data h2 {
-    margin-bottom: 20px;
-}
-
 .current-issue-data h3 {
     margin-bottom: 10px;
 }
-
 .current-issue-data h4 {
     padding: 10px 0;
 }
-
 .current-issue-data a {
     margin-top: 10px;
 }
-
-
-/* =========================================================
-   ISSUE PAGE
-========================================================= */
-
-.issue-wrapper {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.issue-data {
-    display: flex;
-}
-
-.issue-header {
-    padding-bottom: 15px;
-}
-
-.issue-header-description {
-    padding: 20px;
-    line-height: 24px;
-}
-
 .issue-description {
     margin-bottom: 40px;
 }
-
-.second-container {
-    margin-top: 20px;
-}
-
-.second-container .issue-wrapper {
-    padding: 20px;
-}
-
-.second-container .issue-wrapper h3 {
-    margin-bottom: 20px;
-}
-
-.second-container p {
-    font-size: 15px;
-    line-height: 24px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-wrapper {
-    padding: 20px;
-}
-
-.header-article {
-    margin-bottom: 20px;
-}
-
-.about-wrapper .article-content {
-    line-height: 24px;
-}
-
-.about-wrapper .article-content p {
-    padding-bottom: 15px;
-}
-
-.about-wrapper .article-content ul {
+.main-btn {
     display: flex;
-    flex-direction: column;
-
-    padding: 0 0 20px 50px;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    width: 200px;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .4s, color .4s;
 }
-
-
-/* =========================================================
-   FOUNDER
-========================================================= */
-
+.main-btn:hover {
+    background: #fff;
+    border-color: var(--accent-color);
+    color: #000;
+}
+.no-pdf {
+    font-weight: bold;
+    color: var(--accent-color);
+    text-align: center;
+}
 .founder-contacts {
     max-width: 50%;
-    padding: 20px;
+    padding: 20px 0;
 }
-
-.header-founder {
-    padding: 20px;
-}
-
 .founder-text {
     font-weight: 600;
-    padding: 0 20px 20px 20px;
+    padding-bottom: 20px;
 }
-
 .founder-link {
-    color: #891f05;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: 600;
 }
-
 .founder-link:hover {
     text-decoration: underline;
-    transition: .5s;
+}
+.document-list {
+    display: grid;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+.document-list a {
+    display: inline-block;
+    line-height: 1.6;
+}
+.skip-link {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 2000;
+    padding: 10px;
+    background: #fff;
+    transform: translateY(-200%);
+}
+.skip-link:focus {
+    transform: translateY(0);
+}
+/* Buttons retain the existing navigation appearance. */
+.menu button, .burger {
+    background: none;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+}
+.menu button {
+    text-align: left;
+}
+.menu .submenu button {
+    width: 100%;
+}
+.menu ul {
+    padding: 0;
+}
+.burger {
+    padding: 0;
+}
+.footer-block-title {
+    font-size: 1.17em;
+}
+.footer-wrapper ul {
+    padding: 0;
+}
+.info-footer-adress p {
+    padding: 0;
+}
+.prose .info-footer-adress {
+    padding: 0;
+}
+.switch input:focus-visible + .slider {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 3px;
 }
 
-
-/* =========================================================
-   FOR AUTHORS
-========================================================= */
-
-.for-authors-article-content {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 0 20px 20px;
-}
-
-.for-authors-article-content a {
-    line-height: 40px;
-    width: fit-content;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-header {
+/* Site navigation and footer. */
+.site-header {
     position: relative;
     z-index: 1000;
-
-    background-color: #f7f8fa;
-
-    border-bottom: 1px solid #ddd;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
 }
-
-header .container {
+.site-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 25px;
 }
 
-
-/* =========================================================
-   BURGER
-========================================================= */
-
 .burger {
     display: none;
-
     width: 26px;
     height: 19px;
-
     cursor: pointer;
-
     flex-direction: column;
     justify-content: space-between;
-
     z-index: 1100;
 }
-
 .burger span {
     display: block;
-
     width: 100%;
     height: 3px;
-
     background: #222;
-
     border-radius: 3px;
-
     transition: all 0.3s ease;
 }
-
-
-/* =========================================================
-   DESKTOP MENU
-========================================================= */
 
 #nav {
     display: block;
 }
-
 .menu {
     display: flex;
     align-items: center;
-
     gap: 30px;
-
     list-style: none;
-
     margin: 0;
     padding: 0;
 }
-
 .menu li {
     position: relative;
 }
-
-.menu a {
+.menu :is(a, button) {
     display: block;
-
     text-decoration: none;
     color: #222;
-
     padding: 10px 15px;
 }
 
-
-/* =========================================================
-   MAIN MENU ITEMS
-========================================================= */
-
-.menu > li > a {
+.menu > li > :is(a, button) {
     display: flex;
     align-items: center;
-
     height: 40px;
-
     padding: 20px 15px;
-
     border-radius: 20px;
-
-    color: #891f05;
-
+    color: var(--accent-color);
     font-weight: bold;
-
     transition: .5s;
 }
-
-.menu > li > a:hover {
-    background: #891f05;
+.menu > li > :is(a, button):hover {
+    background: var(--accent-color);
     color: white;
 }
 
-
-/* =========================================================
-   DESKTOP DROPDOWN - FIRST LEVEL
-========================================================= */
-
 .menu > li > .submenu {
     position: absolute;
-
     top: 100%;
     left: 0;
-
     min-width: 200px;
-
     margin: 0;
-
     background: #fff;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
     list-style: none;
-
     opacity: 0;
     visibility: hidden;
-
     transform: translateY(10px);
-
     transition: all 0.25s ease;
 }
 
-
-/* Open on hover */
-.menu > li:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-
-    transform: translateY(0);
-}
-
-
-/* =========================================================
-   DESKTOP DROPDOWN ITEMS
-========================================================= */
-
-.menu > li > .submenu > li > a {
+.menu > li > .submenu > li > :is(a, button) {
     padding: 10px 15px;
-
     white-space: nowrap;
 }
-
-.menu > li > .submenu > li > a:hover {
+.menu > li > .submenu > li > :is(a, button):hover {
     background: #f5f5f5 !important;
     color: black !important;
 }
 
-
-/* =========================================================
-   DESKTOP SECOND LEVEL
-========================================================= */
-
 .menu .submenu .submenu {
     position: absolute;
-
     top: 0;
     left: 100%;
-
     min-width: 200px;
-
     margin: 0;
-
     background: #fff;
-
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
-
     list-style: none;
-
     opacity: 0;
     visibility: hidden;
-
     transform: translateX(10px);
-
     transition: all 0.25s ease;
 }
-
-.menu .submenu > li:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-
-    transform: translateX(0);
-}
-
-
-/* =========================================================
-   LANGUAGE SWITCHER - DESKTOP
-========================================================= */
 
 .language-switcher {
     position: relative;
 
-    /*display: flex;*/
     align-items: center;
 }
 
-
-/*
- * RU / toggle / EN
- */
 .language-toggle {
     display: flex;
     align-items: center;
-
     gap: 8px;
-
     font-size: 16px;
     font-weight: 600;
-
-    color: #891f05;
-
+    color: var(--accent-color);
     white-space: nowrap;
 }
-
 .language-mobile-toggle,
 .language-mobile-menu {
     display: none;
 }
 
-
-/* =========================================================
-   LANGUAGE TOGGLE
-========================================================= */
-
 .switch {
     position: relative;
-
     display: inline-block;
-
     width: 42px;
     height: 22px;
-
     flex-shrink: 0;
 }
-
 .switch input {
     opacity: 0;
-
     width: 0;
     height: 0;
 }
-
 .slider {
     position: absolute;
-
     inset: 0;
-
     cursor: pointer;
-
     background-color: #ccc;
-
     border-radius: 22px;
-
     transition: 0.3s;
 }
-
 .slider::before {
     content: "";
-
     position: absolute;
-
     width: 16px;
     height: 16px;
-
     left: 3px;
     top: 3px;
-
     background-color: white;
-
     border-radius: 50%;
-
     transition: 0.3s;
 }
 
-
-/* Toggle ON */
 .switch input:checked + .slider {
     background-color: #333;
 }
-
 .switch input:checked + .slider::before {
     transform: translateX(20px);
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.footer {
-    border-top: 1px solid #ddd;
-
-    background-color: #f7f8fa;
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    background-color: var(--surface-color);
 }
-
 .footer-wrapper {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
-
     font-size: 14px;
-    line-height: 20px;
+    line-min-height: 20px;
 }
-
 .footer-columns {
     padding: 20px;
 }
-
 .footer-wrapper li {
     list-style: none;
 }
-
 .footer-wrapper a {
     height: 100%;
-
     padding: 5px;
-
-    color: #891f05;
-
+    color: var(--accent-color);
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.5s;
-
     border-radius: 20px;
-
     cursor: pointer;
 }
-
 .footer-wrapper a:hover {
     text-decoration: underline;
-
     transition: .5s;
 }
-
 .footer-block-title {
     text-align: center;
-
     padding-bottom: 10px;
 }
-
 .info-footer-adress {
     list-style: none;
 }
-
 .info-footer-adress li {
     padding: 5px;
 }
-
-.footer-links h3 {
+.footer-links .footer-block-title {
     padding: 0;
 }
-
 ul.footer-menu-links {
     display: flex;
     flex-direction: column;
 }
-
 ul.footer-menu-links li {
     padding: 1px;
-
     display: flex;
-
     width: fit-content;
 }
-
 .footer-information p {
     padding-top: 10px;
 }
-
 .copyright {
-    border-top: 1px solid #ddd;
-
-    height: 20px;
+    border-top: 1px solid var(--border-color);
+    min-height: 20px;
 }
-
 .sp-copyright {
     font-size: 12px;
-
     padding: 2px;
 }
-
 .copyright-wrapper {
     padding: 0 20px;
 }
 
-
-/* =========================================================
-   FIXED FOOTER
-========================================================= */
-
-.fixed-footer {
-    position: fixed;
-
-    bottom: 0;
-
-    width: 100%;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
 @media (max-width: 768px) {
 
-    /* -----------------------------------------------------
-       CONTAINER
-    ----------------------------------------------------- */
-
-    .container {
-        max-width: 768px;
+    .menu > li > button {
+        width: 100%;
     }
 
-
-    /* -----------------------------------------------------
-       HEADER
-    ----------------------------------------------------- */
-
-    header {
+    .page-main {
+        margin-top: 110px;
+    }
+    .site-header {
         position: fixed;
-
         top: 0;
         left: 0;
         right: 0;
-
         height: 70px;
     }
-
-    header .container {
+    .site-header .container {
         position: relative;
     }
-
-
-    /* -----------------------------------------------------
-       BURGER
-    ----------------------------------------------------- */
 
     .burger {
         display: flex;
     }
-
     .burger.active span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
-
     .burger.active span:nth-child(2) {
         opacity: 0;
     }
-
     .burger.active span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
 
-
-    /* -----------------------------------------------------
-       LOGO
-    ----------------------------------------------------- */
-
-    .logo > a {
+    .logo > :is(a, button) {
         display: flex;
-
         height: 70px;
     }
 
-
-    /* -----------------------------------------------------
-       NAVIGATION
-    ----------------------------------------------------- */
-
     #nav {
         position: absolute;
-
         top: 100%;
         left: 0;
         right: 0;
-
         background: #fff;
-
         max-height: 0;
-
         overflow: hidden;
-
         opacity: 0;
         visibility: hidden;
-
         transition:
-                max-height 0.35s ease,
-                opacity 0.25s ease,
-                visibility 0.25s ease;
-
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        visibility 0.25s ease;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
     }
-
     #nav.active {
         max-height: calc(100vh - 70px);
-
         opacity: 1;
         visibility: visible;
-
         overflow-y: auto;
-
         border-radius: 0 0 5px 5px;
     }
 
-
-    /* -----------------------------------------------------
-       MAIN MENU
-    ----------------------------------------------------- */
-
     .menu {
         display: block;
-
         width: 100%;
 
-        /*padding: 10px 0;*/
     }
-
     .menu > li {
         width: 100%;
-
         border-bottom: 1px solid #eee;
     }
-
     .menu > li:last-child {
         border-bottom: none;
     }
 
-
-    /* -----------------------------------------------------
-       MOBILE DROPDOWNS
-    ----------------------------------------------------- */
-
     .menu > li > .submenu,
     .menu .submenu .submenu {
-
         position: static;
-
         width: 100%;
         min-width: 0;
-
         padding: 0;
         margin: 0;
-
         box-shadow: none;
-
         opacity: 1;
         visibility: visible;
-
         transform: none;
-
         display: none;
     }
-
 
     .menu li.open > .submenu {
         display: block;
     }
 
-
     .menu > li > .submenu {
         background: #f7f7f7;
     }
 
-
-    .menu > li > .submenu > li > a {
+    .menu > li > .submenu > li > :is(a, button) {
         padding: 13px 20px 13px 35px;
-
         white-space: normal;
     }
-
 
     .menu > li > .submenu > li > .submenu {
         background: #eeeeee;
     }
 
-
-    .menu > li > .submenu > li > .submenu > li > a {
+    .menu > li > .submenu > li > .submenu > li > :is(a, button) {
         padding: 12px 20px 12px 50px;
     }
 
-
-    /* -----------------------------------------------------
-       ARROWS FOR SUBMENUS
-    ----------------------------------------------------- */
-
     .has-submenu > .submenu-toggle {
         position: relative;
-
         padding-right: 45px !important;
     }
-
     .has-submenu > .submenu-toggle::after {
         content: "";
-
         position: absolute;
-
         right: 20px;
         top: 50%;
-
         width: 8px;
         height: 8px;
-
         border-right: 2px solid #222;
         border-bottom: 2px solid #222;
-
         transform:
-                translateY(-70%)
-                rotate(45deg);
-
+        translateY(-70%)
+        rotate(45deg);
         transition:
-                transform 0.25s ease;
+        transform 0.25s ease;
     }
-
 
     .has-submenu.open > .submenu-toggle::after {
         transform:
-                translateY(-30%)
-                rotate(225deg);
+        translateY(-30%)
+        rotate(225deg);
     }
 
-
-    /* -----------------------------------------------------
-       AUTHORS / CONTACTS
-    ----------------------------------------------------- */
-
-    .sp-menu-item > a {
+    .sp-menu-item > :is(a, button) {
         padding: 15px 20px;
     }
-
-
-    /* =====================================================
-       LANGUAGE - MOBILE
-    ===================================================== */
 
     .language-toggle {
         display: none;
     }
 
-
     .language-mobile-toggle {
         display: flex;
-
         width: 100%;
-
         align-items: center;
-
         padding:
-                15px 45px 15px 20px !important;
-
+        15px 45px 15px 20px !important;
         position: relative;
-
-        color: #891f05;
-
+        color: var(--accent-color);
         font-weight: bold;
-
         text-decoration: none;
     }
 
-
     .language-mobile-menu {
         display: none;
-
         position: static;
-
         width: 100%;
         min-width: 0;
-
         padding: 0;
         margin: 0;
-
         background: #eeeeee;
-
         box-shadow: none;
-
         list-style: none;
-
         opacity: 1;
         visibility: visible;
-
         transform: none;
     }
-
 
     .language-switcher.open > .language-mobile-menu {
         display: block;
     }
 
-
-    .language-mobile-menu > li > a {
+    .language-mobile-menu > li > :is(a, button) {
         display: block;
-
         padding: 12px 20px 12px 50px;
-
         color: #222;
-
         text-decoration: none;
-
-        /*font-size: 14px;*/
 
         font-weight: normal;
     }
 
-
-    .language-mobile-menu > li > a:hover {
+    .language-mobile-menu > li > :is(a, button):hover {
         background-color: #f5f5f5;
-
-        color: #891f05;
-    }
-
-
-    .language-switcher > .language-mobile-toggle::after {
-        content: "";
-
-        position: absolute;
-
-        right: 20px;
-        top: 50%;
-
-        width: 8px;
-        height: 8px;
-
-        border-right: 2px solid #222;
-        border-bottom: 2px solid #222;
-
-        transform:
-                translateY(-70%)
-                rotate(45deg);
-
-        transition:
-                transform 0.25s ease;
-    }
-
-
-    .language-switcher.open > .language-mobile-toggle::after {
-        transform:
-                translateY(-30%)
-                rotate(225deg);
-    }
-
-
-    /* -----------------------------------------------------
-       OTHER MOBILE CONTENT
-    ----------------------------------------------------- */
-
-    .about-journal {
-        display: flex;
-        flex-direction: column;
-
-        margin-top: 110px;
+        color: var(--accent-color);
     }
 
     .main-cover {
         max-width: 100%;
     }
-
     .main-text {
         max-width: 100%;
-    }
-
-    .current-issue-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .issue-wrapper {
-        margin-top: 110px;
-    }
-
-    .issue-data {
-        flex-direction: column;
     }
 
     .footer-wrapper {
         grid-template-columns: 1fr;
     }
 
-    .fixed-footer {
-        position: relative;
-    }
-
     .footer-columns {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--border-color);
     }
-
     .footer-information.footer-columns {
         border: none;
     }
-
     .copyright {
-        height: 40px;
+        min-height: 40px;
     }
-
     .founder-contacts {
         max-width: 100%;
     }
 }
 
-
-/* =========================================================
-   TOUCH DEVICES
-========================================================= */
-
 @media (hover: none) {
-
     .submenu-toggle:hover {
         background-color: white !important;
-
-        color: #891f05 !important;
+        color: var(--accent-color) !important;
     }
-
-    .sp-menu-item > a:hover {
+    .sp-menu-item > :is(a, button):hover {
         background-color: white !important;
-
-        color: #891f05 !important;
+        color: var(--accent-color) !important;
     }
 }
-
 @media (min-width: 769px) {
-    a.submenu-toggle.language-mobile-toggle {
+    .submenu-toggle.language-mobile-toggle {
         display: none;
     }
-
-    .menu > li > ul > li > ul > li > a:hover {
+    .menu > li > ul > li > ul > li > :is(a, button):hover {
         background-color: #f5f5f5;
     }
-
-    .article-content h3.footer-block-title {
+    .article-content .footer-block-title {
         margin-right: 30%;
+    }
+    .menu li.open > .submenu {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
     }
 }
