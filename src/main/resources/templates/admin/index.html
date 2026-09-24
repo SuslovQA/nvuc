@@ -8,131 +8,131 @@
 <body>
 <main class="container admin-main">
 
-<h1>
-    Административная панель
-</h1>
+    <h1>
+        Административная панель
+    </h1>
 
-<a href="/admin/journals/new">
-    + Добавить журнал
-</a>
+    <a href="/admin/journals/new">
+        + Добавить журнал
+    </a>
 
-<div class="table-scroll" role="region" aria-label="Список журналов" tabindex="0">
-<table>
-    <caption class="visually-hidden">Журналы</caption>
+    <div class="table-scroll" role="region" aria-label="Список журналов" tabindex="0">
+        <table>
+            <caption class="visually-hidden">Журналы</caption>
 
-    <thead>
+            <thead>
 
-    <tr>
+            <tr>
 
-        <th scope="col">ID</th>
+                <th scope="col">ID</th>
 
-        <th scope="col">Год</th>
+                <th scope="col">Год</th>
 
-        <th scope="col">Выпуск</th>
+                <th scope="col">Выпуск</th>
 
-        <th scope="col">Название</th>
+                <th scope="col">Название</th>
 
-        <th scope="col">PDF</th>
+                <th scope="col">PDF</th>
 
-        <th scope="col">Действия</th>
+                <th scope="col">Действия</th>
 
-    </tr>
+            </tr>
 
-    </thead>
+            </thead>
 
 
-    <tbody>
+            <tbody>
 
-    <tr th:each="journal : ${journals}">
+            <tr th:each="journal : ${journals}">
 
-        <td th:text="${journal.id}">
-        </td>
+                <td th:text="${journal.id}">
+                </td>
 
-        <td th:text="${journal.year}">
-        </td>
+                <td th:text="${journal.year}">
+                </td>
 
-        <td th:text="${journal.issue}">
-        </td>
+                <td th:text="${journal.issue}">
+                </td>
 
-        <td th:text="${journal.title}">
-        </td>
+                <td th:text="${journal.title}">
+                </td>
 
-        <td>
+                <td>
 
             <span
                     th:if="${journal.pdf != null}">
                 Есть
             </span>
 
-            <span
-                    th:unless="${journal.pdf != null}">
+                    <span
+                            th:unless="${journal.pdf != null}">
                 Нет
             </span>
 
-        </td>
+                </td>
 
-        <td>
+                <td>
 
-            <div class="actions">
+                    <div class="actions">
 
-                <a th:href="@{/admin/journals/{id}/edit(
+                        <a th:href="@{/admin/journals/{id}/edit(
                     id=${journal.id}
                 )}">
-                    Изменить
-                </a>
+                            Изменить
+                        </a>
 
-                <form
-                        th:action="@{/admin/journals/{id}/delete(
+                        <form
+                                th:action="@{/admin/journals/{id}/delete(
                             id=${journal.id}
                         )}"
-                        method="post">
+                                method="post">
 
-                    <input type="hidden"
-                           th:name="${_csrf.parameterName}"
-                           th:value="${_csrf.token}">
+                            <input type="hidden"
+                                   th:name="${_csrf.parameterName}"
+                                   th:value="${_csrf.token}">
 
-                    <button type="submit"
-                            onclick="return confirm(
+                            <button type="submit"
+                                    onclick="return confirm(
                                 'Удалить журнал?'
                             )">
 
-                        Удалить
+                                Удалить
 
-                    </button>
+                            </button>
 
-                </form>
+                        </form>
 
-            </div>
+                    </div>
 
-        </td>
+                </td>
 
-    </tr>
+            </tr>
 
-    </tbody>
+            </tbody>
 
-</table>
-</div>
+        </table>
+    </div>
 
-<nav aria-label="Страницы журналов" th:if="${journalPage.totalPages > 1}">
-    <a th:if="${journalPage.hasPrevious()}" th:href="@{/admin(page=${journalPage.number - 1})}">Назад</a>
-    <span th:text="${journalPage.number + 1} + ' / ' + ${journalPage.totalPages}"></span>
-    <a th:if="${journalPage.hasNext()}" th:href="@{/admin(page=${journalPage.number + 1})}">Далее</a>
-</nav>
+    <nav aria-label="Страницы журналов" th:if="${journalPage.totalPages > 1}">
+        <a th:if="${journalPage.hasPrevious()}" th:href="@{/admin(page=${journalPage.number - 1})}">Назад</a>
+        <span th:text="${journalPage.number + 1} + ' / ' + ${journalPage.totalPages}"></span>
+        <a th:if="${journalPage.hasNext()}" th:href="@{/admin(page=${journalPage.number + 1})}">Далее</a>
+    </nav>
 
 
-<form method="post"
-      action="/admin/logout"
-      class="logout-form">
+    <form method="post"
+          action="/admin/logout"
+          class="logout-form">
 
-    <input type="hidden"
-           th:name="${_csrf.parameterName}"
-           th:value="${_csrf.token}">
+        <input type="hidden"
+               th:name="${_csrf.parameterName}"
+               th:value="${_csrf.token}">
 
-    <button type="submit" class="logout-button">
-        Выйти
-    </button>
+        <button type="submit" class="logout-button">
+            Выйти
+        </button>
 
-</form>
+    </form>
 
 </main>
 </body>

@@ -254,41 +254,11 @@
         editor.root.setAttribute('aria-labelledby', names[index] + 'Label');
     });
 
-    function contentsHtml(editor) {
-        const container = document.createElement('div');
-        container.innerHTML = editor.root.innerHTML;
-        // Ordinary contents lines belong to one paragraph. Keep headings, lists,
-        // and paragraphs with explicit block formatting intact.
-        let paragraph = null;
-        let firstMerge = true;
-        Array.from(container.childNodes).forEach(node => {
-            if (node.nodeName !== 'P' || node.attributes.length !== 0) {
-                paragraph = null;
-                return;
-            }
-            if (!paragraph) {
-                paragraph = node;
-                firstMerge = true;
-                return;
-            }
-            if (firstMerge && paragraph.innerHTML === '<br>') paragraph.replaceChildren();
-            firstMerge = false;
-            paragraph.appendChild(document.createElement('br'));
-            if (node.innerHTML !== '<br>') {
-                while (node.firstChild) paragraph.appendChild(node.firstChild);
-            }
-            node.remove();
-        });
-        return container.innerHTML;
-    }
-
     document.querySelector('form')
         .addEventListener('submit', function () {
             editors.forEach((editor, index) => {
                 if (JSON.stringify(editor.getContents()) === initialContents[index]) return;
-                document.getElementById(names[index]).value = index >= 2
-                    ? contentsHtml(editor)
-                    : editor.root.innerHTML;
+                document.getElementById(names[index]).value = editor.root.innerHTML;
             });
         });
 

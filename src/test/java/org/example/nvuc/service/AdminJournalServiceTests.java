@@ -60,6 +60,16 @@ class AdminJournalServiceTests {
     }
 
     @Test
+    void savesBothContentsLanguagesAsOneParagraph() throws IOException {
+        form.setContent("<div><p>Раздел</p>\n<p><em>Автор</em> Статья</p><p><br></p><p>Раздел 2</p></div>");
+        form.setContentEn("<div><p>Section</p>\n<p>Article</p></div>");
+        service.save(1L, form);
+        assertThat(journal.getContents()).isEqualTo("<p>Раздел<br><em>Автор</em> Статья<br><br>Раздел 2</p>");
+        assertThat(journal.getContentsEn()).isEqualTo("<p>Section<br>Article</p>");
+        verify(repository).saveAndFlush(journal);
+    }
+
+    @Test
     void removesOldFilesOnlyAfterCommit() throws IOException {
         uploads();
         doAnswer(invocation -> {

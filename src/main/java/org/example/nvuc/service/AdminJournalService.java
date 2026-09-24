@@ -61,8 +61,8 @@ public class AdminJournalService {
         journal.setTitleEn(form.getTitleEn());
         journal.setDescription(sanitizer.sanitize(form.getDescription()));
         journal.setDescriptionEn(sanitizer.sanitize(form.getDescriptionEn()));
-        journal.setContents(sanitizer.sanitize(form.getContent()));
-        journal.setContentsEn(sanitizer.sanitize(form.getContentEn()));
+        journal.setContents(sanitizer.sanitizeContents(form.getContent()));
+        journal.setContentsEn(sanitizer.sanitizeContents(form.getContentEn()));
 
         if (form.getCoverFile() != null && !form.getCoverFile().isEmpty()) {
             uploaded.cover = storage.saveCover(form.getCoverFile());
