@@ -29,10 +29,10 @@ public class Journal {
     @Column(columnDefinition = "TEXT")
     private String contentsEn;
 
-    @Column(length = 5000)
+    @Column(columnDefinition = "TEXT")
     private String description;
 
-    @Column(length = 5000)
+    @Column(columnDefinition = "TEXT")
     private String descriptionEn;
 
     private String cover;

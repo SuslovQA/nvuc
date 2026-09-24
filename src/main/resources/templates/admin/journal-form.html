@@ -243,28 +243,53 @@
         });
 
 
-    [descriptionEditor, descriptionEnEditor, contentEditor, contentEnEditor].forEach((editor, index) => {
-        const names = ['description', 'descriptionEn', 'content', 'contentEn'];
+    // Compare editor state after initialization: Quill normalizes existing HTML on load.
+    const editors = [descriptionEditor, descriptionEnEditor, contentEditor, contentEnEditor];
+    const names = ['description', 'descriptionEn', 'content', 'contentEn'];
+    const initialContents = editors.map(editor => JSON.stringify(editor.getContents()));
+
+    editors.forEach((editor, index) => {
         editor.root.setAttribute('role', 'textbox');
         editor.root.setAttribute('aria-multiline', 'true');
         editor.root.setAttribute('aria-labelledby', names[index] + 'Label');
     });
 
+    function contentsHtml(editor) {
+        const container = document.createElement('div');
+        container.innerHTML = editor.root.innerHTML;
+        // Ordinary contents lines belong to one paragraph. Keep headings, lists,
+        // and paragraphs with explicit block formatting intact.
+        let paragraph = null;
+        let firstMerge = true;
+        Array.from(container.childNodes).forEach(node => {
+            if (node.nodeName !== 'P' || node.attributes.length !== 0) {
+                paragraph = null;
+                return;
+            }
+            if (!paragraph) {
+                paragraph = node;
+                firstMerge = true;
+                return;
+            }
+            if (firstMerge && paragraph.innerHTML === '<br>') paragraph.replaceChildren();
+            firstMerge = false;
+            paragraph.appendChild(document.createElement('br'));
+            if (node.innerHTML !== '<br>') {
+                while (node.firstChild) paragraph.appendChild(node.firstChild);
+            }
+            node.remove();
+        });
+        return container.innerHTML;
+    }
+
     document.querySelector('form')
         .addEventListener('submit', function () {
-
-            document.getElementById('description').value =
-                descriptionEditor.root.innerHTML;
-
-            document.getElementById('descriptionEn').value =
-                descriptionEnEditor.root.innerHTML;
-
-            document.getElementById('content').value =
-                contentEditor.root.innerHTML;
-
-            document.getElementById('contentEn').value =
-                contentEnEditor.root.innerHTML;
-
+            editors.forEach((editor, index) => {
+                if (JSON.stringify(editor.getContents()) === initialContents[index]) return;
+                document.getElementById(names[index]).value = index >= 2
+                    ? contentsHtml(editor)
+                    : editor.root.innerHTML;
+            });
         });
 
 </script>
